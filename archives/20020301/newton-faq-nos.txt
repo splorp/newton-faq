@@ -1,0 +1,516 @@
+PART III: Newton OS
+
+* A) System Versions
+  + 1) What are the different Newton OS (NOS) versions?
+  + 2) What system upgrades are available for my Newton? Which one is the most recent? Where can I find it?
+    x a) US updates
+    x b) German updates
+    x c) French updates
+    x d) What is the numbering system?
+  + 3) How do I find out which NOS version I have?
+  + 4) What are the differences between OS versions?
+    x a) NOS 2.x is really different from NOS 1.x
+    x b) NOS 2.1 has some additional features compared to NOS 2.0.
+    x c) Latest revision (US MP2x00: 710031) of NOS 2.1
+    x d) eMate 737246
+* B) Using the Newton OS
+  + 1) How do I find the Newton's built-in helpbook?
+  + 2) What are the different ways to reset the Newton OS?
+    x a) Soft Reset
+    x b) Deep Reset
+    x c) Reset With Extensions Off
+    x d) MP2000 and MP2100 Power-Drain Reset
+    x e) Hard Reset ("Brainwipe")
+    x f) Cold boot
+  + 3) Transferring data to and from the Newton
+    x a) What are the various methods to input data on the Newton?
+    x b) What are the various methods of transferring data to/from the desktop?
+    x c) Can I use IrDA (infrared) to transfer information between my desktop and my 2.x Newton?
+    x d) What are the various methods to synchronize my data with a desktop computer?
+    x e) What are the various terminal softwares available for Newton?
+    x f) How can I transfer data between my Newton and another PDA?
+  + 4) What are the alternatives to the original HWR?
+  + 5) Can I change the fax cover page?
+  + 6) How do I find out information about a package in Extras?
+  + 7) How do I take screen shots?
+  + 8) Where can I find my Newton's ID?
+  + 9) Storage space arithmetic
+* C) Troubleshooting
+  + 1) Is Newton Y2K compliant?
+  + 2) Are there known bugs into Newton OS?
+    x a) I've heard about the nasty -10061 error on MP2x and eMate -- how can I reduce/prevent this?
+    x b) What is the Dates/Find bug?
+    x c) When I write, sometimes some strokes do not appear or disappear.
+    x d) When I do a find with NewtWorks, the free memory amount falls.
+    x e) What are these -16022 errors every time I try to use my modem?
+    x f) When I insert a memory card, I get a -10582 error. What's wrong?
+    x g) When I insert a flash memory card, my MP2x00 tells me the battery in the card needs to be replaced.
+    x h) I installed a new version of the backdrop application I'm using and I can't see it.
+  + 3) Packages on other platforms
+    x a) On my Mac, the icon of a .pkg file is plain, and NPI refuses it.
+    x b) When I download a .pkg via my Newton web browser, it's not recognized as a package.
+    x c) I can't expand StuffIt archives (on both platform).
+    x d) I have problems with a package on Windows
+  + 4) Why does the I/O Box always open to Out Box? Can I change that?
+  + 5) Why does the available memory decrease when the Newton is idle?
+* D) Miscellaneous
+  + 1) Where can I find informations about Easter Eggs?
+  + 2) How are packages compressed? (The story of the compression bits)
+  + 3) How it all works
+    x a) Newton Process Management
+    x b) Newton Memory Organization
+    x c) The Newton "File System"
+---------------------------------------------------------------------------
+
+
+A) System Versions
+
+
+1) What are the different versions of the Newton OS (NOS)?
+
+The Newton OS is burned into ROM. Hence the version depends on the model of Newton you have (cf the table of the models). However, some upgrades do exist.
+
+2) What are the system upgrades for my Newton? Which one is the latest? Where can I find it?
+
+Upgrades can be found on various sites, including Newton Source: <http://www.oldschool.net/newton/updates.html>
+Updates are in fact installer packages (which auto-remove themselves), and they all include a system version checking mechanism: you cannot damage your Newton by installing a wrong update: it will simply not install.
+Latest upgrades are:
+
+a) US & International English updates
+
+* Newton OS System update 1.0.5 for 1.0 ROM OMP's (over System version 1.0.4 or earlier)
+* Newton OS System update 1.1.1 for 1.1 ROM OMP's (over System version 1.1.0)
+* MP100 1.3 415333 (over 415059, 415172, 415313, & 415313p3 (developer release))
+* MP110 1.3 345333 (over 1.2.00, 344052, 344138, 345025 & 345025p3 (developer release))
+* MP120 1.3 445333 (US) (over 444217 & 444347)
+* MP120 1.3 465333 (Int'l) (over 464353)
+* MP120 2.0 516263 (over 516205, 515264 & 515299)
+* MP130 2.0 526205 (over 525314, 526060 & 526167)
+* MP2000 & MP2100 2.1 710031 (over 717260, 717145, 717006, 717041 & 717132)
+* eMate 300 2.1 737246 (over 737041)
+The 6 digit system update was introduced with NOS 1.3 to fix the confusion with previous system patches numbers. Indeed, the pre 1.3 systems are divided into 1.0.x ROMs and 1.1.x ROMs which, with system updates, are more or less equivalent:
+1.0.x ROM       1.1.x ROM
+-------------------------
+1.00
+1.02............1.1.0
+1.03
+1.04
+    ............1.1.1
+1.05
+
+That means 1.02 is equivalent to 1.10, but 1.05 is more recent than 1.11.
+MP2x00 710031 was designed by me [Paul Guyot] after Apple discontinued NewtonOS with little information. Hence there may be some problems although none were reported. It fixes the Date/Find bug. For copyright reasons, I only published an updater, one for MacOS and one for Windows. They can be found on Kallisys website: <http://www.kallisys.com/newton/rustines/>.
+MP120 2.0 and MP130 updates can be found in .hqx or .zip/.exe at:  <ftp://ftp.apple.com/developer/Newton_Development/SystemUpdates/>
+All apple updates (MacOS or Windoze) can be found at:  <ftp://ftp.apple.com/Apple_Support_Area/Apple_Software_Updates/English-North_American/Newton/>
+All system patches can be found on UNNA: <http://www.unna.org/unna/apple/software/SystemPatches/english/>
+
+b) German updates
+
+* OMP D-1.1.1 (over D-1.10) which was factory pre-installed
+* Upgraded OMP D-1.3/MP100-D 435334
+* MP120/1.3 435334
+* MP120 2.0 536205 (over 535344 & 536030)
+* MP130 2.0 536205 (over 535344 & 536030) (It is not the same update than MP120 2.0 536205, although it fixes the same bugs: MP120/2.0-D and MP130-D actually have the same ROM [except for the Gestalt Machine Type])
+* MP2000 & MP2100 2.1 747260
+OMP upgrades are very rare upgrades which can be found at: <http://www.pbk-solutions.de/ins/update.htm>
+Other upgrades can be found in .hqx or .exe at:  <ftp://ftp.apple.com/developer/Newton_Development/SystemUpdates/German/> and (sea.bin or .hqx): <ftp://ftp.apple.com/Apple_Support_Area/Apple_Software_Updates/German/Newton/>
+All German system patches can also be found at UNNA: <http://www.unna.org/unna/apple/software/SystemPatches/german/>
+
+c) French updates
+
+* MP100 424112 (is there a newer version?)
+* MP110 424157
+* MP120 455334
+The MP110 system update is available at UNNA: <http://www.unna.org/unna/apple/software/SystemPatches/french/110/FSystemAdd_424157.pkg>
+
+d) What is the numbering system?
+
+That's a direct quotation from Walter Smith (wrs@pobox.com):
+The numbering system originated as a response to customer irrationality. :-) Because each patch applies to a single ROM image, there are multiple patches that produce the same end result. The exact numbers may be off, but let's say the OMP had version 1.0 software, then the MP100 came out with version 1.1. We released an update for the OMP that brought it up to date, and gave it version 1.01.
+The problem here is that even though 1.01 and 1.1 are functionally equivalent, people with OMPs were unhappy because their version number was lower. There was lots of misinformation floating around about "upgrading" 1.01 to 1.1, meaningless though that actually was. It got even worse when 1.1 was patched, so you had 1.03 vs. 1.12.
+To address this, we had to distinguish between the actual version number that tells tech support what software the customer has and the end-user version number that tells the customer what functionality they have. The six-digit number is unique to a particular update (software version), and the x.y number indicates what functionality you get when the update is applied (end-user version).
+Unfortunately, some customers are a little too smart to fall for that, so there's still all sorts of consternation over the supposedly meaningless system update numbers.
+The actual scheme is some combination of the ROM version the update applies to and the date the patch was generated. I don't remember the details.
+Here there are: (but that's my own interpretation, although I was helped by Henry Cate's answer to Walter's post (both of them worked in the Newton department at Apple))
+* First two digits is the model code:
+  + 34: MP110 US
+  + 41: MP100 US
+  + 42: MP100 & MP110 French
+  + 43: MP100 & MP120/1.3 German
+  + 44: MP120/1.3 US
+  + 45: MP120/1.3 French
+  + 46: MP120/1.3 Int'l
+  + 51: MP120/2.0 US
+  + 52: MP130 US
+  + 53: MP120/MP130 German
+  + 71: MP2000/2100
+  + 73: eMate 300
+  + 74: MP2000/2100 German
+* Third digit is the last digit of the year.
+* Last three digits is the day the package was built.
+The question then is: how will we do with years 2000's? Was the discontinuing of Newton planned from the beginning (at least before the 52nd day of 1994) by Apple? With 710031, I (Paul Guyot) coded year 2000 with a 0. However, 710031 seems lower than 717260. Hence, Avi Drissman suggested to now code year 2000 with an A.
+
+3) How do I find out which NOS version I have?
+
+This depends on the OS itself.
+If you have a 1.x OS: Go to the preferences. It appears at center-bottom of screen.
+If you have a 2.x OS: Go to the Extras Drawer, select the i button, then Memory Info. You can read something like: ROM Version 2.1 (710031)-1
+
+4) What are the differences between the versions of the OS?
+
+
+a) NOS 2.x is really different from NOS 1.x
+
+You can read the doc about it at:
+<ftp://www.cif.rochester.edu/pub/newton/FAQ_and_documentation/apple_manuals/0307843ANOS2FTURS.PDF>
+
+b) NOS 2.1 has a few more features compared to NOS 2.0.
+
+NewtWorks support, gray scale, sound manager,...
+
+c) Latest revision (US MP2x00: 710031) of NOS 2.1
+
+717260 introduces some changes with the contrast button (allowing greater contrast control), and fixes a few bugs concerning memory, printing, faxing and PC cards. See the Read Me file that comes with the 717260 upgrade for more details.
+The 710031 patch (US MP2x00 only) also fixes the Dates/Find bug.
+
+d) eMate 737246
+
+See the Read Me file that comes with the 737246 upgrade for more details.
+---------------------------------------------------------------------------
+
+
+B) Using the Newton OS
+
+
+1) How do I find the Newton's built-in helpbook?
+
+Tap the i button in the lower left hand corner of the screen, and then select "help". This general helpbook is provided in all built-in programs. Some third party programs can also access the built-in helpbook or their own particular helpbook via the i button.
+You can also tap the "How Do I?" button in the Assistant (at least with NOS 2.x). Or tap the help icon in the Extras Drawer.
+
+2) What are the various ways the Newton can be reset?
+
+Pressing the power button does not "reset" or "restart" your Newton.  The power button isn't really a power button per se -- it's more of a "go to sleep" button. Unlike other computers, the Newton never completely turns off. It's closer to being in a suspended or sleeping state. It is still able to receive beams, faxes, or wake you up if you configured it to do so.
+The Newton has a number of ways of resetting/rebooting, in various levels of severity. Four of them, for the original MessagePad and MP1x0 models, are described in Apple's article <http://til.info.apple.com/techinfo.nsf/artnum/n17908> But actually, this article applies to MP1xx models.
+
+a) Soft Reset
+
+This is the most straightforward of the four resets. Just press the "Reset" button on the back of your Newton with your stylus. Alternatively, many software packages have the ability to perform a soft reset.
+A soft reset can be helpful if the Newton becomes sluggish or runs out of heap memory. You will NOT lose any data doing a soft reset.
+
+b) Deep Reset
+
+The Deep reset is similar to a soft reset. You tap the reset button on the back of the Newton, but this time hold it down for about 20 seconds, until the Newton chimes. This reset is used when there's a power problem with your Newton, or there's a problem when doing a standard restart. It resets at a slightly lower level than a soft reset.
+
+c) Reset With Extensions Off
+
+A reset with extensions off allows you to reset your Newton but not load any packages. It's as if all packages were frozen. This returns the Newton to an almost virgin state, and is useful if you're having conflicts between two packages, or when you need to maximize heap for a certain procedure. With no packages loaded, your Newton will have it's maximum amount of heap available.
+To perform a reset with extensions off, hit the reset button, on the back of the Newton and then flip the Newton over so the screen is facing you, as for normal usage. Immediately hold the pen down halfway down the left edge of the screen, about a centimeter from the casing, down the screen. Keep holding the pen there, and soon a dialog box will appear asking if you'd like to activate packages on the store "Internal". Answer "no." If you have any PC cards installed, return the pen to the left edge and keep holding it down. You'll then get the same dialog for each card. Answer "no" to each. Your Newton now is restarted with no packages loaded.
+You will NOT lose data doing a reset with extensions off. However, if you have a third party application as the Backdrop, (such as Backdrop Plus) it will be replaced with the NotePad, so you'll have to re-designate it as the Backdrop.
+
+d) MP2000 and MP2100 Power-Drain Reset
+
+The MP2000 and MP2100 have a special last-resort reset which cures most ills, but doesn't lose any of your data.  It's simple: remove the batteries, cards, and the power adapter.  Don't worry, your data is safe.  Let your Newton sit by itself for several hours. Then put in fresh batteries, plug in the power adapter, and press reset.
+
+e) Hard Reset ("Brainwipe")
+
+Before you perform a hard reset, first remove all PCMCIA cards from the Newton (this is *really* important, otherwise you may destroy the card!).
+This hard reset WILL ERASE EVERYTHING ON YOUR NEWTON. Use it with caution, and usually only as a last resort. If you are performing a Backup and Restore Cycle, you will want to perform a hard reset after the backup and before the restore. Other than that, you will probably never perform one; unless you have major data corruption, or are selling your Newton.
+To perform a Hard reset, tap the reset button, while holding down the power switch. You will be presented with a dialog box asking "Do you want to erase data completely" . Tap Yes if you want to perform the Hard reset and erase everything on the Newton. You will be asked to reconfirm your selection, and then the data will be erased.
+Note that doing a backup/hard reset/restore cycle might speed up your Newton. See question IIIB9 about defragmentation.
+
+f) Cold boot
+
+(From Apple's article which only applies to the OMP and 1x0 models.)
+A Cold Boot erases all data, any System Update installed, and sets the Newton OS back to factory defaults. There are two methods to do this.
+WARNING: You should backup your data prior to a Cold Boot.
+Method 1
+* 1. Disconnect any AC power.
+* 2. Remove the main batteries.
+* 3. Remove the round Lithium backup battery.
+* 4. Hold the power switch down for 5 seconds.
+* 5. Release the power switch.
+* 6. Repeat steps 4 and 5 four more times.
+Method 2
+* 1. Disconnect any AC power.
+* 2. Remove the main batteries.
+* 3. Remove the round Lithium backup battery.
+* 4. Let the Apple MessagePad sit this way for 15 minutes.
+NOTES:
+* On a MessagePad 120: No data is erased since data is stored in the internal non-volatile Flash RAM.
+* On the MessagePad 120, a Cold Boot resets the Power Manager. Pen alignment is required on the next use.
+* The Time Zone, Date, Time, and Prefs need to be set up.
+
+3) Transferring data to and from the Newton
+
+
+a) What are the various methods to input data on the Newton?
+
+There are many ways to input data:
+* using the stylus and handwriting recognition.
+* via the virtual keyboard: some software provide alternate keyboards such as:
+  + Nick's keyboard: <http://www.logictools.de/newton/english/freeware.html#keyboard>
+  + PowerTrans Keyboards: <http://www.powertrans.de/software/keyboards.html>
+  + Kallisys Foreign Kits: <http://www.kallisys.com/newton/dicts_and_kits/>
+* Graffiti (cf What are the alternatives to the original HWR?)
+* Newton keyboard (cf What kind of keyboard can I use?)
+* Desktop keyboard with NCU (cf Apple's software) or with a terminal emulator on the desktop computer and a software like SerialKey, SerialInput, Sloup or TypeIt... (<http://guelph.unna.org/mirrors/download.planetnewton.com/download/buttons/bsserialkeyboards.htm>)
+
+b) What are the various methods of transferring data, to/from the desktop?
+
+You can:
+* Use Newton Connection Utilities to import/export/synchronize data with a MacOS or Windows desktop computer. (cf question VB1).
+* Use Sloup by Steve Weyer to import/export data with most types of  desktops using a terminal emulation program such as ZTerm and ClarisWorks for Mac, HyperTerminal for Windows as well as programs for Unix and other platforms. <http://www.kagi.com/weyer/#Sloup>
+* Use Dan Rowley's X-Port program to import/export with Windows or MacOS computers:
+<http://www.landware.com/products/xport/xportps.html>
+* Use QuickPort by PowerPen Software for transferring ASCII text to any terminal on the desktop. PowerPen was a project of the EECS, but Dr. Schlimmer left the Washington States University and therefore the homepage no longer exists. However, it can be found on AMUG: <ftp://ftp.amug.org//newton/utilities/2.x/quickport-1.1.sit.hqx>
+* Use EETransfer from EasterEggs <http://www.easter-eggs.com/newton/index.html>
+* Use NewtDump by Victor Rehorst. It can export In/Out box messages, notes, names and Quotes to ASCII text (or .vcf for names) on any PC running Windows: <http://www.chuma.org/code/newton/newtdump/> - requires Sloup
+* Use emails. This also allows you to export packages. Note: every mail software has its own package unrelocation mechanism, and in fact, none perfectly works. It will work properly for most packages, though.
+* Use Newton Personnal Data Sharing (NPDS) (a Newton web server!) <http://homepage.mac.com/LightyearMedia/NPDS/>
+* Use NewtonLink (for Unices) <http://misf67.cern.ch/~reinhold/Newton/newtonlink-doc-en.html>
+* Use Thomas Tempelmann's Newton Data Browser (for MacOS PPC and Windows) <http://www.tempel.org/newton/>
+* Use Notes2Notes to synchronize between the NotePad and Microsoft Outlook 97, 98 & 2000: <http://members.tripod.com/SDHEngSoft/notes2notes.html> - requires Sloup
+* Use NewtShare, a webserver for Windows to access documents translated the right way for Newtscape on the Newton: <http://www.beckedorf.net/Mainpage/NewtShare/newtshare.html>
+* Use RCU or Notable by Revelar Software: <http://www.revelar.com/rcu.html>
+* Use PackageBuddy by Tactile to export packages: <http://www.tactile.com/packageBuddy.html>
+* Use Johnathan Kip's BinHexer to transfer binaries from/to the desktop to the Newton by de/encoding them on the Newton: <http://hometown.aol.com/NewtsPrism/BinHexer/BinHexer.html>
+I suggest that you read the Connection FAQ for more details: <http://newted.dyndns.org/users/1f2frfbf/answers.html>
+
+c) Can I use IrDA (infrared) to transfer information between my desktop and my 2.x Newton?
+
+This does not seem to be supported by Apple tools (NCU, NBU, etc.).
+It is possible to use a terminal emulator and Sloup to communicate via IrDA:  <http://members.home.net/saweyer/newton/sloup/connect.htm#IrDA>
+There is a special page about this issue: <http://web.ukonline.co.uk/kieran.miller/newton/irda.html>
+You can also use Thomas Tempelmann's Newton Data Browser (IrDA only works on MacOS PPC) to connect to the Dock application of your MP2x00/eMate 300. <http://www.tempel.org/newton/>
+
+d) What are the various methods to synchronize my data with a desktop computer?
+
+The easiest way to synchronize is to use NCU for 2.x models. This software can synchronize with Now UpToDates, Now Contacts, Claris Organizer and Palm Desktop for MacOS, Schedule+ 7.0 and Lotus Organizer 2.1 for Windows.
+You can also use Cadenza, available on UNNA <http://newyork.unna.org/unna/applications/Cadenza/> with Lotus Notes. The Cadenza documentation says that you can synchronize with Lotus Notes 4.5, 4.6, but Harri Hohteri reports that it works with the R5 (especially 5.0.8). It's not clear whether Lotus Notes R5 normally comes with nnotes.dll or not, but this file seems to be required (it's included in 4.5/4.6 versions).
+You can also use Newtourage from DelCann Software for synchronizing with Entourage on MacOS: <http://delcannsoftware.com/>
+There are Unix softwares to synchronize, import and export with, to and from Unix softwares. Cf Linux-Newton mini HowTo: <http://misf67.cern.ch/~reinhold/Newton/Newton_and_Linux-mini-HOWTO.html>
+You can also use Notes2Notes to synchronize between the NotePad and Microsoft Outlook 97, 98 & 2000: <http://members.tripod.com/SDHEngSoft/notes2notes.html> - requires Sloup
+I suggest that you read the Connection FAQ for more details: <http://newted.dyndns.org/users/1f2frfbf/answers.html>
+
+e) What are the various terminal softwares available for Newton?
+
+* PocketCall <http://www.exmachina.com/> from Air Media (formerly Ex Machina)
+* PT100 <http://www.scrawlsoft.com/> from ScrawlSoft 2.x
+* NewtTerm terminal program <http://www.geocities.com/ResearchTriangle/9987/> 1.x and 2.x, source available
+* TermLimit by Ed Anuff <http://www.unna.org/unna/applications/communications/TermLimit1.4/> 1.x at least
+* EE Transfer <http://www.easter-eggs.com/newton/>
+
+f) How can I transfer data between my Newton and another PDA?
+
+* The easiest way to transfer data between a Newton with NewtonOS 2.1 and a Palm or any other IrDA capable PDA is BackTalk by SmartDog Software <http://www.smartdogsw.com/backtalk/index.shtml>
+* Another way to transfer data between a Newton 2.x and a Palm is to use Newton Connection Utilities for MacOS (cf question VB1) and synchronize the data with Claris Organizer (Palm Desktop).
+
+4) What are the alternatives to the original HWR?
+
+You can use other recognizers:
+* Graffiti available at Newton Cage <http://newtoncage.webjump.com>
+This is the input method used in Palm devices.
+* Free Style by ParaGraph <http://www.landware.com>
+This input method is used in some WinCE devices.
+You also can use software that improves the Newton's original HWR:
+* Corrector+ by Adam Tow (Foundation Systems) <http://www.tow.com/>
+* alt.rec.... by Paul Guyot on Kallisys website <http://www.kallisys.com/newton/alt.rec..../>
+
+5) Can I change the fax cover page?
+
+Yes, you can use Fax Cover Creator by Standalone Software. You can find it on their website <http://www.standalone.com/newtonos/> and on UNNA: <http://www.unna.org/unna/applications/FaxCoverCreator1.11/>
+
+6) How do I find information about a specific package in Extras?
+
+There are several 3rd party utilities that will do this.
+* PkgInfo by Steve Weyer (2.x only) [freeware]: <http://www.kagi.com/weyer/#PkgInfo>
+* Package Info by Tomoyoshi Murai [freeware]: <http://www.murata.sip.or.jp/~tmurai/freeware/newton/packageinfo/packageinfo.html>
+* Package Info by GNUE (2.x only) [freeware]: <http://homepage.mac.com/~gnue/lib/niwatori/GNUE's_collection_'96r4.i.bin>
+* And of course the excellent SBM Utilities from Softwarebüro Müller [Shareware]: <http://www.sbm.nu/>
+
+7) How do I take screen shots?
+
+There are several ways:
+* NTK (Apple Newton ToolKit) (the screen shot is in the desktop clipboard)
+* X-Port (the screen shot remains on the Newton) <http://www.landware.com/products/xport/xportps.html>
+* NPDS, the Newton WebServer <http://homepage.mac.com/LightyearMedia/NPDS/>
+* EETransfer from EasterEggs <http://www.easter-eggs.com/newton/index.html>
+* RCU from Revelar Software <http://www.revelar.com/rcu.html>
+* NewtVNC by Steve Weyer (in server mode) <http://www.kagi.com/weyer/#VNC>
+
+8) Where can I find my Newton's ID?
+
+Since NewtonOS 2.0, each Newton have a hardware unique NewtonID which is accessible from software. The easiest way to get it is to use Adam Tow's NewtonID software at <http://www.tow.com/software/newton.shtml>.
+The Newton ID has no (direct) link with the Newton's serial number, but it uniquely identifies the unit nevertheless, and even if the serial number sticker is removed.
+On the 2.1 devices, the Newton ID is stored in a specialized chip, the Dallas Semiconductor DS2401 Serial Number ROM. If Apple changes your motherboard, your Newton ID will be changed as well.
+
+9) Storage space arithmetic
+
+This is an answer to the following questions:
+* When I add up Free space and Used space, I don't get the size of the internal store/card?
+* The Newton tells me the internal store/card is full while it also says I have hundreds of KB free?
+* Is it true that the storage can be fragmented and unfragmenting it will speed up the transfer?
+Storage space arithmetic is very close to Bistromathics. It is completely unrelated to Peano's axioms or anything else you could have learnt in school.
+The NewtonOS storage space arithmetic shares with conventional filesystems storage arithmetic its weirdness. However, even if these rules remain a complete mystery for the human minds, they are very different.
+There are actually two values returned by the system:
+* The used space
+* The total space
+When the Extras drawer (or anything else) gives a value of the free space, it is just total minus used.
+One can also compute/find other values, such as the nominal size of a store (what is written on a card or what you will find in the hardware section of the FAQ for the internal store), the sum of the size of all objects that a program can access and other similar things. Beware, don't mix up System RAM installed and the internal store size, see question IIID3b
+All these values give you an idea of the situation, but you can't simply add or substract values, here are a coule of reasons:
+* The internal flash (4 MB on MP2x00s) is not entirely reserved for the internal store. Part of it contains the system update, the calibration (tablet and temperature) data, etc.
+* NewtonOS storage system is transactional, which means that to make a change, the system writes a copy and then commits the change. This means that some space is to be reserved for transaction, and if not enough space for the transaction can be found, the transaction fails and the Newton will display the storage full alert
+* Flash chips used are divided in 64 KB blocks that can only be erased at once (individual bits can be muted from one state, say 0, to the other, say 1 -  0 and 1 could be exchanged here, depends on the chips). For some reason, the NewtonOS also divides SRAM in 64 KB blocks and consider them just like flash blocks.
+* Originally, objects could not be included into more than one block. And in fact, soup entries had to fit one 64 KB block. To have bigger objects, there is a special kind of objects, Large Binary Objects, that are divided into several blocks. If a store is nearly full, a newly large binary object is divided into many blocks. This is what can be called fragmentation.
+* A store includes more data than what some software counts as the used space. There is some information on the store (including its name, ID, kind, password (this is partly implemented in the OS, the missing part is the slip to set it/ask for it). The store also can have some information associated to it (see the programmer's doc for details). And finally, we have the soups. Each soup can have information associated (idem), such as the last time it was backuped, and some information to identify them (name, what is indexed). Data includes the indexes and the entries of course. Finally, a store used size can temporarily include the VBOs.
+* NewtonOS stores are garbaged collected, which isn't surprising for a persistent object store. There is a single persistence root for the curious, a special object with an ID that is determined by the system (it is 0x27 for flash stores, another fixed value for Package Store (0 AFAIR) and some variable value for ATA stores).
+Note: Linear and ATA stores follow different arithmetics.
+To end with these arithmetics, note that probably the most serious website about storage cards, Carsten Lemmen's (http://www.mac3.de/sig/newton/memory_cards.html) relies on Nick's Test It speed values. While the time spent to do the test is probably the best comparison tool, even if it can change a lot due to various factors including pen input, software installed, etc., the speed given by Nick's Test It does not mean much.
+Indeed, Nick's Test It creates a temporary soup (hence with at least an index on the unique ID) and then creates 335 entries with the following frame:{ s : "ABC..YZabc...wxABC..YZabc...wxABC..YZabc...wxABC..YZabc...wx" }
+which is 452 bytes; therefore if we count out the index, and the unique ID slot, we have 148 KB of useful data transferred.
+Additionally, on a flash store, creating an entry actually means creating a transaction, i.e. copying 64 KB of data. So copying 335 entries means much more than 100 KB. I also think that if the store is nearly empty, the 64 KB aren't copied when possible, hence the much higher value for freshly formatted cards.
+Finally, defragmenting can be done by doing a full backup, erasing all data and restoring the backup. Since backups never hurt, defragmenting cannot hurt. Whether it helps getting some bytes back/improving speed depends on your belief.
+---------------------------------------------------------------------------
+
+
+C) Troubleshooting
+
+
+1) Is the Newton Y2K compliant?
+
+Apparently so: <http://til.info.apple.com/techinfo.nsf/artnum/n30338>
+However, different date/time related problems might occur starting in 2010, 2099 and 2924 (should you be so lucky to be alive, with a functioning Newton). These problems are discussed here: <http://members.home.net/saweyer/newton/newtscape/exs/times.htm#Description>
+And Avi Drissman made an experimental fix for that:  <http://www.drissman.com/avi/newton/Fix2010/>
+
+2) Are there known bugs in the Newton OS?
+
+
+a) I've heard about the nasty -10061 error on MP2x and eMate -- how can I reduce/prevent this?
+
+This only happens on devices with 4MB DRAM memory (upgr eMate and 2100 or upgr 2000).
+Information can be found in an article by Frank Wegener translated by George Oehl: <http://home.k-town.de/~oehl/newton/10061.html> or <http://pobox.com/~oehl/newton/10061.html>.
+There are fixes such as:
+* '61 Memory Fix v1.0 by Avi Drissman - the first fixing tool: <http://www.drissman.com/avi/newton/61MemoryFix/>
+* Richard Li's SysPatch avoids -10061 by Power off scan and regular scans on activated packages: <http://www.ee.cityu.edu.hk/~clli/syspatch.html>
+* Auto61 Fix (Don Vollum). Available at <http://resources.pdadash.com/newtund/NU/extras.shtml>
+* -10061 Utilitiy - automatically pops up and offers a reboot or FIX 61 <http://home.t-online.de/home/Alessandro.Soldo/NU_10061.html>
+* Heaven or Hell - checks on demand, when the Newton is idle, on power on and power off <http://www.saryo.org/basuke/software/heaven-or-hell-101.sit.hqx>
+Since these programs take different approaches to fixing the -10061 problem, there are generally no conflicts even if you have several of the fixes installed at the same time.
+
+b) What is the Dates/Find bug?
+
+From Avi's pages:
+This bug only happens on Newton OS 2.1. The bug is easy to see. Open up the Dates app, tap Find, and do a search for something that will be found in your dates (e.g. the letter "e"). From the list of results, select several and try to print them. Or fax them. Or even preview. It cannot be done. It has been fixed in System Update 710031 for US MP2x00. It is also fixed by Dates/Find Bugfix for eMates and German MP2x00: <http://www.drissman.com/avi/newton/DatesFindBugfix/>
+
+c) When I write, sometimes pen strokes either do not appear or disappear.
+
+This is a known bug. However, as far as I know, nobody has fixed it yet.
+
+d) When I do a find with NewtWorks, the free memory amount falls.
+
+This is a bug in Newton OS 2.1 protoTXViewFinder.FindString method. It is in ROM. However, a workaround fix exists (for Works only). It has been designed by Paul Guyot and can be freely downloaded from Kallisys website: <http://www.kallisys.com/newton/rustines/>.
+
+e) What are these -16022 errors every time I try to use my modem?
+
+[From Victor Rehorst: <chuma@chuma.org>]
+There is a bug in NewtonOS 2.1 where the system is unable to detect which slot a modem is inserted in.  To fix this error, first choose a slot where you will always have your modem inserted.  Then, go to the Prefs panel from Extras and tap on Modem.  Change the Connect Using setting ro either Right PC Card or Left PC Card, depending on the slot you've chosen.
+
+f) When I insert a memory card, I get a -10582 error. What's wrong?
+
+The -10582 error is kError_ATA_No_Partition. It is triggered when the built-in ATA card handler cannot find a Master Boot Record. Actually, it won't find it, even if the card was DOS formatted, because the driver in the ROM always reads zeroes. And even if it worked, the card handler isn't finished either.
+The consequence is that you cannot use ATA cards with the Newton without a third-party driver. See which memory cards work with your Newton (IIB1).
+
+g) When I insert a flash memory card, my MP2x00 tells me the battery in the card needs to be replaced.
+
+This is a known bug. Your card probably doesn't have any battery. Install the latest system patch for your MP2x00 (see IIIA2a).
+
+h) I installed a new version of the backdrop application I'm using and I can't see it.
+
+This is a known bug discovered by Victor Rehorst. Technically, you can on NewtonOS have two packages with the same signature provided that they're not on the same store. Normally, in such a case, the system shows the secondly loaded package with a big cross on it, to tell you that it hasn't been activated. Additionally, the system doesn't show the backdrop application in the Extras Drawer.
+The bug is that it actually doesn't show any package with the same signature than the backdrop application, and therefore, if you have two packages with the same signature and one is the backdrop application (therefore on the internal store), the other one (on a card) will be filtered nevertheless. The solution is to make another application (e.g. the Extras Drawer) the backdrop application, and then you'll see both packages. This isn't a very painful bug (on the contrary to the -10061), but I found it worth it to mention that there is another bug that was left in the OS ;)
+
+3) Packages on other platforms
+
+
+a) On my Mac, the icon of a .pkg file is plain, and NPI refuses it.
+
+The file's type and creator are not set properly. To fix it, you can use ResEdit and change the settings to "pkg " for the type and "pkgX" for the creator. (this is NPI creator. Some of your packages can have another creator, such as NTK creator code).
+Steve Weyer wrote a simple program, PackType, that does that:  <http://members.home.net/saweyer/newton/#PackType>
+If you don't want this to happen again with your zipped packages or with the packages that you may download, you must add/correct the .pkg entry in the files mappings of Internet Config or Internet Control Panel in the latest MacOS.
+
+b) When I download a .pkg via my Newton web browser, it's not recognized as a package.
+
+Assuming the package was properly uploaded as a binary file, then the likely explanation is that the server is not providing the correct MIME type. You can ask the server administrator to use this Content-Type in MIME table: application/x-newton-compatible-pkg or you can contact your browser vendor to support additional MIME types.
+
+c) I can't expand StuffIt archives (on both platform).
+
+Aladdin published a new version of StuffIt Tools (5.x) which doesn't produce compatible archives with older tools. If you bought these tools, just get the expander which you'll find at <http://www.aladdinsys.com/>
+
+d) I have problems with a package on Windows
+
+If you have an error using Windows unstuff utilities where file does not appear to be package format, set the CROSS PLATFORM preference to NEVER for 'Convert Text files to Windows format' and set to NEVER for 'Save Macintosh files in MacBinary format'. (Otherwise, Mac resource fork is left in).
+If you have unzipped a .pkg file on a PC and it isn't recognized/installed properly, it might be because it is macbinary-encoded. You may be able to strip the MacBinary header using Pkg Stripper by Roger Milne: <http://roger.trideja.com/newton/pkgstrip.html>
+
+4) Why does the I/O Box always open to outbox? Can I change that?
+
+There was a problem in older versions of Newt's Cape (2.0a, 1.5) -- if you selected a mailto: link, it created a message in your Outbox and opened to that directly.
+Some other softwares could have also changed the default setting which is to open to inbox. <http://members.home.net/saweyer/newton/newtscape/exs/ioboxfix.htm> describes a fix that you can make from a soup editor (or just run the example in Newt's Cape).
+
+5) Why does the available memory decrease when the Newton is idle?
+
+This kind of memory usage is perfectly normal in a system like Newton that does automatic memory management (also similar to Smalltalk, Lisp, Java). As the event loop runs or even idles, the Newton creates temporary objects. (ala Heisenberg, just observing the state of the Newton in order to update time or amount of heap, uses heap). When this gets to a certain threshhold, the Newton reclaims memory by tracing/discarding items that aren't being referenced anymore by any other object (aka "garbage collection"). [From a developer's perspective, not having to worry about allocating and deallocating memory is great, compared to traditional language environments like C; things just eventually disappear if you stop referencing/using them]
+A real "leak" happens if most of the heap isn't reclaimed. This could happen if an application hangs onto extra, unnecessary stuff even when closed. And this sometimes can happen also during soup (database) processing when the heap becomes partitioned/fragemented (an unfortunate memory management bug that Apple never got around to fixing...)
+---------------------------------------------------------------------------
+
+
+D) Miscellaneous
+
+
+1) Where can I find informations about Easter Eggs?
+
+There are plenty of Easter Eggs in the Newton. Best known are Rosetta!, eclipse, dates prefs, Groom Lake, About Newton?, Egg Freckles & hidden games.
+Here are some links:
+* Oliver Fross' Easter Egg page: <http://www.oof.org/newton/>
+* A 2.x easter egg package [if it is the one I have (by Emmanuel Raviart), it enables the Poker & the Patience] <ftp://ftp.amug.org/newton/games-educ/2.x/easter-eggs.sit.hqx>
+* To replay an the Eclipse, there's a package 2.x package: <ftp://ftp.amug.org//newton/calendars-clocks/2.x/eclipse.sit.hqx>
+* Avi's Egg Freckles Enabler: <http://www.drissman.com/avi/newton/EggFrecklesEnabler/>
+
+2) How are packages compressed? (The story of the compression bits)
+
+Packages are compressed when loaded on the Newton (i.e. when transfered from a desktop computer). They are uncompressed on the fly when mapped on the Virtual Memory. This may result in a (little) slow down. The Newton OS compresses packages according to a flag called the compression bit. This flag is set by the programmer in NTK (NDE offers the same option). But it can be set on some packages that were not designed to be compressed.
+Moreover, NOS 2.x packages also have a fast compression bit. Having it set reduces the compression gain, but it is said to speed up things. I have never felt an important change, however.
+Some packages must not be compressed (so wrote Apple's guys in Newton Formats) because they need to be resident. This is very rare, so you may want to compress the uncompressed packages. To do so, you can use a software for MacOS called PackageFlag Changer 0.1a2 that can be found at: <http://www.murata.sip.or.jp/~tmurai/freeware/newton/jfont/newtonfont.html>
+Victor Rehorst wrote a software to change the flags of Newton Packages on Windows, NewtPackageFlags. It can be found on his website: <http://www.chuma.org/code/newton/pkgflags/>.
+Kip from Prism Research enabled compression on some usual uncompressed packages: <http://homestead.dejanews.com/user.prism2/downloads.html>
+
+3) How it all works
+
+
+a) Newton Process Management
+
+There are two kinds of processes on the Newton.  First, there are lower-level operating system processes (such as handwriting recognition or the NewtonScript interpreter).  Such processes are usually written in C++, though some have been written in assembly code.  As of NewtonOS 2.0, third-party developers can write some (but not all) of their program code in this low-level C++ fashion as well.
+The other kind of process is a "NewtonScript application". NewtonScript applications are not actually applications -- they're better thought of as plug-ins to the NewtonScript interpreter.  Just like Java applications on other platforms, NewtonScript applications can be in a pcode format to be interpreted by the interpreter (slow), or can be compiled directly into machine code.  The Newton even has a compiler built-in; it's possible to use this compiler to build NewtonScript applications directly on the Newton without ever using another computer. Nearly all the icons you see in the Extras Drawer are NewtonScript applications.  There's a lot of NewtonScript stuff in the background too.
+Does the Newton multitask?  Yes and no.  As we understand it, the Newton's underlying operating system has a preemptive multithreaded process manager; the inker, handwriting recognition, low-level I/O, and NewtonScript interpreter all run in separate processes. However, NewtonScript "applications" (like the Note Pad, or a third-party calculator, or the Button Bar, etc.) are not multitasked in any sense of the term.  In fact, they are in essence different functions in the same big computer program hosted by the NewtonScript interpreter.  They all share the same memory and run together in a single process.  Any one application can hog all the processor power if it wants to.  From a user's perspective, no, the Newton doesn't have preemptive multitasking. However, when two cards are inserted at the same time, maybe two NS tasks run at the same time.
+The main way that NewtonScript applications "share" processor time is using an *event model*.  Events (keystrokes, pen taps,incoming serial port information, etc.) are piled up at a low level into an event queue where they await processing by appropriate applications. NewtonScript applications register *callback functions* to be called when certain events occur that are germane to that application. NewtonScript calls these functions "scripts".  When a callback function has been called and has completed its work, the processor is released from duty and some callback function is called for the next event in the queue. When no events are in the queue, the processor sleeps.  Applications may register for timer events which occur periodically (once an hour, week, day, etc.).  Applications may also register for "idle" events -- if there is no event presently in the queue, the processor every once in a while queues up an "idle" event and hands it off to a registered callback function.  This allows applications to do work in the background all by themselves. Besides, since there is only one Event Loop, the system stops when there is nothing to do, awaiting for any event (including a clock change) which will wake it up. This allows the Newton to consume very few power.
+
+b) Newton Memory Organization
+
+The Newton Processor can access memory for 32 bits, i.e. 4 GB. All this memory is not used. There is globally five chunks dedicated to specific tasks:
+* Page zero is for some interrupts. It cannot be read except when an interrupt occurs.
+* The ROM. MP2x00 have 8 megs of ROM. It is read only.
+* The Patchable Tables. It is a zone in DRAM but locked and updated at startup from the update which is saved into the Internal Store Block 0. It includes tables to elements which are in the ROM at a ROM dependent place. There are other tables which we don't know how to patch (yet).
+* The RAM. The whole memory is divided into heaps, the DRAM is divided into at least two heaps (we are sure that there are two heaps, although there may be more, and programs can create some):
+  + A large hunk of DRAM of unknown size is reserved to hold the actual computer code and some read-only resources for running C++ and NewtonScript applications.  Another chunk of memory, in DRAM, probably about 200K in size on an MP2000, is where C++ programs and the operating system allocate memory as necessary.  This includes the window management and graphics system, handwriting recognition, low-level runnning of the NewtonScript interpreter, the file system, etc.  It also includes the Newton Internet Enabler, which is why for example the MP2000 will often hang if you open or close windows while running NIE (both need C++ memory, and there isn't enough to go around).  MacinTalk and the sound subsystem also use this space, as do the C++ parts of various third-party applications.  These two areas of DRAM are roughly equivalent to a typical computer's RAM in that they hold the application code and allocated memory state.
+  + The most famous chunk of memory, the NewtonScript heap or "frames heap", is where the NewtonScript interpreter manages memory for various NewtonScript applications.  On an MP2000, this space is about 150K in size and resides in DRAM.  All NewtonScript applications, including the built-in ones and nearly everything written by third parties, share this memory space when they're open.  Even when closed, some applications hang on to small parts of this memory to "remember" certain things related to process-to-process interaction -- for example, Newt's Cape hangs on to a small chunk of global memory in which is registered all of its plug-ins. NIE also holds on to quite a large chunk of memory to manage its interface to various NewtonScript internet applications.  The Newton also maintains a small piece of NewtonScript memory for every unfrozen application, containing pointers to its name and icon, as well as small NewtonScript functions ("scripts") which get run when the application's card is removed or installed, or when the application is deleted.  The more applications you have unfrozen, the smaller your NewtonScript heap will be.
+* A virtual zone where virtual binary objects are stored. This zone contains the activated packages locked there.
+The last area of memory is where the Newton's "File System" (so to speak) is managed. This area consists of internal DRAM on some early units, internal Flash RAM on others, and of course all of the Flash or DRAM on inserted RAM cards.  Flash RAM is not useful for the other chunks of memory, because it is far too slow to hold executing computer code or dynamic memory allocation.  Flash RAM also can only be accessed in hunks of (16K) memory at a time, similar to a hard disk's sectors.  But Flash RAM is excellent for storing archival information, since it does not require battery backup.
+When the user presses the reset button on a Newton, certain chunks of the DRAM are wiped clean and the system is restarted.  This basically means the RAM which holds the executing computer code, the allocated C++ memory, and the NewtonScript heap.  The low-level system areas and the "file system" storage of course remain intact.
+
+c) The Newton 'File System'
+
+The Newton does not have a file system per se.  It has a shallow database system. The newton considers its internal storage, and each inserted card, as a separate "store" (a volume).  On any store may be placed either read/write "soups" (databases), or read-only objects called "packages".
+Packages are roughly equivalent to application programs, though they may also be storage areas or plug-ins.  They consist of bundles of "parts".  A "part" might be a chunk of executable computer code, a set of large binary objects, a read-only embedded soup,etc. Packages can be stored in compressed or uncompressed format on the Newton. They are always uncompressed on desktop computers.
+A soup is a simple one-table database of "entries" which may be indexed in many ways and over which a variety of queries may be made. Various soups store the Newton's equivalent of "documents" or "files". The newton has a rich set of indexing and querying mechanisms for soups.  One important index is the "tags" index.  Soup entries may be "tagged" with some user-defined string; applications use these tags to give the illusion of filing entries into "folders", one folder per user-defined string. This is for example the case when filing programs in the Extras Drawer.
+Soups have an accompanying ID symbol which represents a soup of that "kind"; this ID is assigned to a soup by the application which created it and uses it.  For example, Hemlock maintains two soups, each with a different ID.  One soup holds Hemlock's search engines, and the other holds Hemlock's current query results.
+Soups on different stores may have the same ID, meaning that they are the same kind of soup, just spread out on different cards.  When applications access soups, they usually do so by querying and accessing a "union soup" object.  From an application's perspective, union soups merge all the soups of a given ID on different stores into one unified soup for that ID.  This happens dynamically; when a user adds or removes cards, the union soup changes automatically, each application is notified, and they update their presentation to the user to reflect this.  For example, when the user yanks a card containing a Note Pad soup, the appropriate soup entries (hence "notes") in the Note Pad's union soup automatically disappear, the Note Pad is notified, and its display is updated to show that these entries are now gone.  It is this general philosophy of treating documents as database entries in a global union soup which is why the Newtons are so graceful at handling multiple cards yanked and inserted while applications are running.
+There are a few global soups which all applications use; the most important one is the "System" Soup, which stores global information for applications, commmonly application preferences.  When applications are installed they often will insert an entry into this soup to store their preferences, but when they are deleted they very often forget to remove this entry.  As a result the System soup grows and grows.  Some users have reported a bloated System soup as a key culprit in the "squiggles", a Newton condition where the Newton cannot properly register the location of the pen.

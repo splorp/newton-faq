@@ -1,0 +1,60 @@
+PART VI: Newton Books
+
+* A) Using and finding books
+  + 1) How can I view NewtonBooks on the Newton?
+  + 2) How can I tell my Newton to read NewtonBooks out loud using Macintalk?
+  + 3) Where can I find NewtonBooks?
+  + 4) Can I read PilotDOC books on the Newton?
+* B) Creating NewtonBooks
+  + 1) What Apple software is available?
+  + 2) Is it possible for me to create a NewtonBook directly on my Newton?
+  + 3) How can I view PDF files on the Newton?
+---------------------------------------------------------------------------
+
+
+A) Using and finding books
+
+
+1) How can I view books on the Newton?
+
+The book viewer is already built-in (in Newton ROM). See your Newton User Guide for help to turn pages, view TOC, annotate, set bookmarks, etc.
+
+2) How can I tell my Newton to read books out loud using Macintalk?
+
+There is a separate application called Bookreader (Bernie Bernstone's reader) that allows you to do that: <http://www.bernstone.com/personal/newton/products/>
+You can also read books using the books routing menu (action button) if you have the HTMList extension installed: <http://www.kagi.com/weyer/#HTMList> (this also allows you email a specified range of book pages)
+
+3) Where can I find books?
+
+* The Newtonberg project produced many books for Newton:
+<http://members.aa.net/~robwest/pn/>
+* AMUG has a complete set of books, including Sherlock Holmes novels by Sir A. Conan Doyle:
+<http://cdrom.amug.org/http/newt/books.html>
+* J. Farmer compiled many books (mostly Paul Bowles books) <http://www.planetnewton.co.uk/>
+* Newton's Library <http://www.algonet.se/~anniqat/>
+* UNNA Book Section <http://www.unna.org/unna/books/>
+* Alex Catalogue automatically generates Newton Books on demand: <http://www.infomotions.com/alex/>
+* Terry Fischer's website: <http://home.earthlink.net/~newtonbooks>
+* [Any other reference?]
+
+4) Can I read PilotDOC books on the Newton?
+
+With Steve Weyer's PilotDOC plugin for Newt's Cape, you can read PilotDOC books. Please see <http://www.kagi.com/weyer/#PilotDoc> for more details.
+---------------------------------------------------------------------------
+
+
+B) Creating NewtonBooks
+
+
+1) What Apple software available?
+
+You can use Apple's software to design books from RTF files or any other XTND format (Newton Press) or from files with a special format (with Newton BookMaker).
+Links are under Press and Development Software (VB2).
+
+2) Is it possible to create NewtonBooks directly on the Newton?
+
+Yes, Steve Weyer's Newt's Cape can create books directly on the Newton from HTML pages: <http://www.kagi.com/weyer/#NewtsCape>
+
+3) How can I view PDF files on Newton?
+
+There is no PDF viewer on Newton yet (and probably there will never be one). However, you can use Adobe PDF->HTML conversion from <http://access.adobe.com/>, and then view the result into your favorite browser. Besides Newt's Cape by Steve Weyer allow you to save the result as a Book package (this will compress the data).

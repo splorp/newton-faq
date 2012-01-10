@@ -1,0 +1,961 @@
+<!doctype html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+
+<html>
+
+<head>
+<title>Newton FAQ: Software [5/7]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="FAQ for the Newton Community">
+<meta name="author" content="Newton FAQ Group">
+<meta name="generator" content="MPW Shell">
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<!-- HTMLAlternate-Begin -->
+
+<a name="top"></a>
+
+<p align="center"><small>
+<a href="index.html">Index</a> | 
+<a href="newton-faq-introduction.html">Introduction</a> | 
+<a href="newton-faq-hardware.html">Hardware</a> | 
+<a href="newton-faq-nos.html">Newton OS</a> | 
+<a href="newton-faq-community.html">Community</a> | 
+Software | 
+<a href="newton-faq-books.html">Books</a> | 
+<a href="newton-faq-development.html">Development</a>
+</small></p>
+
+<hr><!-- ========================================================================== -->
+
+<!-- HTMLAlternate-End -->
+
+<h3 align="center">PART V: Newton Software</h3>
+       
+<ul>
+	<li><a href="#VA">A) General sources</a>
+	<ul>
+		<li><a href="#VA1">1) Where can I find commercial, shareware and freeware programs for the Newton?</a>
+		<li><a href="#VA2">2) Where can I find discontinued software?</a>
+	</ul>
+	<li><a href="#VB">B) Apple's software</a>
+	<ul>
+		<li><a href="#VB1">1) What connection software is provided by Apple?</a>
+		<ul>
+			<li><a href="#VB1a">a) Newton Connection Kit (NOS 1.x)</a>
+			<li><a href="#VB1b">b) Newton Backup Utility</a>
+			<li><a href="#VB1c">c) Newton Package Installer</a>
+			<li><a href="#VB1d">d) Newton Connection Utility (program installation, import/export of data and backups) (NOS 2.x)</a>
+			<li><a href="#VB1e">e) How can I connect to the Newton using Ethernet with NCU/NPI/NBU?</a>
+		</ul>
+		<li><a href="#VB2">2) Book creation and development software</a>
+		<ul>
+			<li><a href="#VB2a">a) Newton Press</a>
+			<li><a href="#VB2b">b) Newton Bookmaker</a>
+			<li><a href="#VB2c">c) Newton ToolKit</a>
+			<li><a href="#VB2d">d) Newton C++ Toolbox</a>
+		</ul>
+		<li><a href="#VB3">3) I've heard of MacIntalk for Newton. Where can I find it?</a>
+		<ul>
+			<li><a href="#VB3a">a) Does it work on my Newton?</a>
+			<li><a href="#VB3b">b) Where can I find it?</a>
+			<li><a href="#VB3c">c) How can I make it read something?</a>
+			<li><a href="#VB3d">d) How can I change the voice?</a>
+			<li><a href="#VB3e">e) Can I change the volume?</a>
+		</ul>
+		<li><a href="#VB4">4) What can NewtWorks do for me?</a>
+		<ul>
+			<li><a href="#VB4a">a) Does it work on my Newton?</a>
+			<li><a href="#VB4b">b) Where can I find it?</a>
+			<li><a href="#VB4c">c) What Word Processing software can I use on my 1.x/2.0 Newton?</a>
+			<li><a href="#VB4d">d) I have heard of a spreadsheet/drawing/calculation stationery. Where can I find them?</a>
+			<li><a href="#VB4e">e) What other spreadsheet can I use?</a>
+		</ul>
+		<li><a href="#VB5">5) I bought a Newton but it didn't come with the CD/Floppies. Where can I find them?</a>
+	</ul>
+	<li><a href="#VC">C) Software problems</a>
+	<ul>
+		<li><a href="#VC1">1) I get an error message on my Newton. What does it mean?</a>
+		<ul>
+			<li><a href="#VC1a">a) Negative numbers</a>
+			<li><a href="#VC1b">b) Positive numbers are usually bus errors.</a>
+		</ul>
+		<li><a href="#VC2">2) My Newton is blocked by a certain package (i.e. it crashes at every startup)</a>
+		<li><a href="#VC3">3) Unsupported shareware</a>
+		<li><a href="#VC4">4) How can I help a developer to fix bugs I have found?</a>
+		<ul>
+			<li><a href="#VC4a">a) Using BugTrap - How can I make a log to send to developers?</a>
+			<li><a href="#VC4b">b) Using TrashPak - How can I get the list of the installed softwares?</a>
+		</ul>
+	</ul>
+	<li><a href="#VD">D) Internet</a>
+	<ul>
+		<li><a href="#VD1">1) How can I connect to the Internet on my Newton?</a>
+		<ul>
+			<li><a href="#VD1a">a) What do I need?</a>
+			<li><a href="#VD1b">b) What's the differences between NIE 1.1 and NIE 2.0?</a>
+			<li><a href="#VD1c">c) How can I connect my Newton to a MacOS connection (cable, ethernet, etc.)?</a>
+		</ul>
+		<li><a href="#VD2">2) What software is needed?</a>
+		<ul>
+			<li><a href="#VD2a">a) Email software</a>
+			<li><a href="#VD2b">b) Web &amp; WAP browsers</a>
+			<li><a href="#VD2c">c) Newsgroups</a>
+			<li><a href="#VD2d">d) Other protocols</a>
+			<li><a href="#VD2e">e) Can I use my Newton as a Web Server?</a>
+		</ul>
+		<li><a href="#VD3">3) How can I read my mail from AOL or Compuserve?</a>
+		<li><a href="#VD4">4) Is there a Sherlock equivalent for the Newton?</a>
+	</ul>
+	<li><a href="#VE">E) Newton Fonts</a>
+	<ul>
+		<li><a href="#VE1">1) Where do I get roman fonts for the Newton?</a>
+		<li><a href="#VE2">2) How do I make a Newton Font?</a>
+		<li><a href="#VE3">3) My font doesn't print (or prints poorly) to my printer.  Why?</a>
+	</ul>
+	<li><a href="#VF">F) Internationalized Software</a>
+	<ul>
+		<li><a href="#VF1">1) Where do I find fonts, input systems, encodings, and dictionaries
+		     for non-Roman foreign languages?</a>
+		<li><a href="#VF2">2) Is there a web browser which supports non-Roman encodings?</a>
+	</ul>
+</ul>
+
+<hr><!-- ========================================================================== -->
+
+<h3><a name="VA">A) General sources</a></h3>
+
+<h4><a name="VA1">1) Where can I find commercial, shareware and freeware software for the Newton?</a></h4>
+
+<ul>
+	<li>The first place to turn to for software used to be Newton Versions at DNUG, but it's no longer available
+		<!--lt--><a href="http://www.dnug.dk/versions/db-show/newton/">http://www.dnug.dk/versions/db-show/newton/
+       	</a><!--gt-->
+	<li>Now, the huge archive UNNA (United Network of Newton Archives) is the first place to go:
+		<!--lt--><a href="http://www.unna.org/">
+		http://www.unna.org/</a><!--gt-->
+  <li>AMUG: <!--lt--><a href="http://cdrom.amug.org/http/newt/newton.html">
+       http://cdrom.amug.org/http/newt/newton.html</a><!--gt-->
+  <li>
+       <!--lt--><a href="http://www.misnic.com/">
+       http://www.misnic.com/</a><!--gt-->
+  <li>The Roundtable Newton Archives at Rochester:
+       <!--lt--><a href="http://www.cif.rochester.edu/~samurai/archive.html">
+       http://www.cif.rochester.edu/~samurai/archive.html</a><!--gt-->
+  <li>Newton Mad:
+       <!--lt--><a href="http://www.imageguild.com/chuma/">
+       http://www.imageguild.com/chuma/</a><!--gt-->
+							
+  <li>Various FTP sites:
+       <ul>
+	 <li><!--lt--><a href="ftp://ftp.cif.rochester.edu/pub/newton/">
+	      ftp://ftp.cif.rochester.edu/pub/newton/</a><!--gt-->
+	 <li><!--lt--><a href="ftp://hyperarchive.lcs.mit.edu/info-mac/nwt/">
+	      ftp://hyperarchive.lcs.mit.edu/info-mac/nwt/</a><!--gt-->
+	 <li><!--lt--><a href="ftp://qube.as.miami.edu/newton/">
+	      ftp://qube.as.miami.edu/newton/</a><!--gt-->
+       </ul>
+  <li>also check AOL PDA forum
+</ul>
+
+<p>You can search for software using Newton Version on DNUG server:
+<!--lt--><a href="http://www.dnug.dk"> http://www.dnug.dk</a><!--gt-->
+
+<p>You can also use the Sherlock plug-in for DNUG:
+<!--lt--><a href="http://www.dnug.dk/updates/DNUGNewtonVersions.src.hqx">
+http://www.dnug.dk/updates/DNUGNewtonVersions.src.hqx</a><!--gt-->
+
+<p>And of course the Hemlock version of the plug-in:
+<!--lt--><a href="http://www.dnug.dk/updates/NV4Hemlock.src.hqx">
+http://www.dnug.dk/updates/NV4Hemlock.src.hqx</a><!--gt-->
+
+<h4><a name="VA2">2) Where can I find discontinued software?</a></h4>
+
+<p>There is a site specialized in discontinued and unlocked software: Newton Cage.
+There are three mirrors of Newton Cage:
+<ul>
+	<li>Original site [currently dead]: <!--lt--><a href="http://newtoncage.webjump.com">http://newtoncage.webjump.com</a><!--gt-->
+	<li>European mirror: <!--lt--><a href="http://www.europegate.com/newton/">http://www.europegate.com/newton/</a><!--gt-->
+	<li>Newton Resources: <!--lt--><a href="http://www.chuma.org/newton/ncage/">http://www.chuma.org/newton/ncage/</a><!--gt-->
+</ul>
+
+<hr><!-- ========================================================================== -->
+
+<h3><a name="VB">B) Apple's software</a></h3>
+
+<h4><a name="VB1">1) What are the connection software provided by Apple?</a></h4>
+
+<h5><a name="VB1a">a) Newton Connection Kit (NOS 1.x)</a></h5>
+
+<p>This only works with 1.x devices (for 2.x devices, use <a href="#VB1d">NCU</a>).</p>
+
+<p>It can be found at Info-Newt:</p>
+<ul>
+  <li>Mac version: <!--lt--><a href="ftp://ftp.info-newt.com/Apple/nck2mac.hqx">
+       ftp://ftp.info-newt.com/Apple/nck2mac.hqx</a><!--gt-->
+  <li>Win version: <!--lt--><a href="ftp://ftp.info-newt.com/Apple/nck1pc.zip">
+       ftp://ftp.info-newt.com/Apple/nck1pc.zip</a><!--gt-->
+</ul>
+
+<p>Documentation can be found on Apple's FTP (among others), see question
+<a href="newton-faq-hardware.html#IIA5">IIA5</a>.
+
+<h5><a name="VB1b">b) Newton Backup Utility</a></h5>
+
+<ul>
+  <li>For MacOS:
+       <!--lt--><a href="ftp://ftp.info.apple.com/Apple_Support_Area/Apple_Software_Updates/English-North_American/Newton/For_Mac_OS/Other_Newton_Updates/NBU_1.0.sea.bin">
+       ftp://ftp.info.apple.com/Apple_Support_Area/Apple_Software_Updates/English-North_American/Newton/For_Mac_OS/Other_Newton_Updates/NBU_1.0.sea.bin</a><!--gt-->
+  <li>For Windows:
+       <!--lt--><a href="ftp://ftp.info.apple.com/Apple_Support_Area/Apple_Software_Updates/English-North_American/Newton/For_DOS-Windows/Other_Newton_Updates/NBU101EN.ZIP">
+       ftp://ftp.info.apple.com/Apple_Support_Area/Apple_Software_Updates/English-North_American/Newton/For_DOS-Windows/Other_Newton_Updates/NBU101EN.ZIP</a><!--gt-->
+</ul>
+
+<h5><a name="VB1c">c) Newton Package Installer</a></h5>
+
+<p>Can be found for both MacOS and Windows at:
+<!--lt--><a href="ftp://ftp.apple.com/developer/Newton_Development/standard/">
+ftp://ftp.apple.com/developer/Newton_Development/standard/</a><!--gt-->
+
+<h5><a name="VB1d">d) Newton Connection Utility (does installation, import/export and backup) (NOS 2.x)</a></h5>
+
+<p>This only works with 2.x devices (for 1.x devices, use <a href="#VB1a">NCK</a>).</p>
+<p>It comes with the original CD/Floppies.</p>
+
+<p>The Windows version can be found on Info-Newt:
+<ul>
+	<li><!--lt--><a href="ftp://ftp.info-newt.com/Apple/ncu10pc.zip">
+		ftp://ftp.info-newt.com/Apple/ncu10pc.zip</a><!--gt-->
+</ul>
+
+<p>The copy on Apple's FTP is an expired beta version. The updater won't work. I leave the link anyway:
+<ul>
+	<li><!--lt--><a href="ftp://ftp.apple.com/developer/Newton_Development/standard/">
+		ftp://ftp.apple.com/developer/Newton_Development/standard/</a><!--gt-->
+	<li><!--lt--><a href="ftp://ftp.apple.com/Apple_Support_Area/Apple_Software_Updates/English-North_American/Newton/">
+		ftp://ftp.apple.com/Apple_Support_Area/Apple_Software_Updates/English-North_American/Newton/</a><!--gt-->
+</ul>
+
+<p>A complete version can be found on the web at Newton Cage (Newton Resources):</p>
+<ul>
+	<li>Mac version: <!--lt--><a href="http://www.chuma.org/newton/ncage/NCU_1.0_Mac.bin">
+       http://www.chuma.org/newton/ncage/NCU_1.0_Mac.bin</a><!--gt-->
+	<li>Win version: <!--lt--><a href="http://www.chuma.org/newton/ncage/NCU10-95-NT.exe">
+       http://www.chuma.org/newton/ncage/NCU10-95-NT.exe</a><!--gt-->
+</ul>
+
+<p>Documentation can be found on Apple's FTP (among others), see question
+<a href="newton-faq-hardware.html#IIA5">IIA5</a>.
+
+<h5><a name="VB1e">e) How can I connect to the Newton using Ethernet with NCU/NPI/NBU?</a></h5>
+
+<p>This only works with 2.1 Newtons (eMate 300 and MP2x00) and with MacOS. The Windows version
+of the Newton Connection Software by Apple don't connect over AppleTalk. A workaround is to
+use Basilisk II (a MacOS emulator) which you'll find at
+<!--lt--><a href="http://www.uni-mainz.de/~bauec002/B2Main.html">
+http://www.uni-mainz.de/~bauec002/B2Main.html</a><!--gt-->.</p>
+
+<ul>
+	<li>Make sure your Ethernet card is one of the supported ones by checking
+		it with the list and photos at <!--lt--><a href="http://www.chuma.org/newton/ethernet/">
+       http://www.chuma.org/newton/ethernet/</a><!--gt-->
+	<li>Install the Newton Devices package from NIE 2.0
+	<li>Install the Ethernet package for your card
+	<li>Reset your Newton (not required, but it's a good idea)
+	<li>Insert the ethernet card - if an ID slip pops up, then the card is
+	<li>recognized - if not, then the card is damaged or not compatible
+	<li>On the Newton, go to Prefs -&gt; Appletalk, choose to Connect via
+		Ethertalk, and then choose your Ethernet card.
+	<li>On the Mac, in the AppleTalk control panel, choose connect via
+		Ethertalk (instructions may vary depending on your MacOS version)
+	<li>Connect the Newton and a Mac with Ethernet cable through a hub, or use
+		a special Ethernet crossover cable (ask your local computer shop)
+	<li>Load up NCU/NBU/NPI on the Mac, Edit the Preferences, and make sure that
+		ONLY AppleTalk is selected as a connection option
+		(not required to have only AppleTalk selected, but it's a good idea)
+	<li>Run Dock on the Newton, choose to connect via AppleTalk, browse for a
+		computer (make sure NCU/NBU/NPI is still running on the Mac!), select your
+		computer name when it appears.
+	<li>Voil&agrave;, they should connect.
+</ul>
+
+<h4><a name="VB2">2) Press and Development software</a></h4>
+
+<h5><a name="VB2a">a) Newton Press</a></h5>
+
+<p>It can be found at Info-Newt:
+<ul>
+	<li>Mac version: <!--lt--><a href="ftp://ftp.info-newt.com/Apple/np11mac.sit">
+		ftp://ftp.info-newt.com/Apple/np11mac.sit</a><!--gt-->
+	<li>Win version: <!--lt--><a href="ftp://ftp.info-newt.com/Apple/np11pc.zip">
+		ftp://ftp.info-newt.com/Apple/np11pc.zip</a><!--gt-->
+</ul>
+
+<p>Documentation can be found on Apple's FTP (among others), see question
+<a href="newton-faq-hardware.html#IIA5">IIA5</a>.
+
+<h5><a name="VB2b">b) Newton Bookmaker</a></h5>
+
+<p>There is a complete version with documentation at Newton Resources:
+<ul>
+ 	<li>Mac version: <!--lt--><a href="http://www.chuma.org/newton/ncage/bookmaker_mac_11_sit.hqx">
+		http://www.chuma.org/newton/ncage/bookmaker_mac_11_sit.hqx</a><!--gt-->
+ 	<li>Win version: <!--lt--><a href="http://www.chuma.org/newton/ncage/Bookmaker_DR2.exe">
+		http://www.chuma.org/newton/ncage/Bookmaker_DR2.exe</a><!--gt-->
+	<li>PDF documentation: <!--lt--><a href="http://www.chuma.org/newton/ncage/bkmkr.pdf">
+		http://www.chuma.org/newton/ncage/bkmkr.pdf</a><!--gt-->
+</ul>
+
+<h5><a name="VB2c">c) Newton ToolKit</a></h5>
+
+Cf question <a href="newton-faq-development.html#VIIA1a">VIIA1a</a>.
+
+<h5><a name="VB2d">d) Newton C++ Toolbox</a></h5>
+
+Cf question <a href="newton-faq-development.html#VIIA1b">VIIA1b</a>.
+
+<h4><a name="VB3">3) I've heard of MacIntalk for Newton. Where can I find it?</a></h4>
+
+<h5><a name="VB3a">a) Does it work on my Newton?</a></h5>
+
+<p>It only works with NOS 2.1 (MP2k and eMate). You need Macintalk.pkg and
+SpeakText.pkg.
+
+<h5><a name="VB3b">b) Where can I find it?</a></h5>
+
+<p>You can find it:
+
+<ul>
+	<li>On UNNA: <!--lt--><a href="http://www.unna.org/unna/apple/software/TextToSpeech/">
+		http://www.unna.org/unna/apple/software/TextToSpeech/</a><!--gt-->
+	<li><!--lt--><a href="http://home.hiwaay.net/~jfrost/html/macintalk.html">
+		http://home.hiwaay.net/~jfrost/html/macintalk.html</a><!--gt-->
+	<li><!--lt--><a href="http://home.hiwaay.net/~jfrost/html/text_to_speech.html">
+		http://home.hiwaay.net/~jfrost/html/text_to_speech.html</a><!--gt-->
+	<li><!--lt--><a href="http://www.users.cloud9.net/~hennessy/newton/packages/">
+		http://www.users.cloud9.net/~hennessy/newton/packages/</a><!--gt-->
+</ul>
+
+<h5><a name="VB3c">c) How can I make it read something?</a></h5>
+
+<p>Most applications with an action button will allow you to read text. A
+good place to start is the Notes application.
+
+<p>Moreover, you can use it to read books. (cf <a href="newton-faq-books.html#VIA2">How can I
+tell my Newton to read books out loud?</a>)
+
+<h5><a name="VB3d">d) How can I change the voice?</a></h5>
+
+<p>Go to I/O Box, tap the i button and choose Speak Text prefs.
+
+<h5><a name="VB3e">e) Can I change the volume?</a></h5>
+
+<p>Generally speaking, no. But you could start the text to be read with
+<tt>[[volm 0.5]]</tt>
+
+<p>Volume is between 0 and 1. Default is 1. (this means that the Newton
+will never speak louder). You can also do <tt>[[volm +0.1]]</tt> or
+<tt>[[volm -0.1]]</tt> for relative change.
+
+<h4><a name="VB4">4) What can NewtWorks do for me?</a></h4>
+
+<h5><a name="VB4a">a) Does it work on my Newton?</a></h5>
+
+<p>NewtWorks word processing's module is mostly in 2.1 ROM. Therefore, it won't work on any other device.
+The word processing was written to be used with the keyboard. However, there are several softwares to directly
+use the HWR, although it is more primitive than in normal HWR input zones.</p>
+
+<p>There are also softwares to enhance NewtWorks.</p>
+
+<p>[list to be provided one day]</p>
+
+<p>Andree Dettmer has a lot of links for NewtWorks on his excellent Been There, Done That! website:
+<!--lt--><a href="http://homepage.mac.com/dettmer/newton/300.html#mitgel">
+http://homepage.mac.com/dettmer/newton/300.html#mitgel</a><!--gt--></p>
+
+
+<h5><a name="VB4b">b) Where can I find it?</a></h5>
+
+<p>NewtWorks can normally be found on the floppies/CD that came with your Newton 2x00/eMate.
+See question <a href="#VB5">VB5</a>.</p>
+<p>The US version can also be found online on Laurent Daudelin's website:
+<ul>
+	<li>User Guide:
+	<!--lt--><a href="http://home.cox.rr.com/nemesys/newton/Newton%20Works%20User%27s%20Guide.zip">
+		http://home.cox.rr.com/nemesys/newton/Newton%20Works%20User%27s%20Guide.zip</a><!--gt-->
+	<li>Newton Package:
+	<!--lt--><a href="http://home.cox.rr.com/nemesys/newton/NewtonWorks.pkg">
+		http://home.cox.rr.com/nemesys/newton/NewtonWorks.pkg</a><!--gt-->
+	<li>StuffIt Archive:
+	<!--lt--><a href="http://home.cox.rr.com/nemesys/newton/NewtonWorks.sit">
+		http://home.cox.rr.com/nemesys/newton/NewtonWorks.sit</a><!--gt-->
+	<li>Zip Archive:
+	<!--lt--><a href="http://home.cox.rr.com/nemesys/newton/NewtonWorks.zip">
+		http://home.cox.rr.com/nemesys/newton/NewtonWorks.zip</a><!--gt-->
+</ul>
+
+<p>The German version can be found on PDA LifeStyle website:
+<!--lt--><a href="http://www.pda-lifestyle.de/ftp/pub/newton/cd-2100/INSTALSW/NEWTWORK/">
+http://www.pda-lifestyle.de/ftp/pub/newton/cd-2100/INSTALSW/NEWTWORK/</a><!--gt--></p>
+
+<h5><a name="VB4c">c) What Word Processing software can I use on my 1.x/2.0 Newton?</a></h5>
+
+<p>You can use AvailWorks. [more information to be supplied one day]</p>
+
+<h5><a name="VB4d">d) I have heard of a spreadsheet/drawing/calculation stationery. Where can I find them?</a></h5>
+
+<p>There are actually three additional stationeries for NewtWorks. They can be found on the original eMate
+CD (QuickFigure Works was also available on the original MP2100 CD). See question <a href="#VB5">VB5</a>.</p>
+
+<p>They can also be found at Newton Cage (Newton Resources) and on Laurent's website:</p>
+
+<ul>
+	<li>Works Calculations: a calculation sheet
+	<ul>
+		<li>User Guide at Laurent's Website:
+			<!--lt--><a href="http://home.cox.rr.com/nemesys/newton/NewtonWorksGraphicalCalc.zip">
+			http://home.cox.rr.com/nemesys/newton/NewtonWorksGraphicalCalc.zip</a><!--gt-->
+		<li>User Guide at Newton Cage (Newton Resources):
+			<!--lt--><a href="http://www.chuma.org/newton/ncage/NW-Graph.pdf">
+			http://www.chuma.org/newton/ncage/NW-Graph.pdf</a><!--gt-->
+		<li>Newton Package:
+			<!--lt--><a href="http://home.cox.rr.com/nemesys/newton/NewtonWorksGraphicalCalculations.pkg">
+			http://home.cox.rr.com/nemesys/newton/NewtonWorksGraphicalCalculations.pkg</a><!--gt-->
+		<li>StuffIt Archive:
+			<!--lt--><a href="http://home.cox.rr.com/nemesys/newton/NewtonWorksGraphicalCalculations.sit">
+			http://home.cox.rr.com/nemesys/newton/NewtonWorksGraphicalCalculations.sit</a><!--gt-->
+		<li>Zip Archive at Laurent's Website:
+			<!--lt--><a href="http://home.cox.rr.com/nemesys/newton/NewtonWorksGraphicalCalculations.zip">
+			http://home.cox.rr.com/nemesys/newton/NewtonWorksGraphicalCalculations.zip</a><!--gt-->
+		<li>Zip Archive at Newton Cage (Newton Resources):
+			<!--lt--><a href="http://www.chuma.org/newton/ncage/workscalculations.zip">
+			http://www.chuma.org/newton/ncage/workscalculations.zip</a><!--gt-->
+	</ul>
+	<li>Works Draw: a drawing stationery
+	<ul>
+		<li>Newton Package:
+			<!--lt--><a href="http://home.cox.rr.com/nemesys/newton/NewtonWorksDraw.pkg">
+			http://home.cox.rr.com/nemesys/newton/NewtonWorksDraw.pkg</a><!--gt-->
+		<li>StuffIt Archive:
+			<!--lt--><a href="http://home.cox.rr.com/nemesys/newton/NewtonWorksDraw.sit">
+			http://home.cox.rr.com/nemesys/newton/NewtonWorksDraw.sit</a><!--gt-->
+		<li>Zip Archive at Laurent's Website:
+			<!--lt--><a href="http://home.cox.rr.com/nemesys/newton/NewtonWorksDraw.zip">
+			http://home.cox.rr.com/nemesys/newton/NewtonWorksDraw.zip</a><!--gt-->
+		<li>Zip Archive at Newton Cage (Newton Resources):
+			<!--lt--><a href="http://www.chuma.org/newton/ncage/newtdraw.zip">
+			http://www.chuma.org/newton/ncage/newtdraw.zip</a><!--gt-->
+	</ul>
+	<li>QuickFigure Works: a spreadsheet
+	<ul>
+		<li>User Guide
+			<!--lt--><a href="http://home.cox.rr.com/nemesys/newton/QFWorks%20User%27s%20Guide.zip">
+			http://home.cox.rr.com/nemesys/newton/QFWorks%20User%27s%20Guide.zip</a><!--gt-->
+		<li>Newton Package:
+			<!--lt--><a href="http://home.cox.rr.com/nemesys/newton/QuickFigureWorks1.0.pkg">
+			http://home.cox.rr.com/nemesys/newton/QuickFigureWorks1.0.pkg</a><!--gt-->
+		<li>StuffIt Archive:
+			<!--lt--><a href="http://home.cox.rr.com/nemesys/newton/QuickFigureWorks1.0.sit">
+			http://home.cox.rr.com/nemesys/newton/QuickFigureWorks1.0.sit</a><!--gt-->
+		<li>Zip Archive:
+			<!--lt--><a href="http://home.cox.rr.com/nemesys/newton/QuickFigureWorks1.0.zip">
+			http://home.cox.rr.com/nemesys/newton/QuickFigureWorks1.0.zip</a><!--gt-->
+		<li>Update to QuickFigureWorks 1.0. QF Works 1.0 must be run at least
+			once before the upgrade can be installed.
+		<ul>
+			<li>Newton package:
+			<!--lt--><a href="http://home.cox.rr.com/nemesys/newton/QuickFigureWorks_1_1_1.pkg">
+			http://home.cox.rr.com/nemesys/newton/QuickFigureWorks_1_1_1.pkg</a><!--gt-->
+			<li>Stuffit Archive:
+			<!--lt--><a href="http://home.cox.rr.com/nemesys/newton/QuickFigureWorks_1_1_1.sit">
+			http://home.cox.rr.com/nemesys/newton/QuickFigureWorks_1_1_1.sit</a><!--gt-->
+			<li>Zip Archive:
+			<!--lt--><a href="http://home.cox.rr.com/nemesys/newton/QuickFigureWorks_1_1_1.zip">
+			http://home.cox.rr.com/nemesys/newton/QuickFigureWorks_1_1_1.zip</a><!--gt-->
+		</ul>
+		<li>German version can be found on PDA LifeStyle website:
+			<!--lt--><a href="http://www.pda-lifestyle.de/ftp/pub/newton/cd-2100/INSTALSW/QFWORKS/">
+			http://www.pda-lifestyle.de/ftp/pub/newton/cd-2100/INSTALSW/QFWORKS/</a><!--gt-->
+		<li>Russian version can be found there:
+			<!--lt--><a href="http://numeroso.spb.org/newton/unsorted/QFRUS/">
+			http://numeroso.spb.org/newton/unsorted/QFRUS/</a><!--gt-->
+	</ul>
+</ul>
+
+<h5><a name="VB4e">e) What other spreadsheet can I use?</a></h5>
+
+<p>PelicanWare made a standalone spreadsheet called QuickFigure Pro.</p>
+
+<p>[From David Huff <!--lt--><a href="mailto:david@ti.com">david@ti.com</a><!--gt-->]</p>
+<p>The link is <!--lt--><a href="http://www.pelicanware.com/">http://www.pelicanware.com/</a><!--gt-->
+and they are now selling products for the Newton 1.x OS for purchase online (e.g. QuickFigure Pro 2.5) for
+$29.95. Their later versions for NOS 2.x are avail for purchase w/demos for download.</p>
+
+<p>Macapa made another standalone spreadsheet software called NapkinCalc.</p>
+
+<p>[From James Pelton <!--lt--><a href="mailto:j-pelton@northwestern.edu">j-pelton@northwestern.edu</a><!--gt-->]</p>
+<p>The place on the company's site where they mention the product is
+<!--lt--><a href="http://www.macapa.com/engother.html">http://www.macapa.com/engother.html</a><!--gt-->.
+On that page, they say that if you want the software, you can either
+download it elsewhere, or email them, and they'll send it to you.</p>
+
+<p>It can be found on UNNA:
+<!--lt--><a href="http://www.unna.org/unna/applications/NapkinCalc1.1/">
+http://www.unna.org/unna/applications/NapkinCalc1.1/</a><!--gt-->.</p>
+
+<p>[description from PlanetNewton]:
+NapkinCalc 1.1 lets you create sheets in which you can enter numbers and
+text, and perform calculations on the numbers you entered. One of the
+many strong points of Napkin Calc is that you can have more than one
+sheet on your screen at a time. It is also fairly easy to use. This
+program does not wish to present itself as a "super powerful", all
+knowing, calculation machine. It's purpose is simply to let you run a
+few calculations on the fly, and also print or fax a nice looking
+report.</p>
+
+<h4><a name="VB5">5) I bought a Newton but it didn't come with the CD/Floppies. Where can I find them?</a></h4>
+
+<p>All Newton models came with floppies or a CD with required software (such as NCU, NIE, etc.). All these
+software are available on UNNA (among other things), especially in the apple directory:
+On UNNA: <!--lt--><a href="http://www.unna.org/unna/apple/">
+http://www.unna.org/unna/apple/</a><!--gt--></p>
+
+<p>Additionally, the Windows CD-ROMs are available online:</p>
+<ul>
+	<li>MP2100 US CD-ROM (Windows)
+	<ul>
+		<li>On NewtonMAD: <!--lt--><a href="http://www.imageguild.com/chuma/newtonmad/apple/2100cdrom/">
+			http://www.imageguild.com/chuma/newtonmad/apple/2100cdrom/</a><!--gt-->
+	</ul>
+	<li>eMate 300 CD-ROM (Windows)
+	<ul>
+		<li>On NewtonMAD: <!--lt--><a href="http://www.imageguild.com/chuma/newtonmad/apple/eMateCDROM/">
+			http://www.imageguild.com/chuma/newtonmad/apple/eMateCDROM/</a><!--gt-->
+	</ul>
+	<li>MP2100-D CD-ROM (Windows)
+	<ul>
+		<li>On PDA LifeStyle: <!--lt--><a href="http://www.pda-lifestyle.de/ftp/pub/newton/cd-2100/">
+			http://www.pda-lifestyle.de/ftp/pub/newton/cd-2100/</a><!--gt-->
+	</ul>
+</ul>
+
+<hr><!-- ========================================================================== -->
+
+<h3><a name="VC">C) Software problems</a></h3>
+
+<h4><a name="VC1">1) I have an error message on my Newton. What does it mean?</a></h4>
+
+<p>There are two kind of error codes that appears in a dialog slip (small
+dialog with animated frame): positive numbers and negative numbers.
+
+<h5><a name="VC1a">a) Negative numbers</a></h5>
+
+<p>These are standard Newton OS errors. The error number usually provides
+information about the type of error and can be found in the Programmer's
+Reference for NOS 2.0 or in a book for Newton written by Chris Frost
+<!--lt--><a href="http://home.hiwaay.net/~jfrost/html/">
+http://home.hiwaay.net/~jfrost/html/</a><!--gt-->
+
+<p>The -10061 error is the symptom of a known bug. (cf <a
+href="newton-faq-nos.html#IIIC2a">I've heard about the nasty -10061 error...</a>);
+
+<h5><a name="VC1b">b) Positive numbers are usually bus errors.</a></h5>
+
+<p>Having such an error means a bad reference to a Newton Script object
+(any strange use of Ref()?) or a bad error in a C++ code.
+
+<p>A bus error may also be triggered by a hardware problem, since the very
+concept of it is that the processor tried to access data at a	 certain address,
+and was answered that it was impossible.</p>
+
+<h4><a name="VC2">2) My Newton is blocked by a software package (i.e. it
+crashes at every startup). What can I do? (How can I deactivate
+packages?)</a></h4>
+
+<p>You can try to deactivate all packages by doing a soft reset of the
+Newton while pressing your thumb nail down on the left side of the MP2k's
+screen. A dialog should appear asking you if you want to activate the
+packages. Say no (the small button). This allows you to eventually delete
+the guilty software.
+
+<h4><a name="VC3">3) Unsupported shareware</a></h4>
+
+<p>I like a particular shareware program, but it requests that I enter a
+code to activate it. I tried to contact the author, but with no success.
+What should I do?
+
+<p>As a Newton developer, I would suggest you work to find the author. Ask
+the Newton community by a post in the newsgroups and mailing lists.
+
+<h4><a name="VC4">4) How can I help a developer to fix bugs I have found?</a></h4>
+
+<h5><a name="VC4a">a) Using BugTrap - How can I make a log to send to developers?</a></h5>
+
+<p>You can install BugTrap
+<!--lt--><a href="http://www.tactile.com/bugTrap.html">http://www.tactile.com/bugTrap.html</a><!--gt-->
+from Tactile. It will make a new note everytime an error occurs (basically when you get the message
+"Sorry an error occured"), which you can send to the developer.</p>
+
+<h5><a name="VC4b">b) Using TrashPak - How can I get the list of the installed softwares?</a></h5>
+
+<p>TrashPak from Atomic Software
+<!--lt--><a href="http://pobox.com/~atomic.software">http://pobox.com/~atomic.software</a><!--gt-->
+does several things including a very useful feature for developers:
+it generates the list of all the packages that are installed on your Newton.</p>
+
+<hr><!-- ========================================================================== -->
+
+<h3><a name="VD">D) Internet</a></h3>
+
+<h4><a name="VD1">1) How can I connect to the Internet on my Newton?</a></h4>
+
+<h5><a name="VD1a">a) What do I need?</a></h5>
+
+<p>First, be warned that Internet access requires NOS 2.x</p>
+
+<p>Mail and newsgroups downloading speed is limited rather
+by the modem than Newton itself, hence using these services on MP120 or MP130
+is doable (many Newtoneers do), although it requires a lot of memory (for NIE and
+internet programs). Web browsing can be painfully slow of these Newtons.</p>
+
+<p>Sean Luke said (in response to "Newtscape is slow on my MP 130"):
+
+<p> <blockquote> An MP130 contains an ARM 610 running at 16MHz
+[Sean meant 20 MHz, thanks Jacek to correct that] with no
+pipelining, no superscalar architecture, no L2 cache, and a
+bytecode-interpreted programming language. When was the last time you
+surfed the web on a Mac Plus?  A PC/AT? You should be amazed that Newt's
+Cape runs at all on an MP130! </blockquote>
+
+<p>You also need an internet access, a compatible modem and NIE - Newton
+Internet Enabler. This software was provided on the floppies that came
+with your Newton.
+
+<h5><a name="VD1b">b) What's the differences between NIE 1.1 and NIE 2.0?</a></h5>
+
+<p>Some bugs were fixed. And support for additional cards, e.g., ethernet
+was added.
+
+<p>MP120 2.0/MP130 can only use NIE 1.1.
+
+<p>NIE 2.0 only works with NOS 2.1. (eMates &amp; MP2x00s).
+
+<h5><a name="VD1c">c) How can my Newton share a desktop computer's Internet connection?</a></h5>
+
+<p>According to Tom Sheppard, while you can provide MacIP connections to a Mac, it doesn't work with Newtons.
+So the only way to share an Internet connection is to do that via Ethernet.</p>
+
+<p>To do so, you need a router software on your desktop computer. On MacOS, there
+are IPNetRouter (shareware, $90) and Vicom's SoftRouter.</p>
+
+<h4><a name="VD2">2) What software is needed?</a></h4>
+
+<p>Steve Weyer maintains a list of internet related applications (e.g.,
+categories mentioned, plus weather, HTML editors, etc.):
+<!--lt--><a href="http://members.home.net/saweyer/newton/newtscape.htm#Other">
+http://members.home.net/saweyer/newton/newtscape.htm#Other</a><!--gt-->
+
+<h5><a name="VD2a">a) Email software</a></h5>
+
+<ul>
+	<li>SimpleMail by Simon Bell
+		<!--lt--><a href="http://dialspace.dial.pipex.com/town/road/aah66/">
+		http://dialspace.dial.pipex.com/town/road/aah66/</a><!--gt--><br>
+		Simon continues to actively support SimpleMail, earning him the gratitude of the entire Newton community. Great program!
+	<li>EnRoute was available in the MP2x00 CD/Floppies. Latest beta (1.4.3b1) and latest final (1.4.2) is available
+		from NetStrategy website: 
+		<!--lt--><a href="http://www.netstrat.com/">
+		http://www.netstrat.com/</a><!--gt-->
+	<li>Eudora Pro (QualComm)
+		<!--lt--><a href="http://www.eudora.com/eudoralight/">
+		http://www.eudora.com/eudoralight/</a><!--gt-->
+	<li>Eudora Light 1.0fc1 which allows to read e-mail from any MessagePad via a Macintosh or a Windows machine:
+		<ul>
+			<li>Mac version:
+				<!--lt--><a href="http://www.unna.org/unna/internet/email/EudoraLite1.0fc1-mac/">
+				http://www.unna.org/unna/internet/email/EudoraLite1.0fc1-mac/</a><!--gt-->
+			<li>Windows version:
+				<!--lt--><a href="http://www.unna.org/unna/internet/email/EudoraLite1.0fc1-win/">
+				http://www.unna.org/unna/internet/email/EudoraLite1.0fc1-win/</a><!--gt-->
+		</ul>
+	<li>LunaSuite, LunaMail (LunaTech)
+		<!--lt--><a href="http://www.lunatech.com/products/lunasuite/">
+		http://www.lunatech.com/products/lunasuite/</a><!--gt-->
+	<li>GoFetch, Unimail (Enfour)
+		<!--lt--><a href="http://www.enfour.com/newton/products/index.html">
+		http://www.enfour.com/newton/products/index.html</a><!--gt-->
+</ul>
+
+<h5><a name="VD2b">b) Web &amp; WAP browsers</a></h5>
+
+<p>There are three html browsers available:</p>
+
+<ul>
+	<li>Steve Weyer's Newt's Cape
+		<!--lt--><a href="http://www.kagi.com/weyer/#NewtsCape">
+		http://www.kagi.com/weyer/#NewtsCape</a><!--gt--><br>
+		Newt's Cape is also actively supported by Steve. Great program!
+	<li>AllPen (now OpenTv) discontinued NetHopper, supported today by SEI
+		(at least that's what LandWare technical support says)
+		Used to be there:
+		<!--lt--><a href="http://www.opentv.com/products/discontinued/nethopper/index.html">
+		http://www.opentv.com/products/discontinued/nethopper/index.html</a><!--gt-->
+		But now, you can only find it on UNNA:
+		<!--lt--><a href="http://www.unna.org/unna/internet/web-browsers/NetHopper3.2/">
+		http://www.unna.org/unna/internet/web-browsers/NetHopper3.2/</a><!--gt-->
+	<li>Discontinued LunaSuite
+		<!--lt--><a href="http://www.lunatech.com/products/lunasuite/">
+		http://www.lunatech.com/products/lunasuite/</a><!--gt-->
+</ul>
+
+<p>Eric M. Schneck wrote a Wireless Application Protocol Browser running on the MP130 and 2x00.
+It can be found at: <!--lt--><a href="http://newton.guhl.net/newton/NewtWap/">
+http://newton.guhl.net/newton/NewtWap/</a><!--gt--></p>
+
+<h5><a name="VD2c">c) Newsgroup readers</a></h5>
+
+<ul>
+  <li>InkSpot from DejaVu
+       <!--lt--><a href="http://www.martnet.com/~dejavu/">
+       http://www.martnet.com/~dejavu/</a><!--gt-->
+  <li>Paperboy from Standalone
+       <!--lt--><a href="http://www.standalone.com/">
+       http://www.standalone.com/</a><!--gt-->
+  <li>Newt's Paper from Serg Koren
+       <!--lt--><a href="http://www.VisualNewt.com/NewtsPaper.html">
+       http://www.VisualNewt.com/NewtsPaper.html</a><!--gt-->
+		<li>NewsReader by T. Kuwabara,
+		     <!--lt--><a href="http://www.bekkoame.or.jp/~kuwa27/index.html">
+       http://www.bekkoame.or.jp/~kuwa27/index.html</a><!--gt-->
+</ul>
+
+<h5><a name="VD2d">d) Other protocols</a></h5>
+
+<ul>
+	<li>ICQ &amp; similar protocols:
+	<ul>
+		<li>the software NewtCQ is being designed by Justin Streufert
+		<li>there is another ICQ project (NCQ) by Pablo Resines (currently at beta stage)
+		at <!--lt--><a href="http://icebergtech.hypermart.net/NCQ/">
+		  	http://icebergtech.hypermart.net/NCQ/</a><!--gt-->
+		<li>there is NewtJab by Eric Schneck at <!--lt--><a href="http://newton.guhl.net/newton/newtjabber/">
+		  	http://newton.guhl.net/newton/newtjabber/</a><!--gt-->
+	</ul>
+	<li>FTP:
+	<ul>
+		<li>NewtFTP
+	      <!--lt--><a href="http://www.tactile.com/newtFTP.html">
+	      http://www.tactile.com/newtFTP.html</a><!--gt-->
+		<li>LunaSuite
+	      <!--lt--><a href="http://www.lunatech.com/products/lunasuite/">
+	      http://www.lunatech.com/products/lunasuite/</a><!--gt-->
+	</ul>
+	<li>Telnet: use PT100 available from Scrawlsoft at: <!--lt--><a href="http://www.scrawlsoft.com/">http://www.scrawlsoft.com/</a><!--gt-->
+	<li>Other terminal softwares: cf question <!--lt--><a href="newton-faq-nos.html#IIIB3e">IIIB3e</a><!--gt-->
+	<li>NewtVNC by Steve Weyer (implements both server and client sides):
+		<!--lt--><a href="http://www.kagi.com/weyer/#VNC">
+		http://www.kagi.com/weyer/#VNC</a><!--gt--><br>		
+</ul>
+
+<h5><a name="VD2e">e) Can I use my Newton as a Web Server?</a></h5>
+
+<p>Yes, there is software called Newton Personal Data Sharing (NPDS) that
+does that:
+<!--lt--><a href="http://come.to/lightyear_media">
+http://come.to/lightyear_media</a><!--gt-->
+<p>You can even visit Newtons which are docked to the Internet at
+Matthew's Newton Tracker at <!--lt--><a href="http://130.126.50.66/tracker.cgi">
+http://130.126.50.66/tracker.cgi</a><!--gt-->
+<p>You can also use a NotesWeb by T. Kuwabara,
+<!--lt--><a href="http://www.bekkoame.or.jp/~kuwa27/index.html">
+http://www.bekkoame.or.jp/~kuwa27/index.html</a><!--gt--></p>
+
+<h4><a name="VD3">3) How can I read my mail from AOL or Compuserve?</a></h4>
+
+<p>Aloha AOL (email-only) 2.x client from Catamount
+<!--lt--><a href="http://www.catamount.com">
+http://www.catamount.com</a><!--gt-->
+
+<p>(The 1.x client used to work until AOL changed the protocol)</p>
+
+<h4><a name="VD4">4) Is there a Sherlock equivalent for the Newton?</a>
+</h4>
+
+<p>Yes, it's called Hemlock. It works together with the most recent
+version of Newt's Cape and allows you to do searches as in original
+Sherlock, and it has some extra capabilities which his big brother doesn't
+have (import/export of plug-ins, etc.). This is a freeware program written
+by Sean Luke and you can get it at
+<!--lt--><a href="http://www.cs.umd.edu/~seanl/newton/">
+http://www.cs.umd.edu/~seanl/newton/</a><!--gt-->
+
+<hr><!-- ========================================================================== -->
+
+<h3><a name="VE">E) Newton Fonts</a></h3>
+     
+<h4><a name="VE1">1) Where do I get roman fonts for the Newton?</a></h4>
+
+<p>Freeware fonts:
+
+<ul>
+	<li><!--lt--><a href="http://www.cs.umd.edu/users/seanl/newton/">
+		http://www.cs.umd.edu/users/seanl/newton/</a><!--gt-->
+	<li><!--lt--><a href="http://members.aol.com/NewtsPrism/fonts/fonts.html">
+		http://members.aol.com/NewtsPrism/fonts/fonts.html</a><!--gt-->
+	<li><!--lt--><a href="http://newted.org/~1f2frfbf/storage/fonts/">
+		http://newted.org/~1f2frfbf/storage/fonts/</a><!--gt-->
+</ul>
+
+<p>Minico: (freeware, tiny Monaco, great for terminal emulators)
+
+<ul>
+  <li><!--lt--><a href="http://www.scrawlsoft.com/products/pt100/Minico.pkg">
+       http://www.scrawlsoft.com/products/pt100/Minico.pkg</a><!--gt-->
+</ul>
+
+<p>Commercial fonts:
+
+<ul>
+	<li>TypeSet module in LandWare's WriteStuff adds 9 fonts:
+		<!--lt--><a href="http://www.landware.com/writestuff/index.html">
+			http://www.landware.com/writestuff/index.html</a><!--gt-->
+  <li><!--lt--><a href="http://www.standalone.com/MessagePad/WorksBetter/body.html">
+       http://www.standalone.com/MessagePad/WorksBetter/body.html</a><!--gt-->
+</ul>
+
+<h4><a name="VE2">2) How do I make a Newton Font?</a></h4>
+
+<p>There are two ways to make a Newton font from an Apple TrueType
+font or from bitmaps.
+
+<ul>
+  <li>You can use the Newton Font tool at 
+       <!--lt--><a href="http://fonts.apple.com/Tools/license.html">
+       http://fonts.apple.com/Tools/license.html</a><!--gt-->, which is the easy
+       way.
+  <li>Or for more sophisticated fonts, you can use traditional
+       tools, following Apple's Newton Font instructions at 
+       <!--lt--><a href="http://fonts.apple.com/Newton/">
+       http://fonts.apple.com/Newton/</a><!--gt-->.
+</ul>
+
+<p>Sean Luke gives good font source code for Postscript fonts at his font
+page found at <!--lt--><a href="http://www.cs.umd.edu/users/seanl/newton">
+http://www.cs.umd.edu/users/seanl/newton</a><!--gt-->.</p>
+<p>Apple gives some simple font source code at
+<!--lt--><a href="ftp://ftp.apple.com/developer/Newton_Development/sample_code/MonacoTest.sea.hqx">
+ftp://ftp.apple.com/developer/Newton_Development/sample_code/MonacoTest.sea.hqx</a><!--gt-->
+
+<h4><a name="VE3">3) My font doesn't print (or prints poorly) to my printer.  Why?</a></h4>
+
+<p>The printing facilities in the Newton aren't very sophisticated.  When
+printing to a PostScript printer, the Newton expects the printer to
+already have all the necessary fonts built-in.  If they're not, blank
+space is printed, or the font is rendered in Courier or Helvetica
+(whatever the default font is for your printer).
+
+<p>When printing to a non-PostScript printer, the Newton renders its
+internal fonts as best it can.  However, due to space restrictions the
+internal fonts are stored mostly for screen resolutions, not printer
+resolutions; so they'll come out blocky when printed.
+
+<hr><!-- ========================================================================== -->
+
+<h3><a name="VF">F)Internationalized Software</a></h3>
+
+<h4><a name="VF1">1) Where do I find fonts, input systems, locales, encodings, and dictionaries for foreign languages/countries?</a></h4>
+
+<p>You can go to the NEWTtools font page for a more exhaustive list of links:
+<!--lt--><a href="http://www.NEWTtools.com/Fonts.html">http://www.NEWTtools.com/Fonts.html</a><!--gt-->.</p>
+
+
+<ul>
+	<li>Czech: various programs by Michael Vacik:
+	<ul>
+		<li><!--lt--><a href="http://metastasis.net/people/mi(c)i/newton.html">
+		http://metastasis.net/people/mi(c)i/newton.html</a><!--gt-->
+	</ul>
+	
+	<li>Chinese:
+	<ul>
+		<li><!--lt--><a href="http://www.cs.umd.edu/users/seanl/newton">
+		http://www.cs.umd.edu/users/seanl/newton</a><!--gt-->
+		<li><!--lt--><a href="http://nats-www.informatik.uni-hamburg.de/~joseph/newton/index.html">
+		http://nats-www.informatik.uni-hamburg.de/~joseph/newton/index.html</a><!--gt-->
+		<li><!--lt--><a href="http://home.hkstar.com/~hknug/">
+		http://home.hkstar.com/~hknug/</a><!--gt--> (seems down: cf
+		<a href="newton-faq-community.html#IVA3">IVA3</a>)
+	</ul>
+	
+	<li>Japanese:
+	<ul>
+		<li><!--lt--><a href="http://www.murata.sip.or.jp/~tmurai/freeware/newton/jfont/newtonfont.html">
+		http://www.murata.sip.or.jp/~tmurai/freeware/newton/jfont/newtonfont.html</a><!--gt-->
+		<li><!--lt--><a href="http://homepage.mac.com/~gnue/">
+		http://homepage.mac.com/~gnue/</a><!--gt-->
+	</ul>
+	
+	<li>Cyrillic:
+	<ul>
+		<li><!--lt--><a href="http://nats-www.informatik.uni-hamburg.de/~joseph/newton/index.html">
+		http://nats-www.informatik.uni-hamburg.de/~joseph/newton/index.html</a><!--gt-->
+		<li><!--lt--><a href="http://www.newton.ru/">
+		http://www.newton.ru/</a><!--gt-->
+		<li>SimpleMail
+		(<!--lt--><a href="http://ds.dial.pipex.com/town/road/ah66/">http://ds.dial.pipex.com/town/road/ah66/</a><!--gt-->)
+		also lists some Cyrillic fonts
+	</ul>
+	
+	<li>French:	Dictionary &amp; locale by Paul Guyot from Kallisys website:
+		<!--lt--><a href="http://www.kallisys.com/newton/dicts_and_kits/">
+		http://www.kallisys.com/newton/dicts_and_kits/</a><!--gt-->
+
+	<li>Dutch: Dictionary by Jeroen Goolouze and Paul Guyot:
+	<ul>
+		<li>From Jeroen's website:
+		<!--lt--><a href="http://www.geocities.com/SoHo/Study/3812/DictNL.sit">
+		http://www.geocities.com/SoHo/Study/3812/DictNL.sit</a><!--gt-->
+		<li>From Kallisys website:
+		<!--lt--><a href="http://www.kallisys.com/newton/dicts_and_kits/">
+		http://www.kallisys.com/newton/dicts_and_kits/</a><!--gt-->
+	</ul>
+	
+	<li>Italian: Dictionary by Paolo Matteucci and Paul Guyot from Kallisys website:
+		<!--lt--><a href="http://www.kallisys.com/newton/dicts_and_kits/">
+		http://www.kallisys.com/newton/dicts_and_kits/</a><!--gt-->
+	
+	<li>German: a Locale for US MPs by Nick Mueller:
+		<!--lt--><a href="http://www.logictools.de/newton/german/freeware.html#dlocale">
+		http://www.logictools.de/newton/german/freeware.html#dlocale</a><!--gt-->
+</ul>
+
+<h4><a name="VF2">2) Is there a web browser which supports non-Roman encodings?</a></h4>
+
+<p>Yes. Newt's Cape (<!--lt--><a href="http://www.kagi.com/weyer/#NewtsCape">
+http://www.kagi.com/weyer/#NewtsCape</a><!--gt-->)
+supports Chinese, Japanese, and Cyrillic (in addition to English, French,
+and German).
+
+<!-- HTMLAlternate-Begin -->
+
+<hr><!-- ========================================================================== -->
+
+<p align="center"><small>
+<a href="index.html">Index</a> | 
+<a href="newton-faq-introduction.html">Introduction</a> | 
+<a href="newton-faq-hardware.html">Hardware</a> | 
+<a href="newton-faq-nos.html">Newton OS</a> | 
+<a href="newton-faq-community.html">Community</a> | 
+Software | 
+<a href="newton-faq-books.html">Books</a> | 
+<a href="newton-faq-development.html">Development</a>
+</small></p>
+
+<hr><!-- ========================================================================== -->
+
+<p align="center"><small><small>This FAQ is HTML 4.0 compliant &amp; Newton friendly.</small></small></p>
+
+<!-- HTMLAlternate-End -->
+</body>
+</html>

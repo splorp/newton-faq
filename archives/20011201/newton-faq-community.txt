@@ -1,0 +1,112 @@
+PART IV: The Newton Community on the Internet
+
+* A) Discussions and groups
+  + 1) What Newton newsgroups are there?
+    x a) English newsgroups
+    x b) A German-language newsgroup
+    x c) How do I search the newsgroups for specific information?
+  + 2) What mailing lists are there?
+  + 3) Where can I find Newton user groups?
+  + 4) Newton discussion forums on the Internet
+* B) Sites of general interest
+  + 1) Is there a list of Newton related sites, or a ring?
+  + 2) Is there an equivalent of Version Tracker?
+  + 3) Are there e-zines and internet daily (or nearly) resources for the Newton?
+---------------------------------------------------------------------------
+
+
+A) Discussion and newsgroups
+
+
+1) What Newton newsgroups are there?
+
+
+a) International Newsgroups
+
+The comp.sys.newton.* hierarchy:
+* comp.sys.newton.announce for new hardware and software announcements (moderated)
+* comp.sys.newton.marketplace
+* comp.sys.newton.programmer for programming related questions
+* comp.sys.newton.misc for anything else, and just that!
+
+b) A German-language newsgroup
+
+de.comp.sys.handhelds.newton
+
+c) How do I search newsgroups for specific information?
+
+We suggest a google groups advanced search: <http://groups.google.com/advanced_group_search>
+
+2) What mailing lists are there?
+
+There are several general mailing lists available:
+* The famous NewtonTalk list. It is now community-driven and can be found at: <http://www.newtontalk.net>. You'll find there archives of the list since March 1999.
+* There is also an emergency mailing list, NewtonTalk2, maintained by Rich Lindsay. <http://groups.yahoo.com/group/newtontalk2/>. To subscribe to the emergency list, send an e-mail to: <newtontalk2-subscribe@yahoogroups.com>.
+* A German mailing list: [Danke Guido Heer!]
+<http://www.tu-clausthal.de/student/newton/>
+* The Dutch "NewtonGebruikers" mailinglist
+<http://ngn.luna.nl/maillist.htm>
+* The eMate Talk mailinglist
+To subscribe, send an e-mail to <requests@insanely-great.com> with "subscribe ematelist" (without the quotes) as the subject.
+* Newton FR mailing list (in French) <http://ngfun.online.fr/newtonfr/>
+
+3) Where can I find Newton user groups?
+
+[Sources: TON at: <http://members.aol.com/thisolnewt/html/links.html>, Info-Newt's NUGs at <http://www.info-newt.com/nugs.html> ]
+* AMUG: Arizona's Newton Users <http://www.amug.org/amug_newton.html>
+* ANUG: Austin Newton Users Group <http://www.zti.com/anug>
+* DNUG: Danish Newton Users Group <http://www.dnug.dk>
+* GFUN: Groupe Francophone des Utilisateurs de Newton <http://welcome.to/gfun/>
+* HKNUG Hong Kong Newton Users. Their website seems down and it used to be: <http://home.hkstar.com/~hknug/>. However, the group seems to still exist. You can find them on the comp.pda.newton forum on the news.freeforum.org news server.
+* JNUG The Japan Newton Users [dead link] <http://www.inagaki.nuie.nagoya-u.ac.jp/newton/NewtonJapan/Annai.html>
+* KNUG Korean Newton Users' Group <http://www.messagepad.org/>
+* LANUG Los Angeles Newton User Group [dead link] <http://www.primenet.com/~goodman/lanug.html>
+* MISNIC Mississippi Newton Interest Club <http://www.misnic.com/>
+* MSPUG Michigan State Palmtop Users (formerly MSNUG) <http://www.msu.edu/~luckie/msnug.htm>
+* NANUG North Atlanta Newton Users <http://www.amug.org/amug/sigs/newton/nanug/nanug_newton.html>
+* Pondlife (ex-NENUG) North of England Newton User Group <http://www.quern.demon.co.uk/pondlife/>
+* NGFUN: Nouveau Groupe Francophone des Utilisateurs de Newton <http://ngfun.online.fr/>
+* NGN Newton Gebruikersgroep Nederland <http://ngn.luna.nl/>
+* NewtChamp Vermont Newton Users [dead link] <http://www.together.net/~hardy/NewtChamp.html>
+* NWOU Northwest Of Us Mobile Computing Group (formerly the Northwest of Us Newton Group) <http://www.nwou.org>
+* NYCDAUG (ex-NYCNUG) New York Newton Users <http://www.nycdaug.org>
+* SNAG Stockholm Newton Användar Grupp <http://www.users.wineasy.se/zanderc/SNAG/>
+* SNUG Stanford Newton Users Group <http://www.rahul.net/flasheridn/snug>
+* TCNUG Twin Cities Newton Users Group <mailto:dechant@stolaf.edu>
+* TUNA Teachers Using Newton Alliance [dead link] <http://pobox.com/~bnet/newton/teacher/>
+* TVNUG Tennessee Valley Newton Users [dead link] <http://newton.uah.edu/>
+Paul Filmer maintains a list of the active Newton user groups meetings on his Dedicated MP2100 NewtonOS Server <http://128.150.4.33/html/Active%20Newton%20User%20Group%20Meetings> (if the link doesn't work, try to see if Paul's Newton is online by visiting Matt's NPDS Tracker where Paul usually registers his Newton. <http://130.126.50.66/tracker.cgi>)
+
+4) Newton discussion forums on the Internet
+
+There are several forums:
+* Smaller.com Talk (formerly PDA Dash) <http://talk.smaller.com/Ultimate.cgi>
+* Newton Forum at PDA Buzz <http://www.pdabuzz.com>
+* Apple's discussion forum (Tech Exchange) <http://discussions.info.apple.com/webx?> then follow Older Apple Products and Newton. Beware, this forum is strictly moderated and if you are too tough with Apple in a message, they will delete the whole thread.
+* Newted Community <http://newted.dyndns.org/cgi-bin/Ultimate.cgi?action=intro>
+* MacNN PDA Forum <http://forums.macnn.com/cgi-bin/forumdisplay.cgi?action=topics&forum=PDA&number=29&DaysPrune=20&LastLogin>
+* The Newton Developers Bulletin Board <http://www.imageguild.com/newton/cgi-bin/Ultimate.cgi>
+---------------------------------------------------------------------------
+
+
+B) Sites of general interest
+
+
+1) Is there a list of Newton related sites, or a ring?
+
+Yes, there is the Apple Newton Webring:  <http://www.webring.org/cgi-bin/webring?ring=newtonring&list>
+Some sites also maintains a list of links such as:
+* This Old Newt: <http://members.aol.com/thisolnewt/html/links.html>
+
+
+2) Is there a Newton equivalent of Version Tracker?
+
+Yes, you can go to Newton Versions by the Danish Newton User Group:  <http://www.dnug.dk/versions/>
+While they don't have software on their site, it's an up-to-date database listing and providing links to all known Newton software. (cfPart V for where to find Newton software)
+
+
+3) Are there e-zines and daily (or regular) internet resources for the Newton?
+
+* There is Info-Newt maintained by Bill Davis <http://www.info-newt.com/>.
+* There is This Old Newt maintained by Rich Lindsay (monthly)<http://members.aol.com/thisolnewt>.
+* You can also go to Newton Lifestyle, Das Online-Magazin von und für Newton Freaks: <http://www.newton-lifestyle.de/>

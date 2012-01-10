@@ -1,0 +1,360 @@
+
+
+PART VII: Development
+     
+* A) Environments
+  + 1) What are Apple's Tools to develop software on the Newton, and where can I find them?
+    x a) Apple NTK: The Newton Toolkit.
+    x b) Apple NCT: The Newton C/C++ Toolkit.
+  + 2) What are the solutions to develop directly on my Newton?
+    x a) software on Newton OS: NDE by Steve Weyer
+    x b) software on Newton OS: nsScribe by Prism Research
+    x c) A powerful tool: View Frame by Jason Harper
+  + 3) Are there any languages other than NS/C++ with NCT?
+    x a) NS Basic
+    x b) Lisp
+    x c) Assembler
+    x d) Is Java available on the Newton?
+    x e) C/C++ on other platforms
+  + 4) Are there any other tool to develop Newton Packages?
+* B) Documentation
+  + 1) Where can I find documentation?
+    x a) Apple standard manuals
+    x b) Apple additional docs
+    x c) Articles and additional documentation
+    x d) The Newton Bowels Project
+  + 2) Wow, that's a huge list! Where do I start?
+* C) Sample Code
+  + 1) Sources for Apple's Sample Code modules
+  + 2) The list of Apple's Sample Code modules
+---------------------------------------------------------------------------
+
+
+A) Environments
+
+
+1) What are Apple's Tools to develop software on the Newton, and where can I find them?
+
+
+a) Apple NTK: The Newton Toolkit.
+
+Allows you to develop programs in NewtonScript on MacOS or Windows and to install them (that's cross development). There is a cross debugger for Newton Script programs.
+You can find it on Apple's FTP site:  <ftp://ftp.apple.com/developer/Newton_Development/tools/ntk/>
+It was also on Planet Newton and it's now on the mirror on UNNA: <http://guelph.unna.org/mirrors/download.planetnewton.com/download/programming/appledesktoptools.htm>
+It's also included into NewtonDev, an archive of essential development tools and documentation for MacOS (and Basilisk II) which is on UNNA: <http://www.unna.org/unna/development/NewtonDev/>.
+
+b) Apple NCT: The Newton C++ Toolbox.
+
+The Newton C++ Toolbox is divided into several parts available at various places on the internet:
+The core archive was avaible at Planet Newton, it's now at the mirror on UNNA: <http://guelph.unna.org/mirrors/download.planetnewton.com/download/programming/applec++tools.htm>.
+You can find additional SDK to design drivers (DDK) on Apple's FTP site: <ftp://ftp.apple.com/developer/Newton_Development/>.
+There is the Lantern DDK. It is the DDK for Ethernet cards drivers. It includes Hammer and Newtsbug, the low level debuggers. It can be found on UNNA: <http://www.unna.org/unna/apple/LanternDDK/>.
+NCT requires MPW which only runs on MacOS:
+<ftp://ftp.apple.com/developer/Tool_Chest/Core_Mac_OS_Tools/MPW_etc./MPW-PR_Images/MPW-PR.img.bin> (August 1999 distribution is 18.5 megs).
+You can find all that without MPW and a Basilisk II image with MPW into NewtonDev which is on UNNA: <http://www.unna.org/unna/development/NewtonDev/>. NewtonDev includes additions and bug fixes of the NCT. It also includes NTK, other tools and the most important documentation.
+
+2) What are the solutions to develop directly on my Newton?
+
+
+a) NDE by Steve Weyer
+
+There is Steve Weyer's Newton Dev Environment: <http://www.kagi.com/weyer/#NewtDevEnv>. It allows you to build packages directly on the Newton.
+Here is a comparison between NTK and NDE I made. It only involves my [PG] responsibility.
+* NDE:
+  + pros:
+    x develop directly on your Newt
+    x save applications as packages
+    x play with the turtle
+    x easier to incorporate help books (typically created with Newt's Cape)
+    x continued support from Steve
+  + cons:
+    x no graphical interface to develop your pro GUI, but VisualNewt (from Serg Koren) provides a graphical layout editor. <http://www.visualnewt.com>
+    x direct text input for frames
+    x no way to compile C++ code on your Newton (but you can import libraries)
+    x no way to compile "native" Newton Script (but you can import such)
+    x no debugger (but you can use viewframe)
+  + purpose: all software that does not require resources (you must import them) and too complex GUI. But you can also use Newt's Cape to write form-based applications.
+* NTK:
+  + pros:
+    x graphical interface (like RAD) allow C++ code with NCT.
+    x allow native functions.
+    x debugger (with breakpoints and steps) is available (for Newton Script code only)
+  + cons:
+    x cross development (i.e. develop on your Mac or your Windows device)
+    x discontinued software
+    x can be exported from MacOS to Windows only
+  + purpose: all software, including these that require big resources and complex GUI.
+
+b) software on Newton OS: nsScribe by Prism Research
+
+Many software programs allow you to execute NewtonScript. One which is the easiest to use is nsScribe: it allows you to execute code from the Notepad, the Assistant or Works.
+<http://members.aol.com/NewtsPrism/nsScribe/nsScribe.sit.hqx>
+
+c) A powerful tool: View Frame by Jason Harper
+
+View Frame is a very powerful tool for debugging directly on the Newton, inspect the Newton environment. However, it does not allow you to set breakpoints or to step.
+<http://pobox.com/~JasonHarper>
+
+3) Are there any other languages than NS?
+
+
+a) NS Basic Softwares
+
+<http://www.nsbasic.com>NS Basic/Newton is a complete implementation of the BASIC programming language, with extensions to take advantage of the rich Newton OS. The product is commercial and fully supported, with many thousand users worldwide. (George Henne)NewtCard is a hypercard-like environment for the Newton. It allows you to manage text and pictures as a collection of cards. It's easy to add text fields, check boxes, buttons and lots more to the cards. Buttons can be scripted using NS Basic/Newton. NewtCard is also commercial and fully supported. (George Henne)
+Try the demo: <ftp://ftp.nsbasic.com/pub/NewtCard_files/NewtDemo.sit>
+
+b) Lisp
+
+* LittleLisp by David Benn
+<http://www.adelaide.net.au/~dbenn/LittleLisp/LittleLispDocs/>
+
+* Lisp by by Jonathan Millen <mailto:JKMillen@aol.com>
+[any homepage?]
+
+c) Assembler
+
+* Roger Milne <mailto:roger@barking-dog.com> succeeded in writing programs (such as his MOD Player) in Assembly language on his PC with a GNU assembler.
+He made a page explaining how he proceeded: <http://roger.trideja.com/newton/newtonasm.html.>
+See the warning about C/C++ on other platforms below. (VIIA3e)
+* There is also the Compiler-Formerly-Known-As-ChARM (CFKAC) by Prism Research <http://members.aol.com/NewtsPrism/> It allows to compile and disassemble code directly on the Newton using nsScribe.
+
+d) Is Java available on the Newton?
+
+Sean Luke and Steve Weyer implemented Waba which is a subset of Java. Currently, the software is in alpha release. You can find the binaries and the sources on Sean's website: <http://www.cs.umd.edu/users/seanl/newton/>
+
+e) C/C++ on other platforms
+
+C++ and other compiled languages can basically be used in two ways: as native functions and for P-Classes which are used in drivers. The Newton C++ Toolbox is more than a compiler and a linker. It also includes tools to use this C++ code, either to convert a link output to a Native Module, a file used by NTK or to generate and pack a P-Class.
+All the documentation required to make a tool to convert from link output to NTK is available, but no such tool exists. Therefore, with a C/C++ suite, you will have to use NCT anyway. The other solution is to use Roger Milne's tool. <http://roger.trideja.com/newton/newtonasm.html>.
+The format of the P-Class encapsulated programs is unknown.
+Finally, the low level debuggers (Newtsbug and Hammer) only run on MacOS. Apparently, they are based on RDI, but nobody succeeded to write a compatible low level debugger.
+There are several C/C++ compilers for ARM, here are just the most common ones:
+* The ARM SDT from arm: <http://www.arm.com/>
+* GNU C/C++ compiler for Intel based computers (apparently, the Sparc tools archive is corrupted) <ftp://ftp.intel.com/pub/i960/XScale/SA1tools/>
+BTW, you can use NCT on Basilisk II which you'll find at <http://www.uni-mainz.de/~bauec002/B2Main.html>. It's a Mac 68K emulator for Win NT, BeOS, UNIX with X11 and AmigaOS.
+
+4) Are there any other tool to develop Newton Packages?
+
+Yes, there is Pinehill AppGen <http://www.pinehill.com/Pinehill.Newton.AG.html>.
+It lets you create simple data collection applications on your Newton and export the data to a PC (using PineHill Mover).
+---------------------------------------------------------------------------
+
+
+B) Documentation
+
+
+1) Where can I find documentation?
+
+
+a) Apple standard manuals
+
+Apple published a book called findinfo.pdf <ftp://ftp.apple.com/developer/Newton_Development/tech_info/documentation/acrobat/FINDINFO.PDF>
+I reproduce here the content of this book with added links. I removed comments about the CD where this book was originally. DV=DocViewer for MacOS. You need both the file and the index.
+There are several sources of information on the Newton Platform APIs and how to use them. Although the Newton Programmers Guide is the first source, it is not necessarily the most complete or up to date. There are a number of additional places you can search for information on the Newton Platform APIs.
+Below is a list of where to look. The order of items is also a rough order of searching, i.e., check the NPG, then the OS 2.1 documentation, then the Q&A's, and so on.
+* Newton Programmers Guide 2.0 & Newton Programmers Reference 2.0
+This is the primary source of information. Start here when searching. All the other sources of documentation supplement this guide.
+  + Programmers Guide:
+    x [DV-idx, 2545 Kb] <ftp://ftp.apple.com/developer/Newton_Development/tech_info/documentation/docviewer/NProgRef.idx.sea.hqx>
+    x [DV, 4269 Kb] <ftp://ftp.apple.com/developer/Newton_Development/tech_info/documentation/docviewer/NProgRef.sea.hqx>
+    x [PDF, ZIP, 2844 Kb] <ftp://ftp.apple.com/developer/Newton_Development/tech_info/documentation/acrobat/progref.zip>
+  + Programmers Reference:
+    x [PDF, ZIP, 3369 Kb] <ftp://ftp.apple.com/developer/Newton_Development/tech_info/documentation/acrobat/progguid.zip>
+* Newton Programmers Guide 2.1
+This is a supplement to the Newton Programmers Guide/Reference. It is the main source for the new APIs in Newton OS 2.1. Like NPG, this is a primary source of information.
+  + [PDF, Mac, 1392 Kb] <ftp://ftp.apple.com/developer/Newton_Development/tech_info/documentation/acrobat/NPG21.SEA.HQX>
+* NewtonScript Reference
+This is the primary reference for the NewtonScript language and related support functions.
+  + Newton Script Reference (nscriptref): [What's the difference between them? - I only have one]
+    x [DV-idx, 449 Kb] <ftp://ftp.apple.com/developer/Newton_Development/tech_info/documentation/docviewer/NScriptRef.idx.sea.hqx>
+    x [DV, 1295 Kb] <ftp://ftp.apple.com/developer/Newton_Development/tech_info/documentation/docviewer/NScriptRef.sea.hqx>
+    x [PDF, ZIP, 763 Kb], <ftp://ftp.apple.com/developer/Newton_Development/tech_info/documentation/acrobat/nscriptr.zip>
+  + Newton Script Reference (nsref):
+    x [DV-idx, 442 Kb] <ftp://ftp.apple.com/developer/Newton_Development/tech_info/documentation/docviewer/NSReference.idx.sea.hqx>
+    x [DV, 1275 Kb] <ftp://ftp.apple.com/developer/Newton_Development/tech_info/documentation/docviewer/NSReference.sea.hqx>
+    x [PDF, ZIP, 872 Kb] <ftp://ftp.apple.com/developer/Newton_Development/tech_info/documentation/acrobat/NS_REF.ZIP>
+* Q&A's (Q_AND_AS)
+New and updated information on APIs and extra explanation. This is one of the best sources of information apart from the Newton Programmers Guide.
+* Platform File Functions (PLATFUNC)
+This contains documentation on APIs that are included as part of the Platform File. The APIs are either new APIs or replacements for ones already in the ROM.
+* Sample Code (SAMPCODE)
+In addition to showing you how to use particular features, some pieces of sample code contain interim documentation.
+* NTK 1.6 User's Guide (WINNTK16.PDF)
+In addition to documenting Newton Toolkit, this guide also contains valuable information on both debugging your application and performance tuning.
+
+b) Additional Apple docs
+
+Apple published additional books. These can be found on Newton Gurus' sites.
+* Newton Formats (1.1) describes the format of packages and stream objects.
+It can be found on David Arnold site: <http://archive.dstc.edu.au/AU/staff/david-arnold/newton/dev/newton-formats.pdf>
+* Newton Toolkit 1.6.x File Formats describes the format of NTK files for both MacOS and Windows.
+It can also be found on David Arnold site: <http://archive.dstc.edu.au/AU/staff/david-arnold/newton/dev/ntkformats.pdf>
+* Newton Interconnect Port Hardware Specification for the MessagePad.
+Still David Arnold Site (thanks David): <http://archive.dstc.edu.au/AU/staff/david-arnold/newton/dev/newton-interconnect.pdf>
+But it can also be found there: <ftp://qube.as.miami.edu/newton/Docs/interconnect Specs Folder/>
+* Newton OS 2.1 Engineering Documents
+  + [PDF, 559 Kb] <ftp://ftp.apple.com/developer/Newton_Development/tech_info/documentation/acrobat/engdoc21.zip>
+* Newton Toolkit Enhancements 
+* Newton OS 2.1 Miscellaneous 
+* Newton 2.0 User Interface Guidelines
+  + [DV-idx, 604 Kb] <ftp://ftp.apple.com/developer/Newton_Development/tech_info/documentation/docviewer/UI_Guidelines.idx.sea.hqx>
+  + [DV, 1828 Kb] <ftp://ftp.apple.com/developer/Newton_Development/tech_info/documentation/docviewer/UI_Guidelines.sea.hqx>
+  + [PDF, 1340 Kb] <ftp://ftp.apple.com/developer/Newton_Development/tech_info/documentation/acrobat/uiguidl.zip>
+  + [PDF, 1761 Kb] <ftp://ftp.apple.com/developer/Newton_Development/tech_info/documentation/acrobat/UI_GUIDE.ZIP>
+* User Interface Guidelines for Newton OS 2.1 Keyboard Enhancements
+  + [PDF, ZIP, 327 Kb] <ftp://ftp.apple.com/developer/Newton_Development/tech_info/documentation/acrobat/KEYBDUI.ZIP>
+  + [PDF, ZIP, 277 Kb] <ftp://ftp.apple.com/developer/Newton_Development/tech_info/documentation/acrobat/keybdui.zip>
+
+c) Articles and additional documentation
+
+There were a lot of articles written by Apple and third party developers. They were published in the Newton Technology Journal, in the PIE Developers and other journals.
+* The Newton Technology Journal was a review for both general and developer information. Issues from February 1995 (I,1) to March 1997 (III,2) were published. These can be found on various places. David Arnold has them all: <http://archive.dstc.edu.au/AU/staff/david-arnold/newton/dev/Newton%20Technology%20Journal/>
+* Some articles by the Newton ToolBox Group can be also found. These were published in various places. David Arnold has also them all: <http://archive.dstc.edu.au/AU/staff/david-arnold/newton/dev/Articles/>
+* You can also look into Handheld Systems Magazine. Some articles were published there. The index can be found at: <http://www.cdpubs.com/hhsys/hhsys0199.txt>
+And they can be all downloaded from <http://comtech.sm.luth.se/dugdale/hhsys/> with the sample codes.
+* There is the articles "Ask Dr. Llama" in the form of Q&As
+David Arnold has them all (thanks David, once again) <http://archive.dstc.edu.au/AU/staff/david-arnold/newton/dev/Dr%20Llama/>
+* If you're interested in articles explaining how the NewtonOS or the NewtonScript language works, you can go to Walter Smith's website <http://www.best.com/~wsmith/works.html>. Walter Smith is the father of NewtonScript and is responsible for other great parts of the NewtonOS.
+* Finally, there are all the programming hints from the newton developer website.
+[I'm sorry I haven't them]
+You can also consult the documentation concerning the processor (ARMs). Please note that this is useless to the NewtonScript developer. It is only useful for assembly development and sometimes C++ development.
+* The ARM Architecture Reference Manual by D.Jaggar. You can order the paper version from any good (internet) library. You can get the electronic version by ordering a free evaluation copy of the ARM Development Suite at <http://www.arm.com/sitearchitek/devtools.ns4/html/ads_eval?OpenDocument>. You'll find in this book a (simple) diagram of the Runt based Message Pads. There are other reference manuals for the ARM such as the ARM System-on-Chip Architecture by S.Furber and The ARM RISC Chip, A Programmer's Guide by A. van Someron & C. Atack.
+* The ARM SDT Reference Manual. This manual isn't a manual to the processor but a manual to the ARM SDT which the Newton C++ Toolbox is a MPW port of. The SDT changed a lot, but it's there that you'll find informations about the compiler's behavior (e.g. data size).
+* You can find additional documentation on ARM's website. They are not very interesting for Newton development, though, except the Quick reference guide. <http://www.arm.com/Documentation/>.
+* Intel has several application notes and technical documents about the StrongARM, including one on the memory management (one of the sources about the ARM MMU). They can be downloaded from the Intel's developer website: <http://developer.intel.com/design/strong/>
+
+d) The Newton Bowels Project
+
+The Newton Internals are not documented. But several developers made discoveries when digging the system to interface with it. There is a repository for these documents and thrill seekers tools, called The Newton Bowels Project. It can be found on Kallisys website: <http://www.kallisys.com/newton/bowels/>.
+
+2) Wow, that's a huge list! Where do I start?
+
+My advice is to start with the examples. Try the examples that comes with NDE or those on Apple's FTP site.
+You can also try the interactive tutorial book NewtATut to create a simple app: <http://www.kagi.com/weyer/#NewtATut>
+---------------------------------------------------------------------------
+
+
+C) Sample Code
+
+
+1) Sources for Apple's Sample Code modules
+
+Most of them, in their latest version, can be found on UNNA at: <http://www.unna.org/unna/apple/Newton_Development/sample_code/>.
+
+2) The list of Apple's Sample Code modules
+
+There is a list on Rochester FTP. It has the advantage to include keywords and description.
+* By category: <ftp://ftp.cif.rochester.edu/pub/newton/programming/dev_tools_from_apple/Newton_Development/sample_code/*Samples_by_Category.txt>
+* By name: <ftp://ftp.cif.rochester.edu/pub/newton/programming/dev_tools_from_apple/Newton_Development/sample_code/*Samples_by_name.txt>
+However, it is not complete, with latest versions. Here is a more complete list:
+
+* Application Design
+  + Altered States-6
+  + ChezDTS-2
+  + DeletionScript-2
+  + ExtensionTap-1
+  + protoFSM-7
+  + True Grid-5
+* Controls and Other Protos
+  + Gauges-2
+  + Glancing-2
+  + NouveauScroll-2
+  + protoVertSlider-1
+  + RadioCluster-3
+* Data Storage
+  + SoupTour-4
+* Desktop Connectivity
+  + CompNRun-1
+  + DILette-Mac-2
+  + DILette-Windows-2
+  + Mini-MetaData-1
+  + SoupDrink-Mac-4
+  + SoupDrink-Newton-4
+  + SoupDrink-Windows-3
+  + SuiteP-Mac-2
+  + SuiteP-Windows-2
+* Developer Tools
+  + MonacoTest-5
+  + MooUnit-1
+* Digital Books
+  + Beyond Help-5
+  + Book Maker Examples-1
+  + BookSample-4
+* Drawing and Graphics
+  + Bitmap-2
+  + Dot2Dot-3
+  + Drawing-4
+  + Photo Album-1
+  + Up In Smoke-33&2/3
+* Endpoints
+  + Basic LlamaTalk-1
+  + Basic Modem-2
+  + Basic Serial-2
+  + Comms FSM-6
+  + Thumb-8
+  + Tool Time-2
+* Localization
+  + CreatingALocale-2
+* Modem Setup
+  + Modem Setup-2
+* NewtApp
+  + Checkbook-8
+  + newtLabelPicker-1
+* NewtonScript
+  + Inspector Gadget-4
+* Pickers, Popups, and Overviews
+  + ListPickerSamples-2
+  + PictIndex-1
+  + protoNumberPicker_TDS-1
+  + protoOverview-2
+  + protoSlimPicker-1
+  + WhereInTheWorld-1
+* Recognition
+  + CharEdit-2
+  + WordArray-2
+* Routing
+  + AutoRoute-4
+  + CustomRoute-2
+  + MultiRoute-1
+  + VariRoute-1
+* Sound
+  + Bitchin' Piano-3
+  + Serenade-1
+  + Sound Advice-3
+  + Sound Tricks-4
+  + SoundStudio-2
+* Stationery
+  + WhoOwesWhom-5
+* System Data and Built-in Apps
+  + Cardfile Extensions-1
+  + Extra Change-3
+  + HandWrite-1
+  + Party Time-1
+  + PeoplePicker-1
+  + Sketch-1
+  + Stamps&Patterns-1
+* System Services
+  + PeriodicElements-1
+* Text Input
+  + InkForm-1
+  + InkTranslate-1
+  + Keyboardin-1
+  + Keys-4
+  + QWERTY-3
+  + TXWord-2
+* Transports
+  + ArchiveTransport-4
+  + MinMail-3
+  + StatusReport-1
+* User Interface
+  + AdjustoButton-1
+  + PreeferMadnessTNG-1
+* Views
+  + Clock-2
+  + DatePick-2
+  + DragonDrop-1
+  + Paragraph Scroll-4
+  + SyncScroll-1
+  + TabsNStyles-3
+  + Thumbnail-1
+  + ViewScripts-3

@@ -1,0 +1,372 @@
+FAQ for the Newton Community - Change History
+
+
+* 10/01/2001 [Paul Guyot]
+  + Grant Hutchinson suggested a bunch of changes: [Thanks Grant]
+    x Fixed the link to the Rochester archives which moved in question VA1
+    x The link to the original NewtonCage website is dead, noted it as such in question.VA2
+    x J. Farmer no longer hosts a copy of NCU for MacOS. The link was removed from question VB1d.
+    x Most of Macintalk links are dead. Replaced them with a link to UNNA in questionVB3b.
+    x The URL of Enfour's Newton product page changed, updated the link in questionVD2a.
+    x Rephrased (Grant says Typo corrections when it's actually correcting my English :) parts of questionIIA2
+    x Hiroshi Noguchi's web page has moved (question IIB12)
+    x Added a navigation footer to the history and index pages.
+    x Added a mention that the NewtonTalk mailing list has archives in question IVA2
+    x Added a link to the emergency mailing list in question IVA2
+    x Fixed the HTML link to Matt's Tracker in question IVA3
+  + For an unknown reason, there was a link to Enfour's USA page (saying that you have to contact the Tokyo headquarters) in question IIC5. Removed it.
+  + J. Farmer's website where Paul Bowles books can be found moved. The URL has been updated in questionVIA3
+  + Added a link to Apple's article on the compatible printers in question IIB8[Thanks Ben]
+  + Added Apple's Knowledge Archive and the NewTIL in question IB1b.
+* 09/01/2001 [Paul Guyot]
+  + Bill Shamam's company is called Guns (index page and questionIA2)
+  + Added Sean's experience about an unseated daughterboard in question IIC6a[thanks Sean]
+  + Added an information about grey dongles (for EVT units) Don Vollum posted on usenet in a new questionIIA1i [Thanks Don & Brian]
+  + Fixed a problem in the text version of the question IIIA2a [Thanks Carsten]
+  + Moved Cliff Penwell's experience with the US Apple Service Center from questionIIA2 where it was misplaced to questionIIC3
+  + Added Christopher Dean's report that Apple still has dongles and they cost 38 AUD in questionIIA2 [Thanks Chris]
+  + Added new question IIIB3f"How can I transfer data between my Newton and another PDA?" with a remark on using Claris Organizer/NCU to transfer data between Palms and Newtons by Mark Ross [Thanks Mark]
+  + Added a link to Thomas Tempelmann's tool in question IIIB3c		[Thanks Laurent]
+  + Added a link to question VB1e in questionIIB2c and a note about Basilisk II in questionVB1e. [Thanks Robert]
+  + Added a link to Frank Gruendel's page about refurbishing an eMate battery pack in questionIIC7 [Thanks Robert]
+  + Added a reference to the RadioShack adapter & adapter plug to be used with Newtons in questionIIB7 [Thanks Carl, Michael & Roman].
+  + Added Cadenza/Lotus Notes in question IIIB3d and a remark concerning the R5 of Lotus Notes [Thanks Harri]
+  + Updated the list of compatible cameras with Tibet in question IIB9from a thread in NewtonTalk.
+  + Added the new NewtonTalk website in question IVA2 [Thanks Victor]
+  + Added the Newton Developers Bulletin Board in question IVA4 [Thanks Victor]
+  + Added question IIIC3d "I have problems with a package on Windows" from information provided by Steve Weyer [Thanks Steve]
+  + The FAQ is now automatically posted. Added a note about this in question IA2. Some mirrors are automatically updated, they're marked as such there.
+  + Added Anthony V. Jeancola in the list of hosters, his mirror in the list of mirrors (index page and question IA2)
+  + Updated Peter Rand's address in the index page.
+  + Added serial numbers for Tibet now I got Russell Tait's bless IIB9 [Thanks Russell]
+  + Updated question IIB8 with input from NewtonTalk members [Thanks folks]
+  + Fixed the URL of the NENUG (now Pondlife), the URL of the NYCNUG (now NYCDAUG) and marked the links to JNUG, LANUG, NewtChamp, TUNA & TVNUG as dead in question IVA3 [Thanks Victor]
+* 07/01/2001 [Paul Guyot]
+  + Added Bill Shamam in the list of hosters, his mirror in the list of mirrors and removed Newted and Stacey Tenen. (index page and question IA2)
+  + Added more details on the equivalence of NOS 1.0.x and 1.1.x systems in question IIIA2a [Thanks Carsten]
+  + Added Terry Fischer's website in the list of Newton Book sources (question VIA3)
+  + Updated links to Paul Filmer's dedicated Newton Server in question IVA3
+  + Updated the price of the flip door and the stylus for MP2x00 in question IIA2 [Thanks Myron]
+  + Added question IIIB8 Where can I find my Newton's ID? [Thanks to Eric Strobel for noticing it was missing]
+  + Added Cliff Penwell's experience with the US Apple Service Center in question IIA2 [Thanks Cliff]
+* 06/01/2001 [Paul Guyot]
+  + NCT stands for Newton C++ Toolbox and not Newton C++ Toolkit or anything else. Sections VB2dVIIA1b,VIIA3e, and VIIB1c have been updated accordingly. [Thanks Grant]
+  + Added Newton Glossary in section IB1b.
+  + Changes submitted by Victor Rehorst [Thanks Victor]
+    x Question IIIB2f only applies to the OMP and the 1x0 models.
+    x NOS 1.0.5 is functionnally equivalent to NOS 1.1.1 (question IIIA2a) [additionnal thanks to Carsten]
+    x Various corrections to question IIIB3b:
+      o NewtDump can export names and quotes as well as notes and inbox messages.
+      o Added Notes2Notes. It also has been added to question IIIB3d
+      o Added RCU and Notable
+      o Added NewtShare
+    x Added a link to Fax Cover Creator on UNNA in question IIIB5
+    x Added RCU in the ways to take a screen shot in question IIIB7
+    x Added a link to AladdinSys website in question IIIC3c
+    x Added a reference to NewtPackageFlags in question IIID2
+  + Changes submitted by Otto Sohn [Thanks Otto]
+    x The FAQ still had the old link to GNUE website in section VF1.
+    x The HKNUG website is no longer available, although the group seems to still exist (question IVA3 & VF1)
+    x The eMate upgrade is no longer been built IIB1c
+  + Questions VB2c and VB2d are now just pointers to questions VIIA1aand VIIA1b.
+  + PlanetNewton website is now down. Changed all references to the mirror on UNNA (sections IIIB3a, VIIA1a, VIIA1b) or UNNA directly (sections IIB2a, VB4e, VIIC1) or deleted them (IA2, IVA2 (where I put a link to NTLK2), IVB3, VA1)
+  + Added a link to NewtonDev in sections VIIA1a andVIIA1b
+  + Added a link to Walter Smith's website for his articles in question VIIB1c
+  + Added a	link to Basilisk II in question VIIA3e
+  + Updated the information about the French and German Newtons in questions IIA1b,IIA1d,IIIA2b,IIIA2cand IIIA2d.
+  + Changed the link to Deja to a link to Google in question IVA1c.
+* 05/01/2001 [Paul Guyot]
+  + Added question VIIA4 (Are there any other tool to develop Newton Packages?) for PineHill (thanks Victor)
+  + Updated the links to Apple's FTP in questions IIIA2a,IIIA2b, VB1b,VB1c, VB2c,VIIA1a, VIIA1b andVIIB1a (thanks Matthew & Andrew Beals)
+  + The service manuals are online again. Put the link into question IIA6
+  + Added a link to Ben Truesdale's fonts in question VE1
+  + Added a link to the NEWTtools font page in question VF1 (thanks Ben)
+  + Added the CZ support page by Michael Vacik in question VF1
+  + Updated the list of FAQ mirrors. They are now sorted in regularly updated mirrors and out of date mirrors (I followed Steve suggestion, thanks Steve). (cf question IA2) Every month when doing the update (at the end of the month), I'll look who has the latest version of the FAQ and update the list accordingly.
+* 04/01/2001 [Paul Guyot]
+  + Fixed two typos in the index page (thanks Grant) and a mistake in the history page.
+  + Added the link to the 424157 system update on UNNA in question IIIA2c (thanks Victor)
+  + Updated the links to English and German system updates on UNNA in questions IIIA2band IIIA2b
+  + Updated question IIA1d and especially updated the list of available languages for the Sharp Expert Pad (thanks to Maximilian Hartel)
+  + Added information for phone cabling with a Sagem RD435 in question IIB2band information for the Newton to External modem cable in question IIB2a (thanks to Helmut)
+  + Added the Olympus D-450Z in the list of Tibet compatible cameras (IIB9) (thanks to Hansel Chung)
+  + Added Newton Data Browser by Thomas Tempelmann in question IIIB3b
+  + Added Carsten's big list of parts number in question IIA2 (thanks Carsten)
+  + Added the battery bug in NOS 2.1 for MP2x00 as question IIIC2g (thanks to Victor and Bill)
+  + Added a link to Newtourage in question IIIB3d
+* 03/01/2001 [Paul Guyot]
+  + Added a link to the Korean Newton Users' Group in question IVA3 (thanks to Victor)
+  + Revised question IVA3 using links from Info-Newt's NUG page
+  + Added question IIIA2c about French System Updates (question IIIA2c is now question IIIA2d)
+  + Updated question IIIA2d with the MP110-F code
+  + Added Jean-Christophe Bousson FAQ in question IB1a (thanks to Brian McEwen)
+  + Added new parts numbers for question IIA2 (thanks to Paul Filmer)
+  + Added question VIA4 Can I read PilotDOC books on the Newton? (thanks to Steve)
+* 02/01/2001 [Paul Guyot]
+  + Added a link to the Alex Catalogue website in question VIA3 (thanks to Thomas McDougal & Dan Duncan)
+  + Carsten Lemmen excellent page on Memory Cards is now in English (see question IIB1b)
+  + Updated the link to Landware commercial fonts in question VE1 (thanks to Sean)
+  + Added Victor's detailed steps to connect to NCU using EtherTalk for 2.1 Newtons in question VB1e (thanks Victor)
+  + Added the MP2x00 original adapter specifications in question IIB7 (thanks to Helmut Fischer)
+  + Updated the link to Enfour's adapter in question IIB11 (thanks to Emil Volcheck)
+  + Marked the link to the SIT and HQX FAQ dead in question IB1b (thanks to Fix Bornes)
+  + Added a link to the ATA Project page in question IIB10
+* 01/01/2001 [Paul Guyot]
+  + This FAQ is now posted on comp.answers and news.answers (see section IA2)
+  + Updated the URLs for Steve Weyer's webpage and updated his e-mail address.
+  + NetStrategy link works (section VD2a)
+  + Added Eudora light 1.0fc1 in the e-mail software list (question VD2a)
+  + Updated NetHopper home page (doesn't work today, though) (question VD2b)
+  + Added a link to Waba port in question VIIA3d
+  + Put the list of manuals in question IIA5
+  + Added links to question IIA5 in various questions
+  + The service manuals are no longer available from Apple's FTP (section IIA6)
+  + Added question IIB13 What cable do I need to connect to my desktop computer?
+  + Added a link to the connection FAQ in questions IIIB3band IIIB3d
+  + Fixed the Flash card information in question IIB1b (thanks to Carsten Lemmen)
+  + Added information about how to get the serial dongle from Apple in question IIA2(thanks to Matt Clark)
+  + Question VD2b is now entitled "Web & WAP browsers", added a link to the WAP browser by Eric M. Schneck in it.
+  + Updated the link to The Newton Pre-Buyers' Guide in question IB1b
+  + Updates in question VIIB1c:
+    x Renamed the question to "Articles and additional documentation"
+    x Added information about where to get the ARM ARM and Intel papers
+    x Updated the link to the Handheld Sys Archives
+  + Added a link to the European mirror of the Newton Cage and the Newton Cage at Newton Resources in questionVA2
+  + Added question IIA1h "I have a Newton MP2x00 EVT/DVT. What is it?" (Thanks to Don A. Vollum)
+  + Updated the link to late Guido Heer's FAQ which is now maintained by Pascal B. Kreil in questionIB2 (Thanks to Carsten Lemmen)
+  + Updated information about PowerPen in question IIIB3b (Thanks to Geoff Allen)
+  + Added a link to the Newton FR mailing list and removed the link to the dead NGFUN forum (questions IVA2 & IVA3)
+  + Updated the link to Apple's Discussion Board (question IVA4)
+  + Added a link to the MacNN PDA forum (question IVA4)
+  + Added a link to Paul Filmer's Active Newton User Groups Meetings in question IVA3
+* 12/01/2000 [Paul Guyot]
+  + Corrected question VIIA2b: nsScribe is created by Prism Research. (Thanks to Jonathan Kipling Knight)
+  + Rearranged section VIIA3:
+    x Question VIIA3c is now only for assembler,
+    x There is a separate question for C/C++ on other platforms (VIIA3e).
+    x Added a link to Roger's page in section VIIA3c
+  + Fixed the HTML bug introduced with the November update
+  + Since August where there was no change, the change dates were wrong
+  + Updated list of mirrors: added Stacey Tenen's Newton Community (yes, I should have done that months ago) and Mark Rollins Newton Book (IA2)
+  + New Apple Repair Center phone number; added the repair cost (IIC3) (Merci Laurent)
+  + Added links to Nick's keyboard and PowerTrans Keyboards in section IIIB3a.
+  + Added Nick's D-Locale in section VF1.
+  + Added TermLimit to section IIIB3e.
+  + Added a link to Battery Tech in section IIA2 (Thanks to James Pelton).
+  + Fixed the link to LunaTech in sections VD2aand VD2d (Thanks to Ralph Mazzella)
+  + Added informations about NapKinCalc in section VB4e (Thanks to James Pelton)
+  + Added a link to the German version of NewtWorks VB4b and more links for QuickFigure VB4d (Thanks to Andree Dettmer)
+  + Added question "I bought a Newton but it didn't come with the CD/Floppies. Where can I find them?" (VB5)
+  + Added a link to Andree Dettmer's MetaFAQ (IB1a)
+  + Added links to UNNA in various sections (more to be added).
+  + Added a link to the Newton Bowels Project (VIIB1d)
+  + Updated links to my website.
+* 11/02/2000 [Paul Guyot]
+  + Moved the change history into a new file & made some changes in the presentation.
+  + Added the Olympus D-360L in the Tibet compatibility list (IIB9) (thanks to Mark Rollins)
+  + Clarified the compatibility of Linear Flash cards from Carsten Lemmen's summary (IIB1)
+  + Updated the question IIB10 about the possibility of an ATA driver and moved the Airport and WaveLan to a new question (IIB12), and added a new question about the -10582 error. (IIIC2f)
+  + Added question IIA1g "How can I distinguish a MP2000 from an upgraded MP2000?"
+  + Added UNNA in the software sources (VA1)
+  + Updated the link to NewtonMAD in the software sources (VA1)
+  + Removed a dead link (ftp://newton.uah.edu/ftp/) in the software sources (VA1)
+  + [I haven't added links to software to UNNA or NewtonMAD yet]
+  + Added more links to book sources (VIA3) [Thanks Victor]
+* 10/01/2000 [Paul Guyot]
+  + Updated NPDS home page address (IIIB3b)
+  + Added Newton Link to the transfer section (IIIB3b) [Thanks to Brian McEwen & Victor]
+  + Added a link to Mark Rollins' page for Merlin modem setup (IIB2b) [Thanks Victor]
+  + Added a link to J. Farmer's Paul Bowles Newton Books (VIA3)
+  + Added a link to NCU on J. Farmer's website (VB1c) [Thanks Josie]
+  + Updated information concerning big flash cards (IIB1b) [Thanks Harri]
+  + Updated the links to the manuals (IIA5 &IIA6) [Thanks to Steven Merryman]
+* 09/01/2000 [Paul Guyot]
+  + Added a link to NewtKey in section IIB3 (Thanks Victor)
+  + Added section IIB11 (Are there any third-Party accessories that use the Interconnect port on the 2x00 or eMate?) '(Thanks Victor)
+  + Removed the link to ftp://qube.as.miami.edu/newton/Apple/For_Mac_OS/MessagePad_System_Updates/ in section IIIA2a since it no longer works. (Thanks to James Pelton)
+  + Removed the link to Auto61 Fix (Don Vollum) in sectionIIIC2b since it is dead. (Thanks to James Pelton)
+  + Added David Huff's description to PelicanWare in section . (Thanks David)
+  + Added section IIIC2e (What are these -16022 errors every time I try to use my modem?) (Thanks Victor).
+  + Removed all references to Newton Intelligence since it is down forever. (sectionsVA1,VB1d,VB2b,VIIA1a, & VIIA1b).
+  + Updated the list of Tibet compatible cameras in section IIB9. (Thanks to Robert & Victor)
+  + Fixed the link to Tomoyoshi Murai's package info (section IIIB6). (Thanks to James Pelton)
+  + Added GNUE's package info (section IIIB6).
+  + Qualified the statement about NOS 1.x and the maximum size of cards in sectionIIB1b. (Thanks Harri)
+  + Updated information about where to find the FAQ in sectionIA2.
+  + Updated the link to NuShield in section IIC6b.
+  + Added notice to some dead links in section IB1b. (Thanks Frédéric)
+  + Updated the link to Tomoyoshi Murai website (sections IIID2& VF1) (Thanks Sean)
+  + Added a link to the Windows Patch for 710031 in sectionIIIA2a
+  + HTML code checking (I still have a problem innewton-faq-hardware.html with the hidden table for the ASCII version.
+* 07/03/2000 [Paul Guyot]
+  + Fixed some bugs in the section IIIA4 (Thanks Victor)
+  + Added a link to a DIY hack to accelerate the MP120 in section as suggested by Harri Hohteri (Thanks Harri)
+  + Added a link to the new NewtonOS bugs repository in section IIIC2
+  + Added some informations concerning IPNetRouter (VD1c)
+  + I realized nothing was said about Works, while questions are frequently asked about it. I added a new section (VB4) into the software part with links including to Laurent Daudelin's website. However, it is not finished because there are several links/informations I should search.
+  + Fixed some html bugs - iCab didn't smile at all pages
+  + Info-Newt FTP at DNUG no longer exists. Hence I updated some links.
+  + Ben (THX 1138) moved his Newton Connections site. Change in section IB1b & new links in section VB1
+* 06/02/2000 [Paul Guyot]
+  + Changed Laura email address to webmaster@planetnewton.com
+* 05/30/2000 [Paul Guyot]
+  + Added section IIC7 "how to replace your own eMate batteries while not spending too much" by Robert Benschop
+* 05/29/2000 [Paul Guyot]
+  + Fixed some html bugs (iCab didn't really smile at all pages)
+  + Victor Rehorst suggested several fixes:
+    x Section VB1a, the links for my site (chuma.org) actually point to NCU not NCK. The links should probably be moved down to section d
+    x Section VC1b - can't positive-number errors be caused by hardware problems as well? (I [PG] updated the explanation)
+    x Section VD1b - NIE 2.0 only works with OS 2.1 - It provides extra functions that NIE relies upon AFAIK.
+    x Section VD2d - NewtJabber at <http://newton.guhl.net/newton/newtjabber/> [PG] Also updated the section with NCQ
+    x Section IIIB3b - NewtDump can export In/Out box messages and notes to ASCII text on any PC: <http://www.chuma.org/code/newtdump/>
+    x The link for QuickPort in that section is also dead. You might want to add EETransfer as well. [PG] The server for QuickPort seems down. I put a small comment and the AMUG link.
+    x Section VIB1 should have a link to VB2
+  + Rewrote question IIIB7 about screen shots to add EETransfer.
+  + Added links to NotesWeb and NewsReader by T. Kuwabara. (VD2c,VD2e), although the server seems down.
+* 05/07/2000 [Paul Guyot]
+  + Added the date at the top of this page
+  + Fixed the links to Newton Resources (the web site moved)
+  + Newton Resources copy of the FAQ is finally added in the list of mirrors
+  + Added information about the Siemens S25 (IIB2b) (thanks to Olaf 'Holger' Bohlen and Peter Rand)
+  + Added question IIB10) Can I use an Airport/WaveLan/Click/IBM Microdrive/ATA Flash/Compactflash adapter in my Newton? (Thanks to Victor Rehorst)
+  + Victor also suggested some changes:
+    x Added a link to his site about Apple Canada IIC3
+(I updated the whole question)
+    x Removed Roadrunner Tracks link IIC6b
+    x Fixed broken links to the service manuals IIA6
+* 04/02/2000 [Paul Guyot]
+  + Question IIA5 was missing
+  + Added question IIA6 concerning Service Manuals
+  + Smaller.com was PDA Dash, there is no need for two links.
+  + Added section VIIC for sample code
+  + Changed answer to "What is this document" IA1
+  + Added instruction to order parts to Apple (BTW, I lost the contributor's name of the original message on csnm, if anyone could tell me, I'll add it) to questionIIA2
+  + Question IIB2a is now "Which modem can I use? How do I make a modem script?"
+  + Added a remark concerning Ethernet Card D-Link DE-660IIB2c (thanks to Kent Wong, Rick Roberts and Bill Davis)
+  + Added a remark concerning the HP Deskjet 340CBiIIB8 (thanks to Peter Rand)
+  + Add MPW marks to sections of the FAQ. (nobody minds, anyway)
+  + Minor changes
+* 02/29/2000 [Paul Guyot]
+  + Fixed information concerning German OMP & MP100 IIA1 (thanks to Carsten Lemmen)
+  + Ebb Data Systems is now called Modasys IIA4 (thanks to Carsten Lemmen)
+  + Added information concerning Paul's Braham cards IIB1b (thanks to Carsten Lemmen)
+  + Fixed information concerning eMate upgrades IIB1c (thanks to Carsten Lemmen)
+  + ADT has a new address (http://www.ecprc.com/) IIC3 (thanks to Carsten Lemmen)
+  + Added information concerning mailing lists & forums IVA2, IVA4 (thanks to Victor Rehorst)
+  + Added link to the NCK VB1a and NBM VB2b copies at Newton Resources (thanks to Victor Rehorst)
+  + Added information concerning the -10061 bug (more packages & comments) IIIC2a (thanks to Andree Dettmer)
+  + Added question about how to connect to the Internet (or any TCP network) through a Macintosh. VD1c (thanks to Bob O'Shaughnessy)
+  + Added question about how to help developers to fix bugs (basically, where to find BugTrap & TrashPak). VC4
+  + Minor changes
+* 02/08/2000 [Paul Guyot]
+  + Added question IIIB3e about the terminal softwares (thanks to Steve)
+  + Fixed some bad links, although not all: the following haven't been fixed yet (I don't have the time now)
+    x http://members.aol.com/thisolnewt/html/newtongallery.virtualave.net
+    x http://www.cdpubs.com/hhsys/archives/
+    x http://www.roadrunnertracks.com
+    x http://www.geocities.com/Paris/8382/index.html
+    x http://userwww.service.emory.edu/~mdillah/newton.html
+    x http://www.eecs.wsu.edu/~schlimme/newton/index.shtml
+    x http://members.asciinet.or.jp/msx03163/newton.html
+    x http://137.132.159.146/newtonmad/newton/
+    x http://buzz.dope.com/~tim/macintalk.sit
+    x http://www.martnet.com/~dejavu/(thanks to Steve, again)
+  + Fixed some informations about models IIA1 and cards IIB1a (thanks to Carsten Lemmen)
+  + Added Adam Tow's Backlight Plus in the Backlight softwares list IIC6d (thanks to Allen Russel)
+  + Added question IIB2c [c) Which network cards can I use?] written by Victor Rehorst and completed by Harri Hohteri
+  + Fixed some information about Canon cameras IIB9 (thanks to Daniel Padilla)
+  + Added some information about the eMate DRAM update IIB1c (thanks to C.W. Otto Sohn)
+  + Added a link to the NGFUN IVA3
+  + Added a top five questions and all other suggestions/revisions from Sean:
+    x Section IIA1
+    x Section IIC6
+    x Section IIIB2
+    x Section IIID3
+  + Added all information relative to 710031:
+    x IIIA2a
+    x IIIA2c
+    x IIIC2b
+* 01/02/2000 [Paul Guyot]
+  + Fixed some informations about NSBasic softwares
+  + Updated the name of ChARM (it is now called Compiler-Formerly-Known-As-ChARM) (VIIA3c)
+  + Added Joost (Alien) technical corrections about RAM types (IIA3)
+  + Joost (Alien) remarked that the paragraph about combo cards was a little bit too pessimistic (IIB2a)
+  + Added a warning with memory cards for MP120/2.0 and MP130. (IIB1b)
+  + Improved the description of the Newton Models (IIA1b)
+  + Some more comments about the updates (IIIA2)
+  + Fixed a typo (thanks to Peter Edwardsson) (VD2a)
+  + Added a question about synchronization although its content may change in the future (IIIB3d)
+  + Added a link about IR Transfers (IIIB3c)
+  + comp.sys.newton.announce is now announced as moderated (IVA1a)
+  + International newsgroup are no longer called 'English newsgroups' (IVA1a)
+  + Added a remark about the misuse of the maintainers/hosters addresses
+* 11/30/1999 [Paul Guyot]
+  + Fixed the typo in the date of the latest release
+  + Changes now have a link in the HTML version to the changed paragraphs [Suggested by James Pelton]
+  + Updated NPDS URL (VD2e) [Thanks to Camillus Guhl]
+  + Updated some links of previously available softwares on Ben (bct1@thestate.infi.net)'s site Newton Connections to refer now to DNUG, since Ben site no longer host them (VB1a& VB2a) [Thanks to Ben (bct1@thestate.infi.net)]
+  + Added link to NCU on DNUG (VB1d) [Thanks to Ben (bct1@thestate.infi.net)]
+  + Updated the link to Guido Heer German FAQ (IB2) [Thanks to Chris Stephens]
+  + Updated the link to this FAQ on Chris Stephens' Site (IA2) [Thanks to Chris Stephens]
+  + Added a link to SimpleMail in the Cyrillic Fonts section (VF1) [Thanks to Sean Luke]
+  + Added a link to NewtWorks Fix in the NewtonOS bugs section (IIIC2d)
+  + Added a reference to four system updates (OMPs updates, MP120/1.3's 465333 & German MP2100's 747260) (IIIA2a& IIIA2b [Thanks to Joost (jvdg36@hotmail.com)]
+  + Added question IIIA2c: c) What is the numbering system? [From a discussion on comp.sys.newton.programmer in March 1998]
+  + Fixed some problems in some links (IIIA2a)
+* 10/31/1999 [Paul Guyot]
+  + Added changes suggested by Jacek Jadwiszczak
+  + Added numerous suggested [Steve, Bill, Joost, Dennis, ...] changes
+* 09/30/1999 [Paul Guyot]
+  + Updated the link of the FAQ
+  + Fixed some links
+* 09/27/1999 [Paul Guyot]
+  + Added some additional information from Jacek Jadwiszczak's suggestions
+  + Added some more questions (localization, NewtWorks bug, MP3, etc...)
+  + Added clone Newton models
+* 09/22/1999 [Paul Guyot]
+  + Splitted the FAQ
+  + Fixed some HTML bugs
+* 09/21/1999 [Sean Luke]
+  + Small tweaks
+  + Fixed HTML coding practice
+  + Moved the Java question
+  + Added sections on Fonts and Internationalized Software
+  + Added MP100 power issues
+* 09/11/1999 [Paul Guyot]
+  + Formatted Peter's changes.
+  + Fixed some html bugs.
+  + Added some questions (compression bit & other suggestions from Steve).
+* 09/08/1999 [Peter Rand]
+  + Proof read/revised entire Newton FAQ.
+  + Added info on cell phones.
+  + Added numerous new URLs.
+  + Created a NewtonBook of the Newton FAQ.
+* 08/25/1999 [Paul Guyot]
+  + Formatted Steve's changes.
+  + Added some questions.
+* 08/25/1999 [Steve Weyer]
+  + Fixed some mistakes.
+  + Added a few links.
+  + Added some questions.
+* 08/24/1999 [Paul Guyot]
+  + Added some links: Apple Docs, Apple software.
+  + Added IIA5 "Where can I find original manuals?".
+  + Added subquestions a), b)... into the TOC.
+  + Changed all ASCII lists (with *) to HTML lists, now that the perl script can handle them.
+* 08/23/1999 [Paul Guyot]
+  + Added some links. Updated DNUG Newton Version URL.
+  + Released the Perl script to convert to ASCII.
+  + Added VD4 "Is there a Sherlock  equivalent for the Newton?".
+  + Fixed some more typos.
+* 08/22/1999 [Steve Weyer]
+  + Fixed some mistakes.
+* 08/22/1999 [Paul Guyot]
+  + HTML version.
+  + Table of contents.
+  + Added some links.
+* 08/19/1999 [Paul Guyot]
+  + Added new topics from sources (see: other FAQs?).
+* 08/19/1999 [Steve Weyer]
+  + Filled in gaps
+* 08/18/1999 [Paul Guyot]
+  + Original FAQ from scratch

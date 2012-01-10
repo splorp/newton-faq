@@ -1,0 +1,50 @@
+FAQ for the Newton Community
+
+
+This is the September 2001 update. Released on September, 1st
+Newton 1999-2001 FAQ Group: Please don't ask us questions directly, but post them in related groups/forums.
+* Maintainers:
+  + Steve Weyer <weyer@kagi.com>
+  + Peter Rand <rand_peter@hotmail.com>
+  + Sean Luke <seanl@cs.umd.edu>
+  + Paul Guyot <pguyot@kallisys.net>
+* Hosters:
+  + Grant Hutchinson from Splorp <grant@splorp.com>
+  + Rich Lindsay from ThisOldNewt <thisolnewt@aol.com>
+  + Chris Stephens <cstephens@cat2.com>
+  + Victor Rehorst from Newton Resources <chuma@chuma.org>
+  + Mark Rollins (Newton Book compiler) <mark@mrollins.com>
+  + Bill Davis from Info-Newt <newton@ecity.net>
+  + Laura from PlanetNewton <webmaster@planetnewton.com>
+  + Bill Shamam from Guns <bill@guns-media.com>
+  + Anthony V. Jeancola from Newton Resurrection <newton_user@mac.com>
+RESPONSIBILITY: This FAQ is provided "as is" with no warranties expressed or implied.
+---------------------------------------------------------------------------
+
+
+Top five questions
+
+* IIC6a My Newton won't turn on.  What should I do?
+* IIA1e I have a Newton model H1000. What is this?
+* IIIB3 How do I connect the Newton to my Mac/PC?
+* IIB2a Which modem can I use?  Are there drivers for my modem?
+* IIA1f I heard a rumor that Apple is making a new Newton. Is this true?
+
+Table of contents
+
+* PART I: Introduction
+Basis information and links to other FAQs.
+* PART II: Newton Hardware
+The Newton MessagePad family, compatible hardware & hardware problems.
+* PART III: Newton OS
+System versions, use of the NOS & problems
+* PART IV: The Newton Community on the Internet
+Groups & links
+* PART V: Newton Software
+Sources, Apple software, Internet, Fonts & localization software
+* PART VI: Newton Books
+How to find & create books
+* PART VII: Development
+Links to development solutions & documentation for all platforms and languages.
+---------------------------------------------------------------------------
+Change History

@@ -1,0 +1,839 @@
+PART II: Newton Hardware
+
+* A) The Newton MessagePad family
+  + 1) What are the various Newton MessagePad models?
+    x a) The full list
+    x b) Some models were localized
+    x c) The differences
+    x d) Other differences concern the OS and the size of the memory
+    x e) I have a Newton model H1000. What is this?
+    x f) I heard a rumor that Apple is making a new Newton. Is this true?
+    x g) How can I distinguish a MP2000 from an upgraded MP2000?
+    x h) I have a Newton MP2x00 EVT/DVT or a "Newton NotePad". What is it?
+    x i) I have a grey dongle for MP2x00. What's the difference with the black ones?
+    x j) Where can I find information about Newton prototypes?
+  + 2) Where to find Newton MessagePads or accessories?
+  + 3) What is the difference between RAM, DRAM, FlashRAM, ROM, SRAM...?
+  + 4) What are the Newton's sound capabilities?
+  + 5) Where can I find original manuals?
+  + 6) Where can I find service manuals?
+* B) Extending the MessagePad hardware
+  + 1) What kind of memory cards can I use in my Newton?
+    x a) What cards are suitable for the Newton?
+    x b) What sizes and models are suitable for my Newton?
+    x c) Can I increase the Newton's internal DRAM?
+  + 2) Communications: what kind of modem/ethernet card/cell phone can I use?
+    x a) Which modem can I use?
+    x b) Which cell phones can I use?
+    x c) Which network cards can I use?
+  + 3) What kind of keyboard can I use?
+  + 4) Can I speed up the processor?
+  + 5) Can I change the ROM of the Newton?
+  + 6) What kind of batteries can I use?
+  + 7) What kind of AC power adapters should I use?
+  + 8) What kind of printers can I use?
+  + 9) Can I use digital cameras with my Newton?
+  + 10) Can I use a Click/IBM Microdrive/ATA Flash/Compactflash adapter in my Newton?
+  + 11) Are there any third-Party accessories that use the Interconnect port on the 2x00 or eMate?
+  + 12) Can I use an Airport/WaveLan card in my Newton?
+  + 13) What cable do I need to connect to my desktop computer?
+* C) Hardware problems
+  + 1) Why does my MP130/MP2000/eMate whine when the backlight is on?
+  + 2) Why does my MP120/130 whine?
+  + 3) What should I do if I have a hardware problem with my Newton?
+  + 4) Why does my Newton wake up at 3 AM?
+  + 5) How long will the backlight last?
+  + 6) Common hardware problems
+    x a) My Newton won't turn on. What should I do?
+    x b) How can I protect my MessagePad screen?
+    x c) How do I turn on the backlight?
+    x d) What softwares can be used to turn the backlight on?
+    x e) Why does my MP100 turn itself off as soon as I turn it on?
+    x f) The serial port on my MP2000/MP2100 is caved in. What do I do?
+    x g) My MP2000/2100 pen input is all messed up.  What can I do?
+  + 7) How to replace eMate batteries?
+---------------------------------------------------------------------------
+
+
+A) The Newton MessagePad family
+
+
+1) What are the various Newton MessagePad models?
+
+
+a) The full list
+
+You can view most of them all at <http://archive.dstc.edu.au/newton/hardware.html>
+* Apple's Newtons:
+  + Original MessagePad,
+  + MP100,
+  + MP110,
+  + MP120 w/ NOS 1.3,
+  + MP120 w/ NOS 2.0,
+  + MP130,
+  + MP2000,
+  + MP2100,
+  + eMate 300.
+* Clones:
+  + Sharp ExpertPad,
+  + Digital Ocean Tarpon,
+  + Digital Ocean Seahorse,
+  + Motorola Marco,
+  + Harris SuperTech 2000.
+  + Siemens NotePhone, a Telephon/OMP-Clone/Modem combination
+
+b) Localized models
+
+The OMP 1.1, MP100, MP120 & MP130 were available in German. The MP100, MP110 and the MP120/1.3 were available in French. The MP120/2.0-D ROM is in fact the same than the one in the MP130-D (except for the Gestalt answer about the kind of machine).
+(From Carsten Lemmen) The OMP was available as a localized German model with 1.1 ROMs and factory preinstalled update to 1.11. This OMP could be upgraded (ROM replacement) to OS 1.3 (MP100 equivalent) through an Apple upgrade program in 1994.
+AFAIK there was also a Japanese Version of Newton OS, at least the Sharp Expert Pad (OMP clone) was available with Japanese localisation.
+
+c) The differences
+
+Physically, 1xx models are smaller than 2k models, and they can are equipped with only one PCMCIA slot. MP 130s, MP2ks and eMate 300 are equipped with a backlight. The eMate 300 is equipped with a keyboard, and it looks like the iBook, but smaller.
+
+d) Other differences concern the OS and the size of the memory
+
+From: Holger Schmidt, <holger.schmidt@lauterbach.com>, from Pascal B. Kreil site <http://www.pbk-solutions.de>, and MSNUG Newton Gallery <http://www.msu.edu/~luckie/newtgal.htm>.
+
+Hardware informations
++--------+-----+----+-------+------+-----------+-----+----------+---------+
+|        |     |    |       |      |           |     |          |         |
+| Type:  | RAM |ROM |  CPU  | N/OS |   Peri.   | Fax |  Screen  |  Sound  |
+|        |     |    |       |      |           |     |          |         |
++--------+-----+----+-------+------+-----------+-----+----------+---------+
+| OMP    |640K |4MB |ARM 610| 1.0  |one PC Card|send |          | Speaker |
+|        |     |    | 20MHz |(1.05)|one Serial |only | 336x240  | only    |
+|        |     |    |       | 1.1  |IR(ASK)    |     |          |         |
++--------+-----+----+-------+------+-----------+-----+----------+---------+
+| Sharp  |640K |4MB |ARM 610| 1.0  |one PC Card|send | 320x248  | Speaker |
+| Expert |     |    | 20MHz |(1.05)|one Serial |only |          | only    |
+|  Pad   |     |    |       |      |IR(ASK)    |     |          |         |
++--------+-----+----+-------+------+-----------+-----+----------+---------+
+| MP100  |640K |4MB |ARM 610| 1.3  |one PC Card|send |          | Speaker |
+|        |     |    | 20MHz |      |one Serial |only | 336x240  | only    |
+|        |     |    |       |      |IR(ASK)    |     |          |         |
++--------+-----+----+-------+------+-----------+-----+----------+---------+
+|Motorola| 1MB |5MB |ARM 610|1.0.2?|one PC Card|send | 320x240  |         |
+|        |     |    | 20MHz |1.0.3?|one Serial |and  |back-light|   ???   |
+| Marco  |     |    |       |      |IR, modem  |rec  |          |         |
++--------+-----+----+-------+------+-----------+-----+----------+---------+
+| MP110  | 1MB |4MB |ARM 610| 1.3  |one PC Card|send | 320x240  | Speaker |
+|        |     |    | 20MHz |      |one Serial |only |          | only    |
+|        |     |    |       |      |IR(ASK)    |     |          |         |
++--------+-----+----+-------+------+-----------+-----+----------+---------+
+| MP120a | 1MB |8MB |ARM 610| 1.3  |one PC Card|send | 320x240  | Speaker |
+|        |  *  |    | 20MHz |      |one Serial |and  |          | only    |
+|        |     |    |       |      |IR(ASK)    |rec  |          |         |
++--------+-----+----+-------+------+-----------+-----+----------+---------+
+|Digital | 2MB |4MB |ARM 610| 1.3? |one PC Card|send | 320x240  | Speaker |
+| Ocean  |     |upgr| 20MHz | 2.0? |one Serial |and  |back-light| only    |
+| Tarpon |     |    |       |      |IR, Radio  |rec  |          |         |
++--------+-----+----+-------+------+-----------+-----+----------+---------+
+|Digital | 2MB |4MB |ARM 610| 1.3? |one PC Card|send | 320x240  |         |
+| Ocean  |     |upgr| 20MHz | 2.0? |one Serial |and  |back-light|   ???   |
+|SeaHorse|     |    |       |      |IR, Radio  |rec  |          |         |
++--------+-----+----+-------+------+-----------+-----+----------+---------+
+| Harris | 2MB |4MB |ARM 610| 1.3? |one PC Card|send | 320x240  | Speaker |
+| Super  |     |upgr| 20MHz | 2.0? |one Serial |and  |back-light| only    |
+|Tech2000|     |    |       |      |IR, 2xRadio|rec  |          |         |
++--------+-----+----+-------+------+-----------+-----+----------+---------+
+| MP120b | 2MB |8MB |ARM 610| 1.3  |one PC Card|send | 320x240  | Speaker |
+|        |  *  |upgr| 20MHz | 2.0  |one Serial |and  |          | only    |
+|        |     |    |       |      |IR(ASK)    |rec  |          |         |
++--------+-----+----+-------+------+-----------+-----+----------+---------+
+| MP130  |2.5MB|8MB |ARM 610| 2.0  |one PC Card|send | 320x240  | Speaker |
+|        |  *  |upgr| 20MHz |      |one Serial |and  |back-light| only    |
+|        |     |    |       |      |IR(ASK)    |rec  |          |         |
++--------+-----+----+-------+------+-----------+-----+----------+---------+
+| eMate  | 3MB |4MB |ARM 710| 2.1  |one PC Card|send | 480x320  |Speaker, |
+| 300    |     |    | 25MHz |      |one Serial |and  |back-light|headphone|
+|        |     |    |       |      |IR(IrDA)   |rec  | 16 grays | jack    |
++--------+-----+----+-------+------+-----------+-----+----------+---------+
+| MP2000 | 5M* |8MB |Strong | 2.1  |two PC Card|send | 480x320  |Speaker* |
+|        |     |    |  ARM  |      |one Serial |and  |back-light| and     |
+|        |     |    |162MHz |      |IR(IrDA)   |rec  | 16 grays | micro   |
++--------+-----+----+-------+------+-----------+-----+----------+---------+
+| MP2100 | 8MB*|8MB |Strong | 2.1  |two PC Card|send | 480x320  |Speaker* |
+|        |     |    |  ARM  |      |one Serial |and  |back-light| and     |
+|        |     |    |162MHz |      |IR(IrDA)   |rec  | 16 grays | micro   |
++--------+-----+----+-------+------+-----------+-----+----------+---------+
+
+Other informations:
++--------+----+--------+-------+
+| Type:  | lg |Codename|  Rel  |
+|        |    |        |  Date |
++--------+----+--------+-------+
+| OMP    | en |        |8/3/93 |
+|        | de |        | 12/93 |
++--------+----+--------+-------+
+| Sharp  | en |        |       |
+| Expert | de |        |   ?   |
+|   Pad  |    |        |       |
++--------+----+--------+-------+
+|        | de |        |   ?   |
+| MP100  | en |        |  3/94 |
+|        | fr |        |   ?   |
++--------+----+--------+-------+
+| MP110  | en |  Lindy |  3/94 |
+|        | fr |        |   ?   |
++--------+----+--------+-------+
+| MP120  | de |        |10/94 D|
+|  1.3   | en | Gelato |1/95 US|
+|        | fr |        |       |
++--------+----+--------+-------+
+| MP120  | de |        |       |
+|  2.0   | en |    Q   | 11/95 |
++--------+----+--------+-------+
+| MP130  | de |        |       |
+|        | en |  Dante |  3/96 |
++--------+----+--------+-------+
+| eMate  |    |        |  4/97 |
+| 300    | en |        |       |
++--------+----+--------+-------+
+| MP2000 | en |        |  3/97 |
++--------+----+--------+-------+
+| MP2100 | de |        | 11/97 |
+|        | en |        |       |
++--------+----+--------+-------+
+
+
+*[Robert Sexton's Note] The MP2000/MP2100/eMate has a special connector, known as the interconnect port, which contains the line in, line out, and two serial ports.  At the time of this writing, the interconnect port connector is not widely available. The eMate has an interconnect port, a headphone jack and a regular serial/LocalTalk port.
+The MP120 (1MB) memory consists of 639K of DRAM and 385K of FlashRAM. <http://docs.info.apple.com/article.html?orig=til&artnum=17080>
+The MP120 (2MB) memory consists of 687K of DRAM and 1361K of FlashRAM. <http://docs.info.apple.com/article.html?orig=til&artnum=18815>
+The MP130 memory consists of 1,199K of DRAM and 1,361K of FlashRAM. <http://docs.info.apple.com/article.html?orig=til&artnum=19336>
+The eMate memory consists of 2MB FlashRAM and 1MB DRAM. <http://docs.info.apple.com/article.html?orig=til&artnum=20992>
+The MP2000 memory consists of 1MB of DRAM, and 4mb of Flash RAM. The MP2100 memory (and upgraded MP2k) consists of 4MB of DRAM, and 4Mb of Flash RAM.
+
+e) I have a Newton model H1000. What is this?
+
+You have an original Newton MessagePad (OMP), the first model made, or you have an MP100, its immediate successor.
+
+f) I heard a rumor that Apple is making a new Newton. Is this true?
+
+That's very probably just a rumor based on the interest of Apple for Palm devices. BTW, Palm Desktop which is to be found on iBooks is compatible with NCU (the format is like Claris Organizer).
+
+g) How can I distinguish a MP2000 from an upgraded MP2000?
+
+The difference between both is simply the DRAM size. If Apple upgraded the MP2000, there should be a MP2100 sticker near the interconnect port and the serial number. Otherwise, you can simply go to the Memory Info (press the [i] button under Extras) which should tell System RAM installed something close to 4 MB (3984 KB) if you have an upgraded MP, or something close to 1 MB if you have a MP2000.
+
+h) I have a Newton MP2x00/eMate 300 EVT/DVT or a "Newton NotePad". What is it?
+
+EVT and DVT are two levels of prototype in the Newton program.
+The initial prototypes were called "EVT" ("Engineering Verification Test"). After the EVT units were tested for a while, and various changes were made, the DVT ("Development Verification Test") units were created. DVT units were supposed to be closer to the final production devices.
+Initial EVT prototypes were similar to the final MP2K, except instead of the StrongARM processor, they had the ARM710 processor (same as the eMate).
+A second batch of EVT devices ("EVT 2" devices) with StrongARM processors were built.
+A batch of DVT devices was built. Most of the units were configured as the original MP2000. There were a few 4mb DRAM devices built in the DVT run (they therefore are like MP2100s). Besides, some units have a special ROM Board with an additional 8 MB of Flash for Internal memory (bringing the total to 12 MB). There may have been units with Flash instead of ROM and with 16 MB of ROM instead of 8.
+The Newton NotePad were probably DVT units of the original MessagePad. It's not known how they differed from the production OMPs.
+
+i) I have a grey dongle for MP2x00. What's the difference with the black ones?
+
+Brian Parker reported on Usenet:
+I have a very weird gray Newton 2K serial adapter!  It appears to be exactly the same as the normal black ones, except it is beige/gray and has "TAIWAN N 2" instead of China on the bottom. It has the same part number as the black ones.
+Don Vollum answered:
+IIRC, the gray adapters were for the DVT (second batch of prototype) 2000 units (codenamed "N2"). [Editor's note: cf the previous question]
+The EVT units had black adapters, which looked like the production ones. Between the EVT 2 run and the DVT run, they changed one of the pins, hence the need for different adapters.
+I believe that functionally, the gray adapter should be identical to a production unit.
+
+j) Where can I find information about Newton prototypes?
+
+There was several Newton prototypes. Some pictures can be found in Newton Gallery <http://www.msu.edu/~luckie/newtgal.htm>.
+Larger pictures with some text are available at Newton Secrets Secret Newtons: <http://www.a-in-a-circle.com/newton/>.
+Finally, Russ Uzes purchased a Newton Cadillac on eBay and put some pictures there: <http://www.uzes.net/newton>.
+
+2) Where can I find a Newton MessagePad and Newton accessories?
+
+* eBay <http://www.ebay.com/> on the Internet.
+* comp.sys.newton.marketplace.
+* Tima Scientific <Tima Scientific>
+* Small Dog Electronics <Small Dog Electronics> (use the search box)
+* Battery Tech: <http://bti.batterytech.com/catalog_model.asp?id=16> for Apple Battery Pack
+Additionally, you can buy parts directly from Sun Remarketing <http://www2.sunrem.com/sun02.w?grp=Newtons> or Apple themselves. To buy parts to Apple, you need first to get the part numbers (available on Sun Remarketing Website).
+[This is a direct quote from csnm. Unfortunately, I lost the original message. If anyone can remind me who was the author of this contribution, I'll add necessary credits]
+Call the Apple Fulfillment Center at 1-888-273-3594. This is the department within Apple that someone was once transferred to in a previous message. There is no guarantee that you will experience the same level of success using it. Don't call Apple support at (800) SOS-APPL as you may waste many hours of your life in this endeavour.
+Tell them you would like to order a replacement part and that you have all the info already (ie. part number, case number-if necessary). Since you didn't call Apple SOS to get a case number try to stay away from this subject. I was also prepared to lie and say that my Newton was still under warrenty. That part number for the Newton replacement Flip Top is #922-3306.  Cost?  Around $10 USD [Myron reported the price is now 43 USD as of June, 21st, 2001]. Remember it, learn it, love it.
+Have a credit card ready and provide them with shipping information and credit card number. Shipping cost you ask? Roughly $5 USD for ground shipping (US + Canada) taking 10-12 days or $20 (USD) for Fed Ex shipping (1-2 days I think).
+[Additional comment by PG] If you chose FedEx and they failed to deliver the parts in time, they'll charge you the regular price, $5.50
+Thanks the person on the phone for solving your door issues then quietly hang up as you have escaped the long waiting, frustrating conversations and general annoying details of talking to Apple about the Newton.
+Wait. Door should arrive (hopefully) soon after allotted shipping time. Open arrived package, attach new door, chill and serve. Voila!
+[Newer report by Christopher Dean (07/05/2001)]
+Dongles are still available through Apple. It is listed in their "service" catalogue and are available from your Apple reseller.
+The cost is $38 Australian (US$ 19).
+[Parts numbers]
+The prices are approximate and may have changed since we received the information. Please keep in mind that we don't know which parts are actually available. Most of the items are from Carsten Lemmen. However, I thought that 922-2940 was the eMate Display Housing, not the Display Bezel (which I thought to be 922-2939)
+* eMate parts
+  + Backlight, Electroluminescent (EL)      922-2681
+  + Battery, NiMH                           922-2938
+  + Bezel, eMate Display                    922-2940
+  + Card, ROM, eMate                        661-1195
+  + Case, Bottom Assembly                   922-2941
+  + Case, Top (includes Logic Board)        661-1194
+  + Cover, Top, eMate Display               922-2939
+  + Door, Battery, ROM, RAM Access          922-2674
+  + Feet, Rubber, Pkg. of 4                 922-2679
+  + Handle, Rubber Cushion                  922-2678
+  + Holder, Name Card                       922-2676
+  + Keyboard, eMate                         922-2398
+  + Key, Dummy, Keyboard, eMate 300         076-0636
+  + Latch Kit                               076-0633
+  + LCD Assembly, eMate                     661-1193
+  + Lens, I/R                               922-2677
+  + Plug, Screw, Bezel, Pkg. of 4           922-2680
+  + Plugs, Ink Well, Right and Left, Kit    076-0634
+  + Plugs, Screw, Bottom Case, Kit          076-0635
+  + Screw Kit                               076-0637
+  + Sleeve, Battery                         922-2675
+  + Stylus (eMate Pen)                      922-2682
+* MP2x00 Parts
+  + Battery Pack, Rechargeable, NiMh        922-2968 32.50 USD (or 34 USD?)
+  + Battery Tray							922-3307 10 USD
+  + Cable, Adapter, MessagePad2000 to DIN-9 922-2971
+  + Case, Carrying, MessagePad 2000         922-2976
+  + Case, Carrying, Nylon, MessagePad 2000  922-2972
+  + Stylus, MessagePad 2000, Pkg. of 5      922-2969  43 USD (21/06/2001) (maybe it's the price for a single stylus)
+  + Flip Top								922-3306* 43 USD (21/06/2001)
+  + Serial Adapter (dongle?)				590-0756A 11 USD
+* MP110/120/130 Parts:
+  + 2.0 ROM Card, French (not for MP110)    F661-1054
+  + 2.0 ROM Card, German (not for MP110)    D661-1054
+  + Back Cover Assembly                     076-0526
+  + Battery Pack, Rechargable               661-1105
+  + Battery Cover  (Pkg. of 5)              922-0755
+  + Battery Recharger                       922-0753
+  + Case, LC, Leather                       922-0761
+  + Case, Leather                           922-0896
+  + Cover, Battery, Lithium (Pkg. of 5)     076-0491*
+  + Lithium Battery Cover,MP110 (Pkg. of 5) 922-0756
+  + Cover, Battery (Pkg. of 5)              922-1285
+  + Cover, Top, Hinged (Pkg. of 5)          076-0492*
+  + Foot, Rubber (Pkg. of 50)               922-1375
+  + I/O Cover                               922-1686*
+  + I/R Cover                               922-1687*
+  + On/Off Knob                             922-1688*
+  + Rubber Foot, MP110 (Pkg. of 50)         922-0757
+  + Stylus (Pkg. of 5)                      922-0754
+  + Stylus, Recharger Cradle                922-0759
+* OMP/MP100 Parts:
+  + Battery Cover, Plastic (Pkg. of 5)      922-2037
+  + Battery Holder, 4AAA (Pkg. of 10)       922-2038
+  + Battery Pack, Nicad                     661-1693
+  + Battery Recharger                       922-0562
+  + Case, Carrying, Leather                 922-0563
+  + Case, Carrying, Sport                   922-0569
+  + Cover, Connector Rubber (Pkg. of 20)    922-2039
+  + Cover, Slip, Vinyl (Pkg. of 5)          922-2040
+  + Stylus, MessagePad (Pkg. of 10)         922-2036
+* Parts for all Newton Products:
+  + Adapter Plug, Australia                 922-2975
+  + Adapter Plug, Europe                    922-2974
+  + Adapter Plug, UK                        922-2973
+  + Adapter, Power, Newton, 9 Watt          922-2951
+  + Cable, Macintosh Connect                922-0564
+  + Cable, PC Connect                       922-0565
+  + Battery Booster Pack                    922-0570
+  + Cable, Print Pack                       922-2035
+  + Case, Modem, Pkg. of 10                 922-0714
+  + Flash Memory Card 2MB                   661-1695
+  + Keyboard Slipcover                      922-1493
+  + Keyboard                                661-0963
+  + Keyboard, British                       B661-0963
+  + Keyboard, French                        F661-0963
+  + Keyboard, German                        D661-0963
+  + Keyboard, Swedish                       S661-0963
+  + Modem Card Assembly, PCMCIA             661-1745
+  + Modem, Data/Fax, 2400 Baud, External    661-1692
+  + Power Adapter, In-Line  (old model)     922-0560
+  + Power Adapter,Right Angle,Australia     X922-0561
+  + Power Adapter,Right Angle,Great Britain B922-0561
+  + Power Adapter, Right Angle, Int'l       Z922-0561*: I'm not sure, which Newton this part belongs to
+
+3) What is the difference between RAM, DRAM, FlashRAM, ROM, SRAM...?
+
+RAM stands for Random Access Memory. It is the designation for memory that can be both written to and read. ROM stands for Read Only Memory. ROM cannot be written to. It is used in the Newton for the Operating System. Hence you cannot delete it.
+SRAM stands for Static RAM. An SRAM cell consists of a small semiconductor circuit (a flipflop), that holds one bit of information. As long as power is supplied to this flipflop, it will retain its current state (unless changed intentionally, of course), hence the back-up batteries in SRAM cards.
+DRAM is for Dynamic RAM. A DRAM cell is constructed to be a tiny capacitor. It is much cheaper to manufacture, and can be much smaller. However, the capacitor will slowly lose it's charge, hence the need to refreah it regularly. Also, the needed time to (un)load the capacitor in order to store a bit of information is significantly longer than the time needed to (re)set a flipflop.
+FlashRAM is based on EEPROM technology. It's a kind of memory that does not lose its contents when power is no longer supplied. It is used for storage on the Newton.
+
+4) What are the Newton's sound capabilities?
+
+To record sounds, remember that you'll need a microphone which can only be found on 2.1 devices.
+Software which allows you to record and playback sounds:
+* The Newton's built-in recording stationary (MP 2k only)
+* VoiceNotes (by Modasys) dramatically improves the Newton's recording quality, and uses memory much more efficiently than the built-in recording stationary, thereby turning the Newton into a useful digital recorder. <http://www.modasys.de>
+* The freeware program ModPlayer by  Roger Milne lets you play MOD files directly on your Newton. <http://www.geocities.com/SiliconValley/Code/5100/>
+* Eckhart Köppen ported MAD, an MP3 player <http://40hz.org/MADNewton/>
+* There are also various sound packages available. Search UNNA <http://www.unna.org/unna/sounds/> for sounds such as:
+  + StarWars/Babylon 5/StarTrek/Simpsons
+  + Shane Hill sounds: <http://members.tripod.com/SDHEngSoft/>
+  + The freeware program VoiceAlarm by Serg Koren lets you record sounds which can be used as alarm sounds on the Newton. <http://www.VisualNewt.com/>
+  + Make-your-own audio adaptor (Dave Miller). This site provides advice how to make a headphone jack for your Newton: <http://www.eskimo.com/~millerd/nicadapter/index.html>
+
+5) Where can I find original manuals?
+
+The manuals can be found on Apple's FTP, Rochester FTP and UNNA
+* <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/>
+* <ftp://ftp.cif.rochester.edu/pub/newton/FAQ_and_documentation/apple_manuals/>
+* <http://www.unna.org/unna/apple/documentation/>
+* 1.x devices Manuals (including 1.x to 2.0 upgrade related manuals)
+  + Newton System Update 1.3 for the MessagePad 100 and MessagePad 110 <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0307279AMP100110UD1.3.PDF>
+  + Upgrading Your MessagePad 120 for the Macintosh Operating System <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0307841ANMP120UPG.PDF>
+  + New Features of the Newton 2.0 Operating System <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0307843ANOS2FTURS.PDF>
+  + Transferring Information from an Earlier Model Newton Personal Digital Assistant (PDA) (moving data from a 1.x device to a 2.0 device) <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0308274NewtonTransferInst.pdf>
+* MP120 2.0 and 130 Manuals
+  + Apple MessagePad Handbook(Big manual for the MP130, suitable for the MP120 except for backlight which the MP120 doesn't have)<ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0307258ANEWTONMP.PDF> or <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0308951ANAPLMPHNDBK.PDF>
+  + Late-Breaking Information (addenda to the Newton Handbook) <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0308508AILATEBKGINFO.PDF>
+  + Important Information for the MP120/2.0(Before you use your Apple MessagePad 120 with the Newton 2.0 operating system, it is important that you make a backup copy of the pre-installed software packages.)<ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0307519AIMPINFO.PDF>
+* eMate 300 Manuals
+  + eMate Manual <http://www.unna.org/unna/apple/documentation/eMate/eMateUserManual.pdf>
+  + eMate 300 Getting Started Guide <http://www.unna.org/unna/apple/documentation/eMate/eMateGettingStarted.pdf>
+  + eMate Classroom Exchange <http://www.unna.org/unna/apple/documentation/eMate/ClassroomExchangeManual.pdf> or <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0073557ACLASSRMXCHG.PDF>
+  + Important Information About Your eMate 300(Review the information to find out about making backup copies of your information and using StyleWriter printers.)<ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0300534AEM300BUERRV.PDF> or <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0305126AEM300II.PDF> or <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0330534AEM300II.PDF>
+  + Rechargeable battery for the eMate 300 <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0330414ARBEMATE300.PDF>
+  + eMate 300 Teacher's Guide <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0340024ANCNCTOPWRPLG.PDF> or <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0340273AEMATE300TG.PDF> or <http://www.unna.org/unna/apple/documentation/eMate/eMateTeachersGuide.pdf>
+  + Using the eMate Connectivity CD <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0340063AEMCNCTCDUM.PDF>
+* MP2x00 Manuals
+  + Important Information About Your MessagePad 2000(Review the information to find out about making backup copies of your information and using NewtWorks, PC Card modems and printing.)<ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0306222AMP2000AD.PDF> or <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0330504AMSGPAD2000UD.PDF>
+  + MessagePad 2000 Getting Started Guide <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0306224AMP2000GS.PDF>
+  + MessagePad 2000 User's Manual <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0306251AMP2000UM.PDF>
+  + Using E-Mail on Your MessagePad 2000 <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0340196AMP2000EMAIL.PDF>
+  + Upgrading Your MessagePad 2000 (Important information before sending the MP2000 to Apple)(Note: Apple no longer upgrades MP2000s, see question IIB1c)<ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/Z0330679AUPGMP2000.PDF>
+* Apple software Manuals
+  + Newton Backup Utility User's Guide
+    x For the Macintosh Operating System <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0080027ANEWTBACKUG.PDF>
+    x For Windows <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0300028ANEWTUGWOS.PDF>
+  + Newton Conneciton Utilities User's Manual
+    x For the Macintosh Operating System <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0307273ANCNCTMOSUM.PDF>
+    x For Windows <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0307288ANCNCTWINUM.PDF>
+  + Newton Press User's Guide
+    x For the Macintosh Operating System <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0307735ANPMOSUG.PDF>
+    x For Windows <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0307736NewtonPressWin.pdf>
+  + Newton Internet Enabler User's Manual
+    x NIE 1.x <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0340011ANIEUM.PDF>
+    x NIE 2.0 <http://www.unna.org/unna/apple/documentation/ematedoc/NIE20USE.PDF>
+  + Newton Connection 2.0 Update <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0305272ANCNCT2UD.PDF>
+  + Newton Connection Kit for Windows UserÕs Guide <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0305277ANCNCTKITWINUG.PDF>
+  + NewtonWorks Manuals
+    x NewtonWorks Word Processor UserÕs Manual <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0306284ANWWPUM.PDF>
+    x Newton Works Graphing Calculator UserÕs Manual <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0340062ANWGRAFCALCUM.PDF>
+    x See also questions VB4b and VB4d
+* Apple additional hardware Manuals
+  + Using the Newton Print Pack <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0330870ANWTNPRPK.PDF> or <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0330941APRTPKFCC.PDF>
+  + Connecting Power Plugs <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0340024ANCNCTOPWRPLG.PDF>
+  + Newton 9W Power Adapter (English, French, German, Japanese) <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/ZM0305334AN9WPWRADPT.PDF> or <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/ZM5334ANWTN9WPWRADP.PDF>
+  + Newton Rechargeable Battery Pack (English, French, German, Japanese) <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/ZM0309847ANRCHGBTRYPK.PDF> or <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/ZM9847ANWTRECHBATPAK.PDF>
+* Misc manuals
+  + Important Late-Breaking Information(If you have a MessagePad, MessagePad 100, or MessagePad 110 device and want to transfer information from the Name File, Notepad, and Date Book, applications, and application data to your MessagePad 120, please follow these instructions.)<ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0307176ANMPLATEBKG.PDF>
+  + Connecting a Newton PDA to your Macintosh <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0307372ACNCTNPDAMAC.PDF>
+  + About Cables <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0308266ANCBLS.PDF>
+  + Using E-Mail on Your Newton Device <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0340315ANEMUM.PDF>
+  + Important Information (about GSM and TDK Modem) <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/ZMP2000AD.PDF>
+  + FREE Newton Backup Utility (how to get a free copy of NBU)(Note: you can no longer get this free copy)<ftp://ftp.cif.rochester.edu/pub/newton/FAQ_and_documentation/apple_manuals/0308582AFREENBUUTIL.PDF>
+* Newton Enhancement Pack and Third Party software Documentation(The Newton Enhancement Pack is a 2 MB Flash card which came with third party software)
+  + Getting Started With Your Newton Enhancement Pack <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0307500ANENHPKGS.PDF>
+  + Newton Utilities User's Manual <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/NewtonUtilitiesUM.pdf>
+  + Welcome to Newton! Installing Your Newton Software (manual to install software and Expense Plus in particular - apparently a manual for Apple Employees) <ftp://ftp.cif.rochester.edu/pub/newton/FAQ_and_documentation/apple_manuals/0306817ANSWII.PDF>
+
+6) Where can I find service manuals?
+
+Service manuals are like ghosts on Apple's FTP. They appear and disappear periodically. However, the Newton service manuals are not really exciting.
+
+sp stands for specifications, ba for basics. emate.up.pdf explains how to do the eMate upgrade. Manuals with no extension includes these plus a worthless section called troubleshooting, and exploded view (MP 1xx), which is worthless, too. eMate manual also includes a section about the diagnostic (to be used with a special card from Apple). Here is the URL: <ftphqx.info.apple.com/Apple_Support_Area/Misc/Service/servicemanuals/>
+* emate.ba.pdf (343 Ko)
+* emate.pdf (2913 Ko)
+* emate.sp.pdf (105 Ko)
+* emate.up.pdf (251 Ko)
+* messagepad.ba.pdf (79 Ko)
+* messagepad.sp.pdf (109 Ko)
+* messagepad_100.110.120.130.pdf (209 Ko)
+* messagepad2100.ba.pdf (95 Ko)
+* messagepad2100.sp.pdf (92 Ko)
+* messagepad_2000.2100.pdf (221 Ko)
+In case they disapear again, there is a mirror at: <http://www.traffictrak.com/ServiceManuals/>. Apparently, there isn't all manuals there.
+Victor Rehorst made a mirror which is available at: <http://guelph.unna.org/mirrors/>
+---------------------------------------------------------------------------
+
+
+B) Extending MessagePad hardware
+
+
+1) What kind of memory cards can I use in my Newton?
+
+
+a) What cards are suitable for the Newton?
+
+You can use SRAM cards or FlashRAM cards. SRAM cards are more expensive than FlashRAM cards, and they need an internal battery.
+There are several kinds of flash memory cards available today. There are ATA flash cards, compact flash cards, SmartMedia flash cards and linear flash cards. Linear, ATA and compact cards are the same size, but only linear (or regular) cards can be used in Newton Message Pads, and not all. (see next question).
+
+b) What sizes and models are suitable for my Newton?
+
+There are several common kinds of linear cards, depending on the chip used in it.
+
+Memory Card compatibility
+
++--------+--------+--------+--------+--------+
+|        |  All   |  All   |        |        |
+| Model  |  1.x   |  2.0   | MP2x00 | eMate  |
+|        | models | models |        |   300  |
++--------+--------+--------+--------+--------+
+|        |        |        |        |        |
+| SRAM   |  Yes   |  Yes   |  Yes   |  Yes   |
+|        |        |        |        |        |
++--------+--------+--------+--------+--------+
+|AMD D/AD|        |        |        |        |
+|        |   No   |  Yes   |  Yes   |  Yes   |
+| 5v/5v  |        |        |        |        |
++--------+--------+--------+--------+--------+
+|Intel II|        |        |        |  Read  |
+|        |  Yes   |  Yes   |  Yes   |  Only  |
+| 5v/12v |        |        |        |        |
++--------+--------+--------+--------+--------+
+| Intel  |        |        |        |        |
+|  II+   |   ?    |  Yes   |  Yes   |  Yes   |
+| 5v/5v  |        |        |        |        |
++--------+--------+--------+--------+--------+
+| Intel  |        |        |        |        |
+| VS 100 |   No   |   No   |  Yes   |  Yes   |
+| 5v/5v  |        |        |        |        |
++--------+--------+--------+--------+--------+
+| Intel  |        |        |        |        |
+| VS 200 |   No   |   No   |   No   |   No   |
+| 5v/5v  |        |        |        |        |
++--------+--------+--------+--------+--------+
+VS: Value Series
+
+Please note that I compiled this table from various sources.
+SRAM cards are said to only work if they are 4 MB or smaller.
+It is believed that you need Newton OS 2.x to use flash cards bigger than 4 MB, however it appears to be wrong at least with the Intel Series II+ in a MP100: Harri Hohteri <harri.hohteri@cs.helsinki.fi> succeeded in using such a card in his MP2100, his MP130 and his MP100.
+It is believed that Series II+ only work in 2.x models, but Harri Hohteri's 40 MB card works in his MP100.
+The maximum size limit has been said to be 4 MB, 32 MB, or any other value. Apparently, there is no size limit but the linear cards limit (64 MB), however nobody reported to have been able (or unable) to use a 64 MB card. If you do, please contact us.
+Intel and AMD are technologies and most of the time suppliers of the chips, not brands. Therefore Intel cards can be sold under different brand names (Apple for example ;-). You can identify them by their part number:
+nn is the memory capacity in MB
+* Series II: iMC0nnFLSA
+* Series II+: iMC0nnFLSP
+* VS 100: iMC0nnFLSC
+The best source about Flash Cards is Carsten Lemmen's website. His page about memory cards is available in English <http://www.mac3.de/sig/newton/memory_cards.html> and in German: <http://www.mac3.de/sig/newton/Speicherkarten.html>
+
+c) Can I increase internal DRAM memory?
+
+You can increase the DRAM memory of the MP2000 by doing the MP2100 upgrade. Apple no longer do it. Some companies sell the kit or do the upgrade such as PixSolution <http://www.pixsolution.com/> & Digital Dave <http://www.kc.net/~drnewton>
+You can expand both the DRAM and the Flash on eMate 300 to what the MP2100 has, by installing a NewerRAM <http://www.newerram.com/> or another memory module.
+[From Otto Sohn:] To my knowledge there is not a single manufacturer who still produces/stocks these cards. The only chance seems to be getting one on eBay. There have been rumors, though, that one of the manufacturers (I forgot which one - Lifetime ? Peripheral Enhancements ?) was possibly considering producing another batch if someone would buy their production of these cards wholesale. It was rumored to be 25+ cards minimum. I don't know if that is true.
+Related information on eMate upgrades is also available at:
+* "Apple eMate 300: Memory Upgrade Discussion" <http://docs.info.apple.com/article.html?orig=til&artnum=30408> where the following is said:
+
+"When internal DRAM memory is installed, the total amount of DRAM available will equal that on the expansion card. However, when internal flash memory is installed, the storage memory area equals the amount of original internal flash memory plus that on the internal expansion card.
+
+For example, an expansion card with 4 MB of DRAM and 2 MB of flash memory would result in a configuration of 4 MB of DRAM and 4 MB of flash memory."
+* <http://www.lifetimememory.com/Pages/LMPnpemate2.html> where this additional information is supplied:
+
+"An additional benefit is that with the expanded DRAM, the eMate will reconfigure its data path for processed data from 16 to 32 bit, greatly increasing responsiveness."
+Instructions for a do-it-yourself upgrade can be found on Abe Lee's site at: <http://user.chollian.net/~cehz/frame2.htm>
+
+2) Communications: what kind of modem/ethernet card/cell phone can I use?
+
+
+a) Which modem can I use? How do I make a modem script?
+
+Any compatible external modem should work properly.
+[From Helmut Fischer]: To connect MP and external modem, use a standard Apple Macintosh modem cable. Works on all MPs I have tried (120, 130, 2100).
+For internal modems, there is a complete list maintained by Len Lutz <lenlutz@dca.net> at: <http://www.dca.net/cgi-bin/cgiwrap/lenlutz/newton.cgi>
+DNUG maintains a list of drivers and scripts: <http://www.dnug.dk/info/modems.html>
+To make a modem script, you can use the sample code provided by Apple, Modem Setup (latest version is 2), which you can find on UNNA.
+Combo cards don't work without a specific driver. Some have one, but most don't. In the best case you can use the modem part of the card. If the Newton says "A communications card has been inserted" when you insert a combo card, it means that the modem part has been recognized and might work.
+
+b) Which cell phones can I use?
+
+Here's a summary of cell phone compatibility for the Newton. Information on modems and drivers are further below. Thanks to all the individual contributors who provided info about their cell phones.
+* Motorolla 'Micro TAC Alpha'
+*From: <cn1407@coastalnet.com> (David Rouse)*
+I've had excellent results with a Motorolla 'Micro TAC Alpha' (flip phone, on the larger side) and a CELLect 14.4 PCMCIA modem card (which has a neat geeky manual, it even covers UUCP). Both products are, I believe, as discontinued as the Newton itself.
+* Ericsson T18s
+*From: <pho@berlin.snafu.de> (Peter Hofmann)*Hi, i use with my 2100 a Option 56k GSM ready Card and Ericsson T18s Cell Phone. My Ericsson SH888 also was a good deal (pity you can use the built-in modem)
+* Motorola Startac
+*From: <HOCH.LEONG@worldnet.att.net> (D. Hochberg/J. Leong)*
+I've got a motorola startac with an ositech 5 of diamonds modem. no problems.
+* Motorola DPC650
+*From: <fleishman@lawyer.com> (Dave Fleishman)*
+I have had some success with a Motorola DPC650, a MOT-1 cable from Megahertz and a Megahertz XJ4288 modem.  Dials great, connects great, but the cellular connection is slow, and unless I'm near a cell tower, it can drop in the middle of the transfer.  I used both the 14.4 and higher setting, and the CruiseCard 28.8 setting with success.  I have also had success with a Motorola "black box" with just about all PC card modems I have used.  Let me know if you need the part number for it, because I keep it in my car.
+* Motorola 6200, 8200, 8400, 8700, 8900
+*From: <falzoni@jetai.unipv.it>*
+I'm using the CEllect 1+ card and a Newton 130 with a driver I found in a free data-base a year ago. (sorry, I don't remember the URL) I put up a page with those informations here: <http://jetai.unipv.it/falzoni/cellect.html> Feel free to copy any information/driver from this page. I don't know if the driver works with other models of Newton/cellect. I only tested these phones: motorola 6200, 8200, 8400, 8700, 8900 and flare. 100% ok with my CELLect 1+ card and MP 130.
+* Nokia 2110 & 2110(i)
+*From: <orjan@sm4tfe.com> (Orjan J Larsson)*
+Nokia 2110 and 2110i with an Nokia DTP-2 PC Card works like a charm with an Newton too.
+Also Options 33.6K PC Card modem with "GSM ready" logo onto them, with GSM cable for Siemens S4, works with Option drivers from www.novamedia.de. Both as a standard 33.6K modem, as an cellular. Haven't tried anything else than an S4, but presume that , as you just change cable, it would work with any cellular that Option has an cable for. Both data and fax, in both cases, I might add.
+
+* Nokia 6110
+*From: <roman@pixell.net> (Roman Pixell)*
+I'm using the mp2000 today with a nokia 6110 and an option modem card. i rewrote the script, and it works ok i guess.
+* Nokia 8110
+*From: <kenneth.wong@theactiveidea.com> (Kenneth Wong)*
+I'm using the Nokia Cellular Data Card DTP-2v2 with my Nokia 8110.
+
+* Nokia 880, 2110(i), 3110, 3810, 5000, 8110(i), 8146, 8148i - and clones like Technophone, some Philips models.
+*From: <harri.hohteri@hvk.inet.fi> (Harri)*
+Nokia 880, 2110(i), 3110, 3810, 5000, 8110(i), 8146, 8148i models works with DTP-2 ver.II Nokia Cellular Data Card and Nokia GSM ISDN driver. Nokia 880, 2110(i), 5000 (this might be Mobira Cityman not Nokia) and 2110 -clones like Technophone, some Philips-models work with DTP-2 Nokia Cellular Data Card and Nokia GSM Auto driver. These might work (and probably will) with each others drivers. The Nokia 6150 can be connected with TDK, option and some other 3rd party PC Card. These cards support several other brands and models. The Motorola 8700 - All Motorola phones which support Cellect PC Card are supported by gsm-motorola driver. Some future and currently available phones which has built-in modem should be compatible. These phone are Nokia 7110, Siemens S25, Bosch 909. None of the phones above can use IrDA to communicate because of the un-complete IrDA support on Newtons. Obviously some Ericsson models are supported because there's such thing as gsm-ericsson driver available. I have no idea which phones.
+* Sagem RD435 Helmut Fischer has been able to connect his Newton to this phone using an Apple Modem cable (MinitDIN8 <-> DB9) and connecting the DB9 part to a standard phone - PC cable. He reports: I had to modify the Apple cable slightly (remove the connection between RxD+ and GND).
+* Siemens S25.
+*From: Olaf 'Holger' Bohlen*
+Today I connected my MP130 to my S25 GSM phone with a normal PC Data-Cable from Siemens and a Macintosh to PC Modem Adapter Cable. My configuration for the modem is: "Hayes compatible", "serial" and "no waiting for dialtone". And it works great. I was able to fax, to mail and to phone :)
+* Merlin Wireless Modem.
+Mark Rollins put all information on a web page: <http://www.mrollins.com/newtmerlin.html>
+* Motorola TimePort P280
+*From: <eschneck@mindspring.com> (Eric Schneck)*
+I got the Motorola TimePort P280 working (in analog mode) with my 2100. I need to do a manual dial-up because otherwise it hangs at the login prompt.
+
+c) Which network cards can I use?
+
+(From Victor Rehorst, <chuma@chuma.org>)
+For the 120/2.0 and 130, only one network card is known to work. (From NewtonTalk) <DonS@PineLakeMed.com> (Donald T. Stewart) writes:I purchased the Roamer (a PC card wireless networking device) and a DynaCOMM Network Access Point from e-bay a couple of months ago, but just today tried to get them working.  I have no trouble using a 2.0 MP120 with them, and seem to ba able to access my home Apple Talk network wirelessly.
+This card is seemingly incompatible with OS 2.1.
+Newtons running OS 2.1 and NIE 2.0 can use ethernet cards from certain manufacturers, with the proper drivers.  The following is an almost exhaustive list:
+* Farallon PN895 EtherWave
+* 3Com 3c589, 3C589B (according to Harri Hohteri), 3c589C, 3c589D (including -TP), 3CXE589DT, 3CXE589ET
+* Proxim RangeLAN2 wireless Ethernet *note* this card is not compatible with AirPort or any other 802.11-based technology
+* AmbiCom AMB8010 PowerSaver
+* TDK Combo cards: DFL5610, DFL3410, DFL3200, DFL9610
+* TDK Ethernet cards: LAK-CD021, LAK-CD021AX, LAK-CD021BX
+* D-Link DE-650, DE-660 (can be found at zones.com for US$43.99 plus shipping) [Thanks to Kent Wong] DE-660+
+* Fujitsu FMV-J182, FMV-J182A
+* RATOC REX-R280
+* Contec C-NET(PC)C
+* MELCO LPC2-T
+* Longshine LCS-8534TB
+* Correga EtherII PCC-T
+All of the above drivers are available from Newton Resources: <http://www.chuma.org/newton/ethernet/>
+Note: This applies to TCP/IP. Cf question VB1e"How can I connect to the Newton using Ethernet with NCU/NPI/NBU?" for these software.
+
+3) What kind of keyboard can I use?
+
+The eMate has a keyboard built-in. No other Newtons do.
+Apple Computer made a special optional keyboard which can be plugged into the MP2k's serial port - no other keyboard can be used.
+You can also use a keyboard with MP120 w/ NOS 2.0 & MP130.
+There are hacks (software and/or hardware) which allows one to use this keyboard with earlier Newtons as well.
+* Newtkey is a keyboard driver for NOS 1.x devices. <http://www.contrib.andrew.cmu.edu/usr/gf2e/newtkey/>.
+Information (but no solution) for using Palm Stowaway keyboards can be found at <Grant Hutchinson's site>.
+
+4) Can I speed up the processor?
+
+Yes, PixSolution <http://www.pixsolution.com/english.html> or <http://www.pixsolution.com/> offers kits to speed up the MP2ks and MP130s. They can install it.
+(From Harri Hohteri <harri.hohteri@hvk.inet.fi>) For DIY (stands for do-it-yourself) guys there's an article about accelerating MP120 by Lewin A.R.W. Edwards:<http://www.larwe.com/technical/accel_mp120.html>
+Stephanie Macks wrote two pages for homebrew MP2x00 (<http://www.felesmagus.com/newton/2100fast.html>) and eMate (<http://www.felesmagus.com/newton/ematefast.html>) speed up.
+
+5) Can I change the ROM of the Newton?
+
+Theoretically, the ROM of Newton MP 120 can be changed from Newton OS 1.3 to Newton OS 2.0. But you've got to find a ROM chip to do this. Other ROM chips on OMP and MP110 are soldered to the motherboard.
+Interestingly, the ROM in an OS 2.1 device (MP2x00, eMate) is installed on a card, with room for four more ROM chips...
+
+6) What kind of batteries can I use?
+
+You can use alkaline batteries, rechargeable batteries (NiCD, NiMH, ...) or the Apple battery pack. The MP120 & the MP130 can recharge them (with a little piece of paper to press the button under the batteries).
+Please note that recharging NiMH batteries in MP1x0s can damage the Newton. Cf: <http://www.newtontalk.net/archive/newtontalk.2002-02/2503.html>.
+Only the Apple battery pack can be recharged inside the MP2k. For all other batteries you will need a separate battery charger, or to modify the battery holder as described by Nick Müller: <http://www.logictools.de/newton/akku_mod/akku2k.html>.
+
+7) What kind of AC power adapters should I use?
+
+The best advice is to use a Newton-branded adapter. Any Newton adapter will work with any Newton. There are two adapters, the original adapter (shipped with MP1x0s) and the 9W adapter (officially for MP2x00 and eMates). Both work in every Newton but the 9W adapter charges batteries faster than the original adapter (except in the MP100).
+Apple published a tech note about that: <http://docs.info.apple.com/article.html?orig=til&artnum=21114>
+Too many Newtons have had their power supplies fried using third party adaptors. However, if you want to try at your own risk, please note that, on MP2k, adapters should have the following characteristics:
+(-)==( *-(+), 5V DC, 400 mA [This one works, even to recharge batteries, in both a MP2x00 and a MP120]
+This diagram means that the plus is inside and the minus is outside. I'm not an ASCII artist, but this looks a little bit like the diagram on both the original adapter and this adapter
+Helmut Fischer reported: On my original 9W power adapter (MP2100) it says 7.5V 1.2A. It also works with the MP130.
+With his MP120 & MP130, Jacek Jadwiszczak uses a 7V, 3W. Also: 6V works (but no charging batteries) and 7.5V works just fine, always at least 3W are needed. Please note that he hadn't give me the polarity yet, and in all cases, nusing a third party adapter could fry your Newton
+Carl Schultz reports:
+I have been using a Radio Shack AC adapter for almost a year now. It is the 3-12 volt adjustable model. The new model # is 273-1680 ($34.99 list) and is rated at 1000mA. Mine is the older 800mA model but otherwise is the same. The adapter came with several different plug ends, none of which was correct for my MP2000. I had to buy another one, which I don't have the part number for, but it has a yellow end if that helps (they are all color coded). This end may now be included with the adapter, since the Radio Shack description states that 4 of the included ends are "new". Make sure that you install the connector in the "tip positive" configuration. I've been using mine daily at work with no problems.
+Michael Vacik reports that the RadioShack plug adapter to use is the Adaptaplug C: <http://www.radioshack.com/product.asp?cookie%5Ftest=1&catalog%5Fname=CTLG&category%5Fname=CTLG%5F004%5F001%5F003%5F000&product%5Fid=273%2D1706>
+You might want to check Johannes Wolf advice: <http://marc.theaimsgroup.com/?l=newtontalk&m=102812823519465&w=2>
+
+8) What kind of printers can I use?
+
+Apple has a technote answering this question for NewtonOS 2.x: <http://karchive.info.apple.com/article.html?artnum=19483>
+There are basically three ways to print things from a Newton:
+First, you can print with a serial connection (or an AppleTalk connection - LaserWriter-compatible printers only - or via IrDA if you have a MP2x00/eMate 300). For this, you need a driver. The NewtonOS has drivers in the ROM which appear in the list when you select "Choose Other Printer" from the print dialog. There are also drivers written by Apple which can be found on UNNA for the SW4500 & SW6500 and the HP IrDA printers (NewtonOS 2.1 devices only): <http://www.unna.org/unna/drivers/printer/> [I know there's a non working one for Epson printers, but is there any other driver around?]
+Apple also released a PrintPack which includes a serial/parallel adapter and which can print on several parallel printers (for the list, cf the documentation of the software which can be found on UNNA <http://www.unna.org/unna/drivers/printer/PrintPack2/>).
+PrintPack 1 was a cable with the drivers included in it. PrintPack 2 requires the drivers to be on the Newton.
+Without the hardware, the PrintPack2 drivers are useless. The serial/parallel adapter includes a processor and was manufactured by GDT Softworks (which later became InfoWave) for Apple. This company also manufactured compatible cables, the pre-V.4.X cables. A regular serial/parallel adapter will certainly not work.
+About the GDT Softworks cables, Jon Glass reports:
+I do recall there being a discussion that the last version of the GDT Softworks version of the PowerPrint adapter wouldn't work with the Newton. I do know this, the one I have does work with my Epson 900 (Yea!!!).
+I'm having trouble trying to decipher what's written on the back, so I'll include all the text:
+"Advanced Components & Peripherals P/L
+Made in Singapore
+FCC ID KBVSPC1
+P/N: 590-0839 (whatever "P/N" stands for)
+Batch: SPC292
+
+LR99812"
+Finally, you you can also print using a PC and Newton PC-Print by Alexander Kunzer: <A.Kuenzer@bkr-software.de>
+The HP Deskjet 340CBi is battery powered and has a newton-compatible IrDA (NewtonOS 2.1 devices) adapter.
+
+9) Can I use digital cameras with my Newton?
+
+Yes you can. You need Tibet Software. This software is no longer supported, but Russell Tait (the author of Tibet) gave away some registration codes you can use:
+* 02FDAA084142
+* 02FDAA090E49
+* 02FDAA0A1390
+The following digital cameras will work with a MP2k and Tibet software provided that you have the proper serial cable to connect to the Newton (i.e., a serial cable to connect to macintoshes):
+* Agfa ePhoto 307
+* Agfa ePhoto 780
+* Agfa ePhoto 780c *
+* Agfa ePhoto 1280
+* Agfa 1680
+* Fuji
+* Nikon CoolPix 800
+* Nikon CoolPix 900
+* Nikon CoolPix 950
+* Olympus D-300L
+* Olympus D-320L
+* Olympus D-340R
+* Olympus D-360L
+* Olympus D-450Z
+* Olympus Camedia C-400
+* Olympus Camedia C800L (that's what it is called in Europe, the US designation is different)
+* Olympus C-1000 L
+* Epson PhotoPC 700
+Neal Sofge <NealS@aol.com> reports:
+I have an Agfa ePhoto 780c, which is apparently an updated version of the 780 in an iMac-compatible blue case.  It works with Tibet, but only if you "distract" the camera by sliding the lens cover open and closed while trying to communicate with it.  The timing on this is tricky, but you can get good at it after enough practice.
+It seems some cameras are compatible with the Fujitsu chipset. (which the Olympus have inside)
+The following cameras will not work:
+* QuickTakes
+* Kodaks
+* Connectix QuickCams
+Canon cameras were once reported as compatible, but Daniel Padilla <dpadill@clientes.unicaja.es> said they don't. At least his PowerShot 350 doesn't. (<http://www.average.org/digicam/>)
+Daniel Padilla also reported that to work with Tibet Software, a camera needs to have the Sierra imaging firmware and a serial port. Look at <http://www.sierraimaging.com/support/supchimgex.html> for a list of supported cameras.
+
+10) Can I use a Click/IBM Microdrive/ATA Flash/Compactflash adapter in my Newton?
+
+Not yet. There is a package to support such hardware being in development. More info can be found here: <http://www.kallisys.com/newton/ata/>
+
+11) Are there any third-Party accessories that use the Interconnect port on the 2x00 or eMate?
+
+[From Victor Rehorst: <chuma@chuma.org>]
+Enfour makes serial cables with an Interconnect port molded onto one end, eliminating the need for a serial dongle: <http://www.enfour.com/newton/cables/index.html>.
+You can build your audio in/out dongle. Details are at <http://www.eskimo.com/~millerd/nicadapter/>.
+
+12) Can I use an Airport/WaveLan card in my Newton?
+
+Yes.  Just like an Ethernet card, you need an OS 2.1 Newton, NIE 2.0 installed, and the appropriate driver.  The only available drivers so far is written by Hirochi Noguchi, and is available at:
+<http://www.ff.iij4u.or.jp/~ngc/eng/newtwave.htm>
+The driver seems to work with most Lucent WaveLAN cards, and is designed to use a base station.  Apple AirPort base stations with software version 1.3 or 2.0 are known to work.
+
+13) What cable do I need to connect to my desktop computer?
+
+[Partly from Apple's Manual "About Cables" <ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/newton/0308266ANCBLS.PDF>]
+You can connect to your Newton using either a serial cable or an ethernet card (connection from a 2.1 device to MacOS computers only). Please note that using an Ethernet card means first installing the proper driver.
+The MP1x0 devices and the eMate 300 have a Mini-DIN-8 RS232 and LocalTalk compatible port. You can use either a Mini-DIN-8 to Mini-DIN-8 serial cable to connect to an old-world Macintosh (beige), a Mini-DIN-8 to DB25 cable to connect to a DB25 Serial port on a Windows Box or a Mini-DIN-8 to USB via an USB/Serial adapter to a new-world Macintosh. You cannot use IrDA with Apple Software (see section IIIB3c).
+The MP2x00 have an Interconnect port. Using a dongle, you can have a RS422/GeoPort/LocalTalk compatible port. You can connect the same cable as with the other Newtons.
+See section IIIB3b for the various ways to transfer data to/from your desktop computer, software and hardware.
+---------------------------------------------------------------------------
+
+
+C) Hardware problems
+
+
+1) Why does my MP130/MP2000/eMate whine when the backlight is on?
+
+(From Robert Sexton's FAQ) Backlit Newtons use the same technology that is found in indiglo watches. The backlighting uses high voltages, and this requires a transformer which makes the noise.  If you listen carefully to an indiglo watch, you will notice the same effect.
+Apple published a tech note about it: <http://docs.info.apple.com/article.html?orig=til&artnum=45002>
+
+2) Why does my MP120/130 whine?
+
+(From Robert Sexton's FAQ) If you are referring to the sound made by the backlighting (on MP130), see previous question. The humming when the MessagePad operates (More noticeable when the CPU is idle) is caused by a small power transformer. Its a bit annoying, but there is no workaround for it. Some MessagePads are reportedly noisier than others. This affects the MP110-MP130.
+Apple published a tech note about it: <http://docs.info.apple.com/article.html?orig=til&artnum=45002>
+
+3) What should I do if I have a hardware problem with my Newton?
+
+Apple can still repair Newton devices, for seven years after they announced the discontinuation of the Newton platform. In the US and in Canada, there is a flat fee. It will cost between 175-200 USD and 180 CAD respectively. In the UK, the cost depends on the repair. It will cost around 400 GBP for a motherboard change and around 200 GBP for a screen change (these fees are of course subject to change and were the announced fees in November, 2000).
+* US users: (from Laurent Daudelin)
+To arrange the repair, call 1-800-275-2273 and request technical support. When you talk to someone, tell them you're calling for a Newton. They should arrange to have the Newton repaired. If things don't go as expected, call the Apple Repair Center in Memphis that handles Newton repairs at 800-233-6555. The people that answer the phone are not very cooperative or knowledgeable. They serve as a barrier between you and the actual staff that perform the repair. Insist on talking to a supervisor if you're not pleased with the answers they give you.
+[This is a more recent experience (June, 29th, 2001) from Cliff Penwell]
+You can call the Apple Service Center at 1-800-275-2273, opt 1, opt 5, and tell them what's wrong. (Eventually they sent me to 1-800-320-3728, but I think you have to start at the other number.)
+When I told the service rep what I owned, he told me he had never handled a Newton repair request and didn't think they still did them, but when I gave him the serial number he went and checked with someone and verified that it was an MP2000 and said they still had parts and could do it.
+I got a dispatch number for the repair and called the other number, and they took my credit card info and said I should receive a return box within four days. Total cost is about $194, including shipping, with about a ten-day turnaround.
+
+* Canada users:
+All information (a full page) is available at Newton Resources: <http://www.chuma.org/newton/docs/apple-canada-repair.shtml>
+* Europe users:
+Contact ADT/ECPRC, the Apple Repair center: <http://www.ecprc.com/>
+Considering the fee they will ask, you can try the solutions to the frequent hardware problems (IIC6).
+
+4) Why does my Newton wake up at 3 AM?
+
+(From Robert Sexton's FAQ) The Newton wakes up to move your Todos over from yesterday, and do other housekeeping.
+
+5) How long will the backlight last?
+
+(From Robert Sexton's FAQ) <drogin@panix.com> (Alan Drogin) says, It has a "half life" conjectured to be in the low thousands of hours.  Which translates to at least a couple of years, which also means it doesn't stop working, just gets dimmer, which ultimately means its within the normal limits of planned obsolescence accepted by the high tech world.
+One thing I can't give a definitive answer to is the actual half life.  I've seen plenty of posts claiming that the half life of the MP130 backlighting is 1600-1700, but no actual proof of source. I've seen claims about the MP2K backlighting at 2000 and even 5000. John Schettino saw some web sites from backlighting manufacturers claiming 15,000-20,000 hour half lives.
+Apple published a tech note about it: <http://docs.info.apple.com/article.html?orig=til&artnum=45018>
+
+6) Common hardware problems
+
+
+a) My Newton won't turn on. What should I do?
+
+There are a number of things you can try.  Try the following, in increasing order:
+* Put in fresh batteries and plug in the Newton's power adapter.  Turn on the machine.
+* With batteries or the power adapter installed, press the reset button. On the original MessagePad, MP100, MP110, MP120, and MP130, the reset button is visible when you remove the battery door.  On the MP2000 and MP2100 the reset button is on the underside of the machine.
+* For the original MessagePad, MP100, MP110, MP120, and MP130, replace the backup battery.  Put in fresh batteries and plug in the Newton's power adapter.  Press the reset button.
+* For the MP2000 and MP2100, press and hold the reset button for over twenty seconds. This is a special reset sequence for these machines.
+* For the original MessagePad, MP100, MP110, MP120, and MP130, with the batteries or power adapter installed, press and hold the reset button down, then press the power switch.  Continue to hold the reset button for two more seconds.  Release the reset button.  A dialog box appears asking "Do you want to erase data completely?".  Tap on the "NO" button (you don't want to erase your data!).
+* For the MP2000 and MP2100 *only*, remove the battery, cards, and power adapter.  Let the Newton sit by itself for a few hours.  Leave it a whole day or a whole night if you can.  You won't lose any data.  Then put in fresh alkalines, and plug in the power adapter.  Press the reset button.  This procedure cures nearly every turning-on problem these models have.
+* If you have an original MessagePad or an MP100, see section IIC6eof this FAQ.
+* For the MP2x00s, Sean Luke reports: one last resort you can try is to crack it open and see if its daughtercard has become unseated from its slot. This happened to me.
+* If your Newton still does not wake up, consider posts to the newsgroups or mailing lists, or consider shipping the unit to Apple.See also section IIIB2 of the FAQ
+
+b) How can I protect my MessagePad screen?
+
+Try one of these:
+* WriteRights by Concept Kitchen <http://www.conceptkitchen.com>
+* NuShield Screen Protectors by Mark Ross <http://www.nushield.net>
+* You can also use a Digital Writer by A.T. Cross to protect the screen against damage in the first place (digital writers are inserts for Cross pens. About $6 each.) Order digital writers from Norma Houle <nhoule@cross.com>
+* The Francophone Newton User Group (GFUN) has a page to explain (in French, of course) how to make your own screen protector: <http://perso.wanadoo.fr/dbenet/film.htm>
+* James Elliott has evaluated several types of commercially available transparency papers for use as screen protectors. He also offers downloadable templates so you can make your own screen protectors from these materials: <http://newted.dyndns.org/users/jelliott/screenprotectors.html>
+
+c) How do I turn on the Newton's backlight?
+
+Backlights are included in MP2ks, MP130s and eMate 300. On MP2ks and MP130s, just depress the power switch until the backlight is activated. To switch it off, do the same. On eMate 300, just press the light button. The backlight can also be activitated through software (cf next question).
+
+d) What softwares can be used to turn the backlight on?
+
+* Softwares that add/have a button:
+  + Avi's Backdrop (Avi Drissman) <http://www.drissman.com/avi/>
+  + DashBoard (FiveSpeed) <http://www.fivespeed.com/dashboard/index.html>
+  + BackLight (Sean's Utilities) <http://download.planetnewton.com/download/>
+* Softwares that allows the backlight to be turned on when the Newton is turned on:
+  + PowerPrefs (Jim Bailey) (probably to be found on AMUG)
+  + Options (SBM) [allows to set time range] <http://www.sbm.nu/>
+  + MoreInfo (Silverware) <http://www.silverware.com/>
+  + Sunrise (Any info?)
+  + Silk (Catamount) [probably the most complete one] <http://www.catamount.com/Silk.html>
+* Other softwares (additional information needed!)
+  + Adam Tow's Backlight Plus <http://www.tow.com/>
+
+e) Why does my MP100 turn itself off as soon as I turn it on?
+
+Old MessagePads (in particular, MP100s) develop power-on problems due to gunk building up inside the power switch which raises its resistance.  Sean Luke maintains a web page with workarounds and outright fixes at <http://www.cs.umd.edu/users/seanl/newton/>
+
+f) The serial port on my MP2000/MP2100 is caved in. What do I do?
+
+The serial port is poorly soldered onto the MP2K motherboard, and eventually it can wear out and cave in.  If you are very *very* good at solder, you might try opening the machine and resoldering the contacts. But it's very difficult, and even proficient solderers won't attempt it. Most likely, your only recourse is to have Apple fix the problem: see section II.C.3
+The chief culprit here is the Newton's "dongle", the small plug which connects to the Newton.  The dongle has two bumps on the top and two bumps on the bottom, which help the dongle stay locked in the serial connector, but cause considerable friction and stress on entry and exit.  To prevent problems in the future, you might try filing down the bumps on the top.
+
+g) My MP2000/2100 pen input is all messed up.  What can I do?
+This is a problem known as the "Jaggies".  The symptoms are:- invalid pen input, ie. you draw something and the Newton displays something totally different - random pen input appearing when you draw or writeIt can be caused by two things:- Dirt that has collected between the lip of the case and the touchscreen. This can be aggravated by resting your hand on the case while writing, causing the dirt to trigger an unwanted "tap" on the screen - A warped case that is exerting pressure on the touchscreen, thereby confusing the Newton's calibration - A damaged or oxidized touchscreen connector inside your Newton - A damaged touchscreenIf you suspect that dirt is the culprit, you can attempt to clean between the case and the screen:1) Remove any screen protectors that are installed.2) Take a thin card (such as a paper business card, nothing thicker than a credit or bank card) and gently insert a corner of it in the gap between the case and the screen.  Run the card along all of the edges of the screen - the goal here is to remove any dirt particles that may be wedged between the case and the screen.3) Using a soft cloth, such as a lens or photographic cleaning cloth (**NOT** tissue paper!) wipe up the dirt that was dislodged.4) It's probably a good idea to give the screen a nice cleaning now, before reinstalling your screen protector.Or, it's possible that a warped case is the culprit, in which case you can try to de-warp it:<http://marc.theaimsgroup.com/?l=newtontalk&m=99928252123070&w=2>If none of this does the trick, then either the touchscreen connector needs cleaning, or the screen must be replaced.  Replacing the screen or cleaning the touchscreen should only be attempted by an experienced person, as it required almost complete disassembly of the Newton.
+
+7) How to replace eMate batteries?
+
+[This manual has been written by Robert Benschop ( <rbenschop@mac.com>].
+To replace your eMate batteries you'll need a torx 8 screwdriver and 4 NiMH batteries preferably with soldering lips on them of at least 1200 mAh (the higher the better) and basic soldering skills, nothing too fancy.
+Before you proceed with this, first make a backup (or if you're the careful type, two) and then open the little lid on the back of your eMate next to the handle with the torx 8 screwdriver.
+Your battery pack is the dark rectangular shaped thing that lies in it's own recessed place on the top (I'm considering the handle as the top side of the eMate)
+* On the right hand side you'll see a couple of wires coming from the battery pack that attach to the eMate with a little white plug.
+* Slide the plug off so that you can lift out the battery pack.
+* Open the hard plastic outer casing so that you'll have the actual batteries in your hands still in the plastic wrapping.
+* Cut away the wrapping, replace the old batteries with the new ones in hte same order of course, while soldering the connections back exactly the way they were ! (don't forget the temperature sensor, just solder it back in the same spot on your new batteries, this is about the only moment you really have to pay attention, so that the temperature sensor will still be working).
+* If you want to keep everything really neat put heatshrink around the four batteries so that they're as neat and tidy as the original pack.
+* Put the hard plastic outer casing back on, reconnect, close the lid, charge and away you go, happy forever after. (or at least for another couple of years)
+In case you put in i.e. 1600 mAh batteries you'll get even longer lasting battery life as a bonus.
+[Robert added with his usual modesty:]
+Actually, I posted the instructions quite a few times to the list in text (and that might be in the FAQ, I never read the FAQ myself ;-) but there's an even better instruction (with how-to pictures) made by Frank Gruendel on <http://www.pda-soft.de/emate_battery_pack.html>
