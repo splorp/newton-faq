@@ -1,6 +1,8 @@
 
 Newton FAQ
 
-A community resource for commonly asked questions related to the Apple Newton platform.
+The Newton FAQ is a community resource of commonly asked questions related to the Apple Newton platform.
 
-More to come.
+--
+
+Copyright © 1999–2012 The Newton FAQ Group
