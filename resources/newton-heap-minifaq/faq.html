@@ -1,0 +1,207 @@
+<HTML> 
+<HEAD>
+<TITLE>The Newton Heap MiniFAQ</TITLE>
+</HEAD> 
+
+<BODY>
+
+<a name="top"><H1 ALIGN=CENTER>The Newton Heap Mini-FAQ </H1></a>
+<H3 ALIGN=CENTER>Version 1.5 - August 15 1997</H3>
+<A HREF="/web/20091023231241/http://geocities.com/Paris/8382/index.html"><H4 ALIGN=CENTER>go back to the main page</H4></A>
+
+<H2 ALIGN=CENTER>by Daniel Domberger</H2>
+<P ALIGN=CENTER>Send comments, questions, hints or corrections to :<br><A HREF="/web/20091023231241/mailto:domby@smileyface.com">domby@smileyface.com</A> | 
+<A HREF="/web/20091023231241/mailto:domby@innocent.com">domby@innocent.com</A> | 
+<A HREF="/web/20091023231241/mailto:danield@gsb.usyd.edu.au">danield@gsb.usyd.edu.au</A></P>
+
+<B>Contents:</B><br>
+<UL TYPE=disc>
+<LI><A HREF="#whatis">Introduction: What is Heap?</A><br>
+<LI><A HREF="#heapandstorage">Heap and Storage</A><br>
+<LI><A HREF="#understanding">Understanding Heap</A><br>
+<LI><A HREF="#used">How Heap is used</A><br>
+<LI><A HREF="#outof">Out-of-Memory Errors</A><br>
+<LI><A HREF="#howmuch1">How much Heap is there?</A><br>
+<UL TYPE=circle>
+<LI>MessagePad 120<br>
+<LI>MessagePad 130<br>
+<LI>MessagePad 2000<br>
+<LI>eMate 300<br>
+</UL>
+<LI><A HREF="#howmuch2">So how much should I have available?</A><br>
+<LI><A HREF="#checking">How can I tell how much I have?</A><br>
+<LI><A HREF="#upgrade">Can I upgrade my Heap? Can I add more?</A><br>
+<LI><A HREF="#running">So what do I do if I'm running out of Heap?</A><br>
+<UL TYPE=circle>
+<LI><A HREF="#minimise">Minimise Heap Usage</A><br>
+<LI><A HREF="#backdrop">Backdrop Application</A><br>
+<LI><A HREF="#freeze">Freezing</A><br>
+<LI><A HREF="#garbage">Garbage Collection</A><br>
+<LI><A HREF="#Other">Other Heap saving tips</A><br>
+</UL>
+<LI><A HREF="#heapdoubler">Why is there no HeapDoubler for the Newton?</A><br>
+<LI><A HREF="#admin">Sources and credits</A><br>
+
+</UL>
+<br><br>
+<H3><A NAME="whatis">Introduction: What is Heap?</A></H3>
+Heap, also known as 'Frames Heap' is one of the most common causes of questions from Newton users (probably second only to modem/internet compatibility problems). Part of this is due to the plethora of overlapping names and terms which are frequently bandied about: 'system Memory' is used as a synonym for total installed RAM, which is different from 'Frames Heap', which represents only a small proportion of total RAM.  'Frames Heap' is also distinct from the 'system heap', which is a much larger proportion of total RAM and is used for things like communications, handwriting recognition, and the view system. Confusingly, the 'system heap' is sometimes called 'system memory'.<br><br>
+
+"The Newton has two kinds of memory, system memory and user storage. System memory is analogous to the RAM memory in a desktop computer, user storage to the storage space on a disk drive. The memory space reported in the Memory Preferences window [Memory Info, in the Extras drawer, for NOS2.x] is for user storage. There are shareware packages that measure system memory (heap space), but it is not displayed by the Newton system software. This system memory is further broken down into different uses, but we won't expand on what they are in this discussion. It is in the system memory that programs actually run and store the intermediate data that they create. Permanent data, as well as the packages themselves are stored in the user storage."<br>
+<H6>- Apple Technical Information Library article 16645</H6><br><br>
+
+<CENTER><A HREF="#top">Back To Top</A><br></CENTER>
+<HR WIDTH=75% ALIGN=Center>
+
+<H3><A NAME="heapandstorage">Heap and Storage</A></H3>
+An important distinction to make is that between Heap and Storage. If Heap is like RAM on a Mac or PC, Storage is like hard disk capacity. When you add a PCMCIA storage card to your Newton device, it's like adding a new hard drive. Unfortunately, until Newton Inc. develops 'virtual Heap'(!), there is no way that this storage can increase available Heap. (Actually, there is a technique available to Newton developers to use a form of 'virtual memory' if they wish.  It isn't automatic, but it is available.  <B>Virtual Binary Objects</B> (VBOs) allow a Newton developer to allocate large chunks of Storage space for use with many of the normal heap functions. It can't be used too often, however, because amounts of available storage vary widely from one Newton & user to another, so developers can't use (say) 250k of VBOs because not all users will have that much space available.)<br><br>
+
+<CENTER><A HREF="#top">Back To Top</A><br></CENTER>
+<HR WIDTH=75% ALIGN=Center><H3><A NAME="understanding">Understanding Heap</A></H3>
+It's often said that Heap is like RAM on a desktop machine. This, however, is a little simplistic. It's important to remember that everything in the Newton is integrated - if you email a Notepad item, the list of email addresses comes from the Names file, for example. Because of this, working on a Newton is kinda like having every single application installed on your Mac or PC open at once, because on the Newt they're all in use, even when you're not actually working in them, and they're all taking up 'RAM'(=Heap) even though you might not be using them at the moment. <br><br>
+
+This analogy breaks down, however, because Newton applications use more heap when they're actually open & in use, rather than just installed and integrated. In this respect, working on the Newt is almost like having every document on your Mac or PC open, without the application. But try explaining to a computer-literate person that the documents can be open without an application! (The 'documents' are the Soups; this is where the Newton stores its data; apparently they were named this because every application can dip in and ladle out whatever info it needs - like the notepad needing the Names list of email addresses).<br><br>
+
+"Even when it's not "running", a Newton package can respond to changes in its soups, it can respond to incoming data from modem, network, IR, or even messages from other packages.<br><br>
+
+"Newton packages can access the data in another package's soup. A fax editor package can make use of the Names soup for its address book. It can get its data from the NotePad, or from an e-mail message. A Contact Manager package can make use of the Names soup to look up contact information. It can schedule items into the To Do list, or the Calendar. Apple calls this Newton Intelligence.<br><br>
+
+"There are single applications on desktop computers that integrate these sorts of cross functions. These "all in one" applications exist because desktop machines have not yet learned how to have the separate applications work together. As a result, you can't have your favourite address book program communicate with your favorite calendar program to create a contact manager function. The two programs don't talk to one another.<br><br>
+
+"Newton packages need to always be active in some way. When a package is loaded into the Newton, the package tells the system about itself and its soups. It prepares itself and the system to deal with its soup data and messages it might receive. This causes the package to take up system memory even though the user has not opened it. Again, only a very small amount of memory is used up for this capability." <br>
+<H6>- Apple Technical Information Library article 16645</H6><br><br>
+
+
+<CENTER><A HREF="#top">Back To Top</A><br></CENTER>
+<HR WIDTH=75% ALIGN=Center><H3><A NAME="used">How Heap is used</A></H3>
+Every installed package takes up some heap: this is required to 'integrate' the package with the Newton. Every installed package needs about 2k of Heap for this integration (Apple Technical Information Library article 18284). This means that if you install enough packages, you'll run out of heap. To reach this level, however, you'd have to install hundreds of packages.<br><br>
+
+When a package is run, its commands are loaded into Heap much as an application in loaded into RAM when run on a Mac or PC. Intermediate data is also stored in Heap, although it is automatically copied to storage frequently (so an out-of-memory restart should not lose any of your data, even though you don't have to 'save' documents and settings). <br><br>
+
+Those packages that are always running - because they use statusbar buttons or floating palettes, for example - use relatively more Heap. If they are large and complex, their Heap requirements can slow the  Newton down . <br><br>
+
+<CENTER><A HREF="#top">Back To Top</A><br></CENTER>
+<HR WIDTH=75% ALIGN=Center><H3><A NAME="outof">Out-Of-Memory Errors</A></H3>
+These occur when some package or part of the system made a request for more Heap, and the request failed because the available memory was insufficient. The Newton offers to wipe the slate clean: to restart. Restarting has the effect of flushing the Heap clear; tapping restart on-screen is the same as pressing the Reset button on the back of the MessagePad. <br><br>
+
+<CENTER><A HREF="#top">Back To Top</A><br></CENTER>
+<HR WIDTH=75% ALIGN=Center><H3><A NAME="howmuch1">How much Heap is there?</A></H3>
+This varies from one Newton device to another. <br>
+<UL TYPE=circle>
+<LI>MessagePad 120: <B>110k</B>
+<LI>MessagePad 130: this in fact has more heap than any other Newton device to date, including the 2000. <B>200</B>.	
+<LI>MessagePad 2000: around <B>170k</B>. This has the same amount of hardware heap as the 130, but the changes made to the system (to upgrade it from NOS2.0 to NOS2.1) use some. Also remember that the MessagePad 2000 comes with some additional packages and extensions pre-installed (NetHopper, EnRoute, Internet Enabler, ISP templates etc), which all use some Heap. In addition, the larger screen, and it's greyscale capabilities, mean that the Screen Buffer requires much more Heap than on the MP130 (eight times as much, in fact: twice the size and four times the depth).
+<LI>eMate 300: Same as the MP2k: <B>170k</B>. However, some of the applications on the eMate differ from those on the Messagepad 2000. For example, the eMate's NewtonWorks application has two additional modules (Drawing and Calculation), and its Dock function supports the eMate Classroom Exchange program, which the MP2k's doesn't. Because of this, the Heap on an eMate and MP2k with identical packages loaded could differ (although it shouldn't be by that much).
+</UL><br>
+<br>
+
+<CENTER><A HREF="#top">Back To Top</A><br></CENTER>
+<HR WIDTH=75% ALIGN=Center><H3><A NAME="howmuch2">So how much should I have available?</A></H3>
+Well, that depends on what you want to do! Internet browsing, for example, uses a lot more Heap than just the NotePad. Available Heap will vary with your machine and your System version, and what you have installed. In general, though, on a NOS1.x machine you should hope to have between <B>40-50k</B>; on an MP130, <B>120-150k</B>; and on an eMate or MessagePad 2000, <B>95-115k</B>.<br><br>
+
+<CENTER><A HREF="#top">Back To Top</A><br></CENTER>
+<HR WIDTH=75% ALIGN=Center><H3><A NAME="checking">How can I tell how much I have?</A></H3>
+There is no provision within the basic system software to indicate Heap levels. There are, however, several shareware or freeware packages that will tell you how much Heap you have available. For example, <B>Backdrop Plus</B> (from <A HREF="/web/20091023231241/http://www.standalone.com/">StandAlone Inc.</A> gives a Heap readout. <B>Trashpak</B> (available from AMUG: <A HREF="/web/20091023231241/http://www.amug.org/">http://www.amug.org</A>) also lists available heap. You should, however, bear in mind that any package you open for a Heap readout will itself have to be loaded into Heap, and so the reading may be significantly lower than actual available Heap after the package has been closed. (This is why <B>Backdrop Plus</B>'s Heap status indicator is so useful).<br><br>
+<B>NewtInfo</B> (from <A HREF="/web/20091023231241/http://www.newts.com/">ICS </A>) can tell you how much heap different apps are using , which can be extrememly useful. <br><br>
+
+<CENTER><A HREF="#top">Back To Top</A><br></CENTER>
+<HR WIDTH=75% ALIGN=Center><H3><A NAME="upgrade">Can I upgrade my Heap? Can I add more?</A></H3>
+If you have an eMate 300, yes, you can indeed. <A HREF="/web/20091023231241/http://www.newerram.com/">Newer Ram</A> sells an eMate memory expansion module that upgrades the internal RAM to 4 megs/4megs. The snap-in module also changes the data bus from 16 bit to 32 bit, which increases the machine's speed and
+responsiveness.
+<br><br>
+If you have anything else, including a MessagePad 2000, you cannot. Sorry.<br><br>
+
+<CENTER><A HREF="#top">Back To Top</A><br></CENTER>
+<HR WIDTH=75% ALIGN=Center><H3><A NAME="running">So what do I do if I'm running out of Heap?</A></H3>
+There are several things you can do:
+
+<UL TYPE=circle>
+<LI><A NAME="minimise">Minimise Heap usage</A> - get rid of applications you don't use, or at least freeze them (see below for more info on freezing). Get rid of old Soups; for this you'll need a program like <B>Stewpot</B>, <B>Souper</B> or <B>Trashpak</B> (all available from <A HREF="/web/20091023231241/http://www.amug.org/">AMUG</A>). Get rid of unnecessary extensions - do you really need all those sounds?<br><br>
+
+<LI><A NAME="backdrop">Change your backdrop application</A> - this reduces Heap use by only having open those applications you are using. If the Notepad is the backdrop (as is the default) and you open Dates, the Notepad is still taking up Heap. By using a specialist backdrop application (all of which use less heap than the NotePad or Extras drawer: normally around 10k, as opposed to 20k for the NotePad) you free up quite a lot of Heap: the NotePad can be closed when you're not using it. They also tend to have handy things like clocks, quick-access to desired applications, Heap readouts and so on.  There are several freeware and shareware applications specifically designed to be the backdrop application, including: 
+<UL TYPE=square>
+<LI><B>Backdrop Plus</B> from <A HREF="/web/20091023231241/http://www.standalone.com/">StandAlone Inc.</a> 
+<UL TYPE=square>
+<LI>shareware $25, with a 30-day demo.
+</UL>
+<LI><B>Back-It!</B> from <A HREF="/web/20091023231241/http://pease1.sr.unh.edu/aew/newton/backit/">Bulletproof Software</A> 
+<UL TYPE=square>
+<LI>freeware, but not yet available
+</UL>
+<LI><B>Backpak</B> from Atomic Software
+<UL TYPE=square>
+<LI><A HREF="/web/20091023231241/http://www.amug.org/">http://www.amug.org</A>
+<LI>freeware
+</UL>
+<LI><B>Footprint</B> from <A HREF="/web/20091023231241/http://www.simplemed.com/">Morgan Creek Medical</a> 
+<UL TYPE=square>
+<LI>freeware 
+</UL>
+<LI><B>FreeBack</B> by Thorsten Lange 
+<UL TYPE=square>
+<LI><A HREF="/web/20091023231241/http://www.antopia.com/thorsten/">http://www.antopia.com/thorsten/</A>
+<LI>freeware
+<li>Ultra-minimalist: uses only 1.1k of Heap. Works particularly well in conjunction with <B>i++</B>, also available from <A HREF="/web/20091023231241/http://www.antopia.com/thorsten/">http://www.antopia.com/thorsten/</A>.
+</UL>
+</UL>
+<br><br>
+<LI><A NAME="freeze">Freeze Unused Packages</A> - while this function is built-in to the NOS2.x, you have to activate it with a special program. Freezing basically dis-integrates an application or extension, so that it no longer takes up any Heap. Frozen packages can be thawed on-the-fly, so it doesn't slow you down too much. Extensions (autoparts) are not thawed unless you do it manually.<br><br>
+
+There is a package called <B>PowerFreeze</B> from <A HREF="/web/20091023231241/http://www.newton.ch/compower/">Compower</a> which lets you define freezing 'sets'; you can therefore freeze/thaw all your internet packages with one tap, for example. This makes it easy to have large numbers of packages installed, especially if you only need them in groups - internet, work, games, books etc.<br><br>
+
+<LI><A NAME="garbage">Garbage collection</A> - some packages create objects, and then leave references to them lying around so that the system cannot remove them, even when they're no longer required. According to Apple, there are programs out there that leave 20k of garbage data stored in Heap. By doing a 'garbage collection', you force the Newton to remove this junk data and clear up that heap. It also removes any objects that the system no longer uses.
+<br><br>
+However, when an application requests more memory than is available, a garbage collection is done automatically by the Newton. This means that, except in <B>extremely</B> rare circumstances, a manual garbage collection is unnecessary. <A HREF="/web/20091023231241/http://geocities.com/Paris/8382/garbage.html">(For an explanation of when this could be necessary, click here. It's complex, though!)</A>
+<br><br>
+So why are there so many garbage collection utilities out there? Developers don't really write garbage collection utilities per se.  What
+they really do is <B>call</B> the garbage collection routine that is built into the newton ROMS. In fact, this is the only way to do garbage
+collection from NewtonScript.
+<br><br>
+Why bother? When checking available Heap, the only way to get an accurate count is to first to a garbage collection and then check it (which should show the available heap and
+the largest possible block).  So, anything which allows the user to
+check heap size also needs to allow the user to force a garbage
+collection call.
+<br><br>
+
+It should be noted that this garbage data is different to the 'install scripts' which were most commonly discussed with reference to NOS1.x machines. There are shareware/freeware packages that remove the install scripts. However, Apple discourages their use: "It's a bad idea. The install script may contain code that the package needs while running. The package authors need to be the ones to modify a package to use less system memory. It's not a good idea to try and second guess the authors of the package." (Apple Technical Information Library article 16645.)
+<br><br>
+These 'install scripts' are in fact not stored in Heap. Remove scripts are. <A HREF="/web/20091023231241/http://www.standalone.com/">Standalone's  </a>  <B>HeapSaver</B> saves 5-10k of heap by freezing the remove scripts until they're needed. <br><br>
+
+<li><A NAME="Other">Other Heap saving tips:</A>
+<UL TYPE=circle>
+<LI>get <A HREF="/web/20091023231241/http://www.standalone.com/">Standalone's  </a>  <B>HeapSaver</B>
+<LI>close the Extras Drawer after launching a package: it requires 3k of Heap to keep it open
+<LI>view the Extras Drawer in Overview mode; this means that package icons do not have to be stored in Heap
+<LI>freeze Newtonbooks. They use Heap too, but really don't need to be integrated.
+</UL>
+</UL><br><br>
+
+<CENTER><A HREF="#top">Back To Top</A><br></CENTER>
+<HR WIDTH=75% ALIGN=Center><H3><A NAME="heapdoubler">Why is there no HeapDoubler for the Newton?</A></H3>
+RAMDoubler on the Mac works by allowing applications to use the RAM allocated to another open program, but not actually in use. Because all Newton packages need to be active all the time, there isn't really anything that a 'HeapDoubler' could do. <A HREF="/web/20091023231241/http://www.standalone.com/">Standalone's  </a> <B>HeapSaver</B> is the closest we'll get, I'm afraid.<br><br>
+
+<CENTER><A HREF="#top">Back To Top</A><br></CENTER>
+<HR WIDTH=75% ALIGN=Center><H3><A NAME="admin">Sources & Credits, and Disclaimer</A></H3>
+This FAQ was written by me, <A HREF="/web/20091023231241/mailto:domby@innocent.com">Daniel Domberger</A>, and is © Copyright 1997, except those passages quoted, for which due recognition has been given. The information in this miniFAQ was compiled from various sources, and general reading about the Newton since 1993, when the original MessagePad was released. Specifically, though, a lot of the more technical information came from the <B>Apple Technical Information Library</B> (<A HREF="/web/20091023231241/http://til.info.apple.com/">http://til.info.apple.com</A>). A lot of it also came from people's responses to Heap-based questions on the <B>Newton Doctor</B> site (<A HREF="/web/20091023231241/http://www.antopia.com/Newton/doctor/index.cgi/">http://www.antopia.com/Newton/doctor/index.cgi</A>) - thanks to everybody there!<br><br>
+Others who have helped and/or contributed were:
+<UL TYPE=disc>
+<LI>Jim Bailey
+<LI>Alan Drogin
+<LI>Blaine Fergerstrom
+<LI>Flash Sheridan
+<LI>Sanjay
+</UL><br><br>
+
+Remember, though, I'm a politics student, not a Newton technician, or a programmer. If anything I've written here is incorrect, let me know & I'll correct it. Use this information at your own risk. (Very grim, huh?). Also, the product suggestions contained herein do not represents endoresements or guarrantees: they're simply suggestions. If you know of any other packages I might want to mention, or have comments/questions/hints, <A HREF="/web/20091023231241/mailto:domby@innocent.com">let me know!</A>
+
+<CENTER><A HREF="#top">Back To Top</A><br></CENTER>
+<HR WIDTH=75% ALIGN=Center>
+<H4 ALIGN=CENTER>The Newton Heap MinFAQ by Daniel Domberger</H4>
+<P ALIGN=CENTER><A HREF="/web/20091023231241/mailto:domby@smileyface.com">domby@smileyface.com</A> | 
+<A HREF="/web/20091023231241/mailto:domby@innocent.com">domby@innocent.com</A> | 
+<A HREF="/web/20091023231241/mailto:danield@gsb.usyd.edu.au">danield@gsb.usyd.edu.au</A></P>
+<br>
+<A HREF="/web/20091023231241/http://geocities.com/Paris/8382/index.html"><H4 ALIGN=CENTER>go back to the main page</H4></A>
+
+</BODY> 
+</HTML> 

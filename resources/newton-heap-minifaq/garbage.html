@@ -1,0 +1,44 @@
+<HTML> 
+<HEAD>
+<TITLE>Newton Heap MiniFAQ: Garbage Collections</TITLE>
+</HEAD> 
+
+<BODY>
+
+<H1 ALIGN=CENTER>When a Garbage Collection is Necessary: Cursors and Heap Fragmentation</H1></a>
+
+<A HREF="/web/20091023092056/http://geocities.com/Paris/8382/index.html"><H4 ALIGN=CENTER>go back to the main page</H4></A>
+<A HREF="/web/20091023092056/http://geocities.com/Paris/8382/FAQ.html#garbage"><H4 ALIGN=CENTER>go back to the FAQ</H4></A>
+
+<H2 ALIGN=CENTER>by Daniel Domberger</H2>
+<P ALIGN=CENTER>Send comments, questions, hints or corrections to :<br><A HREF="/web/20091023092056/mailto:domby@smileyface.com">domby@smileyface.com</A> | 
+<A HREF="/web/20091023092056/mailto:domby@innocent.com">domby@innocent.com</A> | 
+<A HREF="/web/20091023092056/mailto:danield@gsb.usyd.edu.au">danield@gsb.usyd.edu.au</A></P>
+
+Okay. I warn you now, this is complex! Most of this information was kindly donated by someone else, and I'm not sure that <B>I</B> understand it all. As ever, if you know something here to be incorrect, <A HREF="/web/20091023092056/mailto:domby@innocent.com">let me know</A>. 
+<br><br>
+There is an undocumented "feature" of the Newton Operating System: cursors are non-moveable objects in Heap. By cursors, I don't mean those common to word-processor users; in fact, in this case, 'cursor' means 'an object which is returned by a soup query' - that is, a piece of information taken from a soup. (Soups are explained briefly in the <A HREF="/web/20091023092056/http://geocities.com/Paris/8382/FAQ.html#understanding">main FAQ</A>).
+<br><br>
+Because cursors are non-moveable, they can lead to <B>Heap fragmentation</B> if they are kept around at the wrong critical moment. Heap fragmentation occurs when there is sufficient Heap available to perform the desired action, but this Heap is divided - in this case, by a cursor. This means that there is not enough <i> contiguous</i>  Heap, and so an error arises. A fairly good analogy would be a bookshelf: if you have an entire bookshelf, with one little book in the very middle that you cannot move, and you want to put the Encyclopoedia Britannica on the shelf, you can't do it because the other book is in the way - you don't have enough contiguous space. <br><br>
+
+With the introduction of the MessagePad130, the Newton reduced the number of garbage collection cycles that it goes through. This increases performance: the MessagePad 120 is slower than the MP130 because it spends more time sorting out it's Heap; the MP130 only does this when it needs to. The MessagePad 2000 collects garbage like the MP130 - when it is necessary. This means that, if a package creates a cursor and leaves it lying around (whether forever, or just during the time of one large call stack) when the Newton needs to do something else, the Newton may need to allocate more Heap than the largest free block. If this arises, the Newton goes into a garbage collection cycle. If the Garbage Collection fails to free up sufficient Heap, you get the 'Out of Memory: Cancel/Restart' message. However, there could be plenty of free memory available on the Newton - just all broken up.
+<br><br>
+It should be noted that Heap Fragmentation was not a problem before Newton OS 2.1.
+
+<br><br>
+Unfortunately, this cursor issue isn't documented. Apple/Newton Inc only revealed it under great pressure. Many developers may not be aware of it and may be unsure as to why exactly their packages run out of memory. In addition to this, many packages generate lists which use memory in proportion to how much data is being displayed. This can lead to problems for the end user that the developer doesn't see until they get feedback from a (usually angry) user. We are seeing this problem much more on the MP2K for two reasons: <br>
+- it has less Heap available than the 130 <br>
+- it uses more Heap more often, causing more activity and more Heap fragmentation<br><br>
+
+<H3>What can be done?</H3>
+Developers need to be made aware that cursors have this property. Newton Inc. has always told developers that they don't need to even think about Heap very much because the NOS will "take care of that automatically". Some programs that are affected by this may have to be rewritten. This is sad, but true. There are a lot of little tricks you can do to keep this problem from happening, but you have to know what the cause of the problem is before you can think of the solution(s).<br><br>
+
+- Newton Inc. could come out with an OS patch that makes cursors into moveable objects on the Heap. This is obviously quite difficult to do or they would have done it long ago. It may be impossible. I don't know the issues involved in doing that. I've heard rumors they plan to do this, though, so I wish them much luck with that because it is really needed.
+<br><br>
+<HR WIDTH=75% ALIGN=Center>
+<br>
+
+<A HREF="/web/20091023092056/http://geocities.com/Paris/8382/FAQ.html#garbage"><H4 ALIGN=CENTER>go back to the FAQ</H4></A>
+
+</BODY> 
+</HTML> 
