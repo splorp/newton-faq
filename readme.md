@@ -19,12 +19,10 @@ With all this in mind, the current state of the Newton FAQ still leaves a lot to
 
 At least it has a better future.
 
-------------------------------------------
 
 ## Why GitHub?
 
-GitHub is a simple way to host, share, and apply the “peace of mind” of version control to all sorts of code. Since the Newton FAQ is written in HTML and will (theoretically) go through hundreds of changes, updates, and iterations over time - GitHub seemed like a perfect place to maintain it.
+GitHub is a simple way to host, share, and apply the “peace of mind” of version control to all sorts of code. Since the Newton FAQ is written in HTML and will undoubtedly go through hundreds of changes, updates, and iterations over time — GitHub seemed like a perfect place to maintain it.
 
-------------------------------------------
 
-Copyright © 1999–2012 The Newton FAQ Group
+Copyright © 1999–2014 The Newton FAQ Group
