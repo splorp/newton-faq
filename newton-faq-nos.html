@@ -425,7 +425,7 @@
 	<li>Use NewtonLink (for Unices) <a href="http://misf67.cern.ch/~reinhold/Newton/newtonlink-doc-en.html">http://misf67.cern.ch/~reinhold/Newton/newtonlink-doc-en.html</a></li>
 	<li>Use Thomas Tempelmann's Newton Data Browser (for MacOS PPC and Windows) <a href="http://www.tempel.org/newton/">http://www.tempel.org/newton/</a></li>
 	<li>Use Notes2Notes to synchronize between the NotePad and Microsoft Outlook 97, 98 &amp; 2000: <a href="http://members.tripod.com/SDHEngSoft/notes2notes.html">http://members.tripod.com/SDHEngSoft/notes2notes.html</a> - requires Sloup</li>
-	<li>Use NewtShare, a webserver for Windows to access documents translated the right way for Newtscape on the Newton: <a href="http://www.beckedorf.net/Mainpage/NewtShare/newtshare.html">http://www.beckedorf.net/Mainpage/NewtShare/newtshare.html</a></li>
+	<li>Use NewtShare, a webserver for Windows to access documents translated the right way for Newt’s Cape on the Newton: <a href="http://www.beckedorf.net/Mainpage/NewtShare/newtshare.html">http://www.beckedorf.net/Mainpage/NewtShare/newtshare.html</a></li>
 	<li>Use RCU or Notable by Revelar Software: <a href="http://www.revelar.com/rcu.html">http://www.revelar.com/rcu.html</a></li>
 	<li>Use PackageBuddy by Tactile to export packages: <a href="http://www.tactile.com/packageBuddy.html">http://www.tactile.com/packageBuddy.html</a></li>
 	<li>Use Johnathan Kip's BinHexer to transfer binaries from/to the desktop to the Newton by de/encoding them on the Newton: <a href="http://hometown.aol.com/NewtsPrism/BinHexer/BinHexer.html">http://hometown.aol.com/NewtsPrism/BinHexer/BinHexer.html</a></li>
@@ -441,8 +441,7 @@
 	This does not seem to be supported by Apple tools (NCU, NBU, etc.).
 </p>
 <p>
-	It is possible to use a terminal emulator and Sloup to communicate via IrDA: <a href="http://mywebpages.comcast.net/saweyer/newton/sloup/connect.htm#IrDA">://mywebpages.comcast.net/saweyer/newton/sloup/connect.htm#IrDA</a>
-</p>
+	It’s possible to use a terminal emulator and Sloup to communicate via <a href="https://communicrossings.com/html/newton/sloup/connect.htm#IrDA">IrDA</a></p>
 <p>
 	There is a special page about this issue: <a href="http://web.ukonline.co.uk/kieran.miller/newton/irda.html">http://web.ukonline.co.uk/kieran.miller/newton/irda.html</a>
 </p>
@@ -605,15 +604,10 @@
 <hr />
 <h3 id="IIIC">C) Troubleshooting</h3>
 <h4 id="IIIC1">1) Is the Newton Y2K compliant?</h4> 
-<p>
-	Apparently so: <a href="http://docs.info.apple.com/article.html?orig=til&amp;artnum=30338">http://docs.info.apple.com/article.html?orig=til&amp;artnum=30338</a>
-</p>
-<p>
-	However, different date/time related problems might occur starting in 2010, 2099 and 2924 (should you be so lucky to be alive, with a functioning Newton). These problems are discussed here: [dead link] http://members.home.net/saweyer/newton/newtscape/exs/times.htm#Description
-</p>
-<p>
-	And Avi Drissman made an experimental fix for that: <a href="http://www.drissman.com/avi/newton/Fix2010/">http://www.drissman.com/avi/newton/Fix2010/</a>
-</p>
+<p>Apparently so: <a href="http://docs.info.apple.com/article.html?orig=til&amp;artnum=30338">http://docs.info.apple.com/article.html?orig=til&amp;artnum=30338</a></p>
+<p>However, different date and time related problems might occur starting in 2010, 2099 and 2924 (should you be so lucky to be alive, with a functioning Newton). These problems are discussed on Steve Weyer’s page, <a href="https://communicrossings.com/html/newton/newtscape/exs/times.htm">The Times, They Are a Changin’</a>.</p>
+<p>Avi Drissman created <a href="http://www.drissman.com/avi/newton/Fix2010/">an experimental fix</a> for the Year 2010 problem.</p>
+
 <h4 id="IIIC2">2) Are there known bugs in the Newton OS?</h4>
 
 <h5 id="IIIC2a">a) I've heard about the nasty -10061 error on MP2x and eMate -- how can I reduce/prevent this?</h5> 
@@ -686,10 +680,7 @@
 <p>
 	The file's type and creator are not set properly. To fix it, you can use ResEdit and change the settings to "pkg " for the type and "pkgX" for the creator. (this is NPI creator. Some of your packages can have another creator, such as NTK creator code).
 </p>
-<p>
-	Steve Weyer wrote a simple program, PackType, that does that:
-</p>
-<a href="http://members.home.net/saweyer/newton/#PackType">http://members.home.net/saweyer/newton/#PackType</a> 
+<p>Steve Weyer wrote a simple program called <a href="https://communicrossings.com/html/newton/toolinfo.htm#PackType">PackType</a> which does this.</p>
 <p>
 	If you don't want this to happen again with your zipped packages or with the packages that you may download, you must add/correct the .pkg entry in the files mappings of Internet Config or Internet Control Panel in the latest MacOS.
 </p>
@@ -710,11 +701,9 @@
 </p>
 
 <h4 id="IIIC4">4) Why does the I/O Box always open to outbox? Can I change that?</h4> 
-<p>
-	There was a problem in older versions of Newt's Cape (2.0a, 1.5) -- if you selected a mailto: link, it created a message in your Outbox and opened to that directly.
-</p>
-<p>
-	Some other softwares could have also changed the default setting which is to open to inbox. <a href="http://mywebpages.comcast.net/saweyer/newton/newtscape/exs/ioboxfix.htm">http://mywebpages.comcast.net/saweyer/newton/newtscape/exs/ioboxfix.htm</a> describes a fix that you can make from a soup editor (or just run the example in Newt's Cape).
+
+<p>There was a problem in older versions of <a href="https://communicrossings.com/html/newton/newtscape.htm">Newt’s Cape</a> (2.0a, 1.5) — if you selected a mailto: link, it created a message in your Outbox and opened to that directly.</p>
+<p>Other software packages could also have changed the default setting of opening directly into the inbox. Steve Weyer’s <a href="https://communicrossings.com/html/newton/newtscape/exs/ioboxfix.htm">InOut Box Fixer Form</a> provides a fix that can be made using a soup editor or running the example directly in Newt’s Cape.
 </p>
 <h4 id="IIIC5">5) Why does the available memory decrease when the Newton is idle?</h4> 
 <p>
