@@ -88,7 +88,7 @@
 			<li><a href="#IIIC1">1) Is Newton Y2K compliant?</a></li>
 			<li><a href="#IIIC2">2) Are there known bugs into Newton OS?</a> 
 				<ol>
-					<li><a href="#IIIC2a">a) I’ve heard about the nasty -10061 error on MP2x and eMate -- how can I reduce/prevent this?</a></li>
+					<li><a href="#IIIC2a">a) How can I eliminate the dreaded -10061 error?</a></li>
 					<li><a href="#IIIC2b">b) What is the Dates/Find bug?</a></li>
 					<li><a href="#IIIC2c">c) When I write, sometimes some strokes do not appear or disappear.</a></li>
 					<li><a href="#IIIC2d">d) When I do a find with Newton Works, the free memory amount falls.</a></li>
@@ -610,28 +610,23 @@
 
 <h4 id="IIIC2">2) Are there known bugs in the Newton OS?</h4>
 
-<h5 id="IIIC2a">a) I’ve heard about the nasty -10061 error on MP2x and eMate -- how can I reduce/prevent this?</h5> 
+<h5 id="IIIC2a">a) How can I eliminate the dreaded -10061 error?</h5> 
 
-<p>
-	This only happens on devices with 4MB DRAM memory (upgr eMate and 2100 or upgr 2000).
+<p>This error only occurs on devices with 4MB DRAM memory, specifically the MessagePad 2100, upgraded MessagePad 2000, and upgraded eMate.
 </p>
-<p>
-	Information can be found in an article by Frank Wegener translated by George Oehl: <a href="http://home.k-town.de/~oehl/newton/10061.html">http://home.k-town.de/~oehl/newton/10061.html</a> or <a href="http://pobox.com/~oehl/newton/10061.html">http://pobox.com/~oehl/newton/10061.html</a>.
-</p>
-<p>
-	There are fixes such as:
-</p>
+<p>Information can be found in Frank Wegener’s article <a href="https://web.archive.org/web/20040205044508/http://home.k-town.de:80/~oehl/newton/10061.html">What Newton OS Error -10061 really is</a> — translated by <a href="https://web.archive.org/web/20010517003421/http://home.k-town.de/~oehl/">George Oehl</a>.</p>
+<p>The following patches and fixes are available:</p>
 <ul>
-	<li>’61 Memory Fix v1.0 by Avi Drissman - the first fixing tool: <a href="http://www.drissman.com/avi/newton/61MemoryFix/">http://www.drissman.com/avi/newton/61MemoryFix/</a></li>
-	<li>Richard Li’s SysPatch avoids -10061 by Power off scan and regular scans on activated packages: <a href="http://www.ee.cityu.edu.hk/~clli/syspatch.html">http://www.ee.cityu.edu.hk/~clli/syspatch.html</a></li>
-	<li>Auto61 Fix (Don Vollum). Available at <a href="http://resources.pdadash.com/newtund/NU/extras.shtml">http://resources.pdadash.com/newtund/NU/extras.shtml</a></li>
-	<li>-10061 Utilitiy - automatically pops up and offers a reboot or FIX 61 <a href="http://home.t-online.de/home/Alessandro.Soldo/NU_10061.html">http://home.t-online.de/home/Alessandro.Soldo/NU_10061.html</a></li>
-	<li>Heaven or Hell - checks on demand, when the Newton is idle, on power on and power off <a href="http://www.saryo.org/basuke/software/heaven-or-hell-101.sit.hqx">http://www.saryo.org/basuke/software/heaven-or-hell-101.sit.hqx</a></li>
+	<li><a href="http://www.drissman.com/avi/newton/61MemoryFix/">’61 Memory Fix</a> by Avi Drissman.</li>
+	<li><a href="https://web.archive.org/web/20130105015929/http://www.ee.cityu.edu.hk:80/~clli/syspatch.html">SysPatch</a> by Richard Li. This patch prevents the -10061 error by scanning activate packages on a regular schedules and when the device is powered off.</li>
+	<li><a href="https://web.archive.org/web/20000308144639/http://resources.pdadash.com/newtund/NU/extras.shtml">Auto 10061 Fix</a> by Don Vollum</li>
+	<li><a href="https://web.archive.org/web/19991111214630/http://home.t-online.de:80/home/Alessandro.Soldo/NU_10061.html">-10061</a> by Alessandro Soldo. This utility automatically pops up offering the choice to reboot the Newton or fix the -10061 error.</li>
+	<li><a href="https://web.archive.org/web/20100106071321/http://www.saryo.org:80/basuke/heaven-or-hell/index.html">Heaven or Hell</a> by Yosuke “Basuke” Suzuki. This utility checks for the -10061 error on demand, while the Newton is idle, as well aas during on power on and power off.</li>
 </ul>
-<p>
-	Since these programs take different approaches to fixing the -10061 problem, there are generally no conflicts even if you have several of the fixes installed at the same time.
-</p>
+<p>Since these fixes take different approaches to the -10061 problem, there is generally no issue with installing several of the packages on the same device.</p>
+
 <h5 id="IIIC2b">b) What is the Dates/Find bug?</h5> 
+
 <p>
 	From Avi’s pages:
 </p>
