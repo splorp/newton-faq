@@ -5,7 +5,7 @@ The Newton FAQ is a community resource of commonly asked questions related to th
 
 ## Current Version
 
-[splorp.github.io/newton-faq](https://splorp.github.io/newton-faq)
+[newtonfaq.com](http://newtonfaq.com/)
 
 ## The Backstory
 
