@@ -32,10 +32,10 @@
 <ol type="A">
 	<li><a href="#VIIA">Environments</a>
 		<ol>
-			<li><a href="#VIIA1">What are Apple’s Tools to develop software on the Newton, and where can I find them?</a>
+			<li><a href="#VIIA1">What are Apple’s tools to develop software on the Newton?</a>
 				<ol type="a">
-					<li><a href="#VIIA1a">Apple NTK: The Newton Toolkit.</a></li>
-					<li><a href="#VIIA1b">Apple NCT: The Newton C/C++ Toolkit.</a></li>
+					<li><a href="#VIIA1a">Newton Toolkit (NTK)</a></li>
+					<li><a href="#VIIA1b">Newton C++ Toolbox (NCT)<</a></li>
 				</ol></li>
 			<li><a href="#VIIA2">What are the solutions to develop directly on my Newton?</a>
 				<ol type="a">
@@ -76,59 +76,47 @@
 
 <h3 id="VIIA">A) Environments</h3>
 
-<h4 id="VIIA1">1) What are Apple’s Tools to develop software on the Newton, and where can I find them?</h4>
+<h4 id="VIIA1">1) What are Apple’s tools to develop software on the Newton?</h4>
 
-<h5 id="VIIA1a">a) Apple NTK: The Newton Toolkit.</h5>
+<h5 id="VIIA1a">a) Newton Toolkit (NTK)</h5>
 
-<p>
-	Allows you to develop programs in NewtonScript on Mac OS or Windows and to install them (that’s cross development). There is a cross debugger for NewtonScript programs.
-</p>
-<p>
-	You can find it on Apple’s FTP site: [Dead Link] ftp://ftp.apple.com/developer/Newton_Development/tools/ntk/
-</p>
-<p>
-	It was also on Planet Newton and it’s now on the mirror on UNNA: <a href="http://guelph.unna.org/mirrors/download.planetnewton.com/download/programming/appledesktoptools.htm">http://guelph.unna.org/mirrors/download.planetnewton.com/download/programming/appledesktoptools.htm</a>
-</p>
-<p>
-	It’s also included into NewtonDev, an archive of essential development tools and documentation for Mac OS (and Basilisk II) which is on UNNA: <a href="http://www.unna.org/unna/development/NewtonDev/">http://www.unna.org/unna/development/NewtonDev/</a>.
-</p>
-<p>
-	NTK and Mac OS X 10.1. NTK might not work on Mac OS X under classic if it cannot find a serial port. To fix this problem or to use NTK over EtherTalk under Mac OS X (this is the only way), you might need to create/define a serial port.
-</p>
-<p>
-	To do this, you can use PortShare Demo <a href="http://www.stalker.com/pub/PortShareDemo.sit.hqx">http://www.stalker.com/pub/PortShareDemo.sit.hqx</a>
-</p>
+<p>Newton Toolkit allows you to develop programs in NewtonScript on Mac OS or Windows and to install them onto a Newton device. There is also a cross-platform debugger for NewtonScript programs.</p>
+
+<p>You can find it on Apple’s FTP site: [Dead Link] ftp://ftp.apple.com/developer/Newton_Development/tools/ntk/</p>
+
+<p>It was also on Planet Newton, now on UNNA’s mirror: <a href="http://guelph.unna.org/mirrors/download.planetnewton.com/download/programming/appledesktoptools.htm">http://guelph.unna.org/mirrors/download.planetnewton.com/download/programming/appledesktoptools.htm</a></p>
+
+<p>NTK is also included as part of NewtonDev, the archive of essential development tools and documentation for Mac OS (and Basilisk II): <a href="http://www.unna.org/unna/development/NewtonDev/">http://www.unna.org/unna/development/NewtonDev/</a>.</p>
+
+<p>Note: NTK might not work on Mac OS X under classic if it cannot find a serial port. To fix this problem or to use NTK over EtherTalk under Mac OS X (this is the only way), you might need to create/define a serial port.</p>
+
+<p>To do this, you can use PortShare Demo <a href="http://www.stalker.com/pub/PortShareDemo.sit.hqx">http://www.stalker.com/pub/PortShareDemo.sit.hqx</a></p>
+
 <ul>
 	<li>Install “PortShare Demo”</li>
 	<li>Boot under 9.x. Open PortShare Demo control panel and create a new port.</li>
 	<li>Start NTK and select this port</li>
 	<li>Boot under X. NTK does work (under Classic).</li>
 </ul>
-<p>
-	Or you can use TCPSerial (which is freeware) and can be found here: <a href="http://tucows.sympatico.ca/mac/preview/205826.shtml">http://tucows.sympatico.ca/mac/preview/205826.shtml</a>
-</p>
-<h5 id="VIIA1b">b) Apple NCT: The Newton C++ Toolbox.</h5>
-<p>
-	The Newton C++ Toolbox is divided into several parts available at various places on the internet:
-</p>
-<p>
-	The core archive was available at Planet Newton, it’s now at the mirror on UNNA: <a href="http://guelph.unna.org/mirrors/download.planetnewton.com/download/programming/applec%2B%2Btools.htm">http://guelph.unna.org/mirrors/download.planetnewton.com/download/programming/applec++tools.htm</a>.
-</p>
-<p>
-	You can find additional SDK to design drivers (DDK) on UNNA site: <a href="http://www.unna.org/unna/apple/development/DDKs/">http://www.unna.org/unna/apple/development/DDKs/</a>.
-</p>
-<p>
-	There is the Lantern DDK. It is the DDK for Ethernet cards drivers. It includes Hammer and Newtsbug, the low level debuggers. It can be found on UNNA: <a href="http://www.unna.org/unna/apple/development/DDKs/FullLanternDDK.sit">http://www.unna.org/unna/apple/development/DDKs/FullLanternDDK.sit</a>.
-</p>
-<p>
-	NCT requires MPW which only runs on Mac OS:
-</p>
-<p>
-	<a href="ftp://ftp.apple.com/developer/Tool_Chest/Core_Mac_OS_Tools/MPW_etc./MPW-PR_Images/MPW-PR.img.bin">ftp://ftp.apple.com/developer/Tool_Chest/Core_Mac_OS_Tools/MPW_etc./MPW-PR_Images/MPW-PR.img.bin</a> (August 1999 distribution is 18.5 megs).
-</p>
-<p>
-	You can find all that without MPW and a Basilisk II image with MPW into NewtonDev which is on UNNA: <a href="http://www.unna.org/unna/development/NewtonDev/">http://www.unna.org/unna/development/NewtonDev/</a>. NewtonDev includes additions and bug fixes of the NCT. It also includes <a href="#VIIA1a">NTK</a>, other tools and the most important documentation.
-</p>
+
+<p>Or you can use TCPSerial (which is freeware) and can be found here: <a href="http://tucows.sympatico.ca/mac/preview/205826.shtml">http://tucows.sympatico.ca/mac/preview/205826.shtml</a></p>
+
+<h5 id="VIIA1b">b) Newton C++ Toolbox (NCT)</h5>
+
+<p>The Newton C++ Toolbox is divided into several parts available at various places on the internet:</p>
+
+<p>The core archive was available at Planet Newton, it’s now at the mirror on UNNA: <a href="http://guelph.unna.org/mirrors/download.planetnewton.com/download/programming/applec%2B%2Btools.htm">http://guelph.unna.org/mirrors/download.planetnewton.com/download/programming/applec++tools.htm</a></p>
+
+<p>You can find additional SDK to design drivers (DDK) on UNNA site: <a href="http://www.unna.org/unna/apple/development/DDKs/">http://www.unna.org/unna/apple/development/DDKs/</a></p>
+
+<p>There is the Lantern DDK. It is the DDK for Ethernet cards drivers. It includes Hammer and Newtsbug, the low level debuggers. It can be found on UNNA: <a href="http://www.unna.org/unna/apple/development/DDKs/FullLanternDDK.sit">http://www.unna.org/unna/apple/development/DDKs/FullLanternDDK.sit</a></p>
+
+<p>NCT requires MPW which only runs on Mac OS:</p>
+
+<p><a href="ftp://ftp.apple.com/developer/Tool_Chest/Core_Mac_OS_Tools/MPW_etc./MPW-PR_Images/MPW-PR.img.bin">ftp://ftp.apple.com/developer/Tool_Chest/Core_Mac_OS_Tools/MPW_etc./MPW-PR_Images/MPW-PR.img.bin</a></p>
+
+<p>You can find all that without MPW and a Basilisk II image with MPW into NewtonDev which is on UNNA: <a href="http://www.unna.org/unna/development/NewtonDev/">http://www.unna.org/unna/development/NewtonDev/</a>. NewtonDev includes additions and bug fixes of the NCT. It also includes <a href="#VIIA1a">NTK</a>, other tools and the most important documentation.</p>
+
 <h4 id="VIIA2">2) What are the solutions to develop directly on my Newton?</h4>
 
 <h5 id="VIIA2a">a) Newton Dev Environment (NDE)</h5>
@@ -175,9 +163,8 @@
 			<li>Purpose: all software, including these that require big resources and complex GUI.</li>
 		</ul></li>
 </ul>
-<h5 id="VIIA2b">b) nsScribe</h5>
 
-<p>Many software programs allow you to execute NewtonScript.</p>
+<h5 id="VIIA2b">b) nsScribe</h5>
 
 <p>Prism Research’s <a href="http://newted.org/newtsprism/nsScribe/nsScribe.html">nsScribe</a> allows you to execute NewtonScript code from the Notepad, the Assistant or Newton Works.</p>
 
@@ -188,21 +175,28 @@
 <h4 id="VIIA3">3) Are there other programming languages for the Newton?</h4>
 
 <h5 id="VIIA3a">a) NS Basic</h5>
+
 <p><a href="https://www.nsbasic.com/newton/info/nsbasic/">NS Basic</a> is a complete implementation of the BASIC programming language, with extensions to take advantage of Newton OS.</p>
+
 <p>Once a commercial application, <a href="https://github.com/gwhenne">George Henne</a> has released <a href="https://github.com/nsbasic-archive/NS-Basic-for-Newton-OS">NS Basic and its source code</a> on GitHub.</p>
 
 <h5 id="VIIA3b">b) NewtCard</h5>
+
 <p><a href="https://www.nsbasic.com/newton/info/newtcard/">NewtCard</a> is a HyperCard-like environment for the Newton. It allows you to manage text and pictures as a collection of cards. Easily add text fields, check boxes, buttons, and other elements to the cards. Buttons can be scripted using NS Basic. [cf. <a href="#VIIA3a">VIIA3a</a>]</p>
+
 <p>Once a commercial application, <a href="https://github.com/gwhenne">George Henne</a> has released <a href="https://github.com/nsbasic-archive/NewtCard-for-Newton-OS">NewtCard and its source code</a> on GitHub.</p>
+
 <p>Archived <a href="https://web.archive.org/web/20090608184151/http://www.nsbasic.com/pub/NewtCard_files/">NewtCard Demo</a> files are also available.</p>
 
 <h5 id="VIIA3c">c) Lisp</h5>
+
 <ul>
 	<li>LittleLisp by David Benn [Dead Link]. http://www.adelaide.net.au/~dbenn/LittleLisp/LittleLispDocs/ Updated by Daniel Padilla</li>
 	<li>Lisp by by Jonathan Millen</li>
 </ul>
 
 <h5 id="VIIA3d">d) Assembler</h5>
+
 <ul>
 	<li>Roger Milne succeeded in writing programs (such as his MOD Player) in Assembly language on his PC with a GNU assembler. He made a page explaining how he proceeded: <a href="http://roger.trideja.com/newton/newtonasm.html">http://roger.trideja.com/newton/newtonasm.html</a>
 		<br />
