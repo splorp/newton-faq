@@ -644,17 +644,20 @@
 <p>
 	There is a bug in Newton OS 2.1 where the system is unable to detect which slot a modem is inserted in. To fix this error, first choose a slot where you will always have your modem inserted. Then, go to the Prefs panel from Extras and tap on Modem. Change the Connect Using setting ro either Right PC Card or Left PC Card, depending on the slot you’ve chosen.
 </p>
+
 <h5 id="IIIC2f">f) When I insert a memory card, I get a -10582 error. What’s wrong?</h5>
-<p>
-	The -10582 error is kError_ATA_No_Partition. It is triggered when the built-in ATA card handler cannot find a Master Boot Record. Actually, it won’t find it, even if the card was DOS formatted, because the driver in the ROM always reads zeroes. And even if it worked, the card handler isn’t finished either.
-</p>
-<p>
-	The consequence is that you cannot use ATA cards with the Newton without a third-party driver. See which memory cards work with your Newton (<a href="newton-faq-hardware.html#IIB1">IIB1</a>).
-</p>
+
+<p>The -10582 error is kError_ATA_No_Partition. It is triggered when the built-in ATA card handler cannot find a Master Boot Record. Actually, it won’t find it, even if the card was DOS formatted, because the driver in the ROM always reads zeroes. And even if it worked, the card handler isn’t finished either.</p>
+
+<p>The end result is that you cannot use ATA cards with the Newton without a third-party driver.</p>
+
+<p>See also: <a href="newton-faq-hardware.html#IIB1">What kind of memory cards can I use in my Newton?</a></p>
+
 <h5 id="IIIC2g">g) When I insert a flash memory card, my MP2x00 tells me the battery in the card needs to be replaced.</h5>
 <p>
 	This is a known bug. Your card probably doesn’t have any battery. Install the latest system patch for your MP2x00 (see <a href="#IIIA2a">IIIA2a</a>).
 </p>
+
 <h5 id="IIIC2h">h) I installed a new version of the backdrop application I’m using and I can’t see it.</h5>
 <p>
 	This is a known bug discovered by Victor Rehorst. Technically, you can on Newton OS have two packages with the same signature provided that they’re not on the same store. Normally, in such a case, the system shows the secondly loaded package with a big cross on it, to tell you that it hasn’t been activated. Additionally, the system doesn’t show the backdrop application in the Extras Drawer.
