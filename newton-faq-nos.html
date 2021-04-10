@@ -82,7 +82,6 @@
 			<li><a href="#IIIB8">How do I find the Newton ID of my device?</a></li>
 			<li><a href="#IIIB9">Storage space arithmetic</a></li>
 			<li><a href="#IIIB10">Are there any viruses that affect Newton OS?</a></li>
-			<li><a href="#IIIB11">How do I freeze a package?</a></li>
 			<li><a href="#IIIB12">How do I delete a package?</a></li>
 		</ol></li>
 	<li><a href="#IIIC">Troubleshooting</a>
@@ -570,29 +569,25 @@
 	<li>A store includes more data than what some software counts as the used space. There is some information on the store (including its name, ID, kind, password (this is partly implemented in the OS, the missing part is the slip to set it/ask for it). The store also can have some information associated to it (see the programmer’s doc for details). And finally, we have the soups. Each soup can have information associated (idem), such as the last time it was backed up, and some information to identify them (name, what is indexed). Data includes the indexes and the entries of course. Finally, a store used size can temporarily include the VBOs.</li>
 	<li>Newton OS stores are garbaged collected, which isn’t surprising for a persistent object store. There is a single persistence root for the curious, a special object with an ID that is determined by the system (it is 0x27 for flash stores, another fixed value for Package Store (0 AFAIR) and some variable value for ATA stores).</li>
 </ul>
-<p>
-	Note: Linear and ATA stores follow different arithmetics.
-</p>
-<p>
-	To end with these arithmetics, note that probably the most serious website about storage cards, Carsten Lemmen’s (http://www.mac3.de/sig/newton/memory_cards.html) relies on Nick’s Test It speed values. While the time spent to do the test is probably the best comparison tool, even if it can change a lot due to various factors including pen input, software installed, etc., the speed given by Nick’s Test It does not mean much.
-</p>
-<p>
-	Indeed, Nick’s Test It creates a temporary soup (hence with at least an index on the unique ID) and then creates 335 entries with the following frame:
-</p>
+
+<p>Note: Linear and ATA stores follow different arithmetics.</p>
+
+<p>To end with these arithmetics, note that probably the most serious website about storage cards, Carsten Lemmen’s (http://www.mac3.de/sig/newton/memory_cards.html) relies on Nick’s Test It speed values. While the time spent to do the test is probably the best comparison tool, even if it can change a lot due to various factors including pen input, software installed, etc., the speed given by Nick’s Test It does not mean much.</p>
+
+<p>Indeed, Nick’s Test It creates a temporary soup (hence with at least an index on the unique ID) and then creates 335 entries with the following frame:</p>
+
 <pre><code>
 {
 	s : “ABC..YZabc...wxABC..YZabc...wxABC..YZabc...wxABC..YZabc...wx”
 }
 </code></pre>
-<p>
-	which is 452 bytes; therefore if we count out the index, and the unique ID slot, we have 148 KB of useful data transferred.
-</p>
-<p>
-	Additionally, on a flash store, creating an entry actually means creating a transaction, i.e. copying 64 KB of data. So copying 335 entries means much more than 100 KB. I also think that if the store is nearly empty, the 64 KB aren’t copied when possible, hence the much higher value for freshly formatted cards.
-</p>
-<p>
-	Finally, defragmenting can be done by doing a full backup, erasing all data and restoring the backup. Since backups never hurt, defragmenting cannot hurt. Whether it helps getting some bytes back/improving speed depends on your belief.
-</p>
+
+<p>which is 452 bytes; therefore if we count out the index, and the unique ID slot, we have 148 KB of useful data transferred.</p>
+
+<p>Additionally, on a flash store, creating an entry actually means creating a transaction, i.e. copying 64 KB of data. So copying 335 entries means much more than 100 KB. I also think that if the store is nearly empty, the 64 KB aren’t copied when possible, hence the much higher value for freshly formatted cards.</p>
+
+<p>Finally, defragmenting can be done by doing a full backup, erasing all data and restoring the backup. Since backups never hurt, defragmenting cannot hurt. Whether it helps getting some bytes back/improving speed depends on your belief.</p>
+
 <h4 id="IIIB10">10) Are there any viruses that affect Newton OS?</h4>
 
 <p>No.</p>
@@ -607,10 +602,15 @@
 <p>If you are in icon mode, tap and hold a package icon until you hear a “squeak” sound, drag over the icon until it is highlighted, and then select “Delete” from the routing menu. You can also simply “scrub” or “zig-zag” over the package icon to delete it. This works the same way as when you are scrubbing out or deleting text.</p>
 
 <hr>
+
 <h3 id="IIIC">C) Troubleshooting</h3>
+
 <h4 id="IIIC1">1) Is the Newton Y2K compliant?</h4>
+
 <p>Apparently so, according to this Apple Support article: <a href="https://support.apple.com/kb/TA38398?locale=en_CA">Newton OS: Year 2000 (Y2K) Compliance</a></p>
+
 <p>However, different date and time related problems might occur starting in 2010, 2099, and 2924. (Should you be so lucky to be alive, with a functioning Newton). These problems are discussed on Steve Weyer’s page, <a href="https://communicrossings.com/html/newton/newtscape/exs/times.htm">The Times, They Are a Changin’</a>.</p>
+
 <p>Avi Drissman created <a href="http://www.drissman.com/avi/newton/Fix2010/">an experimental fix</a> for the Year 2010 problem.</p>
 
 <h4 id="IIIC2">2) Are there known bugs in the Newton OS?</h4>
