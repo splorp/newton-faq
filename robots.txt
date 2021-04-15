@@ -1,0 +1,6 @@
+# robots.txt
+# newtonfaq.com
+# updated 14 April 2021
+
+User-agent: *
+Disallow:
