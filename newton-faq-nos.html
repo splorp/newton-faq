@@ -39,7 +39,7 @@
 					<li><a href="#IIIA2a">US &amp; International English Updates</a></li>
 					<li><a href="#IIIA2b">German Updates</a></li>
 					<li><a href="#IIIA2c">French Updates</a></li>
-					<li><a href="#IIIA2d">What is the numbering system?</a></li>
+					<li><a href="#IIIA2d">What is the update numbering system?</a></li>
 				</ol>
 			</li>
 			<li><a href="#IIIA3">How do I find out which version of Newton OS I have?</a></li>
@@ -222,7 +222,7 @@
 
 <p id="IIIA2-3"><sup>3</sup> Even though they share the same numbering, the 536205 update for the MessagePad 130 is not the same as the update for the MessagePad 120, although it fixes the same bugs. Although both the MessagePad 120 with Newton OS 2.0-D and MessagePad 130 with Newton OS 2.0-D have the same ROM, they have different “Gestalt Machine Type” designations.</p>
 
-<h4 id="IIIA2d">d) What is the numbering system?</h4>
+<h4 id="IIIA2d">d) What is the update numbering system?</h4>
 
 <p>The six digit update numbering system was introduced with Newton OS 1.3 to alleviate some of the confusion with previous update numbering. Adding to the pre-1.3 confusion is the fact that the ROM come is 1.0.x and 1.1.x versions. See for yourself in this handy comparison of ROM and update version numbering:</p>
 
@@ -256,7 +256,7 @@
 <p>The following is Paul Guyot’s interpretation of the numbering system, partially based on Henry Cate’s reply to Walter’s original post. Both Henry and Walter worked on the Newton engineering team at Apple.</p>
 
 <ul>
-	<li>First two digits:
+	<li>First and second digits:
 		<ul>
 			<li>34: MP110</li>
 			<li>41: MP100</li>
@@ -278,14 +278,14 @@
 			<li>The last digit of the year.</li>
 		</ul>
 	</li>
-	<li>Last three digits:
+	<li>Fourth through sixth digits:
 		<ul>
 			<li>The day of the year that the package was created.</li>
 		</ul>
 	</li>
 </ul>
 
-<p>The question is how do we handle years past 1999 into the 2000s? Was the discontinuing of Newton planned from the beginning (at least before the 52nd day of 1994) by Apple? With the 710031 update, Paul Guyot coded year 2000 with a 0. However, this makes the 710031 upgrade a lower number than the older 717260 upgrade. Avi Drissman suggested that the years 2000 through 2009 be represented as ‘A’ through ‘J’.</p>
+<p>Since the third digit indicates the last digit of the year, this assumes that 0 through 9 represent the years 1990 through 1999. So, how are years after 1999 handled? With the 710031 update, Paul Guyot coded year 2000 with a 0. However, this makes the 710031 upgrade a lower number than the older 717260 upgrade. Avi Drissman suggested that the years 2000 through 2009 should be represented as ‘A’ through ‘J’.</p>
 
 <p>Eckhart Köppen’s Year 2010 upgrade numbering system works like this:</p>
 
@@ -308,7 +308,7 @@
 			<li>The number of years after 1990. Note that ‘J’ is used instead of ‘9” for the year 2009 to avoid the overlap with the year 1999.</li>
 		</ul>
 	</li>
-	<li>Last three digits:
+	<li>Fourth through sixth digits:
 		<ul>
 			<li>The day of the year that the package was created.</li>
 		</ul>
