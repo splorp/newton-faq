@@ -85,7 +85,7 @@
 		<li><a href="#IIB9">Can I use digital cameras with my Newton?</a></li>
 		<li><a href="#IIB10">Can I use a Click/IBM Microdrive/ATA Flash/CompactFlash adapter in my Newton?</a></li>
 		<li><a href="#IIB11">Are there any third-party accessories that use the Interconnect port on the MP2x00 or eMate?</a></li>
-		<li><a href="#IIB12">Can I use an AirPort/WaveLAN card in my Newton?</a></li>
+		<li><a href="#IIB12">Can I use a wireless card in my Newton?</a></li>
 		<li><a href="#IIB13">What cable do I need to connect to my desktop computer?</a></li>
 	</ol>
 	</li>
@@ -986,20 +986,22 @@ From: Eric Schneck — I got the Motorola TimePort P280 working (in analog mode)
 
 <h5 id="IIB2c">c) Which network cards can I use?</h5>
 
-<p>(From Victor Rehorst)</p>
+<p>For the MessagePad 120 with Newton OS 2.0 and MessagePad 130, only one network card is known to work.</p>
 
-<p>For the 120/2.0 and 130, only one network card is known to work. Donald T. Stewart writes:</p>
+<p>According to Donald T. Stewart:</p>
 
-<blockquote>I purchased the Roamer (a PC card wireless networking device) and a DynaCOMM Network Access Point from e-bay a couple of months ago, but just today tried to get them working. I have no trouble using a 2.0 MP120 with them, and seem to ba able to access my home AppleTalk network wirelessly.</blockquote>
+<blockquote>“I purchased the Roamer (wireless networking PC card) and a DynaCOMM Network Access Point from eBay a couple of months ago, but just today tried to get them working. I had no trouble using an MessagePad 120/2.0 with them and seem to be able to access my home AppleTalk network wirelessly.”</blockquote>
 
-<p>This card is seemingly incompatible with Newton OS 2.1.</p>
+<p>The Roamer card is apparently not compatible with Newton OS 2.1.</p>
 
-<p>Devices running Newton OS 2.1 and NIE 2.0 can use ethernet cards from certain manufacturers, with the proper drivers. The following is a fairly exhaustive list:</p>
+<p>Devices running Newton OS 2.1 and Newton Internet Enabler (NIE) 2.0 can use ethernet and <a href="#IIB12">wireless cards</a> from certain manufacturers with the proper drivers.</p>
+
+<p>The following is a fairly exhaustive list of compatible ethernet cards:</p>
 
 <ul>
 	<li>Farallon PN895 EtherWave</li>
-	<li>3Com 3c589, 3C589B (according to Harri Hohteri), 3c589C, 3c589D (including -TP), 3CXE589DT, 3CXE589ET</li>
-	<li>Proxim RangeLAN2 wireless ethernet (this card is not compatible with AirPort or any other 802.11-based technology)</li>
+	<li>3Com 3c589, 3C589B, 3c589C, 3c589D, 3c589D-TP, 3CXE589DT, 3CXE589ET</li>
+	<li>Proxim RangeLAN2 <sup><a href="#IIB2c-9">9</a></sup></li>
 	<li>AmbiCom AMB8010 PowerSaver</li>
 	<li>TDK combo cards: DFL5610, DFL3410, DFL3200, DFL9610</li>
 	<li>TDK ethernet cards: LAK-CD021, LAK-CD021AX, LAK-CD021BX</li>
@@ -1012,9 +1014,13 @@ From: Eric Schneck — I got the Motorola TimePort P280 working (in analog mode)
 	<li>Correga EtherII PCC-T</li>
 </ul>
 
-<p>Drivers for all of the listed cards are available from Victor Rehorst’s <a href="http://old.chuma.org/newton/ethernet/">Ethernet Information</a> page.</p>
+<p id="#IIB2c-9"><sup>9</a></sup> The Proxim RangeLAN is a “wireless ethernet” card, but it is not compatible with AirPort or any other 802.11-based networking.</p>
 
-<p>Note: This applies to TCP/IP. [cf. <a href="newton-faq-software.html#VB1f">VB1f</a>]</p>
+<p>Additional information and required driver packages are available from Victor Rehorst’s <a href="http://old.chuma.org/newton/ethernet/">Ethernet Information</a> page, Frank Gründel’s <a href="https://www.pda-soft.de/body_ethernetconnectivity.html">Newton &amp; Ethernet</a> page, and the <a href="https://archive.org/details/newton_ethernet_drivers">Internet Archive</a>.</p>
+
+<p>This information applies to TCP/IP connections over ethernet, not AppleTalk connections. [cf. <a href="newton-faq-software.html#VB1f">VB1f</a>]</p>
+
+<p>See also: <a href="#IIB12">Can I use a wireless card in my Newton?</a>
 
 <h5 id="IIB2d">d) How can I connect my Newton to a mobile phone?</h5>
 
@@ -1192,19 +1198,18 @@ LR99812</p>
 
 <p>You can build your audio in/out dongle. Details are at <a href="http://www.eskimo.com/~millerd/nicadapter/">http://www.eskimo.com/~millerd/nicadapter/</a>.</p>
 
-<h4 id="IIB12">12) Can I use an AirPort/WaveLAN card in my Newton?</h4>
+<h4 id="IIB12">12) Can I use a wireless card in my Newton?</h4>
 
-<p>Yes. Just like an ethernet card, you need an OS 2.1 Newton, NIE 2.0 installed, and the appropriate driver. The only available drivers so far is written by Hirochi Noguchi, and is available at:</p>
+<p>Yes. You can use certain wireless cards just like an <a href="#IIB2c">ethernet networking card</a>. You will need a device running Newton OS 2.1, Newton Internet Enabler (NIE) 2.0, and the <a href="http://www.unna.org/view.php?/drivers/ethernet/WiFi">appropriate driver packages</a> developed by Hirochi Noguchi.</p>
 
-<p><a href="http://www.ff.iij4u.or.jp/~ngc/eng/newtwave.htm">http://www.ff.iij4u.or.jp/~ngc/eng/newtwave.htm</a></p>
-
-<p>The driver seems to work with most Lucent WaveLAN cards, and is designed to use a base station. Apple AirPort base stations with software version 1.3 or 2.0 are known to work.</p>
+<p>The WaverLAN driver seems to work with most Lucent WaveLAN cards and is designed to connect to a base station. Apple AirPort base stations running software version 1.3 or 2.0 are known to work.</p>
 
 <p>Additional information:</p>
 
 <ul>
-	<li><a href="https://web.archive.org/web/20171009051255/http://www.deleet.de/ray/newton/802.11b-FAQ.html">Newton Wireless LAN FAQ</a></li>
-	<li>Darius Zendeh’s <a href="https://web.archive.org/web/20021004113756/http://www.newtenlightment.de/support.html">WaveLAN Support</a></li>
+	<li>Pawel Piotrowski’s <a href="http://applenewton.co.uk/2018/04/22/wifi-connection-setup-for-newton-2x00-and-emate-300/">WiFi Connection Setup for Newton 2×00 and eMate 300</a> (2018)</li>
+	<li><a href="https://web.archive.org/web/20171009051255/http://www.deleet.de/ray/newton/802.11b-FAQ.html">Newton Wireless LAN FAQ</a> (2002)</li>
+	<li>Darius Zendeh’s <a href="https://web.archive.org/web/20021004113756/http://www.newtenlightment.de/support.html">WaveLAN Support</a> (2002)</li>
 </ul>
 
 <h4 id="IIB13">13) What cable do I need to connect to my desktop computer?</h4>
