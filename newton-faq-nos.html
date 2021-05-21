@@ -102,8 +102,8 @@
 					<li><a href="#IIIC2c">When I write, sometimes some strokes do not appear or disappear.</a></li>
 					<li><a href="#IIIC2d">When I do a find with Newton Works, the free memory amount falls.</a></li>
 					<li><a href="#IIIC2e">What are these -16022 errors every time I try to use my modem?</a></li>
-					<li><a href="#IIIC2f">When I insert a memory card, I get a -10582 error. What’s wrong?</a></li>
-					<li><a href="#IIIC2g">When I insert a flash memory card, my MP2x00 tells me the battery in the card needs to be replaced.</a></li>
+					<li><a href="#IIIC2f">When I insert a storage card, I get a -10582 error. What’s wrong?</a></li>
+					<li><a href="#IIIC2g">When I insert a flash storage card, my MP2x00 tells me the battery in the card needs to be replaced.</a></li>
 					<li><a href="#IIIC2h">I installed a new version of the backdrop application I’m using and I can’t see it.</a></li>
 				</ol>
 			</li>
@@ -849,15 +849,15 @@
 
 <p>There is a bug in Newton OS 2.1 where the system is unable to detect which slot a modem is inserted in. To fix this error, first choose a slot where you will always have your modem inserted. Then, go to the Prefs panel from Extras and tap on Modem. Change the Connect Using setting ro either Right PC Card or Left PC Card, depending on the slot you’ve chosen.</p>
 
-<h5 id="IIIC2f">f) When I insert a memory card, I get a -10582 error. What’s wrong?</h5>
+<h5 id="IIIC2f">f) When I insert a storage card, I get a -10582 error. What’s wrong?</h5>
 
 <p>The -10582 error is kError_ATA_No_Partition. It is triggered when the built-in ATA card handler cannot find a Master Boot Record. Actually, it won’t find it, even if the card was DOS formatted, because the driver in the ROM always reads zeroes. And even if it worked, the card handler isn’t finished either.</p>
 
 <p>The end result is that you cannot use ATA cards with the Newton without a third-party driver.</p>
 
-<p>See also: <a href="newton-faq-hardware.html#IIB1">What kind of memory cards can I use in my Newton?</a></p>
+<p>See also: <a href="newton-faq-hardware.html#IIB1">What storage cards can I use?</a></p>
 
-<h5 id="IIIC2g">g) When I insert a flash memory card, my MP2x00 tells me the battery in the card needs to be replaced.</h5>
+<h5 id="IIIC2g">g) When I insert a flash storage card, my MP2x00 tells me the battery in the card needs to be replaced.</h5>
 
 <p>This is a known bug. Your card probably doesn’t have any battery. Install the latest system patch for your MP2x00 (see <a href="#IIIA2a">IIIA2a</a>).</p>
 
