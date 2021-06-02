@@ -455,12 +455,15 @@
 <h5 id="VC1a">a) Negative numbers</h5>
 
 <p>These are standard Newton OS errors. The error number usually provides information about the type of error and can be found in the Programmer’s Reference for Newton OS 2.0 or in a book for Newton written by Chris Frost <a href="http://www.frostnet.net/chris/newton/html/books.html">http://www.frostnet.net/chris/newton/html/books.html</a></p>
-<p>Victor Rehorst built a database of errors that may contain more errors (especially from C++ headers). You’ll find it at: <a href="http://guelph.unna.org/errors/">http://guelph.unna.org/errors/</a></p>
+
+<p>Victor Rehorst built a database of errors that may contain more errors (especially from C++ headers). You’ll find it at: <a href="http://tools.unna.org/errors/">http://tools.unna.org/errors/</a></p>
+
 <p>The -10061 error is the symptom of a known bug. [cf. <a href="newton-faq-nos.html#IIIC2a">IIIC2a</a>]</p>
 
 <h5 id="VC1b">b) Positive numbers are usually bus errors.</h5>
 
 <p>Having such an error means a bad reference to a NewtonScript object (any strange use of Ref()?) or a bad error in a C++ code.</p>
+
 <p>A bus error may also be triggered by a hardware problem, since the very concept of it is that the processor tried to access data at a certain address, and was answered that it was impossible.</p>
 
 <h4 id="VC2">2) My Newton crashes or hangs at startup. What can I do?</h4>
