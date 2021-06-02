@@ -883,17 +883,22 @@ Power Adapter, Right Angle, Int’l         Z922-0561
 
 <h5 id="IIB2a">a) Which modems can I use?</h5>
 
-<p>Any compatible external modem should work properly.</p>
+<p>Any external modem should work properly, using a standard DIN-8 serial cable to connect to the Newton device.</p>
 
-<p>[From Helmut Fischer]: To connect MP and external modem, use a standard Apple Macintosh modem cable. Works on all MPs I have tried (120, 130, 2100).</p>
+<p>Until 2003, Len Lutz maintained the <a href="https://web.archive.org/web/20040409081724/http://www.dca.net/cgi-bin/cgiwrap/lenlutz/newton.cgi">Newton Modem List</a>, a voluminous database of PCMCIA modems that people had used with their Newton devices.</p>
 
-<p>For internal modems, there is a complete list maintained by Len Lutz at: <a href="http://www.dca.net/cgi-bin/cgiwrap/lenlutz/newton.cgi">http://www.dca.net/cgi-bin/cgiwrap/lenlutz/newton.cgi</a></p>
+<p>According to Victor Rehorst, most PCMCIA modems should work as long as they are not labelled as a “software modem” or “Winmodem”.</p>
 
-<p>DNUG maintains a list of drivers and scripts: [dead link] http://www.dnug.dk/info/modems.html</p>
+<p>Note that “combo” cards (PCMCIA cards that combine a modem with some other sort of networking protocol, such as ethernet) generally require a specific driver to operate. However, in many cases the modem will work with a Newton device. If a message appears stating “A communications card has been inserted” when you insert a combo card, the modem component of the card has been recognized and just might work.</p>
 
-<p>To make a modem script, you can use the sample code provided by Apple, Modem Setup (latest version is 2), which you can find on UNNA.</p>
+<p>At one point, DNUG maintained a list of various <a href="https://web.archive.org/web/19990210065102/http://www.dnug.dk/info/modems.html">modem drivers and scripts</a>.</p>
 
-<p>Combo cards don’t work without a specific driver. Some have one, but most don’t. In the best case you can use the modem part of the card. If the Newton says “A communications card has been inserted” when you insert a combo card, it means that the modem part has been recognized and might work.</p>
+<p>To create your own modem script, you can use Apple’s Newton Toolkit sample code.</p>
+
+<ul>
+	<li><a href="http://www.unna.org/unna/apple/development/Examples/SampleCodeMac/Modem%20Setup-2.sea.hqx">Modem Setup Installer 2.0</a> (Mac OS)</li>
+	<li><a href="http://www.unna.org/unna/apple/development/Examples/SampleCodeWin/MODEMSTP.ZIP">Modem Setup Installer 2.0</a> (Windows)</li>
+</ul>
 
 <h5 id="IIB2b">b) Which mobile phones can I use?</h5>
 
