@@ -93,17 +93,21 @@ h5 {
 	margin-bottom: 0.5em;
 	}
 
-blockquote {
-	margin-bottom: 1.0em;
-	background: #EEE;
-	padding: 20px 10px 20px 30px;
-	border-left: 20px solid #CCC;
-	}
-	
 p {
 	margin-bottom: 1.0em;
 	}
 
+blockquote p:last-child {
+	margin-bottom: 0;
+	}
+
+blockquote {
+	margin-bottom: 1.0em;
+	background: #EEE;
+	padding: 1.0em;
+	border-left: 20px solid #CCC;
+	}
+	
 code {
 	background-color: #F8F8F8;
 	border-radius: 3px;
@@ -114,6 +118,10 @@ code {
 	line-height: initial;
 	padding: 2px 5px 1px 5px;
 	white-space: pre;
+	}
+
+pre {
+	margin-bottom: 1.5em;
 	}
 
 table {
