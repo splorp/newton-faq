@@ -130,6 +130,10 @@ pre {
 	padding: 0.5em 1.0em;
 	}
 
+strong {
+	color: #777;
+	}
+
 sub,
 sup {
 	font-size: 0.7em;
@@ -146,8 +150,15 @@ tr {
 	border-bottom: 1px solid #999;
 	}
 	
-td,
 th {
+	background: #EEE;
+	color: #777;
+	padding: 0.5em;
+	text-align: left;
+	white-space: nowrap;
+	}
+
+td {
 	padding: 0.5em;
 	text-align: left;
 	white-space: nowrap;
