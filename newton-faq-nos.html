@@ -768,11 +768,11 @@
 
 <p>Indeed, Nick’s Test It creates a temporary soup (hence with at least an index on the unique ID) and then creates 335 entries with the following frame:</p>
 
-<pre><code>
-{
-	s : “ABC..YZabc...wxABC..YZabc...wxABC..YZabc...wxABC..YZabc...wx”
-}
-</code></pre>
+<pre>
+<code>{
+    s : “ABC..YZabc...wxABC..YZabc...wxABC..YZabc...wxABC..YZabc...wx”
+}</code>
+</pre>
 
 <p>which is 452 bytes; therefore if we count out the index, and the unique ID slot, we have 148 KB of useful data transferred.</p>
 

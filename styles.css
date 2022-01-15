@@ -108,20 +108,26 @@ blockquote {
 	border-left: 20px solid #CCC;
 	}
 	
-code {
+p code {
+	background-color: #F8F8F8;
+	border-radius: 3px;
+	border: 1px solid #CCC;
+	color: #333;
+	font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+	font-size: 14px;
+	line-height: -10px;
+	padding: 0.2em;
+	}
+
+pre {
 	background-color: #F8F8F8;
 	border-radius: 3px;
 	border: 1px solid #CCC;
 	color: #333;
 	font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
 	font-size: 15px;
-	line-height: initial;
-	padding: 2px 5px 1px 5px;
-	white-space: pre;
-	}
-
-pre {
 	margin-bottom: 1.5em;
+	padding: 0.5em 1.0em;
 	}
 
 sub,
