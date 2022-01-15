@@ -124,6 +124,12 @@ pre {
 	margin-bottom: 1.5em;
 	}
 
+sub,
+sup {
+	font-size: 0.7em;
+	line-height: 1;
+	}
+	
 table {
 	margin-bottom: 1.5em;
 	border: 1px solid #999;
