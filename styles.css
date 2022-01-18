@@ -164,16 +164,20 @@ td {
 	white-space: nowrap;
 	}
 
-article ul,
-article ol {
+ul,
+ol {
 	margin-bottom: 1.5em;
 	margin-left: 1.5em;
 	}
 
-article li ul,
-article li ol {
+li ul,
+li ol {
 	margin-bottom: 0;
 	margin-left: 2.5em;
+	}
+
+li strong + ul {
+	margin-top: 0.5em;
 	}
 
 nav {
