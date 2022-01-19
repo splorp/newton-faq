@@ -185,6 +185,10 @@ nav {
 	padding: 1em 0;
 	}
 
+nav ul {
+	margin-left: 0;
+	}
+
 nav li {
 	float: left;
 	font-weight: bold;
