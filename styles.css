@@ -176,8 +176,16 @@ li ol {
 	margin-left: 2.5em;
 	}
 
+li + li[id] {
+	margin-top: 1.5em;
+	}
+
 li strong + ul {
 	margin-top: 0.5em;
+	}
+
+li p {
+	margin-bottom: 0.5em;
 	}
 
 nav {
