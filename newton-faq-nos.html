@@ -63,7 +63,7 @@
 			</li>
 		</ol>
 	</li>
-	<li><a href="#IIIB">Using the Newton OS</a>
+	<li><a href="#IIIB">Using Newton OS</a>
 		<ol>
 			<li><a href="#IIIB1">How do I find the Newton’s built-in Help Book?</a></li>
 			<li><a href="#IIIB2">What are the different ways to reset a Newton?</a>
@@ -91,7 +91,7 @@
 			<li><a href="#IIIB6">How do I find out information about a package?</a></li>
 			<li><a href="#IIIB7">How do I take screenshots?</a></li>
 			<li><a href="#IIIB8">How do I find the Newton ID of my device?</a></li>
-			<li><a href="#IIIB9">Storage space arithmetic</a></li>
+			<li><a href="#IIIB9">Are there any easter eggs in Newton OS?</a></li>
 			<li><a href="#IIIB10">Are there any viruses that affect Newton OS?</a></li>
 			<li><a href="#IIIB11">How do I freeze a package?</a></li>
 			<li><a href="#IIIB12">How do I delete a package?</a></li>
@@ -124,17 +124,13 @@
 			<li><a href="#IIIC5">Why does the available memory decrease when the Newton is idle?</a></li>
 		</ol>
 	</li>
-	<li><a href="#IIID">Miscellaneous</a>
+	<li><a href="#IIID">How does Newton OS work?</a>
 		<ol>
-			<li><a href="#IIID1">Where can I find information about easter eggs?</a></li>
-			<li><a href="#IIID2">How are packages compressed? (The story of the compression bits)</a></li>
-			<li><a href="#IIID3">How it all works</a>
-				<ol type="a">
-					<li><a href="#IIID3a">Newton Process Management</a></li>
-					<li><a href="#IIID3b">Newton Memory Organization</a></li>
-					<li><a href="#IIID3c">The Newton “File System”</a></li>
-				</ol>
-			</li>
+			<li><a href="#IIID1">How is storage space calculated?</a></li>
+			<li><a href="#IIID2">How are packages compressed?/a></li>
+			<li><a href="#IIID3">How are processes managed?</a></li>
+			<li><a href="#IIID4">How is the memory organized?</a></li>
+			<li><a href="#IIID5">Does Newton OS have a file system?</a></li>
 		</ol>
 	</li>
 </ol>
@@ -517,7 +513,7 @@
 
 <hr>
 
-<h3 id="IIIB">B. Using the Newton OS</h3>
+<h3 id="IIIB">B. Using Newton OS</h3>
 
 <h4 id="IIIB1">1. How do I find the Newton’s built-in Help Book?</h4>
 
@@ -560,8 +556,9 @@
 <p>Warning: A hard reset <strong>will erase everything on your Newton</strong>. Use it with caution, and usually only as a last resort. If you are performing a Backup and Restore Cycle, you will want to perform a hard reset after the backup and before the restore. Other than that, you will probably never perform one; unless you have major data corruption, or are selling your Newton.</p>
 
 <p>To perform a Hard reset, tap the reset button, while holding down the power switch. You will be presented with a dialog box asking “Do you want to erase data completely”. Tap Yes if you want to perform the Hard reset and erase everything on the Newton. You will be asked to reconfirm your selection, and then the data will be erased.</p>
+<p>Note that performing a backup, hard reset, and restore cycle will defragment storage and potentially speed up your Newton device.</p>
 
-<p>Note that doing a backup/hard reset/restore cycle might speed up your Newton. See question <a href="#IIIB9">IIIB9</a> about defragmentation.</p>
+<p>See also: <a href="#IIID1">How is storage space calculated?</a></p>
 
 <h5 id="IIIB2f">f. Cold boot</h5>
 
@@ -758,59 +755,28 @@
 
 <p>On Newton OS 2.1 devices, the Newton ID is stored in a special chip, the Dallas Semiconductor DS2401 Serial Number ROM. If the motherboard of the device is replaced, the Newton ID of the device will be changed as well.</p>
 
-<h4 id="IIIB9">9. Storage space arithmetic</h4>
+<h4 id="IIIB9">9. Are there any easter eggs in Newton OS?</h4>
 
-<p>This is an answer to the following questions:</p>
-
-<ul>
-	<li>When I add up Free space and Used space, I don’t get the size of the internal store/card?</li>
-	<li>The Newton tells me the internal store/card is full while it also says I have hundreds of KB free?</li>
-	<li>Is it true that the storage can be fragmented and unfragmenting it will speed up the transfer?</li>
-</ul>
-
-<p>Storage space arithmetic is very close to Bistromathics. It is completely unrelated to Peano’s axioms or anything else you could have learned in school.</p>
-
-<p>The Newton OS storage space arithmetic shares with conventional filesystems storage arithmetic its weirdness. However, even if these rules remain a complete mystery for the human minds, they are very different.</p>
-
-<p>There are actually two values returned by the system:</p>
+<p>There are plenty of easter eggs hidden in the Newton OS. Some of the more well-known are:</p>
 
 <ul>
-	<li>The used space</li>
-	<li>The total space</li>
+	<li>Eclipse</li>
+	<li>Egg Freckles</li>
+	<li>Groom Lake</li>
+	<li>Neat Bong</li>
+	<li>Rosetta! Rosetta! Rosetta!</li>
 </ul>
 
-<p>When the Extras drawer (or anything else) gives a value of the free space, it is just total minus used.</p>
-
-<p>One can also compute/find other values, such as the nominal size of a store (what is written on a card or what you will find in the hardware section of the FAQ for the internal store), the sum of the size of all objects that a program can access and other similar things. Beware, don’t mix up System RAM installed and the internal store size, see question <a href="#IIID3b">IIID3b</a></p>
-
-<p>All these values give you an idea of the situation, but you can’t simply add or subtract values, here are a coule of reasons:</p>
+<p>Here are some resources for easter eggs and methods of activating them. Note that many easter eggs are specific to certain versions or releases of Newton OS.</p>
 
 <ul>
-	<li>The internal flash (4 MB on the MessagePad 2000/2100) is not entirely reserved for the internal store. Part of it contains the system update, the calibration (tablet and temperature) data, etc.</li>
-	<li>Newton OS storage system is transactional, which means that to make a change, the system writes a copy and then commits the change. This means that some space is to be reserved for transaction, and if not enough space for the transaction can be found, the transaction fails and the Newton will display the storage full alert.</li>
-	<li>Flash chips used are divided in 64 KB blocks that can only be erased at once (individual bits can be muted from one state, say 0, to the other, say 1 — 0 and 1 could be exchanged here, depends on the chips). For some reason, the Newton OS also divides SRAM in 64 KB blocks and consider them just like flash blocks.</li>
-	<li>Originally, objects could not be included into more than one block. And in fact, soup entries had to fit one 64 KB block. To have bigger objects, there is a special kind of objects, Large Binary Objects, that are divided into several blocks. If a store is nearly full, a newly large binary object is divided into many blocks. This is what can be called fragmentation.</li>
-	<li>A store includes more data than what some software counts as the used space. There is some information on the store (including its name, ID, kind, password (this is partly implemented in the OS, the missing part is the slip to set it/ask for it). The store also can have some information associated to it (see the programmer’s doc for details). And finally, we have the soups. Each soup can have information associated (idem), such as the last time it was backed up, and some information to identify them (name, what is indexed). Data includes the indexes and the entries of course. Finally, a store used size can temporarily include the VBOs.</li>
-	<li>Newton OS stores are garbaged collected, which isn’t surprising for a persistent object store. There is a single persistence root for the curious, a special object with an ID that is determined by the system (it is 0x27 for flash stores, another fixed value for Package Store (0 AFAIR) and some variable value for ATA stores).</li>
+	<li>Oliver Fross’ <a href="https://web.archive.org/web/20090215012820/http://oof.org/newton/">List of Newton Easter Eggs</a></li>
+	<li>Mackido’s <a href="http://www.mackido.com/EasterEggs/Newton.html">Newton Easter Eggs</a></li>
+	<li>Emmanuel Raviart’s <a href="http://mirrors.unna.org/ftp.amug.org/pub/newton/games-educ/2.x/easter-eggs.sit.hqx">Easter Eggs</a> package enables the Poker and Patience games.</li>
+	<li>Grab the <a href="http://www.unna.org/view.php?/utilites/Eclipse">Eclipse</a> package to replay the eclipse animation.</li>
+	<li>Avi Drissman’s <a href="http://www.drissman.com/avi/newton/EggFrecklesEnabler/">Egg Freckles Enabler</a></li>
+	<li>Grant Hutchinson posted a video that demonstrates the <a href="https://vimeo.com/331625488">Neat Bong Assist</a> easter egg.</li>
 </ul>
-
-<p>Note: Linear and ATA stores follow different arithmetics.</p>
-
-<p>To end with these arithmetics, note that probably the most serious website about storage cards, Carsten Lemmen’s (http://www.mac3.de/sig/newton/memory_cards.html) relies on Nick’s Test It speed values. While the time spent to do the test is probably the best comparison tool, even if it can change a lot due to various factors including pen input, software installed, etc., the speed given by Nick’s Test It does not mean much.</p>
-
-<p>Indeed, Nick’s Test It creates a temporary soup (hence with at least an index on the unique ID) and then creates 335 entries with the following frame:</p>
-
-<pre>
-<code>{
-    s : “ABC..YZabc...wxABC..YZabc...wxABC..YZabc...wxABC..YZabc...wx”
-}</code>
-</pre>
-
-<p>which is 452 bytes; therefore if we count out the index, and the unique ID slot, we have 148 KB of useful data transferred.</p>
-
-<p>Additionally, on a flash store, creating an entry actually means creating a transaction, i.e. copying 64 KB of data. So copying 335 entries means much more than 100 KB. I also think that if the store is nearly empty, the 64 KB aren’t copied when possible, hence the much higher value for freshly formatted cards.</p>
-
-<p>Finally, defragmenting can be done by doing a full backup, erasing all data and restoring the backup. Since backups never hurt, defragmenting cannot hurt. Whether it helps getting some bytes back/improving speed depends on your belief.</p>
 
 <h4 id="IIIB10">10. Are there any viruses that affect Newton OS?</h4>
 
@@ -948,21 +914,55 @@ See: <a href="#IIIA2a">US &amp; International English Updates</a></p>
 
 <hr>
 
-<h3 id="IIID">D. Miscellaneous</h3>
+<h3 id="IIID">D. How does Newton OS work?</h3>
 
-<h4 id="IIID1">1. Where can I find information about easter eggs?</h4>
+<h4 id="IIID1">1. How is storage space calculated?</h4>
 
-<p>There are plenty of easter eggs in the Newton OS, including “Rosetta! Rosetta! Rosetta!”, “Neat Bong”, “Groom Lake”, “Egg Freckles”, and the eclipse animation.</p>
+<p>The Newton OS storage space arithmetic shares with conventional filesystems storage arithmetic its weirdness. However, even if these rules remain a complete mystery for the human minds, they are very different.</p>
+
+<p>There are actually two values returned by the system:</p>
 
 <ul>
-	<li>Oliver Fross’ <a href="https://web.archive.org/web/20090215012820/http://oof.org/newton/">List of Newton Easter Eggs</a></li>
-	<li>Mackido’s <a href="http://www.mackido.com/EasterEggs/Newton.html">Newton Easter Eggs</a></li>
-	<li>Emmanuel Raviart’s <a href="http://mirrors.unna.org/ftp.amug.org/pub/newton/games-educ/2.x/easter-eggs.sit.hqx">Easter Eggs</a> package enables the Poker &amp; Patience games. (Newton OS 2.x only)</li>
-	<li>Grab the <a href="http://www.unna.org/view.php?/utilites/Eclipse">Eclipse</a> package to replay the eclipse animation. (Newton OS 2.x only)</li>
-	<li>Avi Drissman’s <a href="http://www.drissman.com/avi/newton/EggFrecklesEnabler/">Egg Freckles Enabler</a></li>
+	<li>The used space</li>
+	<li>The total space</li>
 </ul>
 
-<h4 id="IIID2">2. How are packages compressed? (The story of the compression bits)</h4>
+<p>When the Extras drawer (or anything else) gives a value of the free space, it is just total minus used.</p>
+
+<p>One can also compute or find other values, such as the nominal size of a store (what is written on a card or what you will find in the hardware section of the FAQ for the internal store), the sum of the size of all objects that a program can access and other similar things. Beware, don’t mix up system RAM installed and the internal store size.</p>
+
+<p>See also: <a href="#IIID4">How is the memory organized?</a></p>
+
+<p>All these values give you an idea of the situation, but you can’t simply add or subtract values, here are a coule of reasons:</p>
+
+<ul>
+	<li>The internal flash (4 MB on the MessagePad 2000/2100) is not entirely reserved for the internal store. Part of it contains the system update, the calibration (tablet and temperature) data, etc.</li>
+	<li>Newton OS storage system is transactional, which means that to make a change, the system writes a copy and then commits the change. This means that some space is to be reserved for transaction, and if not enough space for the transaction can be found, the transaction fails and the Newton will display the storage full alert.</li>
+	<li>Flash chips used are divided in 64 KB blocks that can only be erased at once (individual bits can be muted from one state, say 0, to the other, say 1 — 0 and 1 could be exchanged here, depends on the chips). For some reason, the Newton OS also divides SRAM in 64 KB blocks and consider them just like flash blocks.</li>
+	<li>Originally, objects could not be included into more than one block. And in fact, soup entries had to fit one 64 KB block. To have bigger objects, there is a special kind of objects, Large Binary Objects, that are divided into several blocks. If a store is nearly full, a newly large binary object is divided into many blocks. This is what can be called fragmentation.</li>
+	<li>A store includes more data than what some software counts as the used space. There is some information on the store (including its name, ID, kind, password (this is partly implemented in the OS, the missing part is the slip to set it/ask for it). The store also can have some information associated to it (see the programmer’s doc for details). And finally, we have the soups. Each soup can have information associated (idem), such as the last time it was backed up, and some information to identify them (name, what is indexed). Data includes the indexes and the entries of course. Finally, a store used size can temporarily include the VBOs.</li>
+	<li>Newton OS stores are garbaged collected, which isn’t surprising for a persistent object store. There is a single persistence root for the curious, a special object with an ID that is determined by the system (it is 0x27 for flash stores, another fixed value for Package Store (0 AFAIR) and some variable value for ATA stores).</li>
+</ul>
+
+<p>Note: Linear and ATA stores follow different arithmetics.</p>
+
+<p>To end with these arithmetics, note that probably the most serious website about storage cards, Carsten Lemmen’s (http://www.mac3.de/sig/newton/memory_cards.html) relies on Nick’s Test It speed values. While the time spent to do the test is probably the best comparison tool, even if it can change a lot due to various factors including pen input, software installed, etc., the speed given by Nick’s Test It does not mean much.</p>
+
+<p>Indeed, Nick’s Test It creates a temporary soup (hence with at least an index on the unique ID) and then creates 335 entries with the following frame:</p>
+
+<pre>
+<code>{
+    s : “ABC..YZabc...wxABC..YZabc...wxABC..YZabc...wxABC..YZabc...wx”
+}</code>
+</pre>
+
+<p>which is 452 bytes; therefore if we count out the index, and the unique ID slot, we have 148 KB of useful data transferred.</p>
+
+<p>Additionally, on a flash store, creating an entry actually means creating a transaction, i.e. copying 64 KB of data. So copying 335 entries means much more than 100 KB. I also think that if the store is nearly empty, the 64 KB aren’t copied when possible, hence the much higher value for freshly formatted cards.</p>
+
+<p>Finally, defragmenting can be done by doing a full backup, erasing all data and restoring the backup. Since backups never hurt, defragmenting cannot hurt. Whether it helps getting some bytes back/improving speed depends on your belief.</p>
+
+<h4 id="IIID2">2. How are packages compressed?</h4>
 
 <p>Packages are compressed when loaded on the Newton (i.e. when transfered from another computer). They are uncompressed on the fly when mapped on the Virtual Memory. This may result in a (little) slow down. The Newton OS compresses packages according to a flag called the compression bit. This flag is set by the programmer in NTK (NDE offers the same option). But it can be set on some packages that were not designed to be compressed.</p>
 
@@ -974,9 +974,7 @@ See: <a href="#IIIA2a">US &amp; International English Updates</a></p>
 
 <p>Jonathan Kipling Knight of Prism Research enabled the compression bit on some common uncompressed packages and made them available to <a href="https://web.archive.org/web/19991012080346/http://homestead.dejanews.com/user.prism2/downloads.html">download</a>.</p>
 
-<h4 id="IIID3">3. How it all works</h4>
-
-<h5 id="IIID3a">a. Newton Process Management</h5>
+<h4 id="IIID3">3. How are processes managed?</h4>
 
 <p>There are two kinds of processes on the Newton. First, there are lower-level operating system processes (such as handwriting recognition or the NewtonScript interpreter). Such processes are usually written in C++, though some have been written in assembly code. As of Newton OS 2.0, third-party developers can write some (but not all) of their program code in this low-level C++ fashion as well.</p>
 
@@ -986,7 +984,7 @@ See: <a href="#IIIA2a">US &amp; International English Updates</a></p>
 
 <p>The main way that NewtonScript applications “share” processor time is using an <em>event model</em>. Events (keystrokes, pen taps,incoming serial port information, etc.) are piled up at a low level into an event queue where they await processing by appropriate applications. NewtonScript applications register <em>callback functions</em> to be called when certain events occur that are germane to that application. NewtonScript calls these functions “scripts”. When a callback function has been called and has completed its work, the processor is released from duty and some callback function is called for the next event in the queue. When no events are in the queue, the processor sleeps. Applications may register for timer events which occur periodically (once an hour, week, day, etc.). Applications may also register for “idle” events — if there is no event presently in the queue, the processor every once in a while queues up an “idle” event and hands it off to a registered callback function. This allows applications to do work in the background all by themselves. Besides, since there is only one Event Loop, the system stops when there is nothing to do, awaiting for any event (including a clock change) which will wake it up. This allows the Newton to consume very few power.</p>
 
-<h5 id="IIID3b">b. Newton Memory Organization</h5>
+<h4 id="IIID4">4. How is the memory organized?</h4>
 
 <p>The Newton Processor can access memory for 32 bits, i.e. 4 GB. All this memory is not used. There is globally five chunks dedicated to specific tasks:</p>
 
@@ -1007,7 +1005,7 @@ See: <a href="#IIIA2a">US &amp; International English Updates</a></p>
 
 <p>When the user presses the reset button on a Newton, certain chunks of the DRAM are wiped clean and the system is restarted. This basically means the RAM which holds the executing computer code, the allocated C++ memory, and the NewtonScript heap. The low-level system areas and the “file system” storage of course remain intact.</p>
 
-<h5 id="IIID3c">c. The Newton “File System”</h5>
+<h4 id="IIID5">5. Does Newton OS have a file system?</h4>
 
 <p>The Newton does not have a file system per se. It has a shallow database system. The Newton considers its internal storage, and each inserted card, as a separate “store” (a volume). On any store may be placed either read/write “soups” (databases), or read-only objects called “packages”.</p>
 
