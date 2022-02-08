@@ -73,7 +73,7 @@
 					<li><a href="#IIIB2c">Reset With Extensions Off</a></li>
 					<li><a href="#IIIB2d">MessagePad 2000/2100 Power Drain Reset</a></li>
 					<li><a href="#IIIB2e">Hard Reset (Brain Wipe)</a></li>
-					<li><a href="#IIIB2f">Cold boot</a></li>
+					<li><a href="#IIIB2f">Cold Boot</a></li>
 				</ol>
 			</li>
 			<li><a href="#IIIB3">Transferring data to and from the Newton</a>
@@ -81,7 +81,7 @@
 					<li><a href="#IIIB3a">What are the various ways to input data on the Newton?</a></li>
 					<li><a href="#IIIB3b">How can I transfer data between my Newton and another computer?</a></li>
 					<li><a href="#IIIB3c">Can I use IrDA to transfer information between my Newton and another computer?</a></li>
-					<li><a href="#IIIB3d">What are the various ways to synchronize my data with a another computer?</a></li>
+					<li><a href="#IIIB3d">What are the various ways to synchronize data with a another computer?</a></li>
 					<li><a href="#IIIB3e">What are the various terminal programs available for the Newton?</a></li>
 					<li><a href="#IIIB3f">How can I transfer data between my Newton and another PDA?</a></li>
 				</ol>
@@ -106,7 +106,7 @@
 			<li><a href="#IIIC1">Is Newton Y2K compliant?</a></li>
 			<li><a href="#IIIC2">Are there known bugs into Newton OS?</a>
 				<ol type="a">
-					<li><a href="#IIIC2a">How can I eliminate the dreaded -10061 error?</a></li>
+					<li><a href="#IIIC2a">How can I eliminate the -10061 error?</a></li>
 					<li><a href="#IIIC2b">What is the Dates/Find bug?</a></li>
 					<li><a href="#IIIC2c">When I write, sometimes some strokes do not appear or disappear.</a></li>
 					<li><a href="#IIIC2d">When I do a find with Newton Works, the free memory amount falls.</a></li>
@@ -565,7 +565,7 @@
 
 <p>See also: <a href="#IIID1">How is storage space calculated?</a></p>
 
-<h5 id="IIIB2f">f. Cold boot</h5>
+<h5 id="IIIB2f">f. Cold Boot</h5>
 
 <p>(From Apple’s article which only applies to the Original MessagePad and 1x0 models.)</p>
 
@@ -835,11 +835,12 @@
 
 <h4 id="IIIC2">2. Are there known bugs in the Newton OS?</h4>
 
-<h5 id="IIIC2a">a. How can I eliminate the dreaded -10061 error?</h5>
+<h5 id="IIIC2a">a. How can I eliminate the -10061 error?</h5>
 
 <p>This error only occurs on devices with 4 MB DRAM memory, specifically the MessagePad 2100, upgraded MessagePad 2000, and upgraded eMate.</p>
 
-<p>Information can be found in Frank Wegener’s article <a href="https://web.archive.org/web/20040205044508/http://home.k-town.de/~oehl/newton/10061.html">What Newton OS Error -10061 really is</a> — translated by <a href="https://web.archive.org/web/20010517003421/http://home.k-town.de/~oehl/">George Oehl</a>.</p>
+<p>Information regarding this error can be found in Frank Wegener’s article <a href="https://web.archive.org/web/20040205044508/http://home.k-town.de/~oehl/newton/10061.html">What Newton OS Error -10061 really is</a> — translated by <a href="https://web.archive.org/web/20010517003421/http://home.k-town.de/~oehl/">George Oehl</a>.</p>
+
 <p>The following patches and fixes are available:</p>
 
 <ul>
@@ -954,7 +955,7 @@
 
 <p>See also: <a href="#IIID4">How is the memory organized?</a></p>
 
-<p>All these values give you an idea of the situation, but you can’t simply add or subtract values, here are a coule of reasons:</p>
+<p>All these values give you an idea of the situation, but you can’t simply add or subtract values, here are a couple of reasons:</p>
 
 <ul>
 	<li>The internal flash (4 MB on the MessagePad 2000/2100) is not entirely reserved for the internal store. Part of it contains the system update, the calibration (tablet and temperature) data, etc.</li>
@@ -965,7 +966,7 @@
 	<li>Newton OS stores are garbaged collected, which isn’t surprising for a persistent object store. There is a single persistence root for the curious, a special object with an ID that is determined by the system (it is 0x27 for flash stores, another fixed value for Package Store (0 AFAIR) and some variable value for ATA stores).</li>
 </ul>
 
-<p>Note: Linear and ATA stores follow different arithmetics.</p>
+<p>Note: Linear and ATA stores follow different calculation methods.</p>
 
 <p>To end with these arithmetics, note that probably the most serious website about storage cards, Carsten Lemmen’s (http://www.mac3.de/sig/newton/memory_cards.html) relies on Nick’s Test It speed values. While the time spent to do the test is probably the best comparison tool, even if it can change a lot due to various factors including pen input, software installed, etc., the speed given by Nick’s Test It does not mean much.</p>
 
