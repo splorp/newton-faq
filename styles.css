@@ -108,7 +108,8 @@ blockquote {
 	padding: 1.0em;
 	}
 	
-p code {
+p code,
+li code {
 	background-color: #F8F8F8;
 	border-radius: 3px;
 	border: 1px solid #CCC;
