@@ -557,7 +557,7 @@
 
 <p>Before you perform a hard reset, first remove all PCMCIA cards from the Newton (this is <em>really</em> important, otherwise you may destroy the card!).</p>
 
-<p>Warning: A hard reset <strong>will erase everything on your Newton</strong>. Use it with caution, and usually only as a last resort. If you are performing a cackup and restore cycle, you will want to perform a hard reset after the backup and before the restore. Other than that, you will probably never perform one; unless you have major data corruption, or are selling your Newton.</p>
+<p>Warning: A hard reset <strong>will erase everything on your Newton</strong>. Use it with caution, and usually only as a last resort. If you are performing a backup and restore cycle, you will want to perform a hard reset after the backup and before the restore. Other than that, you will probably never perform one; unless you have major data corruption, or are selling your Newton.</p>
 
 <p>To perform a hard reset, press the reset button, while holding down the power switch. You will be presented with a dialog box asking “Do you want to erase data completely”. Tap “Yes” if you want to perform the hard reset and erase everything on the Newton. You will be asked to confirm your selection, and then the data will be erased.</p>
 
@@ -800,7 +800,7 @@
 <ul>
 	<li><a href="http://www.unna.org/view.php?/utilites/system_enhancements/Extra-Extras1.3">Extra Extras</a> by Brian Sulcer</li>
 	<li><a href="http://www.softwarebueromueller.de/englisch/newton/optionen/">SBM Options</a> by Softwarebüro Müller (Also available from <a href="http://www.unna.org/view.php?/utilites/SBMOptions">UNNA</a>)</li>
-	<li><a href="http://www.standalone.com/MessagePad/FreezeU/">Freeze Utilites</a> by <a href="http://www.standalone.com/">Stand Alone</a> (Also available from <a href="http://www.unna.org/view.php?/utilites/system_enhancements/FreezeUtils">UNNA</a>)</li>
+	<li><a href="http://www.standalone.com/MessagePad/FreezeU/">Freeze Utilities</a> by <a href="http://www.standalone.com/">Stand Alone</a> (Also available from <a href="http://www.unna.org/view.php?/utilites/system_enhancements/FreezeUtils">UNNA</a>)</li>
 </ul>
 
 <h4 id="IIIB12">12. How do I delete a package?</h4>
@@ -871,7 +871,7 @@
 
 <h5 id="IIIC2d">d. When I do a find with Newton Works, the free memory amount falls.</h5>
 
-<p>This is a bug in Newton OS 2.1 protoTXViewFinder.FindString method. It is in ROM. However, a workaround fix exists (for Works only). It has been designed by Paul Guyot and can be freely downloaded from Kallisys website: <a href="http://www.kallisys.com/newton/rustines/">http://www.kallisys.com/newton/rustines/</a>.</p>
+<p>This is a bug in Newton OS 2.1 <code>protoTXViewFinder.FindString</code> method. It is in ROM. However, a workaround fix exists (for Works only). It has been designed by Paul Guyot and can be freely downloaded from Kallisys website: <a href="http://www.kallisys.com/newton/rustines/">http://www.kallisys.com/newton/rustines/</a>.</p>
 
 <h5 id="IIIC2e">e. What are these -16022 errors every time I try to use my modem?</h5>
 
@@ -881,7 +881,7 @@
 
 <h5 id="IIIC2f">f. When I insert a storage card, I get a -10582 error. What’s wrong?</h5>
 
-<p>The -10582 error is kError_ATA_No_Partition. It is triggered when the built-in ATA card handler cannot find a Master Boot Record. Actually, it won’t find it, even if the card was DOS formatted, because the driver in the ROM always reads zeroes. And even if it worked, the card handler isn’t finished either.</p>
+<p>The -10582 error is <code>kError_ATA_No_Partition</code>. It is triggered when the built-in ATA card handler cannot find a Master Boot Record. Actually, it won’t find it, even if the card was DOS formatted, because the driver in the ROM always reads zeroes. And even if it worked, the card handler isn’t finished either.</p>
 
 <p>The end result is that you cannot use ATA cards with the Newton without a third-party driver.</p>
 
@@ -1017,7 +1017,7 @@
 
 <p>The other kind of process is a “NewtonScript application”. NewtonScript applications are not actually applications — they’re better thought of as plug-ins to the NewtonScript interpreter. Just like Java applications on other platforms, NewtonScript applications can be in a pcode format to be interpreted by the interpreter (slow), or can be compiled directly into machine code. The Newton even has a compiler built-in; it’s possible to use this compiler to build NewtonScript applications directly on the Newton without ever using another computer. Nearly all the icons you see in the Extras Drawer are NewtonScript applications. There’s a lot of NewtonScript stuff in the background too.</p>
 
-<p>Does the Newton multitask? Yes and no. As we understand it, the Newton’s underlying operating system has a preemptive multithreaded process manager; the inker, handwriting recognition, low-level I/O, and NewtonScript interpreter all run in separate processes. However, NewtonScript “applications” (like the Note Pad, or a third-party calculator, or the Button Bar, etc.) are not multitasked in any sense of the term. In fact, they are in essence different functions in the same big computer program hosted by the NewtonScript interpreter. They all share the same memory and run together in a single process. Any one application can hog all the processor power if it wants to. From a user’s perspective, no, the Newton doesn’t have preemptive multitasking. However, when two cards are inserted at the same time, maybe two NS tasks run at the same time.</p>
+<p>Does the Newton multitask? Yes and no. As we understand it, the Newton’s underlying operating system has a preemptive multithreaded process manager; the inker, handwriting recognition, low-level I/O, and NewtonScript interpreter all run in separate processes. However, NewtonScript “applications” (like the Notepad, or a third-party calculator, or the Button Bar, etc.) are not multitasked in any sense of the term. In fact, they are in essence different functions in the same big computer program hosted by the NewtonScript interpreter. They all share the same memory and run together in a single process. Any one application can hog all the processor power if it wants to. From a user’s perspective, no, the Newton doesn’t have preemptive multitasking. However, when two cards are inserted at the same time, maybe two NS tasks run at the same time.</p>
 
 <p>The main way that NewtonScript applications “share” processor time is using an <em>event model</em>. Events (keystrokes, pen taps,incoming serial port information, etc.) are piled up at a low level into an event queue where they await processing by appropriate applications. NewtonScript applications register <em>callback functions</em> to be called when certain events occur that are germane to that application. NewtonScript calls these functions “scripts”. When a callback function has been called and has completed its work, the processor is released from duty and some callback function is called for the next event in the queue. When no events are in the queue, the processor sleeps. Applications may register for timer events which occur periodically (once an hour, week, day, etc.). Applications may also register for “idle” events — if there is no event presently in the queue, the processor every once in a while queues up an “idle” event and hands it off to a registered callback function. This allows applications to do work in the background all by themselves. Besides, since there is only one Event Loop, the system stops when there is nothing to do, awaiting for any event (including a clock change) which will wake it up. This allows the Newton to consume very few power.</p>
 
@@ -1052,7 +1052,7 @@
 
 <p>Soups have an accompanying ID symbol which represents a soup of that “kind”; this ID is assigned to a soup by the application which created it and uses it. For example, Hemlock maintains two soups, each with a different ID. One soup holds Hemlock’s search engines, and the other holds Hemlock’s current query results.</p>
 
-<p>Soups on different stores may have the same ID, meaning that they are the same kind of soup, just spread out on different cards. When applications access soups, they usually do so by querying and accessing a “union soup” object. From an application’s perspective, union soups merge all the soups of a given ID on different stores into one unified soup for that ID. This happens dynamically; when a user adds or removes cards, the union soup changes automatically, each application is notified, and they update their presentation to the user to reflect this. For example, when the user yanks a card containing a Note Pad soup, the appropriate soup entries (hence “notes”) in the Note Pad’s union soup automatically disappear, the Note Pad is notified, and its display is updated to show that these entries are now gone. It is this general philosophy of treating documents as database entries in a global union soup which is why the Newtons are so graceful at handling multiple cards yanked and inserted while applications are running.</p>
+<p>Soups on different stores may have the same ID, meaning that they are the same kind of soup, just spread out on different cards. When applications access soups, they usually do so by querying and accessing a “union soup” object. From an application’s perspective, union soups merge all the soups of a given ID on different stores into one unified soup for that ID. This happens dynamically; when a user adds or removes cards, the union soup changes automatically, each application is notified, and they update their presentation to the user to reflect this. For example, when the user yanks a card containing a Notepad soup, the appropriate soup entries (hence “notes”) in the Notepad’s union soup automatically disappear, the Notepad is notified, and its display is updated to show that these entries are now gone. It is this general philosophy of treating documents as database entries in a global union soup which is why the Newtons are so graceful at handling multiple cards yanked and inserted while applications are running.</p>
 
 <p>There are a few global soups which all applications use; the most important one is the “System” Soup, which stores global information for applications, commonly application preferences. When applications are installed they often will insert an entry into this soup to store their preferences, but when they are deleted they very often forget to remove this entry. As a result the System soup grows and grows. Some users have reported a bloated System soup as a key culprit in the “squiggles”, a Newton condition where the Newton cannot properly register the location of the pen.</p>
 
