@@ -90,7 +90,13 @@
 			<li><a href="#IIB5">Can I change the ROM of the Newton?</a></li>
 			<li><a href="#IIB6">Which batteries can I use?</a></li>
 			<li><a href="#IIB7">Which power adapters can I use?</a></li>
-			<li><a href="#IIB8">Which printers can I use?</a></li>
+			<li><a href="#IIB8">Which printers can I use?</a>
+				<ol type="a">
+					<li><a href="#IIB8a">Using a serial connection</a></li>
+					<li><a href="#IIB8b">Using a serial to parallel Newton Print Pack adapter</a></li>
+					<li><a href="#IIB8c">Using a Windows computer</a></li>
+				</ol>
+			</li>
 			<li><a href="#IIB9">Can I use digital cameras with my Newton?</a></li>
 			<li><a href="#IIB10">Are there any accessories that use the Interconnect port?</a></li>
 		</ol>
@@ -1169,35 +1175,60 @@ See also: <a href="#IIB1a">What type of storage cards can I use?</a>
 
 <h4 id="IIB8">8. Which printers can I use?</h4>
 
-<p>Apple published this support article: <a href="https://support.apple.com/kb/TA35200">Newton OS 2.x: Supported Printers</a></p>
+<p>There are several ways to connect to a printer using a Newton device:</p>
 
-<p>There are basically three ways to print things from a Newton:</p>
+<ul>
+	<li>A serial connection using a cable</li>
+	<li>An AppleTalk connection to a LaserWriter printer</li>
+	<li>An IrDA connection to an infrared compatible printer</li>
+	<li>A serial to parallel connection using the Newton Print Pack adapter</li>
+	<li>A serial connection to a Windows computer using PC-Print software</li>
+</ul>
 
-<p>First, you can print with a serial connection (or an AppleTalk connection — LaserWriter-compatible printers only — or via IrDA if you have a MessagePad 2000/2100/eMate). For this, you need a driver. The Newton OS has drivers in the ROM which appear in the list when you select “Choose Other Printer” from the print dialog. There are also drivers written by Apple which can be found on UNNA for the SW4500 &amp; SW6500 and the HP IrDA printers (Newton OS 2.1 devices only): <a href="http://www.unna.org/unna/drivers/printer/">http://www.unna.org/unna/drivers/printer/</a> [I know there’s a non working one for Epson printers, but is there any other driver around?]</p>
+<h5 id="IIB8a">a. Using a serial connection</h5>
 
-<p>Apple also released a PrintPack which includes a serial/parallel adapter and which can print on several parallel printers. The list of printers can be found in the <a href="http://www.unna.org/unna/drivers/printer/PrintPack2/">PrintPack documentation</a> on <a href="http://www.unna.org/">UNNA</a>.</p>
+<p>You can print directly to a printer from a Newton device over a serial, AppleTalk, or IrDA connection, using the appropriate driver.</p>
 
-<p>PrintPack 1 was a cable with the drivers included in it. PrintPack 2 requires the drivers to be on the Newton.</p>
+<p>Newton OS contains some printer drivers in ROM. A list of compatible printers appears when you select “Choose Other Printer” in the print dialog.</p>
 
-<p>Without the hardware, the PrintPack2 drivers are useless. The serial/parallel adapter includes a processor and was manufactured by GDT Softworks (which later became InfoWave) for Apple. This company also manufactured compatible cables, the pre-V.4.X cables. A regular serial/parallel adapter will certainly not work.</p>
+<p>If you have a Newton OS 2.x device, the Apple support article <a href="https://support.apple.com/kb/TA35200">Newton OS 2.x: Supported Printers</a> is a good place to start.</p>
 
-<p>About the GDT Softworks cables, Jon Glass reports:</p>
+<p>There are also <a href="http://www.unna.org/view.php?/drivers/printer">additional drivers available</a> for Newton OS 2.1 devices. These drivers add support for the <a href="http://www.unna.org/view.php?/drivers/printer/StyleWriter">StyleWriter 4500</a>, <a href="http://www.unna.org/view.php?/drivers/printer/StyleWriter">StyleWriter 6500</a>, and several <a href="http://www.unna.org/view.php?/drivers/printer/HP-IrDA">HP printers with IrDA compatibility</a> including the HP DeskJet 340, HP LaserJet 5MP, HP LaserJet 6MP.</p>
 
-<p>I do recall there being a discussion that the last version of the GDT Softworks version of the PowerPrint adapter wouldn’t work with the Newton. I do know this, the one I have does work with my Epson 900.</p>
+<h5 id="IIB8b">b. Using a serial to parallel Newton Print Pack adapter</h5>
 
-<p>I’m having trouble trying to decipher what’s written on the back, so I’ll include all the text:</p>
+<p>Newton Print Pack includes a serial to parallel adapter which is used to connect to a parallel printer. The list of printers can be found in the <a href="http://www.unna.org/unna/drivers/printer/PrintPack2/">Newton Print Pack documentation</a>.</p>
 
-<p>Advanced Components &amp; Peripherals P/L<br>
-Made in Singapore<br>
-FCC ID KBVSPC1<br>
-P/N: 590-0839<br>
-Batch: SPC292<br>
-<br>
-LR99812</p>
+<p>Newton Print Pack 1.0 consists of a special “smart” cable that contains both a serial to parallel adapter and embedded sofware to automatically install software and printer drivers on a Newton device.</p>
 
-<p>Finally, you you can also print using a PC and Newton PC-Print by Alexander Kunzer.</p>
+<ul>
+	<li><a href="https://support.apple.com/kb/TA37355">Newton Print Pack 1.0: General Use and Troubleshooting</a></li>
+	<li><a href="https://support.apple.com/kb/TA31028">Newton Print Pack 1.0: Compatible Printers (A-L)</a></li>
+	<li><a href="https://support.apple.com/kb/TA32212">Newton Print Pack 1.0: Compatible Printers (M-X)</a></li>
+</ul>
 
-<p>The HP Deskjet 340CBi is battery powered and has a Newton-compatible IrDA (Newton OS 2.1 devices) adapter.</p>
+<p>Newton Print Pack 2.0 consists of a modified serial to parallel cable, but uses standard installer softwware to install the required drivers on a Newton device. Newton Print Pack 2.0 is compatible with a much larger range of printers than Newton Print Pack 1.0.</p>
+
+<ul>
+	<li><a href="https://support.apple.com/kb/TA38489">Newton Print Pack 2.0: Read Me</a></li>
+	<li><a href="https://support.apple.com/kb/TA38507">Newton Print Pack 2.0: Installation and Use</a></li>
+	<li><a href="https://support.apple.com/kb/TA38506">Newton Print Pack 2.0: How to Use</a></li>
+	<li><a href="https://support.apple.com/kb/TA38476">Newton Print Pack 2.0: Compatible Printers (A - B)</a></li>
+	<li><a href="https://support.apple.com/kb/TA38479">Newton Print Pack 2.0: Compatible Printers (C - D)</a></li>
+	<li><a href="https://support.apple.com/kb/TA38481">Newton Print Pack 2.0: Compatible Printers (E - G)</a></li>
+	<li><a href="https://support.apple.com/kb/TA38483">Newton Print Pack 2.0: Compatible Printers (H - L)</a></li>
+	<li><a href="https://support.apple.com/kb/TA38484">Newton Print Pack 2.0: Compatible Printers (M - O)</a></li>
+	<li><a href="https://support.apple.com/kb/TA38486">Newton Print Pack 2.0: Compatible Printers (P - R)</a></li>
+	<li><a href="https://support.apple.com/kb/TA38488">Newton Print Pack 2.0: Compatible Printers (S - Z)</a></li>
+</ul>
+
+<p>Note that without the modified cable, the Newton Print Pack 2.0 drivers are useless. Manufactured by GDT Softworks, the serial to parallel adapter in the cable includes a processor that works with the software drivers to communicate with various printers. A regular serial to parallel adapter cable will not work.</p>
+
+<p>They have been reports that other GDT Softworks cables, such as the PowerPrint adapter, also work with the Newton and certain printers. Your mileage may vary.</p>
+
+<h5 id="IIB8c">c. Using a Windows computer</h5>
+
+<p>Another option is <a href="http://www.kuenzer.de/newtonpcprint_index.htm">Newton PC-Print</a> by Alexander Kunzer. This software enables printing from a Newton device over a serial cable to a Windows computer connected to a printer.</p>
 
 <h4 id="IIB9">9. Can I use digital cameras with my Newton?</h4>
 
