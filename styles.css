@@ -118,6 +118,7 @@ li code {
 	font-size: 14px;
 	line-height: -10px;
 	padding: 0.2em;
+	white-space: nowrap;
 	}
 
 pre {
