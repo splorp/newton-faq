@@ -62,13 +62,13 @@
 					<li><a href="#VB2d">Newton C++ Toolbox</a></li>
 				</ol>
 			</li>
-			<li><a href="#VB3">I’ve heard of MacinTalk for Newton. Where can I find it?</a>
+			<li><a href="#VB3">How do I use MacinTalk on my Newton?</a>
 				<ol type="a">
-					<li><a href="#VB3a">Does it work on my Newton?</a></li>
-					<li><a href="#VB3b">Where can I find it?</a></li>
-					<li><a href="#VB3c">How can I make it read something?</a></li>
-					<li><a href="#VB3d">How can I change the voice?</a></li>
-					<li><a href="#VB3e">Can I change the volume?</a></li>
+					<li><a href="#VB3a">Does MacinTalk work on my Newton?</a></li>
+					<li><a href="#VB3b">Where can I find MacinTalk?</a></li>
+					<li><a href="#VB3c">How do I use MacinTalk to convert text to speech?</a></li>
+					<li><a href="#VB3d">Can I change the voice used by MacinTalk?</a></li>
+					<li><a href="#VB3e">Can I change the volume of MacinTalk?</a></li>
 				</ol>
 			</li>
 			<li><a href="#VB4">What can Newton Works do for me?</a>
@@ -337,38 +337,69 @@
 
 <p>[cf. <a href="newton-faq-development.html#VIIA1b">VIIA1b</a>]</p>
 
-<h4 id="VB3">3. I’ve heard of MacinTalk for Newton. Where can I find it?</h4>
+<h4 id="VB3">3. How do I use MacinTalk on my Newton?</h4>
 
-<h5 id="VB3a">a. Does it work on my Newton?</h5>
+<h5 id="VB3a">a. Does MacinTalk work on my Newton?</h5>
 
-<p>It only works with Newton OS 2.1 (MessagePad 2000/2100/eMate). You need MacinTalk.pkg and SpeakText.pkg.</p>
+<p>MacinTalk only works with Newton OS 2.1 devices, including the MessagePad 2000, MessagePad 2100, and eMate 300.</p>
 
-<h5 id="VB3b">b. Where can I find it?</h5>
-
-<p>You can find it:</p>
+<p>Detailed information on using the various text-to-speech capabilities of MacinTalk can be found in the following articles:</p>
 
 <ul>
-	<li>On UNNA: <a href="http://www.unna.org/unna/apple/software/TextToSpeech/">http://www.unna.org/unna/apple/software/TextToSpeech/</a></li>
-	<li><a href="http://www.frostnet.net/chris/newton/html/macintalk.html">http://www.frostnet.net/chris/newton/html/macintalk.html</a></li>
-	<li><a href="http://www.frostnet.net/chris/newton/html/text_to_speech.html">http://www.frostnet.net/chris/newton/html/text_to_speech.html</a></li>
-	<li><a href="http://www.users.cloud9.net/~hennessy/newton/packages/">http://www.users.cloud9.net/~hennessy/newton/packages/</a></li>
+	<li><a href="https://communicrossings.com/html/newton/newtscape/docs/a0000003.shtml">How to Work with the Text-to-Speech Extension</a> by William Nelson and Jake Bordens</li>
+	<li><a href="https://communicrossings.com/html/newton/newtscape/docs/a0000004.shtml">More Newton Text to Speech</a> by Jim Bailey</li>
 </ul>
 
-<h5 id="VB3c">c. How can I make it read something?</h5>
+<p>If you have a Newton OS 1.x device, you can try John Saccente’s <a href="http://matejhorvat.si/en/newton/yak/">Yak</a> instead.</p>
 
-<p>Most applications with an action button will allow you to read text. A good place to start is the Notepad application.</p>
+<h5 id="VB3b">b. Where can I find MacinTalk?</h5>
 
-<p>Moreover, you can use it to read books. [cf. <a href="newton-faq-books.html#VIA2">VIA2</a>]</p>
+<p>To use MacinTalk, you’ll need to install the MacinTalk and SpeakText packages, which are usually named <code>macintal.pkg</code> and <code>speaktex.pkg</code> respectively.</p>
 
-<h5 id="VB3d">d. How can I change the voice?</h5>
+<p>These packages are available here:</p>
 
-<p>Go to the InOut Box, tap the “i” button and choose Speak Text prefs.</p>
+<ul>
+	<li>UNNA’s <a href="http://www.unna.org/view.php?/apple/software/TextToSpeech/">TextToSpeech</a></li>
+	<li>Chris Frost’s <a href="http://www.frostnet.net/chris/newton/html/macintalk.html">Newton Home</a></li>
+</ul>
 
-<h5 id="VB3e">e. Can I change the volume?</h5>
+<h5 id="VB3c">c. How do I use MacinTalk to convert text to speech?</h5>
 
-<p>Generally speaking, no. But you could start the text to be read with <code>[[volm 0.5]]</code></p>
+<p>In most applications, tap the action or routing button and select “Speak Text” from the picker. MacinTalk will begin speaking the text in the current window. A good place to try this is the Notepad application.</p>
 
-<p>Volume is between 0 and 1. Default is 1. (this means that the Newton will never speak louder). You can also do <code>[[volm +0.1]]</code> or <code>[[volm -0.1]]</code> for relative change.</p>
+<p>You can also use MacinTalk to speak the contents of a Newton Book.</p>
+
+<p>See also: <a href="newton-faq-books.html#VIA2">Can I use MacinTalk with a Newton Book?</a></p>
+
+<h5 id="VB3d">d. Can I change the voice used by MacinTalk?</h5>
+
+<p>MacinTalk includes nine voices to choose from.</p>
+
+<ul>
+	<li>Fred (Male, middle pitch, default)</li>
+	<li>Ralph (Male, low pitch)</li>
+	<li>Junior (Male, high pitch)</li>
+	<li>Kathy (Female, middle pitch)</li>
+	<li>Princess (Female, high pitch)</li>
+	<li>Zarvox (Computer, echo)</li>
+	<li>Whisper (Male, whispering)</li>
+	<li>Good News (Happy, singing)</li>
+	<li>Bad News (Sad, singing)</li>
+</ul>
+
+<p>To change the voice, open the InOut Box, tap the “i” button and select “Speak Text Prefs”. Choose the voice you wish to use from the “Voice” menu.</p>
+
+<p>The voice parameter can also be set programmatically using the <code>[[svox]]</code> syntax.</p>
+
+<p>See the Embedded Commands section of <a href="https://communicrossings.com/html/newton/newtscape/docs/a0000004.shtml">More Newton Text to Speech</a> for more information.</p>
+
+<h5 id="VB3e">e. Can I change the volume of MacinTalk?</h5>
+
+<p>The volume is set to its maximum level by default. The easiest way to change how loud MacinTalk speaks is to change the volume on your Newton device. Keep in mind that if the volume of your Newton is also set to its maximum level, that is as loud as MacinTalk will get.</p>
+
+<p>The volume parameter can be set programmatically using the <code>[[volm]]</code> syntax. Since the default volume setting is 1.0, it can’t be set any louder than whatever the maximum volume of your Newton device is set to. You can set the volume parameter to an absolute value between 0.0 and 1.0, or you can adjust the volume up and down using a relative value, such as <code>[[volm +0.1]]</code> or <code>[[volm -0.1]]</code>.</p>
+
+<p>See the Embedded Commands section of <a href="https://communicrossings.com/html/newton/newtscape/docs/a0000004.shtml">More Newton Text to Speech</a> for more information.</p>
 
 <h4 id="VB4">4. What can Newton Works do for me?</h4>
 
