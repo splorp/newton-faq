@@ -174,8 +174,9 @@ ol {
 
 li ul,
 li ol {
-	margin-bottom: 0;
+	margin-bottom: 0.5em;
 	margin-left: 2.5em;
+	margin-top: 0.25em;
 	}
 
 li + li[id] {
