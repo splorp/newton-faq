@@ -94,42 +94,38 @@
 
 <h5 id="VIIA1a">a. Newton Toolkit (NTK)</h5>
 
-<p>Newton Toolkit allows you to develop programs in NewtonScript on Mac OS or Windows and to install them onto a Newton device. There is also a cross-platform debugger for NewtonScript programs.</p>
+<p>Newton Toolkit allows you to develop programs in NewtonScript on Mac OS or Windows, installing them as packages onto a Newton device. There is also a cross-platform debugger for NewtonScript programs.</p>
 
-<p>You can find it on Apple’s FTP site: [Dead Link] ftp://ftp.apple.com/developer/Newton_Development/tools/ntk/</p>
+<p>Installers and documentation for Newton Toolkit are available from Planet Newton’s <a href="http://mirrors.unna.org/download.planetnewton.com/download/programming/appledesktoptools.htm">Newton Programming Tools</a>.</p>
 
-<p>It was also on Planet Newton, now on UNNA’s mirror: <a href="http://mirrors.unna.org/download.planetnewton.com/download/programming/appledesktoptools.htm">http://mirrors.unna.org/download.planetnewton.com/download/programming/appledesktoptools.htm</a></p>
+<p>Newton Toolkit is also included as part of <a href="http://www.unna.org/view.php?/development/NewtonDev">NewtonDev</a>, an archive of essential development tools and documentation for classic Mac OS. NewtonDev also includes a bootable image for use with the Basilisk II emulator.</p>
 
-<p>NTK is also included as part of NewtonDev, the archive of essential development tools and documentation for Mac OS (and Basilisk II): <a href="http://www.unna.org/unna/development/NewtonDev/">http://www.unna.org/unna/development/NewtonDev/</a>.</p>
+<p>Be aware, that Newton Toolkit might not work in Classic under Mac OS X if it cannot find a serial port. To fix this problem, you might need to create or define a serial port using software.</p>
 
-<p>Note: NTK might not work on Mac OS X under classic if it cannot find a serial port. To fix this problem or to use NTK over EtherTalk under Mac OS X (this is the only way), you might need to create/define a serial port.</p>
+<p>To create a virtual serial port, you can try Stalker Software’s <a href="https://archive.org/details/tucows_206656_PortShare_Pro">PortShare</a>.</p>
 
-<p>To do this, you can use PortShare Demo <a href="http://www.stalker.com/pub/PortShareDemo.sit.hqx">http://www.stalker.com/pub/PortShareDemo.sit.hqx</a></p>
+<ol>
+	<li>Install “PortShare Demo”.</li>
+	<li>Boot into Classic.</li>
+	<li>Open the “PortShare Demo” control panel and create a new port.</li>
+	<li>Start Newton Toolkit and select the port you created.</li>
+</ol>
 
-<ul>
-	<li>Install “PortShare Demo”</li>
-	<li>Boot under 9.x. Open PortShare Demo control panel and create a new port.</li>
-	<li>Start NTK and select this port</li>
-	<li>Boot under X. NTK does work (under Classic).</li>
-</ul>
-
-<p>Or you can use TCPSerial (which is freeware) and can be found here: <a href="http://tucows.sympatico.ca/mac/preview/205826.shtml">http://tucows.sympatico.ca/mac/preview/205826.shtml</a></p>
+<p>You can also use <a href="https://archive.org/details/tucows_205826_TCPSerial">TCPSerial</a> to simulate a serial port using a TCP/IP connection.</p>
 
 <h5 id="VIIA1b">b. Newton C++ Toolbox (NCT)</h5>
 
 <p>The Newton C++ Toolbox is divided into several parts available at various places on the internet:</p>
 
-<p>The core archive was available at Planet Newton, it’s now at the mirror on UNNA: <a href="http://mirrors.unna.org/download.planetnewton.com/download/programming/applec++tools.htm">http://mirrors.unna.org/download.planetnewton.com/download/programming/applec++tools.htm</a></p>
+<p>Installers and documentation for Newton Toolkit are available from Planet Newton’s <a href="http://mirrors.unna.org/download.planetnewton.com/download/programming/applec++tools.htm">Newton C++ Tools</a>.</p>
 
-<p>You can find additional SDK to design drivers (DDK) on UNNA site: <a href="http://www.unna.org/unna/apple/development/DDKs/">http://www.unna.org/unna/apple/development/DDKs/</a></p>
+<p>Additional <a href="http://www.unna.org/view.php?/apple/development/DDKs">Driver Development Kits</a> (DDKs) are available on UNNA.</p>
 
-<p>There is the Lantern DDK. It is the DDK for ethernet cards drivers. It includes Hammer and Newtsbug, the low level debuggers. It can be found on UNNA: <a href="http://www.unna.org/unna/apple/development/DDKs/FullLanternDDK.sit">http://www.unna.org/unna/apple/development/DDKs/FullLanternDDK.sit</a></p>
+<p>There is also the <a href="http://www.unna.org/unna/apple/development/DDKs/FullLanternDDK.sit">Lantern DDK</a> for developing ethernet card drivers. It includes the Hammer and Newtsbug low level debuggers.</p>
 
-<p>NCT requires MPW which only runs on Mac OS:</p>
+<p>Newton C++ Toolbox requires the Macintosh Programmer’s Workshop (MPW), which is available from <a href="https://macintoshgarden.org/apps/macintosh-programmers-workshop">Macintosh Garden</a> and as part of <a href="http://www.unna.org/view.php?/development/NewtonDev">NewtonDev</a>.</p>
 
-<p><a href="ftp://ftp.apple.com/developer/Tool_Chest/Core_Mac_OS_Tools/MPW_etc./MPW-PR_Images/MPW-PR.img.bin">ftp://ftp.apple.com/developer/Tool_Chest/Core_Mac_OS_Tools/MPW_etc./MPW-PR_Images/MPW-PR.img.bin</a></p>
-
-<p>You can find all that without MPW and a Basilisk II image with MPW into NewtonDev which is on UNNA: <a href="http://www.unna.org/unna/development/NewtonDev/">http://www.unna.org/unna/development/NewtonDev/</a>. NewtonDev includes additions and bug fixes of the NCT. It also includes <a href="#VIIA1a">NTK</a>, other tools and the most important documentation.</p>
+<p>NewtonDev includes documentation, additional support files, and bug fixes for Newton C++ Toolbox.</p>
 
 <h4 id="VIIA2">2. What are the solutions to develop directly on my Newton?</h4>
 
