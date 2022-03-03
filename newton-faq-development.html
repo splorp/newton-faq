@@ -34,363 +34,361 @@
 	<section>
 		<h2>Part VII: Development</h2>
 		<article>
+			<ol type="A">
+				<li><a href="#VIIA">Environments</a>
+					<ol>
+						<li><a href="#VIIA1">What are Apple’s tools to develop software on the Newton?</a>
+							<ol type="a">
+								<li><a href="#VIIA1a">Newton Toolkit (NTK)</a></li>
+								<li><a href="#VIIA1b">Newton C++ Toolbox (NCT)</a></li>
+							</ol>
+						</li>
+						<li><a href="#VIIA2">What are the solutions to develop directly on my Newton?</a>
+							<ol type="a">
+								<li><a href="#VIIA2a">Newton Dev Environment (NDE)</a></li>
+								<li><a href="#VIIA2b">nsScribe</a></li>
+								<li><a href="#VIIA2c">ViewFrame</a></li>
+							</ol>
+						</li>
+						<li><a href="#VIIA3">Are there other programming languages for the Newton?</a>
+							<ol type="a">
+								<li><a href="#VIIA3a">NS Basic</a></li>
+								<li><a href="#VIIA3b">NewtCard</a></li>
+								<li><a href="#VIIA3c">Lisp</a></li>
+								<li><a href="#VIIA3d">Assembler</a></li>
+								<li><a href="#VIIA3e">Is Java available on the Newton?</a></li>
+								<li><a href="#VIIA3f">C/C++ on other platforms</a></li>
+							</ol>
+						</li>
+						<li><a href="#VIIA4">Are there any other tools to develop Newton Packages?</a></li>
+					</ol>
+				</li>
+				<li><a href="#VIIB">Documentation</a>
+					<ol>
+						<li><a href="#VIIB1">Where can I find documentation?</a>
+							<ol type="a">
+								<li><a href="#VIIB1a">Apple programming reference</a></li>
+								<li><a href="#VIIB1b">Other Apple documents</a></li>
+								<li><a href="#VIIB1c">Other articles and documentation</a></li>
+								<li><a href="#VIIB1d">The Newton Bowels Project</a></li>
+								<li><a href="#VIIB1e">NewtonScript.org</a></li>
+							</ol>
+						</li>
+						<li><a href="#VIIB2">Wow, that’s a huge list! Where do I start?</a></li>
+					</ol>
+				</li>
+				<li><a href="#VIIC">Sample Code</a>
+					<ol>
+						<li><a href="#VIIC1">Where can I find sample code?</a></li>
+						<li><a href="#VIIC2">Where can I find a complete listing of all the sample code?</a></li>
+					</ol>
+				</li>
+			</ol>
+			<hr>
+
+			<h3 id="VIIA">A. Environments</h3>
+
+			<h4 id="VIIA1">1. What are Apple’s tools to develop software on the Newton?</h4>
+
+			<h5 id="VIIA1a">a. Newton Toolkit (NTK)</h5>
+
+			<p>Newton Toolkit allows you to develop programs in NewtonScript on Mac OS or Windows, installing them as packages onto a Newton device. There is also a cross-platform debugger for NewtonScript programs.</p>
+
+			<p>Installers and documentation for Newton Toolkit are available from Planet Newton’s <a href="http://mirrors.unna.org/download.planetnewton.com/download/programming/appledesktoptools.htm">Newton Programming Tools</a>.</p>
+
+			<p>Newton Toolkit is also included as part of <a href="http://www.unna.org/view.php?/development/NewtonDev">NewtonDev</a>, an archive of essential development tools and documentation for classic Mac OS. NewtonDev also includes a bootable image for use with the <a href="https://basilisk.cebix.net/">Basilisk II</a> emulator.</p>
+
+			<p>Be aware, that Newton Toolkit might not work in Classic under Mac OS X if it cannot find a serial port. To fix this problem, you might need to create or define a serial port using software.</p>
+
+			<p>To create a virtual serial port, you can try Stalker Software’s <a href="https://archive.org/details/tucows_206656_PortShare_Pro">PortShare</a>.</p>
+
+			<ol>
+				<li>Install “PortShare Demo”.</li>
+				<li>Boot into Classic.</li>
+				<li>Open the “PortShare Demo” control panel and create a new port.</li>
+				<li>Start Newton Toolkit and select the port you created.</li>
+			</ol>
+
+			<p>You can also use <a href="https://archive.org/details/tucows_205826_TCPSerial">TCPSerial</a> to simulate a serial port using a TCP/IP connection.</p>
+
+			<h5 id="VIIA1b">b. Newton C++ Toolbox (NCT)</h5>
+
+			<p>The Newton C++ Toolbox is divided into several parts available at various places on the internet:</p>
+
+			<p>Installers and documentation for Newton Toolkit are available from Planet Newton’s <a href="http://mirrors.unna.org/download.planetnewton.com/download/programming/applec++tools.htm">Newton C++ Tools</a>.</p>
+
+			<p>Additional <a href="http://www.unna.org/view.php?/apple/development/DDKs">Driver Development Kits</a> (DDKs) are available on UNNA.</p>
+
+			<p>There is also the <a href="http://www.unna.org/unna/apple/development/DDKs/FullLanternDDK.sit">Lantern DDK</a> for developing ethernet card drivers. It includes the Hammer and Newtsbug low level debuggers.</p>
+
+			<p>Newton C++ Toolbox requires the Macintosh Programmer’s Workshop (MPW), which is available from <a href="https://macintoshgarden.org/apps/macintosh-programmers-workshop">Macintosh Garden</a> and as part of <a href="http://www.unna.org/view.php?/development/NewtonDev">NewtonDev</a>.</p>
+
+			<p>NewtonDev includes documentation, additional support files, and bug fixes for Newton C++ Toolbox.</p>
+
+			<h4 id="VIIA2">2. What are the solutions to develop directly on my Newton?</h4>
+
+			<h5 id="VIIA2a">a. Newton Dev Environment (NDE)</h5>
+
+			<p>Steve Weyer’s <a href="https://communicrossings.com/html/newton/newtdev.htm">Newton Dev Environment</a> allows you to build packages directly on the Newton.</p>
+
+			<p>Here’s a comparison of Newton Toolkit and Newton Dev Environment provided by Paul Guyot.</p>
+
+			<ul>
+				<li>NDE:
+					<ul>
+						<li>Pros:
+							<ul>
+								<li>develop directly on your Newt</li>
+								<li>save applications as packages</li>
+								<li>play with the turtle</li>
+								<li>easier to incorporate Help Books (typically created with Newt’s Cape)</li>
+								<li>continued support from Steve</li>
+							</ul>
+						</li>
+						<li>Cons:
+							<ul>
+								<li>no graphical interface to develop your pro GUI, but Serg Koren’s <a href="https://web.archive.org/web/20020626111122/http://www.visualnewt.com/Newton/VN/VNHelp.html">VisualNewt</a> provides a graphical layout editor.</li>
+								<li>direct text input for frames</li>
+								<li>no way to compile C++ code on your Newton (but you can import libraries)</li>
+								<li>no way to compile “native” NewtonScript (but you can import such)</li>
+								<li>no debugger (but you can use ViewFrame)</li>
+							</ul>
+						</li>
+						<li>Purpose: all software that does not require resources (you must import them) and too complex GUI. But you can also use Newt’s Cape to write form-based applications.</li>
+					</ul>
+				</li>
+				<li>NTK:
+					<ul>
+						<li>Pros:
+							<ul>
+								<li>graphical interface (like RAD) allow C++ code with NCT.</li>
+								<li>allow native functions.</li>
+								<li>debugger (with breakpoints and steps) is available (for NewtonScript code only)</li>
+							</ul>
+						</li>
+						<li>Cons:
+							<ul>
+								<li>cross development (i.e. develop on your Mac or your Windows device)</li>
+								<li>discontinued software</li>
+								<li>can be exported from Mac OS to Windows only</li>
+							</ul>
+						</li>
+						<li>Purpose: all software, including these that require big resources and complex GUI.</li>
+					</ul>
+				</li>
+			</ul>
 
-<ol type="A">
-	<li><a href="#VIIA">Environments</a>
-		<ol>
-			<li><a href="#VIIA1">What are Apple’s tools to develop software on the Newton?</a>
-				<ol type="a">
-					<li><a href="#VIIA1a">Newton Toolkit (NTK)</a></li>
-					<li><a href="#VIIA1b">Newton C++ Toolbox (NCT)</a></li>
-				</ol>
-			</li>
-			<li><a href="#VIIA2">What are the solutions to develop directly on my Newton?</a>
-				<ol type="a">
-					<li><a href="#VIIA2a">Newton Dev Environment (NDE)</a></li>
-					<li><a href="#VIIA2b">nsScribe</a></li>
-					<li><a href="#VIIA2c">ViewFrame</a></li>
-				</ol>
-			</li>
-			<li><a href="#VIIA3">Are there other programming languages for the Newton?</a>
-				<ol type="a">
-					<li><a href="#VIIA3a">NS Basic</a></li>
-					<li><a href="#VIIA3b">NewtCard</a></li>
-					<li><a href="#VIIA3c">Lisp</a></li>
-					<li><a href="#VIIA3d">Assembler</a></li>
-					<li><a href="#VIIA3e">Is Java available on the Newton?</a></li>
-					<li><a href="#VIIA3f">C/C++ on other platforms</a></li>
-				</ol>
-			</li>
-			<li><a href="#VIIA4">Are there any other tools to develop Newton Packages?</a></li>
-		</ol>
-	</li>
-	<li><a href="#VIIB">Documentation</a>
-		<ol>
-			<li><a href="#VIIB1">Where can I find documentation?</a>
-				<ol type="a">
-					<li><a href="#VIIB1a">Apple programming reference</a></li>
-					<li><a href="#VIIB1b">Other Apple documents</a></li>
-					<li><a href="#VIIB1c">Other articles and documentation</a></li>
-					<li><a href="#VIIB1d">The Newton Bowels Project</a></li>
-					<li><a href="#VIIB1e">NewtonScript.org</a></li>
-				</ol>
-			</li>
-			<li><a href="#VIIB2">Wow, that’s a huge list! Where do I start?</a></li>
-		</ol>
-	</li>
-	<li><a href="#VIIC">Sample Code</a>
-		<ol>
-			<li><a href="#VIIC1">Where can I find sample code?</a></li>
-			<li><a href="#VIIC2">Where can I find a complete listing of all the sample code?</a></li>
-		</ol>
-	</li>
-</ol>
-
-<hr>
-
-<h3 id="VIIA">A. Environments</h3>
-
-<h4 id="VIIA1">1. What are Apple’s tools to develop software on the Newton?</h4>
-
-<h5 id="VIIA1a">a. Newton Toolkit (NTK)</h5>
-
-<p>Newton Toolkit allows you to develop programs in NewtonScript on Mac OS or Windows, installing them as packages onto a Newton device. There is also a cross-platform debugger for NewtonScript programs.</p>
-
-<p>Installers and documentation for Newton Toolkit are available from Planet Newton’s <a href="http://mirrors.unna.org/download.planetnewton.com/download/programming/appledesktoptools.htm">Newton Programming Tools</a>.</p>
-
-<p>Newton Toolkit is also included as part of <a href="http://www.unna.org/view.php?/development/NewtonDev">NewtonDev</a>, an archive of essential development tools and documentation for classic Mac OS. NewtonDev also includes a bootable image for use with the <a href="https://basilisk.cebix.net/">Basilisk II</a> emulator.</p>
-
-<p>Be aware, that Newton Toolkit might not work in Classic under Mac OS X if it cannot find a serial port. To fix this problem, you might need to create or define a serial port using software.</p>
-
-<p>To create a virtual serial port, you can try Stalker Software’s <a href="https://archive.org/details/tucows_206656_PortShare_Pro">PortShare</a>.</p>
-
-<ol>
-	<li>Install “PortShare Demo”.</li>
-	<li>Boot into Classic.</li>
-	<li>Open the “PortShare Demo” control panel and create a new port.</li>
-	<li>Start Newton Toolkit and select the port you created.</li>
-</ol>
-
-<p>You can also use <a href="https://archive.org/details/tucows_205826_TCPSerial">TCPSerial</a> to simulate a serial port using a TCP/IP connection.</p>
-
-<h5 id="VIIA1b">b. Newton C++ Toolbox (NCT)</h5>
-
-<p>The Newton C++ Toolbox is divided into several parts available at various places on the internet:</p>
-
-<p>Installers and documentation for Newton Toolkit are available from Planet Newton’s <a href="http://mirrors.unna.org/download.planetnewton.com/download/programming/applec++tools.htm">Newton C++ Tools</a>.</p>
-
-<p>Additional <a href="http://www.unna.org/view.php?/apple/development/DDKs">Driver Development Kits</a> (DDKs) are available on UNNA.</p>
-
-<p>There is also the <a href="http://www.unna.org/unna/apple/development/DDKs/FullLanternDDK.sit">Lantern DDK</a> for developing ethernet card drivers. It includes the Hammer and Newtsbug low level debuggers.</p>
-
-<p>Newton C++ Toolbox requires the Macintosh Programmer’s Workshop (MPW), which is available from <a href="https://macintoshgarden.org/apps/macintosh-programmers-workshop">Macintosh Garden</a> and as part of <a href="http://www.unna.org/view.php?/development/NewtonDev">NewtonDev</a>.</p>
-
-<p>NewtonDev includes documentation, additional support files, and bug fixes for Newton C++ Toolbox.</p>
+			<h5 id="VIIA2b">b. nsScribe</h5>
 
-<h4 id="VIIA2">2. What are the solutions to develop directly on my Newton?</h4>
+			<p>Prism Research’s <a href="http://newted.org/newtsprism/nsScribe/nsScribe.html">nsScribe</a> allows you to execute NewtonScript code from the Notepad, the Assistant or Newton Works.</p>
 
-<h5 id="VIIA2a">a. Newton Dev Environment (NDE)</h5>
+			<h5 id="VIIA2c">c. ViewFrame</h5>
 
-<p>Steve Weyer’s <a href="https://communicrossings.com/html/newton/newtdev.htm">Newton Dev Environment</a> allows you to build packages directly on the Newton.</p>
+			<p>Jason Harper’s <a href="http://pobox.com/~JasonHarper">ViewFrame</a> is a very powerful tool for debugging directly on the Newton, inspect the Newton environment. However, it does not allow you to set breakpoints or to step.</p>
 
-<p>Here’s a comparison of Newton Toolkit and Newton Dev Environment provided by Paul Guyot.</p>
-
-<ul>
-	<li>NDE:
-		<ul>
-			<li>Pros:
-				<ul>
-					<li>develop directly on your Newt</li>
-					<li>save applications as packages</li>
-					<li>play with the turtle</li>
-					<li>easier to incorporate Help Books (typically created with Newt’s Cape)</li>
-					<li>continued support from Steve</li>
-				</ul>
-			</li>
-			<li>Cons:
-				<ul>
-					<li>no graphical interface to develop your pro GUI, but Serg Koren’s <a href="https://web.archive.org/web/20020626111122/http://www.visualnewt.com/Newton/VN/VNHelp.html">VisualNewt</a> provides a graphical layout editor.</li>
-					<li>direct text input for frames</li>
-					<li>no way to compile C++ code on your Newton (but you can import libraries)</li>
-					<li>no way to compile “native” NewtonScript (but you can import such)</li>
-					<li>no debugger (but you can use ViewFrame)</li>
-				</ul>
-			</li>
-			<li>Purpose: all software that does not require resources (you must import them) and too complex GUI. But you can also use Newt’s Cape to write form-based applications.</li>
-		</ul>
-	</li>
-	<li>NTK:
-		<ul>
-			<li>Pros:
-				<ul>
-					<li>graphical interface (like RAD) allow C++ code with NCT.</li>
-					<li>allow native functions.</li>
-					<li>debugger (with breakpoints and steps) is available (for NewtonScript code only)</li>
-				</ul>
-			</li>
-			<li>Cons:
-				<ul>
-					<li>cross development (i.e. develop on your Mac or your Windows device)</li>
-					<li>discontinued software</li>
-					<li>can be exported from Mac OS to Windows only</li>
-				</ul>
-			</li>
-			<li>Purpose: all software, including these that require big resources and complex GUI.</li>
-		</ul>
-	</li>
-</ul>
-
-<h5 id="VIIA2b">b. nsScribe</h5>
-
-<p>Prism Research’s <a href="http://newted.org/newtsprism/nsScribe/nsScribe.html">nsScribe</a> allows you to execute NewtonScript code from the Notepad, the Assistant or Newton Works.</p>
-
-<h5 id="VIIA2c">c. ViewFrame</h5>
-
-<p>Jason Harper’s <a href="http://pobox.com/~JasonHarper">ViewFrame</a> is a very powerful tool for debugging directly on the Newton, inspect the Newton environment. However, it does not allow you to set breakpoints or to step.</p>
-
-<h4 id="VIIA3">3. Are there other programming languages for the Newton?</h4>
-
-<h5 id="VIIA3a">a. NS Basic</h5>
-
-<p><a href="https://www.nsbasic.com/newton/info/nsbasic/">NS Basic</a> is a complete implementation of the BASIC programming language, with extensions to take advantage of Newton OS.</p>
-
-<p>Once a commercial application, <a href="https://github.com/gwhenne">George Henne</a> has released <a href="https://github.com/nsbasic-archive/NS-Basic-for-Newton-OS">NS Basic and its source code</a> on GitHub.</p>
-
-<h5 id="VIIA3b">b. NewtCard</h5>
-
-<p><a href="https://www.nsbasic.com/newton/info/newtcard/">NewtCard</a> is a HyperCard-like environment for the Newton. It allows you to manage text and pictures as a collection of cards. Easily add text fields, check boxes, buttons, and other elements to the cards. Buttons can be scripted using <a href="#VIIA3a">NS Basic</a>.</p>
-
-<p>Once a commercial application, <a href="https://github.com/gwhenne">George Henne</a> has released <a href="https://github.com/nsbasic-archive/NewtCard-for-Newton-OS">NewtCard and its source code</a> on GitHub.</p>
-
-<p>Archived <a href="https://web.archive.org/web/20090608184151/http://www.nsbasic.com/pub/NewtCard_files/">NewtCard Demo</a> files are also available.</p>
-
-<h5 id="VIIA3c">c. Lisp</h5>
-
-<p><a href="http://www.users.on.net/~dbenn/LittleLisp/LittleLispDocs/">LittleLisp</a> is a Lisp interpreter for the Newton developed by <a href="http://www.users.on.net/~dbenn/">David Benn</a>.</p>
-
-<h5 id="VIIA3d">d. Assembler</h5>
-
-<p>Roger Milne succeeded in writing programs such as <a href="https://web.archive.org/web/20100403072239/http://roger.trideja.com/newton/modplayer.html">ModPlayer</a> in assembly language on his PC with a GNU assembler. His process is documented in the article <a href="https://web.archive.org/web/20090227035203/http://roger.trideja.com/newton/newtonasm.html">Writing Assembly for your Newton</a>.</p>
-
-<p>There is also the <a href="http://newted.org/newtsprism/chARM/chARM.html">Compiler-Formerly-Known-As-ChARM</a> (CFKAC) by Prism Research. It allows to compile and disassemble code directly on the Newton using <a href="http://newted.org/newtsprism/nsScribe/nsScribe.html">nsScribe</a>.</p>
-
-<h5 id="VIIA3e">e. Is Java available on the Newton?</h5>
-
-<p><a href="https://cs.gmu.edu/~sean/">Sean Luke</a>, <a href="https://communicrossings.com/">Steve Weyer</a>, and several other contributors implemented a subset of Java called <a href="https://wabasoft.com/">Waba</a> on the Newton platform. The software is currently in beta release, with binaries and source code available on Sean’s <a href="https://cs.gmu.edu/~sean/projects/newton/waba/">Waba for the Newton</a> page.</p>
-
-<h5 id="VIIA3f">f. C/C++ on other platforms</h5>
-
-<p>C++ and other compiled languages can basically be used in two ways: as native functions and for P-Classes which are used in drivers. The Newton C++ Toolbox is more than a compiler and a linker. It also includes tools to use this C++ code, either to convert a link output to a Native Module, a file used by NTK or to generate and pack a P-Class.</p>
-
-<p>All the documentation required to make a tool to convert from link output to NTK is available, but no such tool exists. Therefore, with a C/C++ suite, you will have to use NCT anyway. The other solution is to use Roger Milne’s <a href="https://web.archive.org/web/20090227035203/http://roger.trideja.com/newton/newtonasm.html">MakePKG</a> tool.</p>
-
-<p>The format of the P-Class encapsulated programs is unknown.</p>
-
-<p>Finally, the low level debuggers (Newtsbug and Hammer) only run on Mac OS. Apparently, they are based on RDI, but nobody succeeded to write a compatible low level debugger.</p>
-
-<p>There are several C/C++ compilers for ARM, here are just the most common ones:</p>
-
-<ul>
-	<li>The ARM SDT from arm: <a href="http://www.arm.com/">http://www.arm.com/</a></li>
-	<li>GNU C/C++ compiler for Intel based computers (apparently, the Sparc tools archive is corrupted) <a href="ftp://ftp.intel.com/pub/i960/XScale/SA1tools/">ftp://ftp.intel.com/pub/i960/XScale/SA1tools/</a></li>
-</ul>
-
-<p>You can also use <a href="#VIIA1b">Newton C++ Toolkit</a> with <a href="https://basilisk.cebix.net/">Basilisk II</a>.
-
-<p>Basilisk II is a 68k Mac OS emulator that runs on several platforms, including Mac OS X, Windows, BeOS, various flavours of UNIX with X11, and AmigaOS.</p>
-
-<h4 id="VIIA4">4. Are there any other tools to develop Newton Packages?</h4>
-
-<p>Pinehill Softworks’ <a href="http://www.unna.org/view.php?/development/AppGeneratorV3">AppGen</a> lets you create simple data collection applications on your Newton and export the data to a PC using PineHill Mover.</p>
-
-<hr>
-
-<h3 id="VIIB">B. Documentation</h3>
-
-<h4 id="VIIB1">1. Where can I find documentation?</h4>
-
-<h5 id="VIIB1a">a. Apple programming reference</h5>
-
-<p>Apple published <a href="http://www.unna.org/unna/apple/documentation/developer/FINDINFO.PDF">Find Info</a>, a PDF listing information about where to locate Newton development documentation.</p>
-
-<p>Although the Newton Programmers Guide (NPG) is the first source, it is not necessarily the most complete or up to date. There are a number of additional places you can search for information on the Newton Platform APIs.</p>
-
-<p>Below is a simplified version of that document with links added.</p>
-
-<ul>
-	<li><strong>Newton Programmers Guide 2.0 &amp; Newton Programmers Reference 2.0</strong>
-		<br>
-		This is the primary source of information. Start here when searching. All the other sources of documentation supplement this guide.
-		<ul>
-			<li>Programmers Guide:
-				<ul>
-					<li>[PDF] <a href="http://www.unna.org/unna/apple/documentation/developer/ProgrammersGuideOS2.0.pdf">http://www.unna.org/unna/apple/documentation/developer/ProgrammersGuideOS2.0.pdf</a></li>
-				</ul>
-			</li>
-			<li>Programmers Reference:
-				<ul>
-					<li>[PDF] <a href="http://www.unna.org/unna/apple/documentation/developer/ProgrammersReferenceOS2.0.pdf">http://www.unna.org/unna/apple/documentation/developer/ProgrammersReferenceOS2.0.pdf</a></li>
-				</ul>
-			</li>
-		</ul>
-	</li>
-	<li><strong>Newton Programmers Guide 2.1</strong>
-		<br>
-		This is a supplement to the Newton Programmers Guide/Reference. It is the main source for the new APIs in Newton OS 2.1. Like NPG, this is a primary source of information.
-		<ul>
-			<li>[PDF] <a href="http://www.unna.org/unna/apple/documentation/developer/ProgrammersGuideOS2.1Addenum.pdf">http://www.unna.org/unna/apple/documentation/developer/ProgrammersGuideOS2.1Addenum.pdf</a></li>
-		</ul>
-	</li>
-	<li><strong>NewtonScript Reference</strong>
-		<br>
-		This is the primary reference for the NewtonScript language and related support functions.
-		<ul>
-			<li>NewtonScript Programming Language:
-				<ul>
-					<li>[PDF] <a href="http://www.unna.org/unna/apple/documentation/developer/NewtonScriptProgLanguage.pdf">http://www.unna.org/unna/apple/documentation/developer/NewtonScriptProgLanguage.pdf</a></li>
-				</ul>
-			</li>
-		</ul>
-	</li>
-	<li><strong>Newton 2.x OS Q &amp; As</strong> (Q_AND_AS)
-		<br>
-		New and updated information on APIs and extra explanation. This is one of the best sources of information apart from the Newton Programmers Guide. They can be found on UNNA: <a href="http://www.unna.org/view.php?/apple/documentation/developer/QAs-2.x">http://www.unna.org/view.php?/apple/documentation/developer/QAs-2.x</a></li>
-	<li><strong>Platform File Functions</strong> (PLATFUNC)
-		<br>
-		This contains documentation on APIs that are included as part of the Platform File. The APIs are either new APIs or replacements for ones already in the ROM.</li>
-	<li><strong>Sample Code</strong> (SAMPCODE)
-		<br>
-		In addition to showing you how to use particular features, some pieces of sample code contain interim documentation.</li>
-	<li><strong>NTK 1.6 User’s Guide</strong> (WINNTK16.PDF)
-		<br>
-		In addition to documenting Newton Toolkit, this guide also contains valuable information on both debugging your application and performance tuning.</li>
-</ul>
-
-<h5 id="VIIB1b">b. Other Apple documents</h5>
-
-<p>Apple published additional books. These can be found on Newton Gurus’ sites.</p>
-
-<ul>
-	<li>Newton Formats (1.1) describes the format of packages and stream objects.
-		<br>
-		It can be found on UNNA: <a href="http://www.unna.org/unna/apple/documentation/developer/NewtonFormats1.1.pdf">http://www.unna.org/unna/apple/documentation/developer/NewtonFormats1.1.pdf</a></li>
-	<li>Newton Toolkit 1.6.x File Formats describes the format of NTK files for both Mac OS and Windows.
-		<br>
-		It can also be found on Roger Milne site: <a href="http://www.geocities.com/SiliconValley/Code/5100/newton/ntkfrmat.pdf">http://www.geocities.com/SiliconValley/Code/5100/newton/ntkfrmat.pdf</a></li>
-	<li>Newton Interconnect Port Hardware Specification for the MessagePad.
-		<br>
-		It can be found on UNNA <a href="http://www.unna.org/view.php?/development/documentation/interconnect">http://www.unna.org/view.php?/development/documentation/interconnect</a></li>
-	<li>Newton OS 2.1 Engineering Documents
-		<ul>
-			<li>[PDF, 559 Kb] <a href="http://www.unna.org/unna/apple/documentation/developer/EngineeringDocsOS2.1.pdf">http://www.unna.org/unna/apple/documentation/developer/EngineeringDocsOS2.1.pdf</a></li>
-		</ul>
-	</li>
-	<li>Newton Toolkit Enhancements</li>
-	<li>Newton OS 2.1 Miscellaneous</li>
-	<li>Newton 2.0 User Interface Guidelines
-		<ul>
-			<li>[PDF] <a href="http://www.unna.org/unna/apple/documentation/developer/UserInterfaceGuidelinesOS2.0.pdf">http://www.unna.org/unna/apple/documentation/developer/UserInterfaceGuidelinesOS2.0.pdf</a></li>
-		</ul>
-	</li>
-	<li>User Interface Guidelines for Newton OS 2.1 Keyboard Enhancements
-		<ul>
-			<li>[PDF] <a href="http://www.unna.org/unna/apple/documentation/developer/UserInterfaceKeyboardOS2.1.pdf">http://www.unna.org/unna/apple/documentation/developer/UserInterfaceKeyboardOS2.1.pdf</a></li>
-		</ul>
-	</li>
-</ul>
-
-<h5 id="VIIB1c">c. Other articles and documentation</h5>
-
-<p>There were a lot of articles written by Apple and third-party developers. They were published in the Newton Technology Journal, in the PIE Developers and other journals.</p>
-
-<ul>
-	<li>The <a href="http://www.unna.org/view.php?/apple/documentation/developer/NewtonTechnologyJournal">Newton Technology Journal</a> contains both general and developer information. Issues from February 1995 (Volume I, Issue 1) to March 1997 (Volume III, Issue 2) were published.</li>
-	<li>Specific articles by the <a href="http://www.unna.org/view.php?/apple/documentation/developer/Articles/">Newton ToolBox Group</a>.</li>
-	<li>You can also look into develop issues, on Apple’s website: <a href="http://developer.apple.com/dev/techsupport/develop/">http://developer.apple.com/dev/techsupport/develop/</a></li>
-	<li>You can also look into Handheld Systems Magazine. Some articles were published there. The issues used to be found on UNNA, they might be back in some time. They used to be on cdpubs website, but they finally decided to charge for it. Note that all these articles can be found elsewhere. Some were archived by web.archive.org: <a href="http://web.archive.org/web/*re_pd_/http://cdpubs.com*">http://web.archive.org/web/*re_pd_/http://cdpubs.com*</a></li>
-	<li>There are <a href="http://mirrors.unna.org/www.geocities.com/SiliconValley/Code/5100/newton_docs.html">Ask The Llama</a> articles in the form of developer Q &amp; A.</li>
-	<li>If you’re interested in articles explaining how the Newton OS or the NewtonScript language works, you can go to Walter Smith’s website <a href="http://wsmith.best.vwh.net/works.html">http://wsmith.best.vwh.net/works.html</a> Walter Smith is the father of NewtonScript and is responsible for other great parts of the Newton OS.</li>
-	<li>Finally, there are all the programming hints from the Newton developer website.</li>
-</ul>
-
-<p>You can also consult the documentation concerning the processor (ARMs). Please note that this is useless to the NewtonScript developer. It is only useful for assembly development and sometimes C++ development.</p>
-
-<ul>
-	<li>The ARM Architecture Reference Manual by D. Jaggar. You can order the paper version from any good (internet) library. You can get the electronic version by ordering a free evaluation copy of the ARM Development Suite at <a href="http://www.arm.com/sitearchitek/devtools.ns4/html/ads_eval?OpenDocument">http://www.arm.com/sitearchitek/devtools.ns4/html/ads_eval?OpenDocument</a> You’ll find in this book a (simple) diagram of the Runt based MessagePad devices. There are other reference manuals for the ARM such as the ARM System-on-Chip Architecture by S. Furber and The ARM RISC Chip, A Programmer’s Guide by A. van Someron &amp; C. Atack.</li>
-	<li>The ARM SDT Reference Manual. This manual isn’t a manual to the processor but a manual to the ARM SDT which the Newton C++ Toolbox is a MPW port of. The SDT changed a lot, but it’s there that you’ll find information about the compiler’s behavior (e.g. data size).</li>
-	<li>You can find additional documentation on ARM’s website. They are not very interesting for Newton development, though, except the Quick reference guide. <a href="http://www.arm.com/Documentation/">http://www.arm.com/Documentation/</a></li>
-	<li>Intel has several application notes and technical documents about the StrongARM, including one on the memory management (one of the sources about the ARM MMU). They can be downloaded from the Intel’s developer website: <a href="http://developer.intel.com/design/strong/">http://developer.intel.com/design/strong/</a></li>
-</ul>
-
-<h5 id="VIIB1d">d. The Newton Bowels Project</h5>
-
-<p>The inner workings of Newton OS are not well documented. However, several developers were able to discover certain useful details while digging around the system in their attempts to interface with it. <a href="http://www.kallisys.com/files/newton/Bowels/">The Newton Bowels Project</a> is a repository of documents, sample code, and other “thrill-seeking” tools.</p>
-
-<h5 id="VIIB1e">e. NewtonScript.org</h5>
-
-<p>A one-stop shop for all things related to the NewtonScript programming language. This site is a collaborative project hosted on <a href="https://github.com/NewtonScript/newtonscript.github.com/">GitHub</a>, collecting all manner of NewtonScript development tools, documentation, libraries, sample code, and other resources.</p>
-
-<h4 id="VIIB2">2. Wow, that’s a huge list! Where do I start?</h4>
-
-<p>Our advice is to start with the code examples that come with Steve Weyer’s <a href="#VIIA2a">Newton Dev Environment</a> or Apple’s <a href="http://www.unna.org/view.php?/apple/development/Examples">Development Examples</a>.</p>
-
-<p>You can also try Steve Weyer’s interactive <a href="https://communicrossings.com/html/newton/newtpkgs.htm#NewtATut">NewtATut</a> (Newt Application Tutorial) that shows how to develop a simple application in NewtonScript directly on your Newton device.</p>
-
-<hr>
-
-<h3 id="VIIC">C. Sample Code</h3>
-
-<h4 id="VIIC1">1. Where can I find sample code?</h4>
-
-<p>Most of the sample code and developer examples distributed by Apple are available on <a href="http://www.unna.org/">UNNA</a> as part of the <a href="http://www.unna.org/view.php?/apple/development/Examples">Development Examples</a> and <a href="http://www.unna.org/view.php?/development/NewtonDev">NewtonDev</a> collections.</p>
-
-<p>See also: <a href="#VIIB1d">The Newton Bowels Project</a> and <a href="#VIIB1e">NewtonScript.org</a></p>
-
-<h4 id="VIIC2">2. Where can I find a complete listing of all the sample code?</h4>
-
-<p>A complete list of <a href="https://web.archive.org/web/19980529083053/http://www.newton-inc.com/dev/samples.htm">Newton 2.x OS Sample Code</a> with descriptions was published on the Newton Inc. website in 1997. Unfortunately, this copy of the information from the Internet Archive does not have valid links to the source code itself.</p>
-
-<p>See also: <a href="#VIIC1">Where can I find sample code?</a></p>
+			<h4 id="VIIA3">3. Are there other programming languages for the Newton?</h4>
+
+			<h5 id="VIIA3a">a. NS Basic</h5>
+
+			<p><a href="https://www.nsbasic.com/newton/info/nsbasic/">NS Basic</a> is a complete implementation of the BASIC programming language, with extensions to take advantage of Newton OS.</p>
+
+			<p>Once a commercial application, <a href="https://github.com/gwhenne">George Henne</a> has released <a href="https://github.com/nsbasic-archive/NS-Basic-for-Newton-OS">NS Basic and its source code</a> on GitHub.</p>
+
+			<h5 id="VIIA3b">b. NewtCard</h5>
+
+			<p><a href="https://www.nsbasic.com/newton/info/newtcard/">NewtCard</a> is a HyperCard-like environment for the Newton. It allows you to manage text and pictures as a collection of cards. Easily add text fields, check boxes, buttons, and other elements to the cards. Buttons can be scripted using <a href="#VIIA3a">NS Basic</a>.</p>
+
+			<p>Once a commercial application, <a href="https://github.com/gwhenne">George Henne</a> has released <a href="https://github.com/nsbasic-archive/NewtCard-for-Newton-OS">NewtCard and its source code</a> on GitHub.</p>
+
+			<p>Archived <a href="https://web.archive.org/web/20090608184151/http://www.nsbasic.com/pub/NewtCard_files/">NewtCard Demo</a> files are also available.</p>
+
+			<h5 id="VIIA3c">c. Lisp</h5>
+
+			<p><a href="http://www.users.on.net/~dbenn/LittleLisp/LittleLispDocs/">LittleLisp</a> is a Lisp interpreter for the Newton developed by <a href="http://www.users.on.net/~dbenn/">David Benn</a>.</p>
+
+			<h5 id="VIIA3d">d. Assembler</h5>
+
+			<p>Roger Milne succeeded in writing programs such as <a href="https://web.archive.org/web/20100403072239/http://roger.trideja.com/newton/modplayer.html">ModPlayer</a> in assembly language on his PC with a GNU assembler. His process is documented in the article <a href="https://web.archive.org/web/20090227035203/http://roger.trideja.com/newton/newtonasm.html">Writing Assembly for your Newton</a>.</p>
+
+			<p>There is also the <a href="http://newted.org/newtsprism/chARM/chARM.html">Compiler-Formerly-Known-As-ChARM</a> (CFKAC) by Prism Research. It allows to compile and disassemble code directly on the Newton using <a href="http://newted.org/newtsprism/nsScribe/nsScribe.html">nsScribe</a>.</p>
+
+			<h5 id="VIIA3e">e. Is Java available on the Newton?</h5>
+
+			<p><a href="https://cs.gmu.edu/~sean/">Sean Luke</a>, <a href="https://communicrossings.com/">Steve Weyer</a>, and several other contributors implemented a subset of Java called <a href="https://wabasoft.com/">Waba</a> on the Newton platform. The software is currently in beta release, with binaries and source code available on Sean’s <a href="https://cs.gmu.edu/~sean/projects/newton/waba/">Waba for the Newton</a> page.</p>
+
+			<h5 id="VIIA3f">f. C/C++ on other platforms</h5>
+
+			<p>C++ and other compiled languages can basically be used in two ways: as native functions and for P-Classes which are used in drivers. The Newton C++ Toolbox is more than a compiler and a linker. It also includes tools to use this C++ code, either to convert a link output to a Native Module, a file used by NTK or to generate and pack a P-Class.</p>
+
+			<p>All the documentation required to make a tool to convert from link output to NTK is available, but no such tool exists. Therefore, with a C/C++ suite, you will have to use NCT anyway. The other solution is to use Roger Milne’s <a href="https://web.archive.org/web/20090227035203/http://roger.trideja.com/newton/newtonasm.html">MakePKG</a> tool.</p>
+
+			<p>The format of the P-Class encapsulated programs is unknown.</p>
+
+			<p>Finally, the low level debuggers (Newtsbug and Hammer) only run on Mac OS. Apparently, they are based on RDI, but nobody succeeded to write a compatible low level debugger.</p>
+
+			<p>There are several C/C++ compilers for ARM, here are just the most common ones:</p>
+
+			<ul>
+				<li>The ARM SDT from arm: <a href="http://www.arm.com/">http://www.arm.com/</a></li>
+				<li>GNU C/C++ compiler for Intel based computers (apparently, the Sparc tools archive is corrupted) <a href="ftp://ftp.intel.com/pub/i960/XScale/SA1tools/">ftp://ftp.intel.com/pub/i960/XScale/SA1tools/</a></li>
+			</ul>
+
+			<p>You can also use <a href="#VIIA1b">Newton C++ Toolkit</a> with <a href="https://basilisk.cebix.net/">Basilisk II</a>.
+
+			<p>Basilisk II is a 68k Mac OS emulator that runs on several platforms, including Mac OS X, Windows, BeOS, various flavours of UNIX with X11, and AmigaOS.</p>
+
+			<h4 id="VIIA4">4. Are there any other tools to develop Newton Packages?</h4>
+
+			<p>Pinehill Softworks’ <a href="http://www.unna.org/view.php?/development/AppGeneratorV3">AppGen</a> lets you create simple data collection applications on your Newton and export the data to a PC using PineHill Mover.</p>
+
+			<hr>
+
+			<h3 id="VIIB">B. Documentation</h3>
+
+			<h4 id="VIIB1">1. Where can I find documentation?</h4>
+
+			<h5 id="VIIB1a">a. Apple programming reference</h5>
+
+			<p>Apple published <a href="http://www.unna.org/unna/apple/documentation/developer/FINDINFO.PDF">Find Info</a>, a PDF listing information about where to locate Newton development documentation.</p>
+
+			<p>Although the Newton Programmers Guide (NPG) is the first source, it is not necessarily the most complete or up to date. There are a number of additional places you can search for information on the Newton Platform APIs.</p>
+
+			<p>Below is a simplified version of that document with links added.</p>
+
+			<ul>
+				<li><strong>Newton Programmers Guide 2.0 &amp; Newton Programmers Reference 2.0</strong>
+					<br>
+					This is the primary source of information. Start here when searching. All the other sources of documentation supplement this guide.
+					<ul>
+						<li>Programmers Guide:
+							<ul>
+								<li>[PDF] <a href="http://www.unna.org/unna/apple/documentation/developer/ProgrammersGuideOS2.0.pdf">http://www.unna.org/unna/apple/documentation/developer/ProgrammersGuideOS2.0.pdf</a></li>
+							</ul>
+						</li>
+						<li>Programmers Reference:
+							<ul>
+								<li>[PDF] <a href="http://www.unna.org/unna/apple/documentation/developer/ProgrammersReferenceOS2.0.pdf">http://www.unna.org/unna/apple/documentation/developer/ProgrammersReferenceOS2.0.pdf</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><strong>Newton Programmers Guide 2.1</strong>
+					<br>
+					This is a supplement to the Newton Programmers Guide/Reference. It is the main source for the new APIs in Newton OS 2.1. Like NPG, this is a primary source of information.
+					<ul>
+						<li>[PDF] <a href="http://www.unna.org/unna/apple/documentation/developer/ProgrammersGuideOS2.1Addenum.pdf">http://www.unna.org/unna/apple/documentation/developer/ProgrammersGuideOS2.1Addenum.pdf</a></li>
+					</ul>
+				</li>
+				<li><strong>NewtonScript Reference</strong>
+					<br>
+					This is the primary reference for the NewtonScript language and related support functions.
+					<ul>
+						<li>NewtonScript Programming Language:
+							<ul>
+								<li>[PDF] <a href="http://www.unna.org/unna/apple/documentation/developer/NewtonScriptProgLanguage.pdf">http://www.unna.org/unna/apple/documentation/developer/NewtonScriptProgLanguage.pdf</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><strong>Newton 2.x OS Q &amp; As</strong> (Q_AND_AS)
+					<br>
+					New and updated information on APIs and extra explanation. This is one of the best sources of information apart from the Newton Programmers Guide. They can be found on UNNA: <a href="http://www.unna.org/view.php?/apple/documentation/developer/QAs-2.x">http://www.unna.org/view.php?/apple/documentation/developer/QAs-2.x</a></li>
+				<li><strong>Platform File Functions</strong> (PLATFUNC)
+					<br>
+					This contains documentation on APIs that are included as part of the Platform File. The APIs are either new APIs or replacements for ones already in the ROM.</li>
+				<li><strong>Sample Code</strong> (SAMPCODE)
+					<br>
+					In addition to showing you how to use particular features, some pieces of sample code contain interim documentation.</li>
+				<li><strong>NTK 1.6 User’s Guide</strong> (WINNTK16.PDF)
+					<br>
+					In addition to documenting Newton Toolkit, this guide also contains valuable information on both debugging your application and performance tuning.</li>
+			</ul>
+
+			<h5 id="VIIB1b">b. Other Apple documents</h5>
+
+			<p>Apple published additional books. These can be found on Newton Gurus’ sites.</p>
+
+			<ul>
+				<li>Newton Formats (1.1) describes the format of packages and stream objects.
+					<br>
+					It can be found on UNNA: <a href="http://www.unna.org/unna/apple/documentation/developer/NewtonFormats1.1.pdf">http://www.unna.org/unna/apple/documentation/developer/NewtonFormats1.1.pdf</a></li>
+				<li>Newton Toolkit 1.6.x File Formats describes the format of NTK files for both Mac OS and Windows.
+					<br>
+					It can also be found on Roger Milne site: <a href="http://www.geocities.com/SiliconValley/Code/5100/newton/ntkfrmat.pdf">http://www.geocities.com/SiliconValley/Code/5100/newton/ntkfrmat.pdf</a></li>
+				<li>Newton Interconnect Port Hardware Specification for the MessagePad.
+					<br>
+					It can be found on UNNA <a href="http://www.unna.org/view.php?/development/documentation/interconnect">http://www.unna.org/view.php?/development/documentation/interconnect</a></li>
+				<li>Newton OS 2.1 Engineering Documents
+					<ul>
+						<li>[PDF, 559 Kb] <a href="http://www.unna.org/unna/apple/documentation/developer/EngineeringDocsOS2.1.pdf">http://www.unna.org/unna/apple/documentation/developer/EngineeringDocsOS2.1.pdf</a></li>
+					</ul>
+				</li>
+				<li>Newton Toolkit Enhancements</li>
+				<li>Newton OS 2.1 Miscellaneous</li>
+				<li>Newton 2.0 User Interface Guidelines
+					<ul>
+						<li>[PDF] <a href="http://www.unna.org/unna/apple/documentation/developer/UserInterfaceGuidelinesOS2.0.pdf">http://www.unna.org/unna/apple/documentation/developer/UserInterfaceGuidelinesOS2.0.pdf</a></li>
+					</ul>
+				</li>
+				<li>User Interface Guidelines for Newton OS 2.1 Keyboard Enhancements
+					<ul>
+						<li>[PDF] <a href="http://www.unna.org/unna/apple/documentation/developer/UserInterfaceKeyboardOS2.1.pdf">http://www.unna.org/unna/apple/documentation/developer/UserInterfaceKeyboardOS2.1.pdf</a></li>
+					</ul>
+				</li>
+			</ul>
+
+			<h5 id="VIIB1c">c. Other articles and documentation</h5>
+
+			<p>There were a lot of articles written by Apple and third-party developers. They were published in the Newton Technology Journal, in the PIE Developers and other journals.</p>
+
+			<ul>
+				<li>The <a href="http://www.unna.org/view.php?/apple/documentation/developer/NewtonTechnologyJournal">Newton Technology Journal</a> contains both general and developer information. Issues from February 1995 (Volume I, Issue 1) to March 1997 (Volume III, Issue 2) were published.</li>
+				<li>Specific articles by the <a href="http://www.unna.org/view.php?/apple/documentation/developer/Articles/">Newton ToolBox Group</a>.</li>
+				<li>You can also look into develop issues, on Apple’s website: <a href="http://developer.apple.com/dev/techsupport/develop/">http://developer.apple.com/dev/techsupport/develop/</a></li>
+				<li>You can also look into Handheld Systems Magazine. Some articles were published there. The issues used to be found on UNNA, they might be back in some time. They used to be on cdpubs website, but they finally decided to charge for it. Note that all these articles can be found elsewhere. Some were archived by web.archive.org: <a href="http://web.archive.org/web/*re_pd_/http://cdpubs.com*">http://web.archive.org/web/*re_pd_/http://cdpubs.com*</a></li>
+				<li>There are <a href="http://mirrors.unna.org/www.geocities.com/SiliconValley/Code/5100/newton_docs.html">Ask The Llama</a> articles in the form of developer Q &amp; A.</li>
+				<li>If you’re interested in articles explaining how the Newton OS or the NewtonScript language works, you can go to Walter Smith’s website <a href="http://wsmith.best.vwh.net/works.html">http://wsmith.best.vwh.net/works.html</a> Walter Smith is the father of NewtonScript and is responsible for other great parts of the Newton OS.</li>
+				<li>Finally, there are all the programming hints from the Newton developer website.</li>
+			</ul>
+
+			<p>You can also consult the documentation concerning the processor (ARMs). Please note that this is useless to the NewtonScript developer. It is only useful for assembly development and sometimes C++ development.</p>
+
+			<ul>
+				<li>The ARM Architecture Reference Manual by D. Jaggar. You can order the paper version from any good (internet) library. You can get the electronic version by ordering a free evaluation copy of the ARM Development Suite at <a href="http://www.arm.com/sitearchitek/devtools.ns4/html/ads_eval?OpenDocument">http://www.arm.com/sitearchitek/devtools.ns4/html/ads_eval?OpenDocument</a> You’ll find in this book a (simple) diagram of the Runt based MessagePad devices. There are other reference manuals for the ARM such as the ARM System-on-Chip Architecture by S. Furber and The ARM RISC Chip, A Programmer’s Guide by A. van Someron &amp; C. Atack.</li>
+				<li>The ARM SDT Reference Manual. This manual isn’t a manual to the processor but a manual to the ARM SDT which the Newton C++ Toolbox is a MPW port of. The SDT changed a lot, but it’s there that you’ll find information about the compiler’s behavior (e.g. data size).</li>
+				<li>You can find additional documentation on ARM’s website. They are not very interesting for Newton development, though, except the Quick reference guide. <a href="http://www.arm.com/Documentation/">http://www.arm.com/Documentation/</a></li>
+				<li>Intel has several application notes and technical documents about the StrongARM, including one on the memory management (one of the sources about the ARM MMU). They can be downloaded from the Intel’s developer website: <a href="http://developer.intel.com/design/strong/">http://developer.intel.com/design/strong/</a></li>
+			</ul>
+
+			<h5 id="VIIB1d">d. The Newton Bowels Project</h5>
+
+			<p>The inner workings of Newton OS are not well documented. However, several developers were able to discover certain useful details while digging around the system in their attempts to interface with it. <a href="http://www.kallisys.com/files/newton/Bowels/">The Newton Bowels Project</a> is a repository of documents, sample code, and other “thrill-seeking” tools.</p>
+
+			<h5 id="VIIB1e">e. NewtonScript.org</h5>
+
+			<p>A one-stop shop for all things related to the NewtonScript programming language. This site is a collaborative project hosted on <a href="https://github.com/NewtonScript/newtonscript.github.com/">GitHub</a>, collecting all manner of NewtonScript development tools, documentation, libraries, sample code, and other resources.</p>
+
+			<h4 id="VIIB2">2. Wow, that’s a huge list! Where do I start?</h4>
+
+			<p>Our advice is to start with the code examples that come with Steve Weyer’s <a href="#VIIA2a">Newton Dev Environment</a> or Apple’s <a href="http://www.unna.org/view.php?/apple/development/Examples">Development Examples</a>.</p>
+
+			<p>You can also try Steve Weyer’s interactive <a href="https://communicrossings.com/html/newton/newtpkgs.htm#NewtATut">NewtATut</a> (Newt Application Tutorial) that shows how to develop a simple application in NewtonScript directly on your Newton device.</p>
+
+			<hr>
+
+			<h3 id="VIIC">C. Sample Code</h3>
+
+			<h4 id="VIIC1">1. Where can I find sample code?</h4>
+
+			<p>Most of the sample code and developer examples distributed by Apple are available on <a href="http://www.unna.org/">UNNA</a> as part of the <a href="http://www.unna.org/view.php?/apple/development/Examples">Development Examples</a> and <a href="http://www.unna.org/view.php?/development/NewtonDev">NewtonDev</a> collections.</p>
+
+			<p>See also: <a href="#VIIB1d">The Newton Bowels Project</a> and <a href="#VIIB1e">NewtonScript.org</a></p>
+
+			<h4 id="VIIC2">2. Where can I find a complete listing of all the sample code?</h4>
+
+			<p>A complete list of <a href="https://web.archive.org/web/19980529083053/http://www.newton-inc.com/dev/samples.htm">Newton 2.x OS Sample Code</a> with descriptions was published on the Newton Inc. website in 1997. Unfortunately, this copy of the information from the Internet Archive does not have valid links to the source code itself.</p>
+
+			<p>See also: <a href="#VIIC1">Where can I find sample code?</a></p>
 
 			<hr>
 		</article>
