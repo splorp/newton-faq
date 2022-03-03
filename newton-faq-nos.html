@@ -110,10 +110,11 @@
 					<li><a href="#IIIC2b">What is the Dates/Find bug?</a></li>
 					<li><a href="#IIIC2c">When I write, sometimes some strokes do not appear or disappear.</a></li>
 					<li><a href="#IIIC2d">When I do a find with Newton Works, the free memory amount falls.</a></li>
-					<li><a href="#IIIC2e">What are these -16022 errors every time I try to use my modem?</a></li>
-					<li><a href="#IIIC2f">When I insert a storage card, I get a -10582 error. What’s wrong?</a></li>
+					<li><a href="#IIIC2e">What is the -16022 error when I use my modem?</a></li>
+					<li><a href="#IIIC2f">What is the -10582 error when I insert a storage card?</a></li>
 					<li><a href="#IIIC2g">When I insert a flash storage card, it says the battery in the card needs to be replaced.</a></li>
 					<li><a href="#IIIC2h">I installed a new version of the backdrop application I’m using and I can’t see it.</a></li>
+					<li><a href="#IIIC2i">Why can’t I change between single and double page Newton Books?</a></li>					
 				</ol>
 			</li>
 			<li><a href="#IIIC3">Why can’t I install packages?</a>
@@ -879,17 +880,19 @@
 
 <p>This is a bug in Newton OS 2.1 <code>protoTXViewFinder.FindString</code> method. It is in ROM. However, a workaround fix exists (for Works only). It has been designed by Paul Guyot and can be freely downloaded from Kallisys website: <a href="http://www.kallisys.com/newton/rustines/">http://www.kallisys.com/newton/rustines/</a>.</p>
 
-<h5 id="IIIC2e">e. What are these -16022 errors every time I try to use my modem?</h5>
+<h5 id="IIIC2e">e. What is the -16022 error when I use my modem?</h5>
 
-<p>Victor Rehorst reports:</p>
+<p>The -10582 error indicates that an operation has failed due to a missing resource. In this case, there is a bug in Newton OS 2.1 where the system is unable to automatically detect which slot a modem card is inserted into. This error only affects MessagePad 2000 and MessagePad 2100 devices, which have two PCMCIA slots.</p>
 
-<p>There is a bug in Newton OS 2.1 where the system is unable to detect which slot a modem is inserted in. To fix this error, first choose a slot where you will always have your modem inserted. Then, go to the Prefs panel from Extras and tap on Modem. Change the Connect Using setting ro either Right PC Card or Left PC Card, depending on the slot you’ve chosen.</p>
+<p>To fix this error, insert the modem into either the bottom or top card slot. Open the Extras Drawer. Open “Prefs”. Tap on “Modem”. Change the “Connect Using” setting from “Default” to either “Bottom PC Card” or “Top PC Card”, depending on the slot you’re using.</p>
 
-<h5 id="IIIC2f">f. When I insert a storage card, I get a -10582 error. What’s wrong?</h5>
+<p>If your Newton is set to display in landscape mode, the card slots will be referred to as “Left PC Card” and “Right PC Card” in the Modem preferences.</p>
 
-<p>The -10582 error is <code>kError_ATA_No_Partition</code>. It is triggered when the built-in ATA card handler cannot find a Master Boot Record. Actually, it won’t find it, even if the card was DOS formatted, because the driver in the ROM always reads zeroes. And even if it worked, the card handler isn’t finished either.</p>
+<h5 id="IIIC2f">f. What is the -10582 error when I insert a storage card?</h5>
 
-<p>The end result is that you cannot use ATA cards with the Newton without a third-party driver.</p>
+<p>The -10582 error is triggered when an ATA-based storage card is inserted and the system cannot locate a “Master Boot Record” on the card. The card is not recognized as a valid store and cannot be used.</p>
+
+<p>To avoid this error, install Paul Guyot’s <a href="https://web.archive.org/web/20080701200025/http://www.kallisys.com/newton/ata/">ATA Support</a> package.</p>
 
 <p>See also: <a href="newton-faq-hardware.html#IIB1">What storage cards can I use?</a></p>
 
@@ -905,9 +908,10 @@
 
 <p>The bug is that it actually doesn’t show any package with the same signature than the backdrop application, and therefore, if you have two packages with the same signature and one is the backdrop application (therefore on the internal store), the other one (on a card) will be filtered nevertheless. The solution is to make another application (e.g. the Extras Drawer) the backdrop application, and then you’ll see both packages. This isn’t a very painful bug (on the contrary to the -10061), but I found it worth it to mention that there is another bug that was left in the OS ;)</p>
 
-<h5 id="IIIC2i">i. I can’t change between single and double page books under certain conditions.</h5>
+<h5 id="IIIC2i">i. Why can’t I change between single and double page Newton Books?</h5>
 
-<p>Victor Rehorts reports: I found a bug in copperfield, at least in 2.1, probably in all versions. I tried to compile a book using Newton Press/PC by adding a new size definition: 75 x 50. The Newton initially brings it up as 75x50 double page (because it can, I guess), and then trying to go to the book prefs and change it to single page crashes copperfield. The OS and NewtonScript task are all still fine though.</p>
+<p>There is a bug in some versions of the built-in Newton Book Reader software. When you attempt to change the display of a double page book to single page in the Preferences, the Newton Book Reader will crash.</p>
+
 
 <h4 id="IIIC3">3. Why can’t I install packages?</h4>
 
