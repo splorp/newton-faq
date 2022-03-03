@@ -115,6 +115,7 @@
 					<li><a href="#IIIC2g">When I insert a flash storage card, it says the battery in the card needs to be replaced.</a></li>
 					<li><a href="#IIIC2h">I installed a new version of the backdrop application I’m using and I can’t see it.</a></li>
 					<li><a href="#IIIC2i">Why can’t I change between single and double page Newton Books?</a></li>					
+					<li><a href="#IIIC2j">Why does the date always reset on my Newton?</a></li>
 				</ol>
 			</li>
 			<li><a href="#IIIC3">Why can’t I install packages?</a>
@@ -912,6 +913,23 @@
 
 <p>There is a bug in some versions of the built-in Newton Book Reader software. When you attempt to change the display of a double page book to single page in the Preferences, the Newton Book Reader will crash.</p>
 
+<h5 id="IIIC2j">j. Why does the date always reset on my Newton?</h5>
+
+<p>This is known as the <a href="https://40hz.org/Pages/newton/hacking/newton-year-2010-problem/">Year 2010 Problem</a></p>
+
+<p>Devices running an unpatched version of Newton OS 2.1 cannot handle dates past 18:48:31 on January 5th, 2010. The bug is located in the NewtonScript interface of certain time functions and is caused by an integer value overflow.</p>
+
+<p>Eckhart Köppen created several system updates to correct this bug.</p>
+
+<ul>
+	<li>The <a href="https://40hz.org/Pages/newton/patches/patch711000/">711000</a> update for the MessagePad 2000 and MessagePad 2100 (US)</li>
+	<li>The <a href="https://40hz.org/Pages/newton/patches/patch74j185/">74J185</a> update for the MessagePad 2100 (German)</li>
+	<li>The <a href="https://40hz.org/Pages/newton/patches/patch73j186/">73J186</a> update for the eMate 300</li>
+</ul>
+
+<p>Avi Drissman also created <a href="http://www.drissman.com/avi/newton/Fix2010/">Fix2010</a>, a less comprehensive patch for devices running Newton OS 2.0.</p>
+
+<p>See also: <a href="#IIIA2">What system updates are available for my Newton?</a></p>
 
 <h4 id="IIIC3">3. Why can’t I install packages?</h4>
 
