@@ -43,17 +43,17 @@ hr {
 
 p + hr,
 ol + hr,
-ul + hr  {
+ul + hr {
 	margin-top: 2.5em;
 	}
 
 img {
 	border: 1px solid #CCC;
 	max-width: 90%;
-    display: block;
-    margin: 2em auto;
-    outline: none;
-    padding: 1em;
+	display: block;
+	margin: 2em auto;
+	outline: none;
+	padding: 1em;
 	}
 
 h1 {
@@ -236,6 +236,19 @@ section a {
 	
 section a:hover {
 	border-bottom: 2px #FFF solid;
+	}
+
+section span a {
+	background-color: #CFC;
+	border-bottom: none;
+	border-radius: 0.25em;
+	color: #090;
+	padding: 0 0.2em;
+	}
+
+section span a:hover {
+	background-color: #090;
+	color: #FFF;
 	}
 
 .mouseprint {
