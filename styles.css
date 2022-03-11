@@ -248,11 +248,8 @@ section span a {
 
 section span a:hover {
 	background-color: #090;
+	border-bottom: none;
 	color: #FFF;
-	}
-
-.mouseprint {
-	font-size: 13px;
 	}
 
 
