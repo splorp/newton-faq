@@ -86,7 +86,7 @@
 						<li><a href="#VC1">I get an error message on my Newton. What does it mean?</a>
 							<ol type="a">
 								<li><a href="#VC1a">Negative numbers</a></li>
-								<li><a href="#VC1b">Positive numbers are usually bus errors.</a></li>
+								<li><a href="#VC1b">Positive numbers</a></li>
 							</ol>
 						</li>
 						<li><a href="#VC2">My Newton crashes or hangs at startup. What can I do?</a></li>
@@ -452,13 +452,13 @@
 
 			<p>Victor Rehorst built a database of errors that may contain more errors (especially from C++ headers). You’ll find it at: <a href="http://tools.unna.org/errors/">http://tools.unna.org/errors/</a></p>
 
-			<p>The -10061 error is the symptom of a known bug. [cf. <a href="newton-faq-nos.html#IIIC2a">IIIC2a</a>]</p>
+			<p>See also: <a href="newton-faq-nos.html#IIIC2a">What is the -10061 error?</a></p>
 
-			<h5 id="VC1b">b. Positive numbers are usually bus errors.</h5>
+			<h5 id="VC1b">b. Positive numbers</h5>
 
-			<p>Having such an error means a bad reference to a NewtonScript object (any strange use of Ref()?) or a bad error in a C++ code.</p>
+			<p>A positive error number generally indicates a bus error caused by a bad reference to a NewtonScript object or an error in some piece of C++ code.</p>
 
-			<p>A bus error may also be triggered by a hardware problem, since the very concept of it is that the processor tried to access data at a certain address, and was answered that it was impossible.</p>
+			<p>These types of errors may also be triggered by hardware problems, where the processor tried to access data at a certain address and the request could not be completed successfully.</p>
 
 			<h4 id="VC2">2. My Newton crashes or hangs at startup. What can I do?</h4>
 
