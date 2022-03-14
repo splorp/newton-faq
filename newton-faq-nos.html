@@ -946,12 +946,18 @@
 				<li><a href="http://www.tempel.org/newton/#pkgfixer">Package File Type Fixer</a> (Mac OS) by Thomas Tempelmann</li>
 				<li><a href="https://communicrossings.com/html/newton/toolinfo.htm#PackType">PackType</a> (Mac OS) by Steve Weyer</li>
 			</ul>
+			
+			<p>If you are running Mac OS X or later, the .pkg extension is used by the system. The file extension must be changed to .newtonpkg for Newton packages to be recognized by modern package installers such as <a href="https://newtonresearch.org/">Newton Connection for Mac OS X</a> (NCX).</p>
+			
+			<p>Pawel Piotrowski’s <a href="http://applenewton.co.uk/newton-workshop/newton-pkg-for-ncx/">PKG to NewtonPKG</a> Automator script can help with changing package file extensions in a batch.</p>
 
 			<h5 id="IIIC3b">b. When I download a .pkg via my Newton web browser, it’s not recognized as a package.</h5>
 
-			<p>Assuming the package was properly uploaded as a binary file, then the likely explanation is that the server is not providing the correct MIME type. You can ask the server administrator to use this Content-Type in MIME table: application/x-newton-compatible-pkg or you can contact your browser vendor to support additional MIME types.</p>
+			<p>Assuming the package was uploaded to the web server as a binary file, then it’s likely that the server is not providing the correct MIME (Multipurpose Internet Mail Extensions) mapping for the .pkg file extension. The server administrator will need to add a MIME type of <code>application/x-newton-compatible-pkg</code> for the .pkg file extension. The specific method of setting the MIME type will depend on the web server software and platform being used.</p>
 
-			<p>If you don’t want this to happen again with your zipped packages or with the packages that you may download, you must add/correct the .pkg entry in the files mappings of Internet Config or Internet Control Panel in the latest Mac OS.</p>
+			<p>If you are running Mac OS, you can add or adjust the file mapping entry for .pkg extensions using the Internet Config or Internet control panel.</p>
+			
+			<p>See also: <a href="#IIIC3a">Why won’t the package installer recognize a .pkg file?</a></p>
 
 			<h5 id="IIIC3c">c. How do I expand StuffIt archives?</h5>
 
