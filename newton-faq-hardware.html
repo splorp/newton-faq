@@ -197,7 +197,7 @@
 
 			<h5 id="IIA1e">e. Specification differences between models</h5>
 
-			<p>Much of the following information was obtained from Pascal B. Kreil’s <a href="https://web.archive.org/web/20200924143402/http://newtonwiki.de/hardware/daten">NewtonWiki</a> and MSNUG’s <a href="http://cf.psl.msu.edu/newtgal.htm">Newton Gallery</a>.</p>
+			<p>The following information was compiled from various official specification sheets, Pascal B. Kreil’s <a href="https://web.archive.org/web/20200924143402/http://newtonwiki.de/hardware/daten">NewtonWiki</a>, MSNUG’s <a href="http://cf.psl.msu.edu/newtgal.htm">Newton Gallery</a>, and Wikipedia’s entry on <a href="https://en.wikipedia.org/wiki/MessagePad#Newton_device_models">Newton device models</a>.</p>
 
 			<p><strong>Newton Specifications</strong></p>
 
@@ -326,18 +326,33 @@
 						<td>October 1994 (Germany), January 1995 (US)</td>
 					</tr>
 					<tr>
+						<td>Harris SuperTech 2000</td>
+						<td>1 MB</td>
+						<td>4 MB</td>
+						<td>ARM 610 20 MHz</td>
+						<td>1.3</td>
+						<td>PCMCIA, Serial, IR (ASK), ARDIS, WLAN, CDPD, Trunk Radio, Voice</td>
+						<td>Send, Receive</td>
+						<td>320x240, Backlight</td>
+						<td>Speaker</td>
+						<td>English</td>
+						<td></td>
+						<td></td>
+						<td>December 1994</td>
+					</tr>
+					<tr>
 						<td>Motorola Marco</td>
 						<td>1 MB</td>
 						<td>5 MB</td>
 						<td>ARM 610 20 MHz</td>
 						<td>1.3 <sup><a href="#IIA1e-1">1</a></sup></td>
-						<td>PCMCIA, Serial, IR, ARDIS</td>
+						<td>PCMCIA, Serial, IR (ASK), ARDIS</td>
 						<td>Send Only</td>
 						<td>320x240</td>
 						<td>Speaker</td>
 						<td>English</td>
 						<td></td>
-						<td></td>
+						<td>PWLN1001A</td>
 						<td>January 1995</td>
 					</tr>
 					<tr>
@@ -346,7 +361,7 @@
 						<td>4 MB, 8 MB</td>
 						<td>ARM 610 20 MHz</td>
 						<td>1.3, 2.0</td>
-						<td>PCMCIA, Serial, IR (ASK)</td>
+						<td>PCMCIA, Serial, IR (ASK), Radio LAN, WLAN, CDPD, GPS, Voice</td>
 						<td>Send Only</td>
 						<td>320x240, Backlight</td>
 						<td>Speaker</td>
@@ -354,21 +369,6 @@
 						<td></td>
 						<td></td>
 						<td>January 1995</td>
-					</tr>
-					<tr>
-						<td>Harris SuperTech 2000</td>
-						<td>1 MB</td>
-						<td>4 MB</td>
-						<td>ARM 610 20 MHz</td>
-						<td>1.3</td>
-						<td>PCMCIA, Serial, Cellular, WLAN, CDPD, ARDIS</td>
-						<td>Send, Receive</td>
-						<td>320x240, Backlight</td>
-						<td>Speaker</td>
-						<td>English</td>
-						<td></td>
-						<td></td>
-						<td>August 1995</td>
 					</tr>
 					<tr>
 						<td>MessagePad 120</td>
@@ -406,8 +406,8 @@
 						<td>8 MB</td>
 						<td>ARM 610 20 MHz</td>
 						<td>2.0</td>
-						<td>PCMCIA, Serial, IR (ASK), Modem, WLAN, CDPD</td>
-						<td>Send Only</td>
+						<td>PCMCIA, Serial, IR (ASK), Radio LAN, WLAN, CDPD, GSM, GPS, Voice</td>
+						<td>Send, Receive</td>
 						<td>320x240, Backlight</td>
 						<td>Speaker</td>
 						<td>English</td>
@@ -421,7 +421,7 @@
 						<td>8 MB</td>
 						<td>ARM 710 25 MHz</td>
 						<td>2.1, 2.2 <sup><a href="#IIA1e-6">6</a></sup></td>
-						<td>PCMCIA, Interconnect, Serial, IR (IrDA), Headphone Jack</td>
+						<td>PCMCIA, Serial, IR (IrDA), Interconnect, Headphone Jack</td>
 						<td>Send, Receive</td>
 						<td>480x320, Backlight, 16 Grays</td>
 						<td>Speaker, Headphone Jack <sup><a href="#IIA1e-9">9</a></sup></td>
@@ -436,7 +436,7 @@
 						<td>8 MB</td>
 						<td>StrongARM 161.9 MHz</td>
 						<td>2.1</td>
-						<td>2x PCMCIA, Interconnect, IR (IrDA, ASK)</td>
+						<td>2x PCMCIA, IR (IrDA, ASK), Interconnect</td>
 						<td>Send, Receive</td>
 						<td>480x320, Backlight, 16 Grays</td>
 						<td>Speaker, Microphone <sup><a href="#IIA1e-9">9</a></sup></td>
@@ -451,7 +451,7 @@
 						<td>8 MB</td>
 						<td>StrongARM 161.9 MHz</td>
 						<td>2.1</td>
-						<td>2x PCMCIA, Interconnect, IR (IrDA, ASK)</td>
+						<td>2x PCMCIA, IR (IrDA, ASK), Interconnect</td>
 						<td>Send, Receive</td>
 						<td>480x320, Backlight, 16 Grays</td>
 						<td>Speaker, Microphone <sup><a href="#IIA1e-9">9</a></sup></td>
@@ -466,13 +466,43 @@
 						<td>8 MB</td>
 						<td>StrongARM 161.9 MHz</td>
 						<td>2.1</td>
-						<td>2x PCMCIA, Interconnect, IR (IrDA, ASK), Radio ??</td>
+						<td>PCMCIA, Serial, IR (IrDA, ASK), Telephone I/O</td>
 						<td>Send, Receive</td>
 						<td>480x320, Backlight, 16 Grays</td>
 						<td>Speaker, Microphone</td>
 						<td>English</td>
 						<td></td>
+						<td>AD2000</td>
+						<td>1997</td>
+					</tr>
+					<tr>
+						<td>Harris Access Device Wireline</td>
+						<td>5 MB</td>
+						<td>8 MB</td>
+						<td>StrongARM 161.9 MHz</td>
+						<td>2.1</td>
+						<td>PCMCIA, Serial, IR (IrDA, ASK), Telephone I/O</td>
+						<td>Send, Receive</td>
+						<td>480x320, Backlight, 16 Grays</td>
+						<td>Speaker, Microphone</td>
+						<td>English</td>
 						<td></td>
+						<td>AD2000</td>
+						<td>1997</td>
+					</tr>
+					<tr>
+						<td>Harris Access Device GPS</td>
+						<td>5 MB</td>
+						<td>8 MB</td>
+						<td>StrongARM 161.9 MHz</td>
+						<td>2.2</td>
+						<td>PCMCIA, Serial, IR (IrDA, ASK), GPS, Telephone I/O</td>
+						<td>Send, Receive</td>
+						<td>480x320, Backlight, 16 Grays</td>
+						<td>Speaker, Microphone</td>
+						<td>English</td>
+						<td></td>
+						<td>AD2000</td>
 						<td>1998</td>
 					</tr>
 					<tr>
