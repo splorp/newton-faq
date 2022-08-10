@@ -126,6 +126,7 @@
 						</li>
 						<li><a href="#IIIC4">Why does the InOut Box always open to Out Box? Can I change that?</a></li>
 						<li><a href="#IIIC5">Why does the available memory decrease when the Newton is idle?</a></li>
+						<li><a href="#IIIC6">How do I stop packages from activating when I insert a storage card?</a></li>
 					</ol>
 				</li>
 				<li><a href="#IIID">How does Newton OS work?</a>
@@ -542,11 +543,15 @@
 
 			<h5 id="IIIB2c">c. Reset With Extensions Off</h5>
 
-			<p>A reset with extensions off allows you to start up your Newton without loading any packages. The effect is similar to freezing all packages and returning the Newton to an almost virgin state. This is useful if you’re having conflicts between two packages, a package has become corrupt, or when you need to maximize heap for a certain procedure. With no packages loaded, your Newton will have it’s maximum amount of heap available.</p>
+			<p>A reset with extensions off allows you to start up your Newton without loading any packages. The effect is similar to freezing all packages and returning the Newton to a nearly factory state. There are several reasons why you might want to stop packages from activating when inserting a storage card or rebooting your Newton. For example, there might be a conflict between packages, a package or its soup may have become corrupt, or you need to maximize the amount of heap. With no packages loaded, your Newton will have it’s maximum amount of heap available.</p>
 
-			<p>To perform a reset with extensions off, hit the reset button on the back of the Newton and then flip the Newton over so the screen is facing you. Immediately tap and hold your stylus (or your fingernail) halfway down the left edge of the screen, about a centimeter from the casing. Keep holding the pen there until a dialog box appears asking if you’d like to activate packages on the store “Internal”. Tap “No”. If you have any PC cards installed, return the pen to the left edge and keep holding it down. You’ll see the same dialog for each card installed. Tap “no” in each dialog. Once this procedure has been completed, your Newton will have been started up with no packages activated. You may now delete any corrupted or conflicting packages at this time.</p>
+			<p>To perform a reset with extensions off, hit the reset button on the back of the Newton and then flip the Newton over so the screen is facing you. Immediately tap and hold your stylus (or your fingernail) halfway down the left edge of the screen, about a centimeter from the casing. Keep holding the pen there until a dialog box appears asking if you’d like to activate packages on the store “Internal”. Tap “No”.</p>
+			
+			<p>If you have any PC cards installed, return the pen to the left edge and keep holding it down. You’ll see the same dialog box for each card that is installed. Tap “No”.<p>
+			
+			<p>Once this procedure is complete, your Newton will not have any activated packages. You can now delete any corrupted or conflicting packages from the device.</p>
 
-			<p>You will not lose data doing a reset with extensions off. However, if you have a third-party application set as the backdrop, (such as Backdrop Plus or Avi’s Backdrop) it will be replaced with the Notepad. You’ll have to set the third-party application as the backdrop again.</p>
+			<p>You won’t lose data doing a reset with extensions off. However, if you have a third-party application set as the backdrop, (such as Backdrop Plus or Avi’s Backdrop) it will be replaced with the Notepad. You’ll have to set the third-party application as the backdrop again.</p>
 
 			<h5 id="IIIB2d">d. MessagePad 2000/2100 Power Drain Reset</h5>
 
@@ -982,6 +987,10 @@
 			<p>This kind of memory usage is perfectly normal in a system like Newton that does automatic memory management (also similar to Smalltalk, Lisp, Java). As the event loop runs or even idles, the Newton creates temporary objects. (ala Heisenberg, just observing the state of the Newton in order to update time or amount of heap, uses heap). When this gets to a certain threshold, the Newton reclaims memory by tracing/discarding items that aren’t being referenced anymore by any other object (aka “garbage collection”). [From a developer’s perspective, not having to worry about allocating and deallocating memory is great, compared to traditional language environments like C; things just eventually disappear if you stop referencing/using them]</p>
 
 			<p>A real “leak” happens if most of the heap isn’t reclaimed. This could happen if an application hangs onto extra, unnecessary stuff even when closed. And this sometimes can happen also during soup (database) processing when the heap becomes partitioned/fragmented (an unfortunate memory management bug that Apple never got around to fixing …)</p>
+
+			<h4 id="IIIC6">6. How do I stop packages from activating when I insert a storage card?</h4>
+			
+			<p>See: <a href="#IIIB2c">Reset With Extensions Off</a></p>
 
 			<hr>
 
