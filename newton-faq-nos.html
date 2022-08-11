@@ -119,12 +119,12 @@
 						<li><a href="#IIIC3">Why can’t I install packages?</a>
 							<ol type="a">
 								<li><a href="#IIIC3a">Why won’t the package installer recognize a .pkg file?</a></li>
-								<li><a href="#IIIC3b">When I download a .pkg via my Newton web browser, it’s not recognized as a package.</a></li>
+								<li><a href="#IIIC3b">Why doesn’t a .pkg file work when I download it using a Newton web browser?</a></li>
 								<li><a href="#IIIC3c">How do I expand StuffIt archives?</a></li>
-								<li><a href="#IIIC3d">I have problems with a package on Windows</a></li>
+								<li><a href="#IIIC3d">Why won’t .pkg files work on my Windows computer?</a></li>
 							</ol>
 						</li>
-						<li><a href="#IIIC4">Why does the InOut Box always open to Out Box? Can I change that?</a></li>
+						<li><a href="#IIIC4">Why does the InOut Box always open to Out Box?</a></li>
 						<li><a href="#IIIC5">Why does the available memory decrease when the Newton is idle?</a></li>
 						<li><a href="#IIIC6">How do I stop packages from activating when I insert a storage card?</a></li>
 					</ol>
@@ -964,7 +964,7 @@
 
 			<p>Pawel Piotrowski’s <a href="http://applenewton.co.uk/newton-workshop/newton-pkg-for-ncx/">PKG to NewtonPKG</a> Automator script can help with changing package file extensions in a batch.</p>
 
-			<h5 id="IIIC3b">b. When I download a .pkg via my Newton web browser, it’s not recognized as a package.</h5>
+			<h5 id="IIIC3b">b. Why doesn’t a .pkg file work when I download it using a Newton web browser?</h5>
 
 			<p>Assuming the package was uploaded to the web server as a binary file, then it’s likely that the server is not providing the correct MIME (Multipurpose Internet Mail Extensions) mapping for the .pkg file extension. The server administrator will need to add a MIME type of <code>application/x-newton-compatible-pkg</code> for the .pkg file extension. The specific method of setting the MIME type will depend on the web server software and platform being used.</p>
 
@@ -976,23 +976,27 @@
 
 			<p>Use a current version of <a href="https://stuffit.com/">StuffIt Expander</a> for your platform or <a href="https://theunarchiver.com">The Unarchiver</a> for Mac OS X.</p>
 
-			<h5 id="IIIC3d">d. I have problems with a package on Windows</h5>
+			<h5 id="IIIC3d">d. Why won’t .pkg files work on my Windows computer?</h5>
 
-			<p>If you have an error using Windows unstuff utilities where file does not appear to be package format, set the CROSS PLATFORM preference to NEVER for “Convert Text files to Windows format” and set to NEVER for “Save Macintosh files in MacBinary format”. (Otherwise, Mac resource fork is left in).</p>
+			<p>The package may have been corrupted due to incorrect decompression settings.</p>
+			
+			<p>If you are using a Windows utility (such as <a href="https://stuffit.com/">StuffIt Expander</a>) to decompress Mac OS archives, the “Convert Text files to Windows format” and “Save Macintosh files in MacBinary format” settings should be set to “Never”.</p>
 
-			<p>If you have unzipped a .pkg file on a PC and it isn’t recognized by the package installer, it might be MacBinary encoded. You may be able to strip the MacBinary header using Roger Milne’s <a href="https://web.archive.org/web/20100916222855/http://roger.trideja.com/newton/pkgstrip.html">Pkg Stripper</a> utility.</p>
+			<p>If you are unzipping a compressed .pkg file on a PC and it isn’t recognized by the package installer, the file might be MacBinary encoded. You should be able to strip the MacBinary header from the file using Roger Milne’s <a href="https://web.archive.org/web/20100916222855/http://roger.trideja.com/newton/pkgstrip.html">Pkg Stripper</a> utility.</p>
 
-			<h4 id="IIIC4">4. Why does the InOut Box always open to Out Box? Can I change that?</h4>
+			<h4 id="IIIC4">4. Why does the InOut Box always open to Out Box?</h4>
 
-			<p>There was a problem in older versions of <a href="https://communicrossings.com/html/newton/newtscape.htm">Newt’s Cape</a> (2.0a, 1.5) — if you selected a mailto: link, it created a message in your Out Box and opened to that directly.</p>
+			<p>This is related to an issue with older versions of <a href="https://communicrossings.com/html/newton/newtscape.htm">Newt’s Cape</a> (2.0a and earlier). If you tapped a mailto: link on a web page, it created a message and open it in the Out Box.</p>
 
-			<p>Other software packages could also have changed the default setting of opening directly into the In Box. Steve Weyer’s <a href="https://communicrossings.com/html/newton/newtscape/exs/ioboxfix.htm">InOut Box Fixer Form</a> provides a fix that can be made using a soup editor or running the example directly in Newt’s Cape.</p>
+			<p>Other software packages may have changed the default In Box setting as well. Steve Weyer’s <a href="https://communicrossings.com/html/newton/newtscape/exs/ioboxfix.htm">InOut Box Fixer Form</a> provides a solution that can be implemented using a soup editor or by running the example directly in the <a href="https://communicrossings.com/html/newton/newtscape.htm">Newt’s Cape</a> application.</p>
 
 			<h4 id="IIIC5">5. Why does the available memory decrease when the Newton is idle?</h4>
 
-			<p>This kind of memory usage is perfectly normal in a system like Newton that does automatic memory management (also similar to Smalltalk, Lisp, Java). As the event loop runs or even idles, the Newton creates temporary objects. (ala Heisenberg, just observing the state of the Newton in order to update time or amount of heap, uses heap). When this gets to a certain threshold, the Newton reclaims memory by tracing/discarding items that aren’t being referenced anymore by any other object (aka “garbage collection”). [From a developer’s perspective, not having to worry about allocating and deallocating memory is great, compared to traditional language environments like C; things just eventually disappear if you stop referencing/using them]</p>
+			<p>This behaviour is normal in an system that performs automatic memory management, such as Newton OS (and similarly structured programming languages like Smalltalk, Lisp, and Java).</p>
+			
+			<p>As the programmatic event loop runs (or is idling), Newton OS creates temporary objects which use bits of memory along the way. When this process reaches a certain threshold, the Newton reclaims memory by locating and discarding objects that are no longer being referenced by other objects. This procedure is also known as “garbage collection”.</p>
 
-			<p>A real “leak” happens if most of the heap isn’t reclaimed. This could happen if an application hangs onto extra, unnecessary stuff even when closed. And this sometimes can happen also during soup (database) processing when the heap becomes partitioned/fragmented (an unfortunate memory management bug that Apple never got around to fixing …)</p>
+			<p>A “leak” happens if the bulk of the unused memory isn’t reclaimed. This may happen if an application holds on to extra data even after its been closed. Memory “leakage” can also happen during soup (the Newton OS database structure) processing when the memory becomes fragmented. Unfortunately, memory fragmentation is one of those bugs that Apple never got around to fixing before the Newton was discontinued.</p>
 
 			<h4 id="IIIC6">6. How do I stop packages from activating when I insert a storage card?</h4>
 
