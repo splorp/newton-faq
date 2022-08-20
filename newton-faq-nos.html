@@ -234,7 +234,7 @@
 				<li><strong>MessagePad 120 1.4-J 444152</strong> <sup><a href="#IIIA2-4">4</a></sup></li>
 				<li><strong>MessagePad 120 1.4-J 464353</strong> <sup><a href="#IIIA2-4">4</a></sup></li>
 				<li><strong>MessagePad 120 2.0-J 516205</strong> <sup><a href="#IIIA2-5">5</a></sup></li>
-				<li><strong>MessagePad 130 2.0-J 526205</strong> <sup><a href="#IIIA2-6">6</a></sup></li>
+				<li><strong>MessagePad 130 2.0-J 526205</strong> <sup><a href="#IIIA2-6">6</a></sup> (updates 526061)</li>
 			</ul>
 
 			<p id="IIIA2-1"><sup>1</sup> The <a href="https://web.archive.org/web/20080617035836/http://www.kallisys.com/newton/rustines/">710031</a> update for the MessagePad 2000 and MessagePad 2100 was created by <a href="http://www.kallisys.com/">Paul Guyot</a> specifically to fix the <a href="#IIIC2b">Dates/Find bug</a> and was the very first system patch not developed and released by Apple. Due to copyright concerns, Paul initially published the update as Mac OS and Windows updater applications, not a standalone package. The updater applications modified the official 717260 update to become the 710031 update.</p>
@@ -973,7 +973,7 @@
 			<h5 id="IIIC3d">d. Why won’t .pkg files work on my Windows computer?</h5>
 
 			<p>The package may have been corrupted due to incorrect decompression settings.</p>
-			
+
 			<p>If you are using a Windows utility (such as <a href="https://stuffit.com/">StuffIt Expander</a>) to decompress Mac OS archives, the “Convert Text files to Windows format” and “Save Macintosh files in MacBinary format” settings should be set to “Never”.</p>
 
 			<p>If you are unzipping a compressed .pkg file on a PC and it isn’t recognized by the package installer, the file might be MacBinary encoded. You should be able to strip the MacBinary header from the file using Roger Milne’s <a href="https://web.archive.org/web/20100916222855/http://roger.trideja.com/newton/pkgstrip.html">Pkg Stripper</a> utility.</p>
@@ -987,7 +987,7 @@
 			<h4 id="IIIC5">5. Why does the available memory decrease when the Newton is idle?</h4>
 
 			<p>This behaviour is normal in an system that performs automatic memory management, such as Newton OS (and similarly structured programming languages like Smalltalk, Lisp, and Java).</p>
-			
+
 			<p>As the programmatic event loop runs (or is idling), Newton OS creates temporary objects which use bits of memory along the way. When this process reaches a certain threshold, the Newton reclaims memory by locating and discarding objects that are no longer being referenced by other objects. This procedure is also known as “garbage collection”.</p>
 
 			<p>A “leak” happens if the bulk of the unused memory isn’t reclaimed. This may happen if an application holds on to extra data even after its been closed. Memory “leakage” can also happen during soup (the Newton OS database structure) processing when the memory becomes fragmented. Unfortunately, memory fragmentation is one of those bugs that Apple never got around to fixing before the Newton was discontinued.</p>
