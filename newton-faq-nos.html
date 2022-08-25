@@ -83,6 +83,7 @@
 								<li><a href="#IIIB3d">How can I synchronize data between my Newton and another computer?</a></li>
 								<li><a href="#IIIB3e">Can I use a terminal emulator to transfer data?</a></li>
 								<li><a href="#IIIB3f">How can I transfer data between my Newton and another PDA?</a></li>
+								<li><a href="#IIIB3g">How do I connect to the Newton using ethernet?</a></li>
 							</ol>
 						</li>
 						<li><a href="#IIIB4">What are alternatives to the built-in handwriting recognition?</a></li>
@@ -706,6 +707,31 @@
 			<ul>
 				<li><a href="http://www.smartdogsw.com/backtalk/">BackTalk</a> by SmartDog Software offers one of the easiest ways to transfer data between a device running Newton OS 2.1 and a Palm or other PDA that uses IrDA.</li>
 				<li>Another way to transfer data between a Newton 2.x and a Palm is to use <a href="newton-faq-software.html#VB1d">Newton Connection Utilities</a> for Mac OS and synchronize the data with Claris Organizer or Palm Desktop.</li>
+			</ul>
+
+			<h5 id="IIIB3g">g. How do I connect to the Newton using ethernet?</h5>
+
+			<p>Ethernet only works between devices running Newton OS 2.1 and Mac OS.</p>
+
+			<p>Since the Windows versions of Apple’s connection utilities do not support AppleTalk, one workaround is to run the <a href="https://basilisk.cebix.net/">Basilisk II</a> Mac OS emulator on the Windows computer.</p>
+
+			<p>A <a href="http://www.unna.org/unna/development/NewtonDev/macos755-boot.zip">disk image</a> with Newton Connection Utilities pre-installed for Basilisk II is available on UNNA.</p>
+			
+			<p>Steps to connect via ethernet:</p>
+
+			<ul>
+				<li>Make sure your card is supported. Check the list of cards and images on Victor Rehorst’s <a href="http://old.chuma.org/newton/ethernet/">Ethernet Information</a> page.</li>
+				<li>Install the Newton Internet Enabler (NIE) 2.0 Newton Devices package.</li>
+				<li>Install the ethernet package for your card.</li>
+				<li>Restart your Newton device by pressing the Reset button. (This is not required, but it’s a good idea.)</li>
+				<li>Insert the ethernet card.</li>
+				<li>If a card slip appears on screen, the card has been recognized. If not, then the card is either damaged or not compatible.</li>
+				<li>On the Newton, go to Prefs -&gt; AppleTalk, choose to Connect via EtherTalk, and then choose your ethernet card.</li>
+				<li>On the Mac, in the AppleTalk control panel, choose connect via EtherTalk (instructions may vary depending on your Mac OS version)</li>
+				<li>Connect the Newton and a Mac with ethernet cable through a hub, or use a special ethernet crossover cable (ask your local computer shop)</li>
+				<li>Load up NCU/NBU/NPI on the Mac, Edit the Preferences, and make sure that ONLY AppleTalk is selected as a connection option (not required to have only AppleTalk selected, but it’s a good idea)</li>
+				<li>Run Dock on the Newton, choose to connect via AppleTalk, browse for a computer (make sure NCU/NBU/NPI is still running on the Mac!), select your computer name when it appears.</li>
+				<li>Voilà, they should connect.</li>
 			</ul>
 
 			<h4 id="IIIB4">4. What are alternatives to the built-in handwriting recognition?</h4>
