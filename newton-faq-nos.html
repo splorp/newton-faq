@@ -638,11 +638,28 @@
 			</ul>
 
 			<h5 id="IIIB3b">b. How do I transfer data between my Newton and another computer?</h5>
+			
+			<p>There are several methods of transferring data between a Newton device and another computer.</p>
 
+			<p>These can include:</p>
+			
 			<ul>
+				<li>Serial connection</li>
+				<li>Ethernet or wireless network connection</li>
+				<li>Swapping storage cards between Newton devices</li>
+				<li>Beaming between Newton devices</li>
+				<li>Email</li>
 			</ul>
+			
+			<p>The model of Newton and what accessories are available for that device will determine which methods are applicable.</p>
+			
+			<p>Email is a simple, system-wide means to import and export text. It is also possible to export packages using email, although your mileage may vary.</p>
 
-			<p>Refer to Ben Truesdale’s <a href="https://web.archive.org/web/20080215200930/http://newted.dyndns.org/users/1f2frfbf/answers.html">Newton Connection FAQ</a> for additional information.</p>
+			<p>Ben Truesdale’s <a href="https://web.archive.org/web/20080215200930/http://newted.dyndns.org/users/1f2frfbf/answers.html">Newton Connection FAQ</a> contains additional information regarding transferring and synchronizing data.</p>
+			
+			<p>See also: <a href="newton-faq-software.html#VH1">What software can be used to transfer data?</a></p>
+
+			<p>See also: <a href="#IIIB3c">Can I use IrDA to transfer data?</a></p>
 
 			<h5 id="IIIB3c">c. Can I use IrDA to transfer data?</h5>
 
@@ -656,8 +673,11 @@
 
 			<h5 id="IIIB3d">d. How do I synchronize data between my Newton and another computer?</h5>
 
+			<p>Most software for synchronizing data was originally designed to work with now obsolete operating systems and applications. That being said, it’s still technically possible to synchronize data between a Newton device and another computer.</p>
 
-			<p>Refer to Ben Truesdale’s <a href="https://web.archive.org/web/20080215200930/http://newted.dyndns.org/users/1f2frfbf/answers.html">Newton Connection FAQ</a> for additional information.</p>
+			<p>Ben Truesdale’s <a href="https://web.archive.org/web/20080215200930/http://newted.dyndns.org/users/1f2frfbf/answers.html">Newton Connection FAQ</a> contains additional information regarding transferring and synchronizing data.</p>
+
+			<p>See also: <a href="newton-faq-software.html#VH2">What software can be used to synchronize data with other applications?</a></p>
 
 			<h5 id="IIIB3e">e. Can I use a terminal emulator to transfer data?</h5>
 
@@ -665,23 +685,22 @@
 
 			<h5 id="IIIB3f">f. How do I transfer data between my Newton and another PDA?</h5>
 
-			<ul>
-				<li><a href="http://www.smartdogsw.com/backtalk/">BackTalk</a> by SmartDog Software offers one of the easiest ways to transfer data between a device running Newton OS 2.1 and a Palm device or other PDA that uses IrDA.</li>
-				<li>Another way to transfer data between a Newton 2.x and a Palm is to use <a href="newton-faq-software.html#VB1d">Newton Connection Utilities</a> for Mac OS and synchronize the data with Claris Organizer or Palm Desktop.</li>
-			</ul>
+			<p><a href="http://www.smartdogsw.com/backtalk/">BackTalk</a> by SmartDog Software offers one of the easiest ways to transfer data between a device running Newton OS 2.1 and a Palm device or other PDA that uses IrDA.</p>
+			
+			<p>You can also transfer data between a Newton OS 2.x device and a Palm device using <a href="newton-faq-software.html#VB1d">Newton Connection Utilities</a> for Mac OS and synchronizing the data with Claris Organizer or Palm Desktop.</p>
 
 			<h5 id="IIIB3g">g. How do I connect a Newton using ethernet?</h5>
 
 			<p>Ethernet only works between devices running Newton OS 2.1 and Mac OS.</p>
 
-			<p>Since the Windows versions of Apple’s connection utilities do not support AppleTalk, one workaround is to run the <a href="https://basilisk.cebix.net/">Basilisk II</a> Mac OS emulator on the Windows computer.</p>
+			<p>Since the Windows version of Apple’s connection utilities do not support AppleTalk, one workaround is to run the <a href="https://basilisk.cebix.net/">Basilisk II</a> Mac OS emulator on the Windows computer.</p>
 
 			<p>A <a href="http://www.unna.org/unna/development/NewtonDev/macos755-boot.zip">disk image</a> with Newton Connection Utilities pre-installed for Basilisk II is available on UNNA.</p>
 			
-			<p>Steps to connect via ethernet:</p>
+			<p>To connect using ethernet:</p>
 
 			<ul>
-				<li>Make sure your card is supported. Check the list of cards and images on Victor Rehorst’s <a href="http://old.chuma.org/newton/ethernet/">Ethernet Information</a> page.</li>
+				<li>Make sure your ethernet card is supported. Check the list of cards on Victor Rehorst’s <a href="http://old.chuma.org/newton/ethernet/">Ethernet Information</a> page.</li>
 				<li>Install the Newton Internet Enabler (NIE) 2.0 Newton Devices package.</li>
 				<li>Install the ethernet package for your card.</li>
 				<li>Restart your Newton device by pressing the Reset button. (This is not required, but it’s a good idea.)</li>
@@ -690,9 +709,9 @@
 				<li>On the Newton, go to Prefs -&gt; AppleTalk, choose to Connect via EtherTalk, and then choose your ethernet card.</li>
 				<li>On the Mac, in the AppleTalk control panel, choose connect via EtherTalk (instructions may vary depending on your Mac OS version)</li>
 				<li>Connect the Newton and a Mac with ethernet cable through a hub, or use a special ethernet crossover cable (ask your local computer shop)</li>
-				<li>Load up NCU/NBU/NPI on the Mac, Edit the Preferences, and make sure that ONLY AppleTalk is selected as a connection option (not required to have only AppleTalk selected, but it’s a good idea)</li>
-				<li>Run Dock on the Newton, choose to connect via AppleTalk, browse for a computer (make sure NCU/NBU/NPI is still running on the Mac!), select your computer name when it appears.</li>
-				<li>Voilà, they should connect.</li>
+				<li>Launch <a href="newton-faq-software.html#VB1d">Newton Connection Utilities</a> on the Mac. In Preferences, make sure that only AppleTalk is selected as a connection option. (This is also not required, but again it’s a good idea.)</li>
+				<li>Tap Dock on the Newton. Choose to connect via AppleTalk and browse for your Mac. Newton Connection Utilities must be running on the Mac. Select your computer when it’s name appears.</li>
+				<li>You should now be connected.</li>
 			</ul>
 
 			<h4 id="IIIB4">4. What are alternatives to the built-in handwriting recognition?</h4>
