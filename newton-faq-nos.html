@@ -550,9 +550,9 @@
 
 			<p>A reset with extensions off allows you to start up your Newton without loading any packages. The effect is similar to freezing all packages and returning the Newton to a nearly factory state. There are several reasons why you might want to stop packages from activating when inserting a storage card or rebooting your Newton. For example, there might be a conflict between packages, a package or its soup may have become corrupt, or you need to maximize the amount of heap. With no packages loaded, your Newton will have it’s maximum amount of heap available.</p>
 
-			<p>To perform a reset with extensions off, hit the reset button on the back of the Newton and then flip the Newton over so the screen is facing you. Immediately tap and hold your stylus (or your fingernail) halfway down the left edge of the screen, about a centimeter from the casing. Keep holding the pen there until a dialog box appears asking if you’d like to activate packages on the store “Internal”. Tap “No”.</p>
+			<p>To perform a reset with extensions off, hit the reset button on the back of the Newton and then flip the Newton over so the screen is facing you. Immediately tap and hold your stylus (or your fingernail) halfway down the left edge of the screen, about a centimeter from the casing. Keep holding the stylus there until a dialog box appears asking if you’d like to activate packages on the store “Internal”. Tap “No”.</p>
 
-			<p>If you have any PC cards installed, return the pen to the left edge and keep holding it down. You’ll see the same dialog box for each card that is installed. Tap “No”.<p>
+			<p>If you have any PC cards installed, return the stylus to the left edge and keep holding it down. You’ll see the same dialog box for each card that is installed. Tap “No”.<p>
 
 			<p>Once this procedure is complete, your Newton will not have any activated packages. You can now delete any corrupted or conflicting packages from the device.</p>
 
@@ -606,7 +606,7 @@
 
 			<ul>
 				<li>On a MessagePad 120, no data is erased since data is stored in the internal non-volatile Flash RAM.</li>
-				<li>On a MessagePad 120, a cold boot resets the Power Manager. Pen alignment is required on the next use.</li>
+				<li>On a MessagePad 120, a cold boot resets the Power Manager. Stylus alignment is required on the next use.</li>
 				<li>The Time Zone, Date, Time, and Prefs need to be set up.</li>
 			</ul>
 
@@ -1036,7 +1036,7 @@
 
 			<p>Note: Linear and ATA stores follow different calculation methods.</p>
 
-			<p>Probably the most comprehensive source for information is Carsten Lemmen’s <a href="https://web.archive.org/web/20151024230720/http://www.mac3.de/sig/newton/memory_cards.html">Memory Cards</a> page. The data relies on speed values taken from the Nick’s Test It utility. While the time spent to do the test is probably the best comparison tool, even if it can change a lot due to various factors including pen input, software installed, etc., the speed given by Nick’s Test It does not mean much.</p>
+			<p>Probably the most comprehensive source for information is Carsten Lemmen’s <a href="https://web.archive.org/web/20151024230720/http://www.mac3.de/sig/newton/memory_cards.html">Memory Cards</a> page. The data relies on speed values taken from the Nick’s Test It utility. While the time spent to do the test is probably the best comparison tool, even if it can change a lot due to various factors including stylus input, software installed, etc., the speed given by Nick’s Test It does not mean much.</p>
 
 			<p>Indeed, Nick’s Test It creates a temporary soup (hence with at least an index on the unique ID) and then creates 335 entries with the following frame:</p>
 
@@ -1070,7 +1070,7 @@
 
 			<p>Does the Newton multitask? Yes and no. As we understand it, the Newton’s underlying operating system has a preemptive multithreaded process manager; the inker, handwriting recognition, low-level I/O, and NewtonScript interpreter all run in separate processes. However, NewtonScript “applications” (like the Notepad, or a third-party calculator, or the Button Bar, etc.) are not multitasked in any sense of the term. In fact, they are in essence different functions in the same big computer program hosted by the NewtonScript interpreter. They all share the same memory and run together in a single process. Any one application can hog all the processor power if it wants to. From a user’s perspective, no, the Newton doesn’t have preemptive multitasking. However, when two cards are inserted at the same time, maybe two NS tasks run at the same time.</p>
 
-			<p>The main way that NewtonScript applications “share” processor time is using an <em>event model</em>. Events (keystrokes, pen taps, incoming serial port information, etc.) are piled up at a low level into an event queue where they await processing by appropriate applications. NewtonScript applications register <em>callback functions</em> to be called when certain events occur that are germane to that application. NewtonScript calls these functions “scripts”. When a callback function has been called and has completed its work, the processor is released from duty and some callback function is called for the next event in the queue. When no events are in the queue, the processor sleeps. Applications may register for timer events which occur periodically (once an hour, week, day, etc.). Applications may also register for “idle” events — if there is no event presently in the queue, the processor every once in a while queues up an “idle” event and hands it off to a registered callback function. This allows applications to do work in the background all by themselves. Besides, since there is only one Event Loop, the system stops when there is nothing to do, awaiting for any event (including a clock change) which will wake it up. This allows the Newton to consume very few power.</p>
+			<p>The main way that NewtonScript applications “share” processor time is using an <em>event model</em>. Events (keystrokes, taps, incoming serial port information, etc.) are piled up at a low level into an event queue where they await processing by appropriate applications. NewtonScript applications register <em>callback functions</em> to be called when certain events occur that are germane to that application. NewtonScript calls these functions “scripts”. When a callback function has been called and has completed its work, the processor is released from duty and some callback function is called for the next event in the queue. When no events are in the queue, the processor sleeps. Applications may register for timer events which occur periodically (once an hour, week, day, etc.). Applications may also register for “idle” events — if there is no event presently in the queue, the processor every once in a while queues up an “idle” event and hands it off to a registered callback function. This allows applications to do work in the background all by themselves. Besides, since there is only one Event Loop, the system stops when there is nothing to do, awaiting for any event (including a clock change) which will wake it up. This allows the Newton to consume very few power.</p>
 
 			<h4 id="IIID4">4. How is the memory organized?</h4>
 
@@ -1105,7 +1105,7 @@
 
 			<p>Soups on different stores may have the same ID, meaning that they are the same kind of soup, just spread out on different cards. When applications access soups, they usually do so by querying and accessing a “union soup” object. From an application’s perspective, union soups merge all the soups of a given ID on different stores into one unified soup for that ID. This happens dynamically; when a user adds or removes cards, the union soup changes automatically, each application is notified, and they update their presentation to the user to reflect this. For example, when the user yanks a card containing a Notepad soup, the appropriate soup entries (hence “notes”) in the Notepad’s union soup automatically disappear, the Notepad is notified, and its display is updated to show that these entries are now gone. It is this general philosophy of treating documents as database entries in a global union soup which is why the Newtons are so graceful at handling multiple cards yanked and inserted while applications are running.</p>
 
-			<p>There are a few global soups which all applications use; the most important one is the “System” Soup, which stores global information for applications, commonly application preferences. When applications are installed they often will insert an entry into this soup to store their preferences, but when they are deleted they very often forget to remove this entry. As a result the System soup grows and grows. Some users have reported a bloated System soup as a key culprit in the “squiggles”, a Newton condition where the Newton cannot properly register the location of the pen.</p>
+			<p>There are a few global soups which all applications use; the most important one is the “System” Soup, which stores global information for applications, commonly application preferences. When applications are installed they often will insert an entry into this soup to store their preferences, but when they are deleted they very often forget to remove this entry. As a result the System soup grows and grows. Some users have reported a bloated System soup as a key culprit in the “jaggies”, a Newton condition where the Newton cannot properly register the location of the stylus.</p>
 
 			<hr>
 		</article>
