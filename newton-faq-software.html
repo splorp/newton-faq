@@ -126,9 +126,9 @@
 				</li>
 				<li><a href="#VE">Fonts</a>
 					<ol>
-						<li><a href="#VE3">My font doesn’t print (or prints poorly) to my printer. Why?</a></li>
 						<li><a href="#VE1">Where can I find Roman fonts for the Newton?</a></li>
 						<li><a href="#VE2">How do I make a Newton font?</a></li>
+						<li><a href="#VE3">Why won’t a Newton font print properly?</a></li>
 					</ol>
 				</li>
 				<li><a href="#VF">Audio</a>
@@ -637,10 +637,11 @@
 
 			<p>Apple also provided some <a href="http://www.unna.org/unna/apple/development/Examples/SampleCodeMac/MonacoTest-4.sea.hqx">simple font source code</a>.</p>
 
-			<h4 id="VE3">3. My font doesn’t print (or prints poorly) to my printer. Why?</h4>
+			<h4 id="VE3">3. Why won’t a Newton font print properly?</h4>
 
-			<p>The printing facilities in the Newton aren’t very sophisticated. When printing to a PostScript printer, the Newton expects the printer to already have all the necessary fonts built-in. If they’re not, blank space is printed, or the font is rendered in Courier or Helvetica (whatever the default font is for your printer).</p>
-			<p>When printing to a non-PostScript printer, the Newton renders its internal fonts as best it can. However, due to space restrictions the internal fonts are stored mostly for screen resolutions, not printer resolutions; so they’ll come out blocky when printed.</p>
+			<p>The printing capabilities of the Newton aren’t very sophisticated. When printing to a PostScript printer, the Newton expects the printer to already have the necessary high resolution outline fonts built-in. If those outline fonts are not available, your text will either be printed in a “fallback” font, such as Courier or Helvetica, or may not print at all.</p>
+			
+			<p>When printing to a non-PostScript printer, the Newton OS renders fonts as best it can. Due to limited storage space, Newton fonts are stored as screen optimized, low resolution bitmaps. Since the fonts are not available at a higher resolution, they’ll appear extremely rough or jaggy when printed.</p>
 
 			<hr>
 
