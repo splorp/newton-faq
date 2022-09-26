@@ -918,9 +918,13 @@
 
 			<h5 id="IIIC2h">h. Why doesn’t the new version of my backdrop application appear after installation?</h5>
 
-			<p>This is a known bug discovered by Victor Rehorst. Technically, you can have two packages installed with the same signature provided that they’re not on the same store. Normally, the system shows the second installed package with a big cross through the icon. This indicates that the package has not been activated. Additionally, the system will not show the backdrop application in the Extras Drawer.</p>
+			<p>This is a known bug discovered by Victor Rehorst.</p>
+			
+			<p>Technically, you can have two packages installed with the same “signature” provided that they’re not located on the same store. Normally, the Newton OS will display the second package with a cross through the icon, indicating that the package has not been activated.</p>
 
-			<p>The bug is that it actually doesn’t show any package with the same signature than the backdrop application, and therefore, if you have two packages with the same signature and one is the backdrop application (therefore on the internal store), the other one (on a card) will be filtered nevertheless. The solution is to make another application (e.g. the Extras Drawer) the backdrop application, and then you’ll see both packages. This isn’t a very painful bug (on the contrary to the -10061), but I found it worth it to mention that there is another bug that was left in the OS ;)</p>
+			<p>However, the Newton OS does not show the current backdrop application in the Extras Drawer. By extension, the Newton OS will also not show any package with the same signature as the current backdrop application. If you have two packages with the same signature and one is the current backdrop application (and by default, located on the internal store), the other package (located on a storage card) will be hidden.<p>
+			
+			<p>The solution is to make another package, such as Notepad or Extras Drawer, the backdrop application. Once you set a different backdrop application, you’ll see both of previously hidden packages.</p>
 
 			<h5 id="IIIC2i">i. Why can’t I change between single and double page Newton Books?</h5>
 
