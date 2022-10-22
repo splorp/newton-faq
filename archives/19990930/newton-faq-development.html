@@ -1,0 +1,322 @@
+<!doctype html public "-//W3C//DTD HTML 4.0//EN"
+"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive 4">
+		<title>FAQ for the Newton Community - Part 7: Development</title>
+		<meta name="description" content="FAQ for the Newton Community">
+		<meta name="author" content="August &amp; September 1999 FAQ Group">
+	</head>
+
+	<body bgcolor="white" link="#336666" vlink="#009999" alink="#008800">
+		<!-- HTMLAlternate-Begin -->
+		<a name="top"></a>
+		<center>
+			<p><a href="index.html"><font size="2">Index</font></a><font size="2"> | <a href="newton-faq-introduction.html">Introduction</a> | <a href="newton-faq-hardware.html">Hardware</a> | <a href="newton-faq-nos.html">Newton OS</a> | <a href="newton-faq-community.html">Community</a> | <a href="newton-faq-software.html">Software</a> | <a href="newton-faq-books.html">Books</a> | Development </font></p>
+		</center>
+		<p>
+		<hr>
+		<!-- HTMLAlternate-End -->
+		<h3>PART VII: Development</h3>
+		<ul>
+			<li><a href="#VIIA">A) Environments</a>
+			<ul>
+				<li><a href="#VIIA1">1) What are Apple's Tools to develop software on the Newton, and where can I find them?</a>
+				<ul>
+					<li><a href="#VIIA1a">a) Apple NTK: The Newton Toolkit.</a>
+					<li><a href="#VIIA1b">b) Apple NCT: The Newton C/C++ Toolkit.</a>
+				</ul>
+				<li><a href="#VIIA2">2) What are the solutions to develop directly on my Newton?</a>
+				<ul>
+					<li><a href="#VIIA2a">a) software on Newton OS: NDE by Steve Weyer</a>
+					<li><a href="#VIIA2b">b) software on Newton OS: nsScribe by NewtsPrism</a>
+					<li><a href="#VIIA2c">c) A powerful tool: View Frame by Jason Harper</a>
+				</ul>
+				<li><a href="#VIIA3">3) Are there any languages other than NS?</a>
+				<ul>
+					<li><a href="#VIIA3a">a) NS Basic</a>
+					<li><a href="#VIIA3b">b) Lisp</a>
+					<li><a href="#VIIA3c">c) Assembler and C/C++ on Intel platforms</a>
+					<li><a href="#VIIA3d">d) Is Java available on the Newton?</a>
+				</ul>
+			</ul>
+			<li><a href="#VIIB">B) Documentation</a>
+			<ul>
+				<li><a href="#VIIB1">1) Where can I find documentation?</a>
+				<ul>
+					<li><a href="#VIIB1a">a) Apple standard manuals</a>
+					<li><a href="#VIIB1b">b) Apple additional docs</a>
+					<li><a href="#VIIB1c">c) Articles</a>
+				</ul>
+				<li><a href="#VIIB2">2) Wow, that's a huge list! Where do I start?</a>
+			</ul>
+		</ul>
+		<p>
+		<hr>
+		<h3><a name="VIIA"></a>A) Environments</h3>
+		<h4><a name="VIIA1"></a>1) What are Apple's Tools to develop software on the Newton, and where can I find them?</h4>
+		<h5><a name="VIIA1a"></a>a) Apple NTK: The Newton Toolkit.</h5>
+		<p>Allows you to develop programs in NewtonScript on MacOS or Windows and to install them (that's cross development). There is a cross debugger for Newton Script programs.</p>
+		<p>You can find it on Apple's FTP site: <!--lt-->
+		<a href="ftp://ftp.apple.com/devworld/Newton_Development/tools/ntk/">ftp://ftp.apple.com/devworld/Newton_Development/tools/ntk/</a><!--gt-->
+		</p>
+		<p>It is also on Planet Newton: <!--lt-->
+		<a href="http://download.planetnewton.com/download/programming/appledesktoptools.htm">http://download.planetnewton.com/download/programming/appledesktoptools.htm</a><!--gt-->
+		</p>
+		<p>And on Newton Intelligence: <!--lt-->
+		<a href="hl://ni.syr.edu">hl://ni.syr.edu</a><!--gt-->
+		</p>
+		<h5><a name="VIIA1b"></a>b) Apple NCT: The Newton C/C++ Toolkit.</h5>
+		<p>It can be found on Planet Newton <!--lt-->
+		<a href="http://download.planetnewton.com/download/programming/appledesktoptools.htm">http://download.planetnewton.com/download/programming/appledesktoptools.htm</a><!--gt-->
+		 or on Newton Intelligence <!--lt-->
+		<a href="hl://ni.syr.edu">hl://ni.syr.edu</a><!--gt-->
+		</p>
+		<p>You can find additional SDK to design drivers (DDK) on Apple's FTP site: <!--lt-->
+		<a href="ftp://ftp.apple.com/devworld/Newton_Development/">ftp://ftp.apple.com/devworld/Newton_Development/</a><!--gt-->
+		</p>
+		<p>You can find the Lantern DDK on Newton Intelligence <!--lt-->
+		<a href="hl://ni.syr.edu">hl://ni.syr.edu</a><!--gt-->
+		</p>
+		<p>It requires MPW which only runs on MacOS:</p>
+		<p><!--lt-->
+		<a href="ftp://ftp.apple.com/devworld/Tool_Chest/Core_Mac_OS_Tools/MPW_etc./MPW-PR_Images/MPW-PR.img.bin">ftp://ftp.apple.com/devworld/Tool_Chest/Core_Mac_OS_Tools/MPW_etc./MPW-PR_Images/MPW-PR.img.bin</a><!--gt-->
+		 (August 1999 distribution is 18.5 megs).</p>
+		<p>Allows you to write drivers with the DDK. You should be familiar with NS before developing in C++ for the Newton.</p>
+		<h4><a name="VIIA2"></a>2) What are the solutions to develop directly on my Newton?</h4>
+		<h5><a name="VIIA2a"></a>a) NDE by Steve Weyer</h5>
+		<p>There is Steve Weyer's Newton Dev Environment: <!--lt-->
+		<a href="http://members.bellatlantic.net/~sweyer/newton/index.htm#NewtDevEnv">http://members.bellatlantic.net/~sweyer/newton/index.htm#NewtDevEnv</a><!--gt-->
+		. It allows you to build packages directly on the Newton.</p>
+		<p>Here is a comparison between NTK and NDE I made. It only involves my [PG] responsibility.</p>
+		<ul>
+			<li>NDE:
+			<ul>
+				<li>pros:
+				<ul>
+					<li>develop directly on your Newt
+					<li>save applications as packages
+					<li>play with the turtle
+					<li>easier to incorporate help books (typically created with Newt's Cape)
+					<li>continued support from Steve
+				</ul>
+				<li>cons:
+				<ul>
+					<li>no graphical interface to develop your pro GUI, but VisualNewt (from Serg Koren) provides a graphical layout editor. <!--lt-->
+					<a href="http://www.visualnewt.com">http://www.visualnewt.com</a><!--gt-->
+					<li>direct text input for frames
+					<li>no way to compile C++ code on your Newton (but you can import libraries)
+					<li>no way to compile &quot;native&quot; Newton Script (but you can import such)
+					<li>no debugger (but you can use viewframe)
+				</ul>
+				<li>purpose: all software that does not require resources (you must import them) and too complex GUI. But you can also use Newt's Cape to write form-based applications.
+			</ul>
+			<li>NTK:
+			<ul>
+				<li>pros:
+				<ul>
+					<li>graphical interface (like RAD) allow C++ code with NCT.
+					<li>allow native functions.
+					<li>debugger (with breakpoints and steps) is available (for Newton Script code only)
+				</ul>
+				<li>cons:
+				<ul>
+					<li>cross development (i.e. develop on your Mac or your Windows device)
+					<li>discontinued project
+					<li>can be exported from MacOS to Windows only
+				</ul>
+				<li>purpose: all software, including these that require big resources and complex GUI.
+			</ul>
+		</ul>
+		<h5><a name="VIIA2b"></a>b) software on Newton OS: nsScribe by NewtsPrism</h5>
+		<p>Many software programs allow you to execute NewtonScript. One which is the easiest to use is nsScribe: it allows you to execute code from the Notepad, the Assistant or Works.</p>
+		<p><!--lt-->
+		<a href="http://members.aol.com/NewtsPrism/nsScribe/nsScribe.sit.hqx">http://members.aol.com/NewtsPrism/nsScribe/nsScribe.sit.hqx</a><!--gt-->
+		</p>
+		<h5><a name="VIIA2c"></a>c) A powerful tool: View Frame by Jason Harper</h5>
+		<p>View Frame is a very powerful tool for debugging directly on the Newton, inspect the Newton environment. However, it does not allow you to set breakpoints or to step.</p>
+		<p><!--lt-->
+		<a href="http://pobox.com/~JasonHarper">http://pobox.com/~JasonHarper</a><!--gt-->
+		</p>
+		<h4><a name="VIIA3"></a>3) Are there any other languages than NS?</h4>
+		<h5><a name="VIIA3a"></a>a) NS Basic</h5>
+		<p><!--lt-->
+		<a href="http://www.nsbasic.com">http://www.nsbasic.com</a><!--gt-->
+		</p>
+		<p>Try the demo: <!--lt-->
+		<a href="ftp://ftp.nsbasic.com//pub/NewtCard_files/NewtDemo.sit">ftp://ftp.nsbasic.com//pub/NewtCard_files/NewtDemo.sit</a><!--gt-->
+		</p>
+		<h5><a name="VIIA3b"></a>b) Lisp</h5>
+		<ul>
+			<li>LittleLisp by David Benn<br>
+			<!--lt-->
+			<a href="http://www.adelaide.net.au/~dbenn/LittleLisp/LittleLispDocs/">http://www.adelaide.net.au/~dbenn/LittleLisp/LittleLispDocs/</a><!--gt-->
+			<br>
+			<li>Lisp by by Jonathan Millen <!--lt-->
+			<a href="mailto:JKMillen@aol.com">mailto:JKMillen@aol.com</a><!--gt-->
+			<br>
+			[any homepage?]
+		</ul>
+		<h5><a name="VIIA3c"></a>c) Assembler and C/C++ on Intel platforms</h5>
+		<ul>
+			<li>Assembler: Roger Milne <!--lt-->
+			<a href="mailto:roger@barking-dog.com">mailto:roger@barking-dog.com</a><!--gt-->
+			 succeeded in writing programs (such as his MOD Player) in Assembly language on his PC with a GNU assembler.
+			<li>There is also GNU C/C++ compiler for Intel based computers <!--lt-->
+			<a href="ftp://208.193.202.5/pub/cygnus/i386-cygwin32-x-arm-coff.zip">ftp://208.193.202.5/pub/cygnus/i386-cygwin32-x-arm-coff.zip</a><!--gt-->
+			<li>And of course the ARM SDT from arm: <!--lt-->
+			<a href="http://www.arm.com/">http://www.arm.com/</a><!--gt-->
+			<li>There is also the NewtsPrism Assembler chArm <!--lt-->
+			<a href="http://members.aol.com/NewtsPrism/">http://members.aol.com/NewtsPrism/</a><!--gt-->
+		</ul>
+		<h5><a name="VIIA3d"></a>d) Is Java available on the Newton?</h5>
+		<p>Not yet. But Sean Luke once said (without X-No-Archive ;-):</p>
+		<blockquote>
+			But when the KVM (Sun's Kilobyte Virtual Machine, a light version of the Java Virtual Machine, used on other PDAs) source code comes out in December/January, and I have some free time, I may port it to the Newton. Until then we'll have to wait.</blockquote>
+		<p>
+		<hr>
+		<h3><a name="VIIB"></a>B) Documentation</h3>
+		<h4><a name="VIIB1"></a>1) Where can I find documentation?</h4>
+		<h5><a name="VIIB1a"></a>a) Apple standard manuals</h5>
+		<p>Apple published a book called findinfo.pdf <!--lt-->
+		<a href="ftp://ftp.apple.com//devworld/Newton_Development/tech_info/documentation/acrobat/FINDINFO.PDF">ftp://ftp.apple.com//devworld/Newton_Development/tech_info/documentation/acrobat/FINDINFO.PDF</a><!--gt-->
+		</p>
+		<p>I reproduce here the content of this book with added links. I removed comments about the CD where this book was originally. DV=DocViewer for MacOS. You need both the file and the index.</p>
+		<p>There are several sources of information on the Newton Platform APIs and how to use them. Although the Newton Programmers Guide is the first source, it is not necessarily the most complete or up to date. There are a number of additional places you can search for information on the Newton Platform APIs.</p>
+		<p>Below is a list of where to look. The order of items is also a rough order of searching, i.e., check the NPG, then the OS 2.1 documentation, then the Q&amp;A's, and so on.</p>
+		<ul>
+			<li><b>Newton Programmers Guide 2.0 &amp; Newton Programmers Reference 2.0</b><br>
+			This is the primary source of information. Start here when searching. All the other sources of documentation supplement this guide.
+			<ul>
+				<li>Programmers Guide:
+				<ul>
+					<li>[DV-idx, 2545 Kb] <!--lt-->
+					<a href="ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/docviewer/NProgRef.idx.sea.hqx">ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/docviewer/NProgRef.idx.sea.hqx</a><!--gt-->
+					<li>[DV, 4269 Kb] <!--lt-->
+					<a href="ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/docviewer/NProgRef.sea.hqx">ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/docviewer/NProgRef.sea.hqx</a><!--gt-->
+					<li>[PDF, ZIP, 2844 Kb] <!--lt-->
+					<a href="ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/acrobat/progref.zip">ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/acrobat/progref.zip</a><!--gt-->
+				</ul>
+				<li>Programmers Reference:
+				<ul>
+					<li>[PDF, ZIP, 3369 Kb] <!--lt-->
+					<a href="ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/acrobat/progguid.zip">ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/acrobat/progguid.zip</a><!--gt-->
+				</ul>
+			</ul>
+			<li><b>Newton Programmers Guide 2.1</b><br>
+			This is a supplement to the Newton Programmers Guide/Reference. It is the main source for the new APIs in Newton OS 2.1. Like NPG, this is a primary source of information.
+			<ul>
+				<li>[PDF, Mac, 1392 Kb] <!--lt-->
+				<a href="ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/acrobat/NPG21.SEA.HQX">ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/acrobat/NPG21.SEA.HQX</a><!--gt-->
+			</ul>
+			<li><b>NewtonScript Reference</b><br>
+			This is the primary reference for the NewtonScript language and related support functions.
+			<ul>
+				<li>Newton Script Reference (nscriptref): [What's the difference between them? - I only have one]
+				<ul>
+					<li>[DV-idx, 449 Kb] <!--lt-->
+					<a href="ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/docviewer/NScriptRef.idx.sea.hqx">ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/docviewer/NScriptRef.idx.sea.hqx</a><!--gt-->
+					<li>[DV, 1295 Kb] <!--lt-->
+					<a href="ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/docviewer/NScriptRef.sea.hqx">ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/docviewer/NScriptRef.sea.hqx</a><!--gt-->
+					<li>[PDF, ZIP, 763 Kb], <!--lt-->
+					<a href="ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/acrobat/nscriptr.zip">ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/acrobat/nscriptr.zip</a><!--gt-->
+				</ul>
+				<li>Newton Script Reference (nsref):
+				<ul>
+					<li>[DV-idx, 442 Kb] <!--lt-->
+					<a href="ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/docviewer/NSReference.idx.sea.hqx">ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/docviewer/NSReference.idx.sea.hqx</a><!--gt-->
+					<li>[DV, 1275 Kb] <!--lt-->
+					<a href="ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/docviewer/NSReference.sea.hqx">ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/docviewer/NSReference.sea.hqx</a><!--gt-->
+					<li>[PDF, ZIP, 872 Kb] <!--lt-->
+					<a href="ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/acrobat/NS_REF.ZIP">ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/acrobat/NS_REF.ZIP</a><!--gt-->
+				</ul>
+			</ul>
+			<li><b>Q&amp;A's</b> (Q_AND_AS)<br>
+			New and updated information on APIs and extra explanation. This is one of the best sources of information apart from the Newton Programmers Guide.
+			<li><b>Platform File Functions</b> (PLATFUNC)<br>
+			This contains documentation on APIs that are included as part of the Platform File. The APIs are either new APIs or replacements for ones already in the ROM.
+			<li><b>Sample Code</b> (SAMPCODE)<br>
+			In addition to showing you how to use particular features, some pieces of sample code contain interim documentation.
+			<li><b>NTK 1.6 User's Guide</b> (WINNTK16.PDF)<br>
+			In addition to documenting Newton Toolkit, this guide also contains valuable information on both debugging your application and performance tuning.
+		</ul>
+		<h5><a name="VIIB1b"></a>b) Additional Apple docs</h5>
+		<p>Apple published additional books. These can be found on Newton Gurus' sites.</p>
+		<ul>
+			<li>Newton Formats (1.1) describes the format of packages and stream objects.<br>
+			It can be found on David Arnold site: <!--lt-->
+			<a href="http://archive.dstc.edu.au/AU/staff/david-arnold/newton/dev/newton-formats.pdf">http://archive.dstc.edu.au/AU/staff/david-arnold/newton/dev/newton-formats.pdf</a><!--gt-->
+			<li>Newton Toolkit 1.6.x File Formats describes the format of NTK files for both MacOS and Windows.<br>
+			It can also be found on David Arnold site: <!--lt-->
+			<a href="http://archive.dstc.edu.au/AU/staff/david-arnold/newton/dev/ntkformats.pdf">http://archive.dstc.edu.au/AU/staff/david-arnold/newton/dev/ntkformats.pdf</a><!--gt-->
+			<li>Newton Interconnect Port Hardware Specification for the MessagePad.<br>
+			Still David Arnold Site (thanks David): <!--lt-->
+			<a href="http://archive.dstc.edu.au/AU/staff/david-arnold/newton/dev/newton-interconnect.pdf">http://archive.dstc.edu.au/AU/staff/david-arnold/newton/dev/newton-interconnect.pdf</a><!--gt-->
+			<br>
+			But it can also be found there: <!--lt-->
+			<a href="ftp://qube.as.miami.edu/newton/Docs/interconnect Specs Folder/">ftp://qube.as.miami.edu/newton/Docs/interconnect Specs Folder/</a><!--gt-->
+			<li>Newton OS 2.1 Engineering Documents
+			<ul>
+				<li>[PDF, 559 Kb] <!--lt-->
+				<a href="ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/acrobat/engdoc21.zip">ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/acrobat/engdoc21.zip</a><!--gt-->
+			</ul>
+			<li>Newton Toolkit Enhancements
+			<li>Newton OS 2.1 Miscellaneous
+			<li>Newton 2.0 User Interface Guidelines
+			<ul>
+				<li>[DV-idx, 604 Kb] <!--lt-->
+				<a href="ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/docviewer/UI_Guidelines.idx.sea.hqx">ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/docviewer/UI_Guidelines.idx.sea.hqx</a><!--gt-->
+				<li>[DV, 1828 Kb] <!--lt-->
+				<a href="ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/docviewer/UI_Guidelines.sea.hqx">ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/docviewer/UI_Guidelines.sea.hqx</a><!--gt-->
+				<li>[PDF, 1340 Kb] <!--lt-->
+				<a href="ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/acrobat/uiguidl.zip">ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/acrobat/uiguidl.zip</a><!--gt-->
+				<li>[PDF, 1761 Kb] <!--lt-->
+				<a href="ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/acrobat/UI_GUIDE.ZIP">ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/acrobat/UI_GUIDE.ZIP</a><!--gt-->
+			</ul>
+			<li>User Interface Guidelines for Newton OS 2.1 Keyboard Enhancements
+			<ul>
+				<li>[PDF, ZIP, 327 Kb] <!--lt-->
+				<a href="ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/acrobat/KEYBDUI.ZIP">ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/acrobat/KEYBDUI.ZIP</a><!--gt-->
+				<li>[PDF, ZIP, 277 Kb] <!--lt-->
+				<a href="ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/acrobat/KEYBDUI.ZIP">ftp://ftp.apple.com/devworld/Newton_Development/tech_info/documentation/acrobat/keybdui.zip</a><!--gt-->
+			</ul>
+		</ul>
+		<h5><a name="VIIB1c"></a>c) Articles</h5>
+		<ul>
+			<li>The Newton Technology Journal was a review for both general and developer information. Issues from February 1995 (I,1) to March 1997 (III,2) were published. These can be found on various places. David Arnold has them all: <!--lt-->
+			<a href="http://archive.dstc.edu.au/AU/staff/david-arnold/newton/dev/Newton%20Technology%20Journal/">http://archive.dstc.edu.au/AU/staff/david-arnold/newton/dev/Newton%20Technology%20Journal/</a><!--gt-->
+			<li>Some articles by the Newton ToolBox Group can be also found. These were published in various places. David Arnold has also them all: <!--lt-->
+			<a href="http://archive.dstc.edu.au/AU/staff/david-arnold/newton/dev/Articles/">http://archive.dstc.edu.au/AU/staff/david-arnold/newton/dev/Articles/</a><!--gt-->
+			<li>You can also look into Handheld Systems Magazine. Some articles were published there. The index can be found at: <!--lt-->
+			<a href="http://www.cdpubs.com/hhsys/hhsys0199.txt">http://www.cdpubs.com/hhsys/hhsys0199.txt</a><!--gt-->
+			<br>
+			And they can be all downloaded from: <!--lt-->
+			<a href="http://www.cdpubs.com/hhsys/archives/">http://www.cdpubs.com/hhsys/archives/</a><!--gt-->
+			<li>There is the articles &quot;Ask Dr. Llama&quot; in the form of Q&amp;As<br>
+			David Arnold has them all (thanks David, once again) <!--lt-->
+			<a href="http://archive.dstc.edu.au/AU/staff/david-arnold/newton/dev/Dr%20Llama/">http://archive.dstc.edu.au/AU/staff/david-arnold/newton/dev/Dr%20Llama/</a><!--gt-->
+			<li>Finally, there are all the programming hints from the newton developer website.<br>
+			[I'm sorry I haven't them]
+		</ul>
+		<h4><a name="VIIB2"></a>2) Wow, that's a huge list! Where do I start?</h4>
+		<p>My advice is to start with the examples. Try the examples that comes with NDE or those on Apple's FTP site.</p>
+		<p>You can also try the interactive tutorial book NewtATut to create a simple app: <!--lt-->
+		<a href="http://members.bellatlantic.net/~sweyer/newton/index.htm#NewtATut">http://members.bellatlantic.net/~sweyer/newton/index.htm#NewtATut</a><!--gt-->
+		 <!-- HTMLAlternate-Begin -->
+		<hr>
+		</p>
+		<center>
+			<p><a href="index.html"><font size="2">Index</font></a><font size="2"> | <a href="newton-faq-introduction.html">Introduction</a> | <a href="newton-faq-hardware.html">Hardware</a> | <a href="newton-faq-nos.html">Newton OS</a> | <a href="newton-faq-community.html">Community</a> | <a href="newton-faq-software.html">Software</a> | <a href="newton-faq-books.html">Books</a> | Development </font></p>
+		</center>
+		<p>
+		<hr>
+		<center>
+			<p><font size="1">This FAQ is HTML 4.0 compliant &amp; Newton friendly.</font></p>
+		</center>
+		<p><!-- HTMLAlternate-End -->
+	</body>
+
+</html>
+&amp
