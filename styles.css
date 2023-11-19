@@ -203,17 +203,21 @@ nav ul {
 nav li {
 	float: left;
 	font-weight: bold;
+	line-height: 1.7em;
 	list-style: none;
 	margin-right: 1.2em;
 	}
 
 nav li a {
 	color: #090;
+	border-bottom: 2px #090 solid;
+	padding-bottom: 1px;
 	}
 
 nav li a:hover,
 nav li a.active {
 	color: #222;
+	border-bottom: 2px #222 solid;
 	}
 
 header {
