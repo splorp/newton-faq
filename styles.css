@@ -279,10 +279,6 @@ section span a:hover {
 		margin-bottom: 10px;
 		}
 
-	section {
-		margin-top: 20px;
-		}
-
 	}
 
 /*
@@ -317,20 +313,25 @@ section span a:hover {
 		max-width: 100%;
 		}
 
-	header p {
-		display: none;
+	header {
+		margin: 0;
 		}
+
+	section {
+		margin: 0;
+		}
+
+	footer {
+		margin: 0;
+		}
+
+	footer p {
+		font-size: 13px;
+	}
 
 	nav li {
 		font-size: 13px;
 		margin-right: 15px;
 		}
 
-	section {
-		margin-top: 20px;
-		}
-
-	footer {
-		margin-top: 50px;
-		}
 	}
