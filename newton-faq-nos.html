@@ -852,9 +852,11 @@
 
 			<p>Apparently so, according to this Apple Support article: <a href="https://web.archive.org/web/20020102183149/https://karchive.info.apple.com/article.html?artnum=30338">Newton OS: Year 2000 (Y2K) Compliance</a></p>
 
-			<p>However, different date and time related problems might occur starting in 2010, 2099, and 2924. (Should you be so lucky to be alive, with a functioning Newton). These problems are discussed on Steve Weyer’s page, <a href="https://communicrossings.com/html/newton/newtscape/exs/times.htm">The Times, They Are a Changin’</a>.</p>
-
-			<p>Avi Drissman created <a href="http://www.drissman.com/avi/newton/Fix2010/">an experimental fix</a> for the Year 2010 problem.</p>
+			<p>However, there are other date and time related problems inherent in Newton OS.</p>
+			
+			<p>The first to be documented and addressed is the <a href="https://40hz.org/Pages/newton/hacking/newton-year-2010-problem/">Year 2010 Problem</a>, which prevents certain Newton devices from handling dates beyond January 5th, 2010.</p>
+			
+			<p>See: <a href="#IIIC2j">Why does the date always reset on my Newton?</a></p>
 
 			<h4 id="IIIC2">2. Are there known bugs in the Newton OS?</h4>
 
@@ -934,9 +936,9 @@
 
 			<h5 id="IIIC2j">j. Why does the date always reset on my Newton?</h5>
 
-			<p>This is known as the <a href="https://40hz.org/Pages/newton/hacking/newton-year-2010-problem/">Year 2010 Problem</a></p>
+			<p>This is known as the <a href="https://40hz.org/Pages/newton/hacking/newton-year-2010-problem/">Year 2010 Problem</a>.</p>
 
-			<p>Devices running an unpatched version of Newton OS 2.1 cannot handle dates past 18:48:31 on January 5th, 2010. The bug is located in the NewtonScript interface of certain time functions and is caused by an integer value overflow.</p>
+			<p>Devices running an unpatched version of Newton OS 2.1 cannot handle dates past January 5th, 2010. The bug is located in the NewtonScript interface used by certain time functions and is caused by an integer value overflow.</p>
 
 			<p>Eckhart Köppen created several system updates to correct this bug.</p>
 
@@ -946,9 +948,19 @@
 				<li>The <a href="https://40hz.org/Pages/newton/patches/patch73j186/">73J186</a> update for the eMate 300</li>
 			</ul>
 
-			<p>Avi Drissman also created <a href="http://www.drissman.com/avi/newton/Fix2010/">Fix2010</a>, a less comprehensive patch for devices running Newton OS 2.0.</p>
-
+			<p>Avi Drissman created <a href="http://www.drissman.com/avi/newton/Fix2010/">Fix2010</a>, a less comprehensive patch for devices running Newton OS 2.0.</p>
+			
 			<p>See also: <a href="#IIIA2">What system updates are available for my Newton?</a></p>
+
+			<p>Other date related problems could potentially pop up in 2026, 2042, 2099, and 2924.</p>
+			
+			<p>Further reading:</p>
+			
+			<ul>
+				<li>Steve Weyer: <a href="https://communicrossings.com/html/newton/newtscape/exs/times.htm">The Times, They Are a Changin’</a>.</li>
+				<li>Eckhart Köppen: <a href="https://40hz.org/Pages/mottek/2016/2016-02-14/">Just checking …</a></li>
+				<li>GitHub: <a href="https://github.com/pguyot/Einstein/issues/24">Y2026 and beyond</a></li>
+			</ul>
 
 			<h4 id="IIIC3">3. Why can’t I install packages?</h4>
 
