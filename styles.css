@@ -15,7 +15,7 @@ body {
 	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-size: 1.0em;
 	line-height: 1.5em;
-	margin: 2em auto;
+	margin: 2.5em auto;
 	}
 
 a {
@@ -60,7 +60,7 @@ h1 {
 	color: #444;
 	font-size: 3.0em;
 	line-height: 1.2em;
-	margin-bottom: 0.5em;
+	margin-bottom: 0.25em;
 	}
 
 h2 {
@@ -193,7 +193,7 @@ li p {
 
 nav {
 	overflow: hidden;
-	padding: 1em 0;
+	padding: 0.5em 0;
 	}
 
 nav ul {
@@ -222,6 +222,10 @@ nav li a.active {
 
 header {
 	margin: 0 2.2em;
+	}
+
+header p + hr {
+	margin-top: 0;
 	}
 
 footer {
