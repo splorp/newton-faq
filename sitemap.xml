@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 	<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    	<url>
-            <loc>https://newtonfaq.com/</loc>
-            <lastmod>2024-02-05T23:46:35+0000</lastmod>
-            <priority>1</priority>
-        </url>
 		<url>
-            <loc>https://newtonfaq.com/newton-faq-books.html</loc>
-            <lastmod>2024-01-23T23:31:53+0000</lastmod>
-            <priority>0.5</priority>
-        </url>
+			<loc>https://newtonfaq.com/</loc>
+			<lastmod>2024-02-05T23:46:35+0000</lastmod>
+			<priority>1.0</priority>
+		</url>
 		<url>
-            <loc>https://newtonfaq.com/newton-faq-community.html</loc>
-            <lastmod>2024-01-23T23:31:53+0000</lastmod>
-            <priority>0.5</priority>
-        </url>
+			<loc>https://newtonfaq.com/newton-faq-books.html</loc>
+			<lastmod>2024-01-23T23:31:53+0000</lastmod>
+			<priority>0.5</priority>
+		</url>
 		<url>
-            <loc>https://newtonfaq.com/newton-faq-development.html</loc>
-            <lastmod>2024-01-24T23:43:30+0000</lastmod>
-            <priority>0.5</priority>
-        </url>
+			<loc>https://newtonfaq.com/newton-faq-community.html</loc>
+			<lastmod>2024-01-23T23:31:53+0000</lastmod>
+			<priority>0.5</priority>
+		</url>
 		<url>
-            <loc>https://newtonfaq.com/newton-faq-hardware.html</loc>
-            <lastmod>2024-01-23T23:31:53+0000</lastmod>
-            <priority>0.5</priority>
-        </url>
+			<loc>https://newtonfaq.com/newton-faq-development.html</loc>
+			<lastmod>2024-01-24T23:43:30+0000</lastmod>
+			<priority>0.5</priority>
+		</url>
 		<url>
-            <loc>https://newtonfaq.com/newton-faq-history.html</loc>
-            <lastmod>2024-02-05T23:30:53+0000</lastmod>
-            <priority>0.5</priority>
-        </url>
+			<loc>https://newtonfaq.com/newton-faq-hardware.html</loc>
+			<lastmod>2024-01-23T23:31:53+0000</lastmod>
+			<priority>0.5</priority>
+		</url>
 		<url>
-            <loc>https://newtonfaq.com/newton-faq-introduction.html</loc>
-            <lastmod>2024-01-24T23:44:48+0000</lastmod>
-            <priority>0.5</priority>
-        </url>
+			<loc>https://newtonfaq.com/newton-faq-history.html</loc>
+			<lastmod>2024-02-05T23:30:53+0000</lastmod>
+			<priority>0.5</priority>
+		</url>
 		<url>
-            <loc>https://newtonfaq.com/newton-faq-nos.html</loc>
-            <lastmod>2024-02-04T19:36:14+0000</lastmod>
-            <priority>0.5</priority>
-        </url>
+			<loc>https://newtonfaq.com/newton-faq-introduction.html</loc>
+			<lastmod>2024-01-24T23:44:48+0000</lastmod>
+			<priority>0.5</priority>
+		</url>
 		<url>
-            <loc>https://newtonfaq.com/newton-faq-software.html</loc>
-            <lastmod>2024-02-04T19:37:04+0000</lastmod>
-            <priority>0.5</priority>
-        </url>
-    </urlset>
+			<loc>https://newtonfaq.com/newton-faq-nos.html</loc>
+			<lastmod>2024-02-04T19:36:14+0000</lastmod>
+			<priority>0.5</priority>
+		</url>
+		<url>
+			<loc>https://newtonfaq.com/newton-faq-software.html</loc>
+			<lastmod>2024-02-04T19:37:04+0000</lastmod>
+			<priority>0.5</priority>
+		</url>
+	</urlset>
