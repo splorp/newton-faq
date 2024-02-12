@@ -13,7 +13,7 @@ First published in August 1999, the Newton FAQ project was led by [Steve Weyer](
 
 As the years passed, updates from the community slowed down, Victor Rehorst’s [WikiWikiNewt](http://tools.unna.org/wikiwikinewt/) had become the de facto resource for Newton related answers, and severe linkrot had settled in across the network of Newton sites.
 
-In late 2009, [Tony Kan](http://myapplenewton.blogspot.com/) began going through the FAQ and submitting updates again. However, without a solid publishing plan in place, those updates never saw the light of day.
+In late 2009, [Tony Kan](https://myapplenewton.blogspot.com/) began going through the FAQ and submitting updates again. However, without a solid publishing plan in place, those updates never saw the light of day.
 
 However, that is all about to change.
 
