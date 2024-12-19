@@ -102,6 +102,7 @@
 						<li><a href="#IIIB15">Does fragmented storage slow down my Newton?</a></li>
 						<li><a href="#IIIB16">What is the maximum size of a Notepad item?</a></li>
 						<li><a href="#IIIB17">How do I remove or bypass the PIN code?</a></li>
+						<li><a href="#IIIB18">Does Newton OS support SSL?</a></li>
 					</ol>
 				</li>
 				<li><a href="#IIIC">Troubleshooting</a>
@@ -878,11 +879,17 @@
 				<p>The PIN can be removed by performing a Hard Reset (or “Brain Wipe”). A hard reset will erase everything on the Newton device, returning it to the original factory settings. This method should only be used if you do not need to save any of the data or packages stored on the device.</p></li>
 				<li><a href="http://www.unna.org/view.php?/utilites/BatteringRamPro">Battering Ram Pro</a>
 				<p>Battering Ram Pro is a software package that you install on a storage card. When the card is inserted into a Newton device, it activates automatically and then proceeds to use brute force to crack the PIN. This method does not erase any data or packages on the Newton device.</p></li>
-				<li>NewtonUnlock
+				<li><a href="https://stuff.mit.edu/afs/net.mit.edu/software/newton/utilities/NEWTON-U/">NewtonUnlock</a>
 				<p>NewtonUnlock is small program created by Jeremy Wyld that works similar to Battering Ram Pro. You install the package on a PC storage and insert it into your Newton device. When the package activates, it bypasses the PIN automatically. Once you are able to access the Newton, tap on NewtonUnlock in the Extras Drawer to remove the PIN entirely. More information can be found in the <a href="https://stuff.mit.edu/afs/net.mit.edu/software/newton/utilities/NEWTON-U/README.TXT">Read Me</a>.</p>
 				<p>NewtonUnlock is available from the <a href="https://web.archive.org/web/20001007032009/http://download.planetnewton.com/download/util/newtonunlock-2.1.zip">Internet Archive</a>, <a href="https://stuff.mit.edu/afs/net.mit.edu/software/newton/utilities/NEWTON-U/">MIT Student’s Portal</a>, and <a href="http://mirrors.unna.org/download.planetnewton.com/download/util/newtonunlock-2.1.zip">UNNA</a>.</p>
 				</li>
 			</ul>
+
+			<h4 id="IIIB18">18. Does Newton OS support SSL?</h4>
+			
+				<p>Sort of.</p>
+				<p>Newton OS does not natively support SSL (Secure Sockets Layer) or TLS (Transport Layer Security) for secure communication with internet services such as websites and email.</p>
+				<p>However, Paul Guyot created a Newton OS version of <a href="https://github.com/pguyot/mbedtls-NewtonOS">Mbed TLS</a>, allowing third-party applications to use SSL. For example, installing the <a href="https://github.com/pguyot/mbedtls-NewtonOS/releases/tag/v2.6.16">MailVSSLPatch.pkg</a> on a Newton device enables access to IMAPS mail services within Simon Bell’s <a href="http://newtonresearch.org/mailv/">Mail V</a>.</p>
 
 			<hr>
 
