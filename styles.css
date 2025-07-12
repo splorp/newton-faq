@@ -5,7 +5,7 @@
 
 html {
 	height: 101%;
-	text-rendering: optimizeLegibility;
+	text-rendering: optimizelegibility;
 	-webkit-font-smoothing: antialiased;
 	}
 
@@ -21,10 +21,28 @@ body {
 a {
 	color: #444;
 	text-decoration: none;
+	outline: none;
+}
+
+section a {
+	border-bottom: 2px #090 solid;
+	padding-bottom: 1px;
 	}
 
-a,
-a:hover,
+section span a {
+	background-color: #CFC;
+	border-bottom: none;
+	border-radius: 0.25em;
+	color: #090;
+	padding: 0 0.2em;
+	}
+
+nav li a {
+	color: #090;
+	border-bottom: 2px #090 solid;
+	padding-bottom: 1px;
+	}
+
 a:active,
 a:visited {
 	outline: none;
@@ -33,6 +51,7 @@ a:visited {
 a:hover {
 	border-bottom: none;
 	color: #090;
+	outline: none;
 	}
 
 hr {
@@ -95,10 +114,6 @@ h5 {
 
 p {
 	margin-bottom: 1.0em;
-	}
-
-blockquote p:last-child {
-	margin-bottom: 0;
 	}
 
 blockquote {
@@ -172,6 +187,10 @@ ol {
 	margin-left: 1.5em;
 	}
 
+nav ul {
+	margin-left: 0;
+	}
+
 li ul,
 li ol {
 	margin-bottom: 0.5em;
@@ -191,13 +210,13 @@ li p {
 	margin-bottom: 0.5em;
 	}
 
+blockquote p:last-child {
+	margin-bottom: 0;
+	}
+
 nav {
 	overflow: hidden;
 	padding: 0.5em 0;
-	}
-
-nav ul {
-	margin-left: 0;
 	}
 
 nav li {
@@ -208,10 +227,8 @@ nav li {
 	margin-right: 1.2em;
 	}
 
-nav li a {
-	color: #090;
-	border-bottom: 2px #090 solid;
-	padding-bottom: 1px;
+section a:hover {
+	border-bottom: 2px #FFF solid;
 	}
 
 nav li a:hover,
@@ -234,24 +251,7 @@ footer {
 	}
 
 section {
-	margin: 2.0em 2.2em 0 2.2em;
-	}
-
-section a {
-	border-bottom: 2px #090 solid;
-	padding-bottom: 1px;
-	}
-
-section a:hover {
-	border-bottom: 2px #FFF solid;
-	}
-
-section span a {
-	background-color: #CFC;
-	border-bottom: none;
-	border-radius: 0.25em;
-	color: #090;
-	padding: 0 0.2em;
+	margin: 2.0em 2.2em 0;
 	}
 
 section span a:hover {
@@ -265,10 +265,9 @@ section span a:hover {
 	Tablet Screen Styles
 */
 
-@media screen and (max-device-width: 1024px), screen and (max-width: 1024px) {
-
-	body {
-		-webkit-text-size-adjust: 100%;
+@media screen and (device-width <= 1024px), screen and (width <= 1024px) {
+		body {
+		text-size-adjust: 100%;
 		padding: 1em;
 		margin: 0 auto;
 		width: 800px;
@@ -289,10 +288,9 @@ section span a:hover {
 	Small Screen Styles
 */
 
-@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 800px) {
-
+@media handheld and (width <= 480px), screen and (device-width <= 480px), screen and (width <= 800px) {
 	body {
-		-webkit-text-size-adjust: 100%;
+		text-size-adjust: 100%;
 		padding: 1em;
 		margin: 0 auto;
 		width: 90%;
@@ -309,7 +307,7 @@ section span a:hover {
 		}
 
 	h3 {
-		margin: 20px 0 20px 0;
+		margin: 20px 0;
 		}
 
 	p {
