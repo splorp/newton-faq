@@ -288,7 +288,7 @@ section span a:hover {
 	Small Screen Styles
 */
 
-@media handheld and (width <= 480px), screen and (device-width <= 480px), screen and (width <= 800px) {
+@media screen and (device-width <= 480px), screen and (width <= 800px) {
 	body {
 		text-size-adjust: 100%;
 		padding: 1em;
