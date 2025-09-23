@@ -664,8 +664,8 @@
 			<ul>
 				<li>Handwriting recognition
 					<ul>
-						<li>Printed text recognition using a stylus</li>
-						<li>Cursive text recognition using a stylus</li>
+						<li>Printed text recognition using a pen</li>
+						<li>Cursive text recognition using a pen</li>
 						<li><a href="https://web.archive.org/web/20051220043204/http://www.kallisys.com/newton/dicts_and_kits/en">Dictionaries and Foreign Kits</a> by Paul Guyot provide improved recognition for non-English languages.</li>
 					</ul>
 				</li>
@@ -972,7 +972,7 @@
 
 			<p>This is a known bug and is difficult to replicate. As far as we know, this issue was never addressed by Apple, but may have something to do with the “jaggies”.</p>
 
-			<p>See also: <a href="newton-faq-hardware.html#IIC6g">How do I fix the stylus input on my MessagePad 2000/2100?</a></p>
+			<p>See also: <a href="newton-faq-hardware.html#IIC6g">How do I fix the pen input on my MessagePad 2000/2100?</a></p>
 
 			<h5 id="IIIC2d">d. Why does the amount of free memory decrease when performing a find in Newton Works?</h5>
 
@@ -1164,7 +1164,7 @@
 
 			<p>Note: Linear and ATA stores follow different calculation methods.</p>
 
-			<p>Probably the most comprehensive source for information is Carsten Lemmen’s <a href="https://web.archive.org/web/20151024230720/http://www.mac3.de/sig/newton/memory_cards.html">Memory Cards</a> page. The data relies on speed values taken from the Nick’s Test It utility. While the time spent to do the test is probably the best comparison tool, even if it can change a lot due to various factors including stylus input, software installed, etc., the speed given by Nick’s Test It does not mean much.</p>
+			<p>Probably the most comprehensive source for information is Carsten Lemmen’s <a href="https://web.archive.org/web/20151024230720/http://www.mac3.de/sig/newton/memory_cards.html">Memory Cards</a> page. The data relies on speed values taken from the Nick’s Test It utility. While the time spent to do the test is probably the best comparison tool, even if it can change a lot due to various factors including pen input, software installed, etc., the speed given by Nick’s Test It does not mean much.</p>
 
 			<p>Indeed, Nick’s Test It creates a temporary soup (hence with at least an index on the unique ID) and then creates 335 entries with the following frame:</p>
 
@@ -1233,7 +1233,7 @@
 
 			<p>Soups on different stores may have the same ID, meaning that they are the same kind of soup, just spread out on different cards. When applications access soups, they usually do so by querying and accessing a “union soup” object. From an application’s perspective, union soups merge all the soups of a given ID on different stores into one unified soup for that ID. This happens dynamically; when a user adds or removes cards, the union soup changes automatically, each application is notified, and they update their presentation to the user to reflect this. For example, when the user yanks a card containing a Notepad soup, the appropriate soup entries (hence “notes”) in the Notepad’s union soup automatically disappear, the Notepad is notified, and its display is updated to show that these entries are now gone. It is this general philosophy of treating documents as database entries in a global union soup which is why the Newtons are so graceful at handling multiple cards yanked and inserted while applications are running.</p>
 
-			<p>There are a few global soups which all applications use; the most important one is the “System” Soup, which stores global information for applications, commonly application preferences. When applications are installed they often will insert an entry into this soup to store their preferences, but when they are deleted they very often forget to remove this entry. As a result the System soup grows and grows. Some users have reported a bloated System soup as a key culprit in the “jaggies”, a condition where the Newton cannot properly register the location of the stylus.</p>
+			<p>There are a few global soups which all applications use; the most important one is the “System” Soup, which stores global information for applications, commonly application preferences. When applications are installed they often will insert an entry into this soup to store their preferences, but when they are deleted they very often forget to remove this entry. As a result the System soup grows and grows. Some users have reported a bloated System soup as a key culprit in the “jaggies”, a condition where the Newton cannot properly register the location of the pen.</p>
 
 			<hr>
 		</article>
