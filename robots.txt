@@ -1,6 +1,6 @@
 # robots.txt
 # newtonfaq.com
-# updated 05 October 2025
+# updated 08 December 2025
 
 Sitemap: https://newtonfaq.com/sitemap.xml
 
@@ -11,15 +11,21 @@ User-agent: AddSearchBot
 User-agent: AI2Bot
 User-agent: Ai2Bot-Dolma
 User-agent: aiHitBot
+User-agent: AmazonBuyForMe
+User-agent: atlassian-bot
+User-agent: amazon-kendra
 User-agent: Amazonbot
 User-agent: Andibot
+User-agent: Anomura
 User-agent: anthropic-ai
 User-agent: Applebot
 User-agent: Applebot-Extended
 User-agent: Awario
 User-agent: bedrockbot
 User-agent: bigsur.ai
+User-agent: Bravebot
 User-agent: Brightbot 1.0
+User-agent: BuddyBot
 User-agent: Bytespider
 User-agent: CCBot
 User-agent: ChatGPT Agent
@@ -28,6 +34,7 @@ User-agent: Claude-SearchBot
 User-agent: Claude-User
 User-agent: Claude-Web
 User-agent: ClaudeBot
+User-agent: Cloudflare-AutoRAG
 User-agent: CloudVertexBot
 User-agent: cohere-ai
 User-agent: cohere-training-data-crawler
@@ -49,18 +56,22 @@ User-agent: Gemini-Deep-Research
 User-agent: Google-CloudVertexBot
 User-agent: Google-Extended
 User-agent: Google-Firebase
+User-agent: Google-NotebookLM
 User-agent: GoogleAgent-Mariner
 User-agent: GoogleOther
 User-agent: GoogleOther-Image
 User-agent: GoogleOther-Video
 User-agent: GPTBot
 User-agent: iaskspider/2.0
+User-agent: IbouBot
 User-agent: ICC-Crawler
 User-agent: ImagesiftBot
 User-agent: img2dataset
 User-agent: ISSCyberRiskCrawler
 User-agent: Kangaroo Bot
+User-agent: KlaviyoAIBot
 User-agent: LinerBot
+User-agent: Linguee Bot
 User-agent: meta-externalagent
 User-agent: Meta-ExternalAgent
 User-agent: meta-externalfetcher
@@ -70,6 +81,7 @@ User-agent: MistralAI-User
 User-agent: MistralAI-User/1.0
 User-agent: MyCentralAIScraperBot
 User-agent: netEstate Imprint Crawler
+User-agent: NotebookLM
 User-agent: NovaAct
 User-agent: OAI-SearchBot
 User-agent: omgili
