@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://newtonfaq.com/</loc>
-		<lastmod>2026-06-07T20:05:08+0000</lastmod>
+		<lastmod>2026-06-21T21:37:51+0000</lastmod>
 		<priority>1.0</priority>
 	</url>
 	<url>
@@ -12,22 +12,22 @@
 	</url>
 	<url>
 		<loc>https://newtonfaq.com/newton-faq-community.html</loc>
-		<lastmod>2026-06-07T20:02:53+0000</lastmod>
+		<lastmod>2026-06-21T21:16:17+0000</lastmod>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://newtonfaq.com/newton-faq-development.html</loc>
-		<lastmod>2026-01-12T23:54:33+0000</lastmod>
+		<lastmod>2026-06-21T21:13:17+0000</lastmod>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://newtonfaq.com/newton-faq-hardware.html</loc>
-		<lastmod>2026-06-03T20:01:44+0000</lastmod>
+		<lastmod>2026-06-21T21:12:14+0000</lastmod>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://newtonfaq.com/newton-faq-history.html</loc>
-		<lastmod>2026-06-07T20:05:35+0000</lastmod>
+		<lastmod>2026-06-21T21:36:25+0000</lastmod>
 		<priority>0.5</priority>
 	</url>
 	<url>
@@ -37,12 +37,12 @@
 	</url>
 	<url>
 		<loc>https://newtonfaq.com/newton-faq-nos.html</loc>
-		<lastmod>2026-01-12T23:54:33+0000</lastmod>
+		<lastmod>2026-06-21T21:12:30+0000</lastmod>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://newtonfaq.com/newton-faq-software.html</loc>
-		<lastmod>2026-01-13T23:17:19+0000</lastmod>
+		<lastmod>2026-06-21T21:22:12+0000</lastmod>
 		<priority>0.5</priority>
 	</url>
 </urlset>
