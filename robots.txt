@@ -1,6 +1,6 @@
 # robots.txt
 # newtonfaq.com
-# updated 01 August 2026
+# updated 20 August 2026
 
 Sitemap: https://newtonfaq.com/sitemap.xml
 
@@ -102,6 +102,7 @@ User-agent: KunatoCrawler
 User-agent: laion-huggingface-processor
 User-agent: LAIONDownloader
 User-agent: LCC
+User-agent: Lightpanda
 User-agent: LinerBot
 User-agent: Linguee Bot
 User-agent: LinkupBot
