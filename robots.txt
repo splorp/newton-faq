@@ -1,6 +1,6 @@
 # robots.txt
 # newtonfaq.com
-# updated 20 August 2026
+# updated 28 August 2026
 
 Sitemap: https://newtonfaq.com/sitemap.xml
 
@@ -66,6 +66,7 @@ User-agent: DuckAssistBot
 User-agent: Echobot Bot
 User-agent: EchoboxBot
 User-agent: ExaBot
+User-agent: ExaSearchBot
 User-agent: FacebookBot
 User-agent: facebookexternalhit
 User-agent: Factset_spyderbot
@@ -141,6 +142,7 @@ User-agent: Querit-SearchBot
 User-agent: QueritBot
 User-agent: QuillBot
 User-agent: quillbot.com
+User-agent: Reflectionbot
 User-agent: SBIntuitionsBot
 User-agent: Scrapy
 User-agent: SemrushBot-OCOB
