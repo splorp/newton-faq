@@ -1,0 +1,485 @@
+                    The Medical Students' Guide to the Newton
+                      aka The Newton Medical Student FAQ
+                         Ron Risley <rrisley@ucsd.edu>
+                          Copyright © 1995 Ron Risley
+                          Last update: 9 October 1995
+
+                                   D R A F T
+
+[0.0]     What is this document about?
+[0.1]          What version is this document?
+[0.2]          What are the changes since the last version?
+[0.3]          You didn't mention/were wrong about [favorite Newton feature/
+[0.4]          I'm a [house officer/private MD/attending staff physician].  Will
+[0.5]          I followed the advice in this FAQ, and one of my patients died.
+[0.6]          I'd like to send a copy of this FAQ to my friends, but you
+[1.0]     Is the Newton useful in preclinical years?
+[1.1]          Can I use Newton to take lecture notes?
+[1.2]          Will my Newton be useful to me as an organizer?
+[1.3]          Are there good Newton reference for the basic science curriculum?
+[2.0]     Is the Newton useful on the wards?
+[2.1]          How can I store patient data on my Newton?
+[2.2]          Can my Newton help me with paperwork?
+[2.3]          Are there good clinical reference books available for my
+[3.0]     How can I print from my Newton while on the wards?
+[3.1]          Are there portable printers I can use while on the hospital 
+[3.2]          Can I use my hospital's fax machines?
+[3.3]          There are printers used by the hospital computer; can my Newton
+[3.4]          I'm lucky and have an office with a computer and printer; can
+[4.0]     Is the Newton reliable enough to store patient data?
+[5.0]     I'm on a student budget; how much will a Newton set me back?
+[5.1]          What is the cheapest usable Newton setup?
+[5.2]          What is a reasonable Newton setup?
+[5.3]          Mommie and Daddy pay my bills; what's the best Newton setup money 
+[6.0]     What software might I want for my Newton?
+[6.1]          You seem to use a lot of utilities.  Which ones are 
+[6.1.1]             What is Graffiti?
+[6.1.2]             What is Wake Up Week?
+[6.1.3]             What is Short List?
+[6.2]          What utilities do you recommend as I start using my Newton more?
+[6.2.1]             What is Speed?
+[6.2.2]             What is NewtCase and Essentials?
+[6.2.3]             What is Graffiti Patch?
+[6.2.4]             What is NoteMarks?
+[6.2.5]             What is NoteScroller
+[6.2.6]             What is Roll Your Own?
+[6.2.7]             What is MoreFolders?
+[6.2.8]             What is ScrollMenus?
+[6.2.9]             What is TimeLock?
+[6.3]          What medical references can I get for my Newton?
+[6.4]          What about all that high-powered patient tracking software?
+[6.4.1]             Tell me about Pocket Doc.
+[6.4.2]             Tell me about MedNotes.
+[6.5]          What is SoloDx, and why does a medical student need it?
+[7.0]     Just how do you use your Newton on the wards?
+[7.1]          Is there a fast, cheap, and dirty way to keep patient data on the 
+[7.1.1]             What's a good way to track inpatient data?
+[7.1.2]             What's a good way to track outpatient data?
+[7.2]          Can the Newton generate a history and physical for me?
+[7.3]          My white coat is already bulging at the seams.  Does it really
+[7.4]          How do I carry my Newton?
+[7.5]          How do I keep my Newton secure?
+[7.6]          What about batteries?
+[7.7]          How do I handle curious house officers, nurses, and staff?
+[7.8]          What do the (expensive) professional vertical packages offer?
+[8.0]     Where can I find all these whizzy software and hardware products 
+[8.1]          I don't know FTP from QID.  How can I get freeware/shareware/ 
+[8.2]          Shareware is cool, 'cause it doesn't cost my anything, right?
+[9.0]     Where can I learn more about using the Newton in medicine?
+[10.0]    Whom should I thank/blame for the information in this FAQ?
+
+-=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- 
+
+[0.0]     What is this document about?
+
+I bought my first Newton, a Message Pad 110, in the spring of 1994 when I was a second year medical student.  Since then, I have answered innumerable questions from fellow students, housestaff, faculty, and others about the usefulness of the Newton in the practice of medicine.  To be honest, a few weeks after my purchase I was convinced that I had wasted over $1,000.  As time went on, however, a number of things changed.  New software became available that made the Newton ever more useful to the medical student.  Increasingly sophisticated medical references appeared.  Perhaps the most important change, though, was that I learned a lot about how to make the Newton useful.
+
+This document is my attempt to answer some of the many questions I've gotten asked as a result of my carrying a Newton around on the wards.
+
+[0.1]          What version is this document?
+
+This is a draft, the very first version of this FAQ.  I'm typing it in Chinle, Arizona while doing a fourth-year externship at the Chinle Comprehensive Health Care Center, a unit of the Indian Health Service.  Right at the moment, I'm recovering from a URI acquired at the Pediatrics Outpatient Department.
+
+[0.2]          What are the changes since the last version?
+
+This is the first version ever published.
+
+[0.3]          You didn't mention/were wrong about [favorite Newton feature/
+               software package].  Where do I flame you?
+
+As of this writing, I'm at <rrisley@ucsd.edu>.  That address should be good until June, 1996, at which time I hope to enter the exciting world of the house officer (and this FAQ might become "The House Officers' Guide to the Newton").
+
+Soon after the March 1996 match has occurred, I'll publish an update with my new email address.
+
+[0.4]          I'm a [house officer/private MD/attending staff physician].  Will
+               this FAQ be of any use to me?
+
+I suspect that most of the information in this FAQ would apply to almost anyone using a Newton in a health-care environment.  I'm just a medical student, though, so being a student is the only environment I know.
+
+[0.5]          I followed the advice in this FAQ, and one of my patients died.
+               Whom should my liability lawyer contact?
+
+This document is prepared as a service to the Internet community.  I have received no compensation of any kind for creating it.  It is certain to contain errors, possibly of great significance.  Users of this document are warned to double-check all information before acting on it.  IN ANY EVENT, MY LIABILITY TO ANY PERSON OR PERSONS SHALL BE STRICTLY LIMITED TO THE AMOUNT OF MONIES I HAVE ACTUALLY RECEIVED FROM SAID PERSON OR PERSONS for preparing this document (currently $0).  If you don't like these terms, stop reading now.
+
+[0.6]          I'd like to send a copy of this FAQ to my friends, but you
+               have placed a copyright notice on it.  How can I get permission
+               to copy it?
+
+Permission is hereby granted to distribute this document electronically provided the following conditions are met: (1) It is distributed unaltered and in its entirety, including the attached PGP signature.  (2) No charge is made for distribution beyond reasonable and customary charges for downloading or media.  (3) All distributors agree that all rights remain with me, including but not limited to the right to rescind permission to further distribute this document.
+
+If you want to distribute this document in paper form, or as part of a commercial product, please contact me for permission.
+
+[1.0]     Is the Newton useful in preclinical years?
+
+In a word, no.  I feel quite strongly that first- and second-year medical students should all have a good desktop or laptop computer, know how to use it, and learn how to type well.
+
+[1.1]          Can I use Newton to take lecture notes?
+
+Unlikely.  At its very best, the Newton is barely capable of sustained operation at greater than 30 words/minute.  It is difficult to read in dim light.  The viewable area is quite limited.  I have talked with people who claim to have done it, but I doubt the results are terribly satisfactory.
+
+You will find that owning some kind of computer system will be invaluable during preclinical years, especially if your institution supports electronic mail and allows access to online medical databases such as Medline.  Having such a computer is almost a prerequisite to using a Newton, since you'll need it for installing packages and making backups.
+
+I used a PowerBook 140 to take notes during my preclinical years, while an artistic classmate concentrated on visual information.  The notes are very complete (I type about 150 words per minute), and have currently been used by four complete classes of medical students.  This approach, or even old-fashioned pencil and paper, are much better than trying to use a Newton.
+
+(That said, I *do* find the Newton useful for taking occasional, sparse notes on the lectures I've gotten during third- and fourth-year clerkships.)
+
+[1.2]          Will my Newton be useful to me as an organizer?
+
+Okay, you're seized by toy lust and *must* buy a Newton before your third year.  How can you rationalize it?  It is often said that organization is the key to surviving medical school (and residency and practice, for that matter).  The Newton really is a prime organizational tool.  If you already have the computer; if your budget can support it; if you understand that what you buy your first year will in all likelyhood be obsolete by your third; if you still want to make that purchase, then go for it.  Chances are you'll get some good use out of it, and you'll be quite familiar with your Newton by the time you start on the wards.
+
+[1.3]          Are there good Newton reference for the basic science curriculum?
+
+None that I know of, though I haven't looked too hard.  Please drop me a note if you find any.
+
+[2.0]     Is the Newton useful on the wards?
+
+Absolutely.  I use my Newton as often as I use my stethoscope.
+
+[2.1]          How can I store patient data on my Newton?
+
+There are several ways.  One is to use the built-in Notepad (see [7.1]).  A number of add-on software products can make this a much more satisfying experience.  In section [6.0], below, I talk in some detail about how this can be done quite effectively.
+
+Another option is to use a dedicated medical management package.  I've had a lot of success with this approach as well.  See the sections on Pocket Doc and MedNotes, below, for some more information.
+
+[2.2]          Can my Newton help me with paperwork?
+
+Only if you have a way to print.  The medical packages Pocket Doc and MedNotes can both print fine-looking admission H & P's as well as progress notes.  Or, as a cheaper and dirtier alternative, I have created a prototype history, physical, and progress note as notes on the Notepad.  It is a simple matter to duplicate them, change the pertinent findings, and print them out in a reasonably attractive format.
+
+Printing, for me, has been the big problem.  It is covered in more detail in section [3.0].
+
+[2.3]          Are there good clinical reference books available for my
+               Newton?
+
+Absolutely.  See [6.3].  In addition, the Newton makes an awesome peripheral brain.  I have developed a substantial collection of clinical pearls over the years, all stashed in my Notepad and retrievable in seconds.  If I ever discover a reasonable way to distribute collections of Notepad entries, I'll publish my collection.
+
+[3.0]     How can I print from my Newton while on the wards?
+
+I have found printing to be the most vexing problem to solve.  Sure, the Newton is quite useful even if you can't print, but it is most impressive if you can crank out beautifully typewritten H & P's and progress notes from the data on your Newton.
+
+In the end, I've given up trying to print at the UCSD Medical Center.  There is no place to keep a portable printer where it wouldn't get stolen, they keep their fax machines locked in Medical Records in the basement, you can't make photocopies anywhere in the hospital, they have a digital phone system, and the printers they use with the hospital computer system and extremely difficult to interface to.  At several other facilities I've rotated through, however, I've been able to print consistently with varying degrees of success.  Recently, several attendings have been seen at the U with Newtons.  I'm hoping that their influence can help ameliorate the printing problem there.
+
+[3.1]          Are there portable printers I can use while on the hospital 
+               floor?
+
+A large number of portable printers will work with the Newton if you buy the optional Print Pack (about $100).  The Print Pack supports just about all parallel printers compatible with IBM PCs.  The Newton will also print directly to Apple StyleWriters and to Postscript laser printers with AppleTalk interfaces.  Ironically, the Newton will *not* print to many Macintosh-compatible serial and AppleTalk printers, including HP DeskWriters and even Apple ImageWriters.
+
+I have used an HP DeskJet Portable extensively on the hospital floor.  It is not the smallest or lightest portable, but it's what I had and it works quite well.  While this approach is relatively fast and produces acceptable output, it is not without its problems.  First, even the smallest portable printers are too much to carry around all the time (the Newton alone is really pushing my threshold for size and weight).  So, if you choose to leave your printer somewhere, you not only have to travel to it and set it up in order to print, but you run a very real risk of theft.  These might not be problems in smaller private hospitals, but where I generally work (the UC San Diego Medical Center), students really have no secure place to leave any equipment, and theft is a common problem.  If you are fortunate enough to have a secure office where you can leave a printer set up at all times, this might be an effective solution.
+
+[3.2]          Can I use my hospital's fax machines?
+
+Many hospitals have fax machines in many nursing stations.  One effective way to get data printed from your Newton is to send it to the nearest fax machine via a fax modem.  Fax modems are smaller, cheaper, and lighter than portable printers.  Though this seems like an ideal solution, there are problems worth noting:
+
+* You should probably only use this technique with plain-paper fax machines.  Veteran's Affairs hospitals, for example, seem to use HP inkjet faxes.  I suspect that most medical records departments would not approve of documentation printed on regular fax paper, as it is flimsy and tends to fade over time.  (In a pinch, you could always print to a fax machine and then make a plain-paper photocopy, but that added step seems pretty significant.  At UCSDMC, you need almost God-level status to have access to photocopiers.)
+
+* The problem of having to carry the modem around remains.  PCMCIA modems can work, but no Newton currently made can support Pocket Doc, MedNotes, or any of the larger reference books without an additional memory card, so you would be forced to juggle cards.  You would also be forced to keep enough free memory on your internal store to keep the largest document you might want to print.  I have no idea how big that might be, but I suspect it could become a problem on an MP-100.  On my 110 I've never really had a problem with space on the internal store.
+
+* You need a phone line to send a fax.  If your hospital has an abundance of single-line analog phones, this shouldn't be a problem -- just unplug a nearby phone and plug the Newton in.  If you have a digital phone system, though, you could well fry your modem if you try to connect it.  There are solutions: several companies make small boxes which connect modems to the *handsets* of digital phones (or analog phones you can't otherwise connect to).  Again, though, this is another device to carry around and hook up each time you want to print a note.
+
+In one clinic I had a relatively safe office.  I wouldn't have left my Newton there all the time, but I was comfortable leaving my cheapie external fax modem and a digital phone interface set up all the time.  When I had a few notes ready to print, I'd just go to my office and fax them over to the plain-paper fax down the hall in medical records.  It worked great, though it's noticably slower than using a dedicated printer
+
+[3.3]          There are printers used by the hospital computer; can my Newton
+               use them also?
+
+My first idea for printing was simple.  The UCSD Medical Center doesn't have plain paper faxes or analog phones or safe places to leave printers, but it does have laser printers at almost every nurses' station.  I bought a Print Pack with the idea that I could just unplug the laser printer from the network, plug in my Newton, print a few notes, and re-connect the printer.
+
+Alas, it didn't work out as planned.  First, the printers tend to be jammed into corners and surrounded by trash.  Just exposing the connector end of the printers often proved to be a major task.  Then I found that the printers had to be shut down while their cables where changed, both to protect the Print Pack interface and because the printers had to be reset before they would recognize the Newton.  Then I found that the formatting was odd, and discovered that the printers had to be reconfigured to really work properly.  By now the sequence became 1. unbury printer, 2. turn printer off, 3. re-configure printer, 4. disconnect printer, 5. attach Newton, 6. turn printer on and wait through long warm-up cycle, 7. print notes, 8. turn printer off, 9. restore original printer configuration, 10. unplug Newton, 11. re-connect printer, 12. turn printer back on, 13. push printer back against wall, 14. restore some order to the trash previously stacked on the printer.  If I was lucky, I could do all this without being accosted by angry nurses who believed the printer to be their personal property.  Once I even had to answer to Security.  To make matters worse, it seems that the central computer system had a bad habit of forgetting about printers that it found were disconnected when it tried to print.
+
+[3.4]          I'm lucky and have an office with a computer and printer; can
+               I synchronize my Newton and print from my office machine?
+
+Yes, but you won't like the result.  When you print from the Connection Kit, notes don't get reformatted to fill the page, but print in Newton-sized strips down the page.  Also, there's no way to print Pocket Doc or MedNotes data from the Connection Kit.
+
+[4.0]     Is the Newton reliable enough to store patient data?
+
+Yes.  This was my biggest concern.  In spite of the fact that I do some nasty development work on the Newton, and crash it frequently, I've never lost a byte of data.  (WARNING!  YOUR MILEAGE MAY VARY.  ALWAYS BACK UP YOUR NEWTON BEFORE RUNNING ANY EXPERIMENTAL SOFTWARE.)  In spite of this remarkable reliability, though, I think one would be foolish to not back up the Newton daily.  No matter how good the data integrity, Newtons can get lost, stolen, or destroyed (as can decks of 3x5 cards).  One of the things I like best about using a Newton on the wards is knowing that I can trivially back up all my patient data and peripheral brain.
+
+Note that if you store your data primarily on the Notepad (see [7.1]) you can access it all from the Connection Kit should your Newton become lost or stolen or if it should fail.  Currently, the vertical packages don't offer Connection Kit access (the data is backed up, but has to be restored to another Newton before it can be read).  That was a big concern when Newtons were $600, but now that one can get a Newton for under $200, this is probably less of a problem.
+
+[5.0]     I'm on a student budget; how much will a Newton set me back?
+
+Newtons are far, far less expensive and far more usable than when I bought mine in 1994.  Still, they're not what you would call cheap.  As much as I'd like to believe that the Newton will "pay for itself" during medical school, the truth is that the payback you get from using a Newton isn't particularly tangible.  The reason is that medical records are currently kept using 19th century technology.  The process of using index cards and handwritten notes may be horribly inefficient and dangerously inaccurate, but it is cheap.  You can get your pens free from pharmaceutical detail reps, and they'll even give you some of the smaller reference books.  Since the UCSD Medical Center decided that they could balance the budget by eliminating index cards, you *do* have to buy those, at least at my school (alternatively you can be sure you stock up while you're over at the VA).  You *do* have to buy some reference books, and they don't come cheap, but the bottom line is that a Newton and associated accessories and software will cost you more than a two years' supply of index cards, a box of pens, and a shelf of reference books.
+
+Another thing to keep in mind is that the Newton is not as durable as one might expect.  While my venerable PowerBook 140 has withstood years and years of almost constant abuse, and still looks almost as good as when it was new, my Newton has suffered notably in the past year.  The finish on the case has worn off in spots.  The on/off button has worn down to almost nothing.  The screen is very badly scratched, in spite of taking great care with it, two of the little rubber feet have fallen off and gotten lost, the paint is flaking off the stylus, and the front cover and battery door latches are starting to wear out.  In short, after just over a year (this is my second Newton), it's looking pretty ratty.  Bear in mind that for much of the year I was using the Newton fourteen hours a day, seven days a week, but I still would have liked it to hold together better.
+
+So why should you choose the Newton?  First, the Newton can give you more effective access to references when it counts.  When you're doing pediatrics, for example, you'll probably keep a Harriet Lane in your pocket.  But will you keep those surgical, emergency, or medical references?  Probably not, as more than fifty pounds of books tends to put undue stress on lab coats.  The Newton doesn't get measurably heavier as you add reference books, so you can keep some of the ones you'd normally leave behind.  Also, your patient information will be more accurate, more readable, and will be backed up.  I can electronically search for, and find, my notes on the first patient I ever admitted.
+
+You'll also be a lot more organized.  Schedules during clerkships can get remarkably complex; with a Newton-managed calendar and to do list, you're much less likely to miss something important.  The Newton really beats paper for use as a peripheral brain, since you can search for obscure items electronically rather than paging through a notebook.  And, hey, it's whizzy.
+
+[5.1]          What is the cheapest usable Newton setup?
+
+I have recently seen the Newton Message Pad 100 for $120.  Great deal, right?  Perhaps, but before you rush out to buy it, think ahead just a bit.  A 100 will need more memory.  You also *must* have Graffiti (see [6.1.1]).  Fortunately, you can get both (and some other software you don't need) with the Newton Enhancement Pack, a 2 MB PCMCIA card with a few software packages on it.  It's about $130.  You'll also need the Newton Connection Kit for Windows or Macintosh, another $100.  Personally, I feel that you also have to have Wake Up Week, $20, if you want to be able to use Newton's calendar and to do list effectively.  So that's $370; a considerable investment, but less than 1/3 of what I paid for my first (quite minimal) Newton system. 
+
+There are a few packages you'll eventually want to add, and sooner or later you'll want a bigger memory card so you can load up with reference books, but maybe by then you'll be pulling down that awesome intern's salary.
+
+It's worth noting that the MP-100 is obsolete.  By the time you read this, it might not be available any longer.  Nonetheless, as long as it continues to exist it represents an excellent value and an ideal way to get started with the Newton.
+
+[5.2]          What is a reasonable Newton setup?
+
+The big decision is whether to go with a MP-110 or MP-120.  The 110 is a pretty good bargain right now.  The 120 has a more readable screen and more internal memory; features I don't feel justify the higher price.  It does have one truly significant difference, however.  The ROM (read only memory) where the operating system is stored is socketed on the 120, but not on the 110.  That means that when version 2 of the Newton OS comes out (real soon now), only MP-120 owners will be able to upgrade.  From preliminary reports, version 2 will be a significant improvement.  It's a hard call.
+
+You can never have too much memory.  I've recently seen 10 MB PCMCIA cards for $300, and 12 MB for $400.  At 12 meg card would let you have Pocket Doc and the ERLI drug reference, primary care pearls, and Five Minute Clinical Consult all on your Newton at once with room to spare -- a powerful system indeed.  On the other hand, I've gotten along for quite a while on a measly 4 MB card, and have only recently (with the release of the ERLI drug reference and DSM-IV) been lusting for a bigger card.
+
+Remember, too, that you must at least have access to a Windows or Macintosh computer to install packages and back up your Newton.
+
+[5.3]          Mommie and Daddy pay my bills; what's the best Newton setup money 
+               can buy?
+
+You might hold out for the rumored MP-150 (backlit screen, OS version 2...).  If you can't wait, get a MP-120 with a 12 or 16 MB memory card, a copy of Pocket Doc, the whole ERLI collection, and all the utilities I list in sections [6.1] and [6.2].
+
+While you're at it, ask the folks for a Macintosh PowerBook 5300cs for your backup machine.  You might also mention that your friendly FAQ maintainer could use one as well.
+
+[6.0]     What software might I want for my Newton?
+
+One thing that really sets the Newton apart from a lot of other PDAs is the vast selection of third-party software available for it.  You could quite easily spend more on software than the cost of your Newton.  I don't think you really *have* to have a lot of software, though.  As I mentioned in [5.1], Graffiti and Wake Up Week are really all you need to get started.
+
+Just as you'd be foolish to go out and buy a lot of software before you knew what you were doing, you'd also be foolish to never expand your Newton beyond its basics.  There is amazing stuff available; most of it well worth the price when it can save you a lot of time and aggrivation.
+
+[6.1]          You seem to use a lot of utilities.  Which ones are 
+               essential?
+
+As far as I'm concerned, the only *essential* programs are Graffiti, Wake UP Week, and (because it's free) Short List.  Speed comes very close (see [6.2.1]), as does NewtCase ([6.2.2]).
+
+[6.1.1]             What is Graffiti?
+
+The handwriting recognition (HWR) that comes with the Newton is remarkable.  It does take some training (both of the Newton and the user), but after a few weeks it often performs with 90-95% accuracy.  The problem is that it is generally word based, so when it messes up, it messes up an entire word (often completely obscuring the intended meaning).  It also only works well on words in its dictionary.  Medical jargon, full of abbreviations, acronyms, numbers, and unusual words, just doesn't fit well with Newton HWR.  Even if it did, 95% accuracy (which means that one word in 20 would be completely wrong) just isn't good enough for medicine.  For me, that made the Newton next to worthless.  I was constantly reduced to tapping out values on the Newton's tiny on-screen keyboard.
+
+All that ended with Graffiti.  Graffiti uses a stroke-based alphabet that takes minutes to learn.  Instead of punching keys on a keyboard, you enter strokes in an on-screen box.  Those strokes get rapidly translated to letters and numbers.  Accuracy is very high, and because entry is always in the same place, it isn't necessary to watch the screen while writing.
+
+I use Graffiti constantly.  I love being able to maintain eye contact with patients while jotting down important information during an interview.  It's also nice to be able to record lab values from a computer screen without taking your eyes off it (and consequently losing your place).
+
+Graffiti also lets you define shortcuts: short stroke sequences that represent longer text sequences.  I have defined shortcuts that put labels on the screen for vital signs, I's & O's, and chemistry and hematology panels; it really speeds pre-rounding.
+
+Graffiti, from Palm Computing, retails for around $40, and is also included with a 2 MB memory card in the Newton Enhancement Pack for around $130.
+
+[6.1.2]             What is Wake Up Week?
+
+This will undoubtedly generate some controversy by being in my "essentials" list.  One of the Newton's real strengths, though, is as an organizer.  The built-in calendar and to do list work pretty well, yet I often found the interface just a little bit too clumsy to work well. Wake Up Week fixes that, by putting an extraordinarily efficient front end on the built-in calendar and to do list.  I won't describe the interface in detail, since a free 30-day demo is available online.
+
+Wake Up Week is $20 from Stand Alone Software.
+
+[6.1.3]             What is Short List?
+
+I don't suppose Short List is truly essential, but it is free and uses very little memory.  After trying many of the list manager utilities out there, I ended up just using the built-in Notepad: it's quick and efficient, especially if you learn a few subtle tricks with selection gestures and Graffiti.  You can really do very good lists in the Notepad, except that it is difficult to sort and you can't easily implement a way of checking off items.
+
+Short List works with your existing Notepad lists, allowing you to sort them, prioritize items, and check off items.  It's lean and fast, but lets you still do all the things you like to do with the Notepad.  For free, it's hard to go wrong.
+
+[6.2]          What utilities do you recommend as I start using my Newton more?
+
+The Newton, as it comes out of the box, really does have some rather astonishing limitations.  Thankfully, Apple made it programmable, and a number of brilliant programmers have rushed in to fill the gaps Apple left.
+
+I tend to be fanatic about keeping utilities *off* of my computers, so there are probably some very good ones that I've missed, but of the ones I've tried, I strongly recommend Speed, NewtCase, Graffiti Patch, and NoteMarks.  Others that I've found quite useful include Note Marks, NoteScroller, Roll Your Own, MoreFolders, ScrollMenus, and TimeLock.
+
+[6.2.1]             What is Speed?
+
+Speed is a program written by Ben Gottlieb at Stand Alone Software (also author of Wake Up Week).  Its main function is to make switching folders in Names and Notepad *much* faster.  If you use my cheap and dirty method of storing patient data on the Notepad (see [7.1]), Speed is very nearly essential.  True, I got by without it for over a year, but I would cringe every time I had to switch patients in the Notepad.  The process could take up to seven to ten seconds -- an eternity while the team is standing around waiting for the answer to a question on morning rounds.  Using Speed, folder changes take less than a second; otherwise, it's almost completely invisible.  Speed also dramatically speeds up scrolling among notes in a folder, creating new notes, and generating overviews (a process so slow as to be almost useless without Speed).
+
+Speed adds some other little features, too, such as the ability to set the default folder and view when opening Names.
+
+All in all, it's well worth the $25.  A 30-day trial version is available online.
+
+[6.2.2]             What is NewtCase and Essentials?
+
+Apple apparently never intended for the Newton to be loaded up with a lot of packages.  Every package in the Extras drawer takes up some precious heap memory (a discussion of heap memory is beyond the scope of this FAQ; suffice to say that you don't get nearly enough, and adding memory doesn't help).  NewtCase lets you archive packages that you don't use too often, saving heap space.
+
+The "Essentials" that are included with NewtCase include Gesture Launch, a package which lets you assign all kinds of functions to the built-in buttons on the Message Pad.  It's extraordinarily useful for simplifying a number of tasks you'll do regularly on the wards.  If you tap a button you get its original function (Names, Dates, Extras, Undo, Find, Assist).  In addition, though, you can make one of four gestures on each key: select (tap and hold till Newton squeaks), caret, line, and scrub.  Each of those gestures can either launch a package, launch an archived package, or execute a short program in NewtonScript.  Included programs do such useful things as creating new notes, putting Newton to sleep, moving to the first or last note in a folder (painfully slow unless you have Speed), and freeing up heap space.
+
+NewtCase and Essentials truly is an essential package once you start adding a lot of extra functionality to your Newton.  It should be among your first software acquisitions once your Newton has become an integral part of your life.
+
+A time-limited demo version is available online.
+
+[6.2.3]             What is Graffiti Patch?
+
+Graffiti is wonderful, but it can be even better.  The Graffiti window is rather large, and is often in the way when you're trying to enter data.  When I first started using Graffiti Patch I thought that it would be wonderful if someone would create a Newton with a dedicated Graffiti input area, that didn't cover any of the viewable Newton screen.
+
+ICS, publishers of NewtCase, managed to do exactly that in software.  Graffiti Patch lets you shrink Graffiti's window to the minimum usable size.  It also allows you to drag the Graffiti window off the screen.  If you drag the window down "underneath" the Assist button, you can do your Graffiti writing there without obscuring any of the screen.  I seldom use Assist anyway, but if you have Gesture Launch (part of NewtCase) then you can create a button gesture to hide Graffiti when you want to use Assist.
+
+Graffiti Patch is available online.  Don't forget to pay for it!
+
+[6.2.4]             What is NoteMarks?
+
+There are some notes I often need to access in a hurry.  NoteMarks is a small application that pops up a menu of notes you've selected, and jumps directly to them.  If you assign it to a gesture button (see [6.2.2]) then a gesture and a tap will take you directly to any note.
+
+NoteMarks was absolutely essential before there was Speed.  Now it's less vital, but still quite handy.
+
+NoteMarks in available online, and it's free.
+
+[6.2.5]             What is NoteScroller
+
+One of the problems with the Notepad is that it always scrolls in full-screen increments.  That is occasionally a big pain, when a list you're trying to study or edit falls on a page boundary.  NoteScroller is shareware from Hardy Macia, available online, which lets you scroll a partial page.
+
+[6.2.6]             What is Roll Your Own?
+
+Roll Your Own divides each of the built-in Newton buttons into two parts.  The icon part of the button performs the original built-in function, but the bottom part (where the name is) can launch a package.
+
+In many ways Gesture Launch (see [6.2.2]) is more flexible than Roll Your Own, but it's nice to be able to access packages with just a tap instead of a gesture.  Fortunately, Roll Your Own and Gesture Launch get along well together.  With both packages installed, you can have up to six functions assigned to each button.  That gives you a total of thirty-six functions that can be accessed with a single gesture.
+
+Roll Your Own is freeware, available online.
+
+[6.2.7]             What is MoreFolders?
+
+If you use my fast, cheap, and dirty way to store patient data, you'll soon run across a serious limitation.  Out of the box, the Newton only allows twelve folders (the same set of twelve applies to the Notepad, Names, and almost everything else that uses folders).  If you set aside a folder for pearls, one for personal information, one for the always-important "miscellaneous" information, then you'll only have room for storing nine patients.  That's probably okay for a third-year on an inpatient rotation, but as you get saddled with more responsibility you'll find that you need to track a lot more than nine patients.  In addition, you'll probably want to add some folders to subdivide names and pearls.  MoreFolders breaks the twelve folder barrier.
+
+MoreFolders is another Ben Gottlieb/Stand Alone Software product.  A time-limited demo is available online.
+
+[6.2.8]             What is ScrollMenus?
+
+So you've installed MoreFolders and have gone folder crazy.  Suddenly you notice that MoreFolders' folder menu extends off the screen, and you can't access folders a the bottom.  ScrollMenus will allow you to scroll any menu which extends off the screen.  
+
+A time limited demo of ScrollMenus is available online.  It's only $5 when ordered with any other Stand Alone Software product.
+
+[6.2.9]             What is TimeLock?
+
+Once you have a lot of confidential patient and personal data on the Newton, you begin to worry about security.  The Newton provides a password feature, but it's a pain in the butt: every time you want to see something on Newton, you have to enter the password before it will turn on.  TimeLock solves that problem by letting you specify a delay before the password feature kicks in.  If you set it for, say, three hours, and someone cockroaches your Newton, unless they steal all the useful information before it has been off for three hours, they'll need the password to turn your Newton on.  You, on the other hand, will probably only need to enter the password once per day (assuming you get three hours' sleep at night).
+
+One word of warning: the protection offered by the Newton password is pathetically weak.
+
+[6.3]          What medical references can I get for my Newton?
+
+The premier publisher of Newton medical references seems to be ERLI.  Here's a taste of their offerings:
+
+* Current Clinical Strategies series:  The Lange Current Clinical Strategies pocket books in Newton format.  Even handier than the paper version, since you can search them electronically.  They are available separately or in bundles.  Titles include medicine, pediatrics, OB/gyn, surgery, outpatient medicine, references, and emergency medicine.  I own them all, and continue to be surprised at how useful they are.
+
+* Daniel Onion's Little Black Book of Primary Care Pearls.  I've gotten a good look at this, even used it for a few days, and it is awesome.
+
+* Comprehensive drug reference.  I've heard this is good, but I've never actually seen it.  When time and money permit (I not only need the program, but a larger memory card), I'll include some impressions here.
+
+* Complete text of the DSM-IV.
+
+There are other free- and shareware references, including a book on reading electrocardiograms, and several utilities for calculating things such as body surface area and estimated creatinine clearance.  There's even a pregnancy wheel calculator.  For the location of these and other goodies, see [8.0].
+
+Pocket Doc also contains a large drug reference and an interactive listing of ICD-9 codes (though the diagnostic codes are not available in the house officer's version).
+
+[6.4]          What about all that high-powered patient tracking software?
+
+There's nothing like a well-designed integrated software package to help you with your work.  Two exist for the Newton in medicine: Pocket Doc and MedNotes.  They both are expensive, relatively slow, and consume a lot of memory, but do things you just can't do with a Notepad-based record-keeping system.
+
+In general, I find the Notepad-based approach (see [7.1]) works well enough unless you have access to an easy method of printing.  If you're able to print, then the ability of the vertical packages to format and print nice documentation make them worth the time, trouble, and money.
+
+One feature that the vertical packages have that I haven't been able to emulate with the Notepad-based technique is effective management of task lists.  In both programs, you can add lists of tasks to be done for each patient, but then you can view them all in a single list.  It's great for organizing your time effectively.
+
+[6.4.1]             Tell me about Pocket Doc.
+
+Pocket Doc is the Cadillac of Newton medical software.  It is pricey: about $500 for the full version, $250 for the house officers' version (which lacks diagnostic coding).  I've used Pocket Doc quite a bit, and wrote a lengthy review of it which should be available for downloading from all the usual places.  In a nutshell, it's a well-made piece of software that does a good job, but it takes some time and effort to get it set up and working properly, and it is often frustratingly slow to run.  Again, if you have the ability to print, it's worth a lot more.
+
+One shortcoming to Pocket Doc is that there is no free demo available.  Physix sells a demo package (around $65, if memory serves, and it can be applied toward the purchase price).  Their reasoning is sound: it isn't the kind of package that sells itself; you really need some support materials to get the most out of it.  In spite of that, though, the lack of a free demo makes it really difficult to find out if Pocket Doc will serve your particular needs.
+
+[6.4.2]             Tell me about MedNotes.
+
+I can't, really.  It's published by ERLI, the folks who make the excellent medical references for the Newton.  A free demo (limited to only four patients) is available online.  I've use it a little, but not really enough to be able to comment intelligently about it and how it compares with Pocket Doc.  I believe it is considerably less expensive ($175?), and doesn't include a drug reference or diagnostic coding.
+
+[6.5]          What is SoloDx, and why does a medical student need it?
+
+SoloDx, or Solo Deluxe, is a solitaire game for the Newton.  It is a remarkable program, and even more remarkable is the fact that it is free.  Download a copy; it is an excellent way to relax while you're nervously waiting for that call from the ER, but you're too burned out to do any reading.
+
+One real advantage to the Newton: it's difficult to tell whether your intently taking notes during those boring conferences, or playing a quick game of Klondike.
+
+[7.0]     Just how do you use your Newton on the wards?
+
+There are n basic functions I use my Newton for: as a daybook (for scheduling and keeping track of things to do), as a medical reference, as a peripheral brain, and for keeping track of patient data.
+
+One thing to keep in mind is that it is important to be flexible.  Unlike a private physician, the environment in which a student must work is constantly changing.  Different services, different residents, different attendings, and different institutions will all place differing demands on the way you schedule things and present patient data.  That is one drawback to the vertical packages: it takes quite a while to, for example, set up Pocket Doc templates to suit a given situation.  Most of my rotations have been four weeks long, and it takes the first one to two weeks just to figure out what needs to be done.  By the time you have the program set up the way you need it, you're moving on to the next rotation.
+
+[7.1]          Is there a fast, cheap, and dirty way to keep patient data on the 
+               Notepad?
+
+Yes, at least for inpatient services.
+
+[7.1.1]             What's a good way to track inpatient data?
+
+First, I create a folder for each patient, with last and first name and medical record number.  That way I can get a quick census just by tapping the folder menu in any application that supports folders.  Then, on the first note in the folder I put a lot of relevant one-time data (date of birth, chief complaint, and other data which largely depends on the service and the patient).
+
+If I have a way to print, I'll copy a history template and a physical exam template to the folder.  The fast way is to use NoteMarks [6.2.4] to go directly to the template, duplicate the template, then file it in the patient's new folder.  Modify the templates to fit the patient, then print out the resulting H&P.
+
+After the H&P's, I copy in a progress note template.  Each day before prerounding, I duplicate the previous day's progress note.  I search the assessment and plan at the end, erasing items which have been done.  Then I update vitals, I's & O's, labs, subjective assessment, and objective assessment.  If anything new goes into the plan, I add it to the end.  I also have a Gesture Launch script (see [6.2.2]) that adds the new item to the Newton's to do list, where it will also show up in Wake Up Week [6.1.2] conveniently filed under the patient's folder.  That way you can easily view pending to do's all together or by individual patient.  (I have not yet found a convenient way to distribute Gesture Launch scripts.  I will gladly make the script available on request, but the only way I know to install it is to paste it into the Connection Kit notepad, then synchronize and cut and paste in to Gesture Launch.)
+
+During rounds, it's easy to pop up the current progress note, since when you select a new folder the Notepad always displays the latest entry in that folder.  It may be easy, but unless you have Speed [6.2.1] it's painfully slow.  I don't really think that it's any slower than shuffling through a deck of cards, but since you're not *doing* anything, it seems like an eternity.  If you need information from the first card or the H&P, you can use the overview or the "first note" script included with Gesture Launch.  Both of these approaches, as well as just scrolling back through cards to find old labs, are painfully slow without Speed.
+
+There are a couple of subtleties that are worth addressing.  First, since the Newton only supports twelve folders, and you're likely to want to use some of them for other things, what do you do with a busy service?  The answer is a utility called MoreFolders; see [6.2.7].
+
+Second, you want to be able to delete patients a few days after discharge (beware bounces!) so that they don't pile up to tremendous numbers.  How do you keep them archived?  It turns out that current versions of the Connection Kit will archive old items, and can even find them by folder name even after the folder is deleted.  To delete a patient folder, (1) synchronize; (2) delete all the notes in the folder (someday I'll write a Gesture Launch script to do this); (3) delete the folder.  The next time you synchronize, the old patient data will be archived.  (WARNING: I've only tested this on version 2.0 of the Newton Connection Kit for Macintosh.  Your mileage may vary.)
+
+A third issue regards formatting.  A bug in the current system causes all text in a paragraph to revert to its original fonts, size, and style at unpredictable intervals (but usually when inserting a return with Graffiti).  This limits the amount of formatting you can do.  Choose a nice face and style, and stick with it.
+
+[7.1.2]             What's a good way to track outpatient data?
+
+At least while I was a third-year student at UCSD (things have since changed), you really weren't ever in any clinic long enough to need to track outpatients.  I often didn't use my Newton for patient data in clinics.  I would sometimes use it for interviews, but I often found it more efficient to simply conduct the interview using the paper form on which I would be expected to record the encounter anyway.  Just because you have a hammer doesn't mean the whole world is a nail.
+
+This is probably one place where the vertical packages would really shine.  If they perform well when loaded up with hundreds of patients, they could provide an excellent way to store patient data between encounters.  Really, though, this is beyond my expertise.
+
+[7.2]          Can the Newton generate a history and physical for me?
+
+The question I'm most often asked by second-year and beginning third-year students is "Is there a Newton program which will prompt me through a history and physical, then generate a finished H&P?  The real answer to that is "no," and I don't think that answer is likely to change.  In fact, people have been trying for years to create a system (either on paper or on a computer) that gets a good history.  The problem is that history taking is much less cut-and-dried than most people seem to think.
+
+When I'm interviewing a patient, I usually bring up a blank Notepad card.  I record very little during the interview, and fill out most of it later using an H&P template or Pocket Doc (see [6.4.1]).  The Pocket Doc system could, conceivably, be a great aid to doing histories and physicals, but you would need to have better templates developed first.  Also, I find it impossible to fiddle with any kind of forms-based software while I'm trying to interact with a patient; I really have to devote my full attention to what the patient is telling me and how it affects my diagnosis.  There are probably people out there who could use Pocket Doc and still track the patient well, but I think it might be a mistake for medical students to try to develop that capacity instead of learning how to get a history with minimal notes.
+
+[7.3]          My white coat is already bulging at the seams.  Does it really
+               make sense to carry a Newton, too?
+
+A lot of that bulk in your coat is probably reference books, decks of index cards, calendars, and peripheral brains.  They all can be replaced by the Newton (but don't rush it).  Ultimately, Newton will lighten your load, not increase it.
+
+[7.4]          How do I carry my Newton?
+
+I originally kept it in my coat pocket, but that has some problems.  You can't wear your coat all the time.  I ditch mine whenever I get the chance, since I think it inappropriately represents authority.  You'll also have to stash your coat a lot during surgery and when you do procedures.  I haven't found a set of scrubs yet that will accomodate a Newton in the pocket.
+
+I bought a fanny pack at a camping supply store, which holds the Newton snugly and has enough space left over to completely free me from the need for an overstuffed white coat.  Ahhh, I'm much more comfortable now.
+
+There are an increasing number of holsters, bags, and other widgets for carrying your Newton.  Check in all the usual places.  One source that seems very popular is to scout out toy stores for bags designed to hold handheld video games.
+
+[7.5]          How do I keep my Newton secure?
+
+Keep it on your person at all times.
+
+[7.6]          What about batteries?
+
+Much has been said, and doubtless will be said, about Newton batteries.  Here's what I know:
+
+My MP-110 with a 4 MB card will run for 4-5 days of *heavy* use (as in outpatient psychiatry, where my Newton was actually on and busy for over six hours a day) on a set of alkaline AAs.  The vast majority of users would get much better mileage.  I don't even own an AC adaptor, and doubt if I'd be happy with NiCads.  Instead, I generally use Ray-O-Vac Renewal batteries.  The reason is that a set of well-used Renewals will still get me through two days of heavy use, representing a full day, a night on call (playing Solo Deluxe [6.5]), and a full day the next day.  I just keep two sets going, and swap them whenever I'm home near the charger.  I carry a set of four new alkalines just in case, but I've never had to use them.  NiCads don't like to be slightly discharged, then recharged -- Renewals thrive on that schedule.  Renewals also have a greater capacity than NiCads.  Of course, they also wear out after *far* fewer charge/discharge cycles, but they're pretty cheap if you find them on sale.
+
+[7.7]          How do I handle curious house officers, nurses, and staff?
+
+Beats me.  Nothing like desperately trying to pre-round on some surgery patients at 05:30 in the morning, trying desperately to finish before the resident arrives, only to have a flock of otherwise helpful staffers wanting to see a demo of your Newton.  I'm not rude by nature, but at five-thirty I'm generally less than patient.
+
+[7.8]          What do the (expensive) professional vertical packages offer?
+
+See [6.4]
+
+[8.0]     Where can I find all these whizzy software and hardware products 
+          you've mentioned?
+
+Where I've noted that stuff is available online, it can be found by anonymous FTP to amug.org and/or uiowa.edu.  For commercial goodies, try the major Macintosh catalog stores or Newton Source, 800/NEWTON1 (800/639-8661).  Right now I'm 700 miles from home, and can only access the Net through a very expensive SLIP dialup, so I don't have any more detailed information.  A future update will list more sources, have URL's, and phone numbers reachable from outside the USA.
+
+Here are a few URLs that I do have:
+
+PocketDoc info:
+http://med-amsa.bu.edu/newton.medical/PocketDoc/pocketdoc.html
+
+ERLI references:
+http://med-amsa.bu.edu/newton.medical/k2/ARTbook.html#k2top
+
+The Newton Store:
+http://www.newtonstore.com/
+
+ICS (publisher of NewtCase, Gesture Launch, Graffiti Patch)
+http://www.newts.com/
+
+[8.1]          I don't know FTP from QID.  How can I get freeware/shareware/ 
+               demoware if I don't have access to online archives?
+
+Every practicing MD and medical student should have access to the Net.  The reasons would fill a FAQ all their own (or see my upcoming article in the Journal of Medical Informatics).  If you don't or won't use the Net, though, there's still hope.  All of the programs available on the AMUG (Arizona Mac Users Group) site are also available on an inexpensive CD-ROM.  Contact AMUG at **** for details.
+
+[8.2]          Shareware is cool, 'cause it doesn't cost my anything, right?
+
+Wrong.  Shareware is cool because you only pay for the software, not for full-page glossy magazine ads, mail-order distributors, and free copies of the London Times.  Shareware is cool because the people who write the software are the ones who profit when it works.  The only thing that isn't cool about shareware are the people who use it without paying.
+
+[9.0]     Where can I learn more about using the Newton in medicine?
+
+For general information on the Newton, get involved with you local Newton users' group, the Usenet newsgroup comp.sys.newton.misc, and subscribe to Steve Holden's NewtNews electonic newsletter by viewing:
+http://www.ridgecrest.ca.us/NewtNews/NN_top.html
+
+For information on using the Newton specifically in medical fields, visit the Newton Medical Home Page on the World Wide Web at ****, and subscribe to the NewtMed electronic mailing list by sending email to ****.
+
+[10.0]    Whom should I thank/blame for the information in this FAQ?
+
+Right now, I'm to blame for all errors, omission, and inaccuracies.  Credit goes to the many folks who have posted to comp.sys.newton.misc and who have participated in the NewtMed mailing list.  Since this is only a preliminary draft of this FAQ, I'm hoping to gather a lot more good questions and answers as other medically-oriented Newton users read this.
+
+Please direct all comments and inquiries to Ron Risley <rrisley@ucsd.edu>, using the subject "msgn-comments".
