@@ -1,6 +1,6 @@
 # robots.txt
 # newtonfaq.com
-# updated 17 September 2026
+# updated 18 October 2026
 
 Sitemap: https://newtonfaq.com/sitemap.xml
 
@@ -8,6 +8,7 @@ User-agent: *
 Disallow:
 
 User-agent: AddSearchBot
+User-agent: AgentDataBot
 User-agent: AgentTimes
 User-agent: AI2Bot
 User-agent: AI2Bot-DeepResearchEval
@@ -33,6 +34,7 @@ User-agent: Awario
 User-agent: AzureAI-SearchBot
 User-agent: bedrockbot
 User-agent: bigsur.ai
+User-agent: BixelBot
 User-agent: Bravebot
 User-agent: Brightbot
 User-agent: Brightbot 1.0
@@ -49,6 +51,7 @@ User-agent: Claude-User
 User-agent: Claude-Web
 User-agent: ClaudeBot
 User-agent: Cloudflare-AutoRAG
+User-agent: CloudflareBrowserRenderingCrawler
 User-agent: CloudVertexBot
 User-agent: Code
 User-agent: cohere-ai
@@ -89,7 +92,10 @@ User-agent: GoogleOther
 User-agent: GoogleOther-Image
 User-agent: GoogleOther-Video
 User-agent: GPTBot
+User-agent: GrokAppAndroid
+User-agent: GrokBot
 User-agent: HenkBot
+User-agent: Hunyuan
 User-agent: iAskBot
 User-agent: iaskspider
 User-agent: iaskspider/2.0
@@ -100,6 +106,8 @@ User-agent: img2dataset
 User-agent: ISSCyberRiskCrawler
 User-agent: kagi-fetcher
 User-agent: Kangaroo Bot
+User-agent: KeenableBot
+User-agent: Kimi-Agent
 User-agent: Kimi-SearchBot
 User-agent: Kimi-User
 User-agent: KimiBot
@@ -122,9 +130,11 @@ User-agent: MistralAI-Index
 User-agent: MistralAI-Training
 User-agent: MistralAI-User
 User-agent: MistralAI-User/1.0
+User-agent: MoonshotBot
 User-agent: Mozilla-Tabstack
 User-agent: MyCentralAIScraperBot
 User-agent: NagetBot
+User-agent: nbot
 User-agent: netEstate Imprint Crawler
 User-agent: newsai
 User-agent: NotebookLM
@@ -145,6 +155,7 @@ User-agent: PetalBot
 User-agent: PhindBot
 User-agent: Poggio-Citations
 User-agent: Poseidon Research Crawler
+User-agent: qodercli
 User-agent: QualifiedBot
 User-agent: Querit-SearchBot
 User-agent: QueritBot
@@ -176,9 +187,11 @@ User-agent: Webzio-Extended
 User-agent: webzio-extended
 User-agent: wpbot
 User-agent: WRTNBot
+User-agent: xAI-Grok
 User-agent: YaK
 User-agent: YandexAdditional
 User-agent: YandexAdditionalBot
+User-agent: YiBot
 User-agent: YiyanBot
 User-agent: YouBot
 User-agent: ZanistaBot
