@@ -106,6 +106,7 @@
 						<li><a href="#IIIB16">What is the maximum size of a Notepad item?</a></li>
 						<li><a href="#IIIB17">How do I remove or bypass the PIN code?</a></li>
 						<li><a href="#IIIB18">Does Newton OS support SSL?</a></li>
+						<li><a href="#IIIB19">Can I run Newton OS on other platforms?</a></li>
 					</ol>
 				</li>
 				<li><a href="#IIIC">Troubleshooting</a>
@@ -941,6 +942,18 @@
 				<p>Newton OS does not natively support SSL (Secure Sockets Layer) or TLS (Transport Layer Security) for secure communication with internet services such as websites and email.</p>
 				<p>However, Paul Guyot created a Newton OS version of <a href="https://github.com/pguyot/mbedtls-NewtonOS">Mbed TLS</a>, allowing third-party applications to use SSL. As an example, installing Guyot’s <a href="https://github.com/pguyot/mbedtls-NewtonOS/releases/tag/v2.6.16">MailVSSLPatch.pkg</a> on a Newton device enables access to IMAPS mail services within Simon Bell’s <a href="http://newtonresearch.org/mailv/">Mail V</a>.</p>
 				<p>This patch requires Newton OS 2.1 and Newton Internet Enabler 2.0.</p>
+
+			<h4 id="IIIB19">Can I run Newton OS on other platforms?</h4>
+			
+			<p>There are several ways to run Newton OS (or an application that mimics the Newton OS experience) on other computing platforms.</p>
+			
+			<ul>
+				<li><a href="https://github.com/pguyot/Einstein/">Einstein</a> is an open source software emulator originally developed by Paul Guyot that allows Newton OS to run on other operating systems such as macOS, iOS, Android, Windows, and some flavours of Linux.</li>
+				<li><a href="https://github.com/pablomarx/Leibniz">Leibniz</a> is an open source emulator for macOS developed by Steve White focused on Runt-based Newton devices such as the Original MessagePad, MessagePad 100, and Sharp ExpertPad.</li>
+				<li><a href="https://github.com/dparnell/newton-re">newton-re</a> is an open source software project developed by Daniel Parnell to reverse engineer the Newton OS ROM found in MessagePad 2000 and MessagePad 2100 devices. This reimplementation of Newton OS would run natively on other computing platforms.</li>
+				<li><a href="https://sourceforge.net/projects/gnuton/">GNUton</a> is an open source project developed by David Arnold as an experiment to implement aspects of Newton OS using the Python programming language.</li>
+				<li><a href="https://www.enfour.com/pda/notes/">PDA Notes</a> is an app developed by Enfour that simulates a feature set of Newton OS on iOS and iPadOS devices.</li>
+			</ul>
 
 			<hr>
 
